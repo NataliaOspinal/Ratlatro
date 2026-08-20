@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2130622660893296387}
   - component: {fileID: 871216071300465342}
+  - component: {fileID: 7053133666394470934}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -81,16 +82,38 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 69053c50b0483904991f4fb62e8ac0cf, type: 3}
+  m_Sprite: {fileID: 7371028057241421067, guid: 9896f8cd9ce5c8245951519302fed5e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.37, y: 2.14}
+  m_Size: {x: 1.33, y: 2.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!95 &7053133666394470934
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834443587584373729}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02c019fef32ea3c42825e8d4d19e6f3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4548800590339929965
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +125,6 @@ GameObject:
   - component: {fileID: 6808370412745188382}
   - component: {fileID: 1029957029999239899}
   - component: {fileID: 210967380371486421}
-  - component: {fileID: 1578471541754191755}
   m_Layer: 0
   m_Name: CilindroLleno
   m_TagString: Untagged
@@ -209,18 +231,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2555319, y: 1.973398}
   m_EdgeRadius: 0
---- !u!114 &1578471541754191755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4548800590339929965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a3269b43acd1841a340cadfa7da2fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DynamicVisual
-  sr: {fileID: 871216071300465342}
-  opaqueSprite: {fileID: 21300000, guid: 69053c50b0483904991f4fb62e8ac0cf, type: 3}
-  transparentSprite: {fileID: 21300000, guid: 827ea476a5fb5694692c237ce6a06b4f, type: 3}

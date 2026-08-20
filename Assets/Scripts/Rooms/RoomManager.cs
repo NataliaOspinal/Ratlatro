@@ -1,7 +1,6 @@
 using UnityEngine; 
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 
 public class RoomManager : MonoBehaviour
 {
@@ -42,6 +41,26 @@ public class RoomManager : MonoBehaviour
 
         currentRoom=Instantiate(roomToload, Vector3.zero, UnityEngine.Quaternion.identity);
 
-        UnityEngine.Debug.Log("Estamos saliendo por la puerta: " + exitDirection);
+        Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
+        Transform targetSpawn = null;
+
+        if (exitDirection == Door.PuertaDireccion.Right)
+        {
+            targetSpawn = spawnFolder.Find("Spawn_L"); 
+        }
+        else if (exitDirection == Door.PuertaDireccion.Left)
+        {
+            targetSpawn = spawnFolder.Find("Spawn_R"); 
+
+        }
+
+        if (targetSpawn != null)
+        {
+            player.transform.position = targetSpawn.position;
+        }
+        else
+        {
+            Debug.LogWarning("Faltan Spawns");
+        }
     }
 }

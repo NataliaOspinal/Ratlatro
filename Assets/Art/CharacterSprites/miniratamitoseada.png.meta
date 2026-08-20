@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 88867d2e47683bc49b0860008d2c2bc1
+guid: 78b7c7c07f6ff134484f350d1e80b84e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2972338507437988473
-    second: german_panzer4_merged5_0
+      213: -5733309182433368606
+    second: miniratamitoseada_0
+  - first:
+      213: -8480662474396311198
+    second: miniratamitoseada_1
+  - first:
+      213: -3952138306342900696
+    second: miniratamitoseada_2
+  - first:
+      213: -7572081652871084037
+    second: miniratamitoseada_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.49753642, y: 0.42978576}
-  spritePixelsToUnits: 50
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: german_panzer4_merged5_0
+      name: miniratamitoseada_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 61
-        width: 81
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 98
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4508254, y: 0.3220349}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97a5e08df1edf3920800000000000000
-      internalID: 2972338507437988473
+      spriteID: 2e5e299cca13f60b0800000000000000
+      internalID: -5733309182433368606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniratamitoseada_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 98
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5468333, y: 0.2939352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2616f997962ae4a80800000000000000
+      internalID: -8480662474396311198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniratamitoseada_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 98
+        height: 49
+      alignment: 9
+      pivot: {x: 0.50234175, y: 0.27520198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ca733562f2729c0800000000000000
+      internalID: -3952138306342900696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniratamitoseada_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 98
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4508256, y: 0.26115212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7cd56fadf8ae690800000000000000
+      internalID: -7572081652871084037
       vertices: []
       indices: 
       edges: []
@@ -138,17 +213,22 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 3839d17c1b0ea2c4cb09979be20ee221
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":98.0,"y":49.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      german_panzer4_merged5_0: 2972338507437988473
+      miniratamitoseada_0: -5733309182433368606
+      miniratamitoseada_1: -8480662474396311198
+      miniratamitoseada_2: -3952138306342900696
+      miniratamitoseada_3: -7572081652871084037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -224,6 +224,8 @@ MonoBehaviour:
   - {fileID: 7362026603347181030, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
   - {fileID: 7362026603347181030, guid: 01d70d11e271b474f99b868cd6ce2a92, type: 3}
   - {fileID: 7362026603347181030, guid: e13a8349c75a5004dad8329327b4f820, type: 3}
+  panelAnimator: {fileID: 0}
+  tiempoDeEspera: 0.5
 --- !u!1001 &650567254
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MainPlayer : BaseIsometricPlayer
 {
-    [Header("Companion Settings")]
+    // Prefab del compañero que se instanciará
     public GameObject companionPrefab;
     private GameObject spawnedCompanion;
 

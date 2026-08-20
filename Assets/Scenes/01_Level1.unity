@@ -410,6 +410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1263429633649196632, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+      propertyPath: companionPrefab
+      value: 
+      objectReference: {fileID: 9089966177106744579, guid: 1b9ac3321a6a9534b8ddc0bc9e486955, type: 3}
     - target: {fileID: 6004177839473615881, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.01
@@ -452,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9089966177106744579, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
       propertyPath: m_Name
-      value: Capsule
+      value: Rata
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

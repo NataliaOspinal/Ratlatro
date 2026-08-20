@@ -39,6 +39,12 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
     protected virtual void Update()
     {
         Vector2 rawInput = GetInput();
+        if (Mathf.Abs(rawInput.x) > 0 && Mathf.Abs(rawInput.y) > 0)
+        {
+            // Anulamos el eje Y para priorizar el movimiento horizontal
+            rawInput.y = 0f;
+        }
+
         Vector2 inputDirection = Vector2.zero;
 
         if (rawInput.y > 0) inputDirection += upRight;

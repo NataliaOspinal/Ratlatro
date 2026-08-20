@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5eaa275123b8394d8999a7c59a8ad58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  direccion: 0
+  direccion: 1
 --- !u!1 &2906291526632361277
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,13 +122,13 @@ Transform:
   m_GameObject: {fileID: 2906291526632361277}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04074, y: 1.56183, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5243776079178109047}
   - {fileID: 6097822251521407563}
-  m_Father: {fileID: 856629393313047508}
+  m_Father: {fileID: 5918253806164369001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4201459629882994084
 GameObject:
@@ -260,6 +260,7 @@ Transform:
   m_Children:
   - {fileID: 3480983649022188348}
   - {fileID: 4552733943908934454}
+  - {fileID: 3962798374322661294}
   m_Father: {fileID: 856629393313047508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4824509992612864358
@@ -309,10 +310,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 26d7f2e15708ffc408f1a509f1eb8034, type: 3}
-  m_Color: {r: 0.4226913, g: 0.4226913, b: 0.96981126, a: 1}
+  m_Color: {r: 0, g: 0.0012202263, b: 1, a: 0.19215687}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -435,7 +436,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3962798374322661294}
   - {fileID: 5918253806164369001}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

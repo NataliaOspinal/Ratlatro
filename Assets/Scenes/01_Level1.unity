@@ -266,7 +266,7 @@ MonoBehaviour:
   - {fileID: 7362026603347181030, guid: 01d70d11e271b474f99b868cd6ce2a92, type: 3}
   - {fileID: 7362026603347181030, guid: e13a8349c75a5004dad8329327b4f820, type: 3}
   panelAnimator: {fileID: 244909581}
-  tiempoDeEspera: 0.5
+  tiempoDeEspera: 1.1
 --- !u!1 &1001198517
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,40 +35,38 @@ public class RoomManager : MonoBehaviour
     }
 
     private IEnumerator RutinaCambioSala(Door.PuertaDireccion exitDirection, GameObject player)
+{
+    isTransitioning = true;
+
+    if (panelAnimator != null)
     {
-        isTransitioning = true;
-
-        if (panelAnimator != null)
-        {
-            panelAnimator.SetTrigger("CambiarSala");
-        }
-
-        yield return new WaitForSeconds(tiempoDeEspera);
-
-        Vector3 posicionSala = Vector3.zero;
-        if (currentRoom != null)
-        {
-            posicionSala = currentRoom.transform.position;
-            currentRoom.SetActive(false); 
-            Destroy(currentRoom);
-        }
-
-        int randomIndex = Random.Range(0, roomPrefabs.Count);
-        GameObject roomToLoad = roomPrefabs[randomIndex];
-        currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
-
-        Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
-        if (spawnFolder != null)
-        {
-            Transform targetSpawn = (exitDirection == Door.PuertaDireccion.Right) ? spawnFolder.Find("Spawn_L") : spawnFolder.Find("Spawn_R");
-
-            if (targetSpawn != null)
-            {
-                player.transform.position = targetSpawn.position;
-            }
-        }
-
-        yield return new WaitForSeconds(0.1f);
-        isTransitioning = false;
+        panelAnimator.SetTrigger("CambiarSala");
     }
+
+   
+    yield return new WaitForSeconds(tiempoDeEspera);
+
+   
+    Vector3 posicionSala = Vector3.zero;
+    if (currentRoom != null)
+    {
+        posicionSala = currentRoom.transform.position;
+        currentRoom.SetActive(false); 
+        Destroy(currentRoom);
+    }
+
+    int randomIndex = Random.Range(0, roomPrefabs.Count);
+    currentRoom = Instantiate(roomPrefabs[randomIndex], posicionSala, Quaternion.identity);
+
+    Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
+    if (spawnFolder != null)
+    {
+        Transform targetSpawn = (exitDirection == Door.PuertaDireccion.Right) ? spawnFolder.Find("Spawn_L") : spawnFolder.Find("Spawn_R");
+        if (targetSpawn != null) player.transform.position = targetSpawn.position;
+    }
+
+    
+    yield return new WaitForSeconds(0.1f);
+    isTransitioning = false;
+}
 }

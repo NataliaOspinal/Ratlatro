@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: fa38efb433e478a43b12fc3c7f5ba82c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28112ad701c496f4a83eb9b0e2d02cf3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6808370412745188382}
   - component: {fileID: 8614131706234509481}
   m_Layer: 0
-  m_Name: Estante
+  m_Name: Contenedor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,8 +170,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.9095689, y: 1.0987642}
-      - {x: -0.63790554, y: -0.35097495}
-      - {x: 0.35309184, y: -0.9164575}
-      - {x: 2.846332, y: 0.49216285}
+    - - {x: 0.054255717, y: 0.6963881}
+      - {x: -1.2669066, y: -0.16774333}
+      - {x: 0.044302918, y: -0.9309043}
+      - {x: 1.3188752, y: -0.13938588}
   m_UseDelaunayMesh: 1

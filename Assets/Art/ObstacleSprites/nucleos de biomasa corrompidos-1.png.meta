@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 26d7f2e15708ffc408f1a509f1eb8034
+guid: 4d5f0374f9b49cc4d98b101db58385c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1895331778537031620
-    second: grilla_isometricaPLACEHOLDER_0
-  - first:
-      213: 8835682138791903101
-    second: grilla_isometricaPLACEHOLDER_1
-  - first:
-      213: -3750383431637015522
-    second: grilla_isometricaPLACEHOLDER_2
+      213: -6166554343284527347
+    second: nucleos de biomasa corrompidos-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,8 +49,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.1899179, y: 0.194261}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,67 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grilla_isometricaPLACEHOLDER_0
+      name: nucleos de biomasa corrompidos-1_0
       rect:
         serializedVersion: 2
-        x: 254
-        y: 30
-        width: 3168
-        height: 2066
+        x: 0
+        y: 0
+        width: 360
+        height: 466
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c387ac01acd62b5e0800000000000000
-      internalID: -1895331778537031620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grilla_isometricaPLACEHOLDER_1
-      rect:
-        serializedVersion: 2
-        x: 3435
-        y: 1402
-        width: 109
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7f74fe7716ae9a70800000000000000
-      internalID: 8835682138791903101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grilla_isometricaPLACEHOLDER_2
-      rect:
-        serializedVersion: 2
-        x: 3435
-        y: 1004
-        width: 109
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e14e3c9a326f3fbc0800000000000000
-      internalID: -3750383431637015522
+      spriteID: d0f22602f7ffb6aa0800000000000000
+      internalID: -6166554343284527347
       vertices: []
       indices: 
       edges: []
@@ -189,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grilla_isometricaPLACEHOLDER_0: -1895331778537031620
-      grilla_isometricaPLACEHOLDER_1: 8835682138791903101
-      grilla_isometricaPLACEHOLDER_2: -3750383431637015522
+      nucleos de biomasa corrompidos-1_0: -6166554343284527347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

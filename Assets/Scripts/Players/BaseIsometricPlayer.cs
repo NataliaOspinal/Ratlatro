@@ -6,6 +6,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
     public float moveSpeed = 5f;
     protected Rigidbody2D rb;
     private Vector2 currentMovement;
+    private SpriteRenderer spriteRenderer;
 
     // Vectores isométricos de solo lectura
     private readonly Vector2 upRight = new Vector2(1f, 0.5f).normalized;
@@ -16,6 +17,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Método abstracto para que se adapte a rata mayor y rata menor, cada una con su propio input
@@ -38,8 +40,19 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
         // Rotación
         if (currentMovement != Vector2.zero)
         {
-            float angle = (Mathf.Atan2(currentMovement.y, currentMovement.x) * Mathf.Rad2Deg) + 90f;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            if (currentMovement != Vector2.zero)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+
+                if (currentMovement.x < 0)
+                {
+                    spriteRenderer.flipX = true;
+                }
+                else if (currentMovement.x > 0)
+                {
+                    spriteRenderer.flipX = false;
+                }
+            }
         }
     }
 

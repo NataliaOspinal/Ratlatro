@@ -385,6 +385,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c477296ac21ac44aebf1f38a29234d, type: 3}
+--- !u!4 &877976805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004177839473615881, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+  m_PrefabInstance: {fileID: 7871736256915235742}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &900644224
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,8 +516,8 @@ Camera:
   m_GameObject: {fileID: 1001198517}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 0.22352941}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -624,8 +629,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9785e62b2daabbb48b7413b8c3681fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera
+  jugador: {fileID: 877976805}
   cantidadMovimiento: 0.8
   suavidad: 3
+  zoomNormal: 10
+  zoomAcercado: 6
+  suavidadZoom: 5
+  fuerzaEnfoque: 0.5
 --- !u!1 &1070042617
 GameObject:
   m_ObjectHideFlags: 0

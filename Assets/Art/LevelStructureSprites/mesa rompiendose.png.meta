@@ -1,0 +1,731 @@
+fileFormatVersion: 2
+guid: 02f1dc5a37960704786cd175234685a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1506965548594887643
+    second: mesa rompiendose_0
+  - first:
+      213: 9098989540136950621
+    second: mesa rompiendose_1
+  - first:
+      213: 876366682698832311
+    second: mesa rompiendose_2
+  - first:
+      213: 1376681653140240418
+    second: mesa rompiendose_3
+  - first:
+      213: -5566220085274017460
+    second: mesa rompiendose_4
+  - first:
+      213: -2733215400320072323
+    second: mesa rompiendose_5
+  - first:
+      213: 8812047991543593491
+    second: mesa rompiendose_6
+  - first:
+      213: 6743660081519664554
+    second: mesa rompiendose_7
+  - first:
+      213: 8512479817760880165
+    second: mesa rompiendose_8
+  - first:
+      213: -8842211506914193971
+    second: mesa rompiendose_9
+  - first:
+      213: -4910414369855630925
+    second: mesa rompiendose_10
+  - first:
+      213: -5140281514122238511
+    second: mesa rompiendose_11
+  - first:
+      213: 4254387254716679590
+    second: mesa rompiendose_12
+  - first:
+      213: 7420052268919206984
+    second: mesa rompiendose_13
+  - first:
+      213: 8898003118396172617
+    second: mesa rompiendose_14
+  - first:
+      213: 6376985541553420368
+    second: mesa rompiendose_15
+  - first:
+      213: -3831210936324216341
+    second: mesa rompiendose_16
+  - first:
+      213: 6327664611241475646
+    second: mesa rompiendose_17
+  - first:
+      213: 6641656721329894042
+    second: mesa rompiendose_18
+  - first:
+      213: 2126807969390564694
+    second: mesa rompiendose_19
+  - first:
+      213: 5001910214936395351
+    second: mesa rompiendose_20
+  - first:
+      213: 2952781623639897857
+    second: mesa rompiendose_21
+  - first:
+      213: -4020341729141893657
+    second: mesa rompiendose_22
+  - first:
+      213: 1338037424265732489
+    second: mesa rompiendose_23
+  - first:
+      213: -3122907969560595922
+    second: mesa rompiendose_24
+  - first:
+      213: -2461396327172714096
+    second: mesa rompiendose_25
+  - first:
+      213: -9170346869724717337
+    second: mesa rompiendose_26
+  - first:
+      213: 178128337664327789
+    second: mesa rompiendose_27
+  - first:
+      213: 5702958439201980442
+    second: mesa rompiendose_28
+  - first:
+      213: 7519472684776644150
+    second: mesa rompiendose_29
+  - first:
+      213: 9158341614769822904
+    second: mesa rompiendose_30
+  - first:
+      213: 5234713915220330454
+    second: mesa rompiendose_31
+  - first:
+      213: -5417878798868154807
+    second: mesa rompiendose_32
+  - first:
+      213: -8883544418340052619
+    second: mesa rompiendose_33
+  - first:
+      213: -1088877936022115307
+    second: mesa rompiendose_34
+  - first:
+      213: -639643386900179996
+    second: mesa rompiendose_35
+  - first:
+      213: 3143974609224324436
+    second: mesa rompiendose_36
+  - first:
+      213: -6209845063282992387
+    second: mesa rompiendose_37
+  - first:
+      213: 1898350848072343419
+    second: mesa rompiendose_38
+  - first:
+      213: -2997718407629467663
+    second: mesa rompiendose_39
+  - first:
+      213: 9206611749429421810
+    second: mesa rompiendose_40
+  - first:
+      213: -533031666816590641
+    second: mesa rompiendose_41
+  - first:
+      213: 4728169639869442872
+    second: mesa rompiendose_42
+  - first:
+      213: -1000289106145532122
+    second: mesa rompiendose_43
+  - first:
+      213: 5254251970997557892
+    second: mesa rompiendose_44
+  - first:
+      213: 8539220143380516905
+    second: mesa rompiendose_45
+  - first:
+      213: -1580820943813597028
+    second: mesa rompiendose_46
+  - first:
+      213: -6575228782926609312
+    second: mesa rompiendose_47
+  - first:
+      213: 2165737042148859112
+    second: mesa rompiendose_48
+  - first:
+      213: 2394568748782147757
+    second: mesa rompiendose_49
+  - first:
+      213: -2854514722702496107
+    second: mesa rompiendose_50
+  - first:
+      213: -2784555802044662846
+    second: mesa rompiendose_51
+  - first:
+      213: 3893928324227637594
+    second: mesa rompiendose_52
+  - first:
+      213: -9188551879169029903
+    second: mesa rompiendose_53
+  - first:
+      213: 883406407776547446
+    second: mesa rompiendose_54
+  - first:
+      213: 1083026301399330788
+    second: mesa rompiendose_55
+  - first:
+      213: -6379387979955080754
+    second: mesa rompiendose_56
+  - first:
+      213: 3336261180119738645
+    second: mesa rompiendose_57
+  - first:
+      213: 3624381263384369090
+    second: mesa rompiendose_58
+  - first:
+      213: -5383267461324632836
+    second: mesa rompiendose_59
+  - first:
+      213: -8000305410772198303
+    second: mesa rompiendose_60
+  - first:
+      213: 312615864865516241
+    second: mesa rompiendose_61
+  - first:
+      213: -2150084182707922802
+    second: mesa rompiendose_62
+  - first:
+      213: 6958201600409686180
+    second: mesa rompiendose_63
+  - first:
+      213: 1598066090988702659
+    second: mesa rompiendose_64
+  - first:
+      213: 2189419576665284985
+    second: mesa rompiendose_65
+  - first:
+      213: -6173902429616728651
+    second: mesa rompiendose_66
+  - first:
+      213: -5074990074955963591
+    second: mesa rompiendose_67
+  - first:
+      213: -4539688903926272596
+    second: mesa rompiendose_68
+  - first:
+      213: 159902292825259013
+    second: mesa rompiendose_69
+  - first:
+      213: 1950484928983269046
+    second: mesa rompiendose_70
+  - first:
+      213: 5411028310004210899
+    second: mesa rompiendose_71
+  - first:
+      213: 2078610824851978801
+    second: mesa rompiendose_72
+  - first:
+      213: -8983276119255242690
+    second: mesa rompiendose_73
+  - first:
+      213: 5986273940209386175
+    second: mesa rompiendose_74
+  - first:
+      213: 4037400970239867195
+    second: mesa rompiendose_75
+  - first:
+      213: -5707315255867399921
+    second: mesa rompiendose_76
+  - first:
+      213: -9107700579956388461
+    second: mesa rompiendose_77
+  - first:
+      213: -3482867181862542228
+    second: mesa rompiendose_78
+  - first:
+      213: 1876021205136365783
+    second: mesa rompiendose_79
+  - first:
+      213: -5527015266179246346
+    second: mesa rompiendose_80
+  - first:
+      213: -3331256103836825006
+    second: mesa rompiendose_81
+  - first:
+      213: -3882041556865795533
+    second: mesa rompiendose_82
+  - first:
+      213: 2977617980341941398
+    second: mesa rompiendose_83
+  - first:
+      213: -1785474142798732631
+    second: mesa rompiendose_84
+  - first:
+      213: 1780025789554325744
+    second: mesa rompiendose_85
+  - first:
+      213: -8246638365096132865
+    second: mesa rompiendose_86
+  - first:
+      213: 8370732995710222544
+    second: mesa rompiendose_87
+  - first:
+      213: 2652418650592103955
+    second: mesa rompiendose_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mesa rompiendose_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524004b51de261be0800000000000000
+      internalID: -1506965548594887643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_1
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b9bda37ca164e70800000000000000
+      internalID: 9098989540136950621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_2
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9504fcada792c00800000000000000
+      internalID: 876366682698832311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_3
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228b8386ba4fa1310800000000000000
+      internalID: 1376681653140240418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_4
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c410993d250d0c2b0800000000000000
+      internalID: -5566220085274017460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_5
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d758b49131ba11ad0800000000000000
+      internalID: -2733215400320072323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_6
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a76a7c5feaa4a70800000000000000
+      internalID: 8812047991543593491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_7
+      rect:
+        serializedVersion: 2
+        x: 4648
+        y: 432
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad16fc5d1b469d50800000000000000
+      internalID: 6743660081519664554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526b15f0b47622670800000000000000
+      internalID: 8512479817760880165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_9
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd02858b772a4580800000000000000
+      internalID: -8842211506914193971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_10
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b118c8a524badbb0800000000000000
+      internalID: -4910414369855630925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_11
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5ac31823d0aa8b0800000000000000
+      internalID: -5140281514122238511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_12
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5465edaae9a0b30800000000000000
+      internalID: 4254387254716679590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_13
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844b2c7b93259f660800000000000000
+      internalID: 7420052268919206984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mesa rompiendose_14
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 0
+        width: 664
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949625a41be0c7b70800000000000000
+      internalID: 8898003118396172617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d37da544ed3e603458c80681ae5e858d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":664.0,"y":432.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      mesa rompiendose_0: -1506965548594887643
+      mesa rompiendose_1: 9098989540136950621
+      mesa rompiendose_10: -4910414369855630925
+      mesa rompiendose_11: -5140281514122238511
+      mesa rompiendose_12: 4254387254716679590
+      mesa rompiendose_13: 7420052268919206984
+      mesa rompiendose_14: 8898003118396172617
+      mesa rompiendose_2: 876366682698832311
+      mesa rompiendose_3: 1376681653140240418
+      mesa rompiendose_4: -5566220085274017460
+      mesa rompiendose_5: -2733215400320072323
+      mesa rompiendose_6: 8812047991543593491
+      mesa rompiendose_7: 6743660081519664554
+      mesa rompiendose_8: 8512479817760880165
+      mesa rompiendose_9: -8842211506914193971
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

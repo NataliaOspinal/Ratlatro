@@ -10,8 +10,7 @@ public class Door : MonoBehaviour
     public Animator puertaAnimator; 
     public string nombreTriggerAnimacion = "Abrir"; 
     
-    public float duracionTemblor = 0.3f; 
-    public float fuerzaTemblor = 0.03f;  
+  
 
 
     public void Abrir()
@@ -21,7 +20,7 @@ public class Door : MonoBehaviour
             puertaAnimator.SetTrigger(nombreTriggerAnimacion);
         }
         
-        StartCoroutine(EfectoTemblor());
+    
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,16 +31,4 @@ public class Door : MonoBehaviour
         }
     }
 
-    private IEnumerator EfectoTemblor()
-    {
-        Vector3 posicionOriginal = transform.position;
-        float tiempo = 0f;
-        while (tiempo < duracionTemblor)
-        {
-            transform.position = posicionOriginal + (Vector3)Random.insideUnitCircle * fuerzaTemblor;
-            tiempo += Time.deltaTime;
-            yield return null;
-        }
-        transform.position = posicionOriginal;
-    }
 }

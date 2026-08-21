@@ -497,7 +497,7 @@ MonoBehaviour:
   puertaAnimator: {fileID: 8102749846637885329}
   nombreTriggerAnimacion: Abrir
   duracionTemblor: 0.3
-  fuerzaTemblor: 0.03
+  fuerzaTemblor: 0.1
 --- !u!1 &3167148631609489199
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7718548659647054110
 Transform:
   m_ObjectHideFlags: 0

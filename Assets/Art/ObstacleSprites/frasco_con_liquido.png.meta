@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 9896f8cd9ce5c8245951519302fed5e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7371028057241421067
+    second: frasco_con_liquido_0
+  - first:
+      213: -3240077660829376751
+    second: frasco_con_liquido_1
+  - first:
+      213: 1950237572692895527
+    second: frasco_con_liquido_2
+  - first:
+      213: -2605050312621835889
+    second: frasco_con_liquido_3
+  - first:
+      213: 8446295169881349082
+    second: frasco_con_liquido_4
+  - first:
+      213: 7891897708181715421
+    second: frasco_con_liquido_5
+  - first:
+      213: -8726277355149099790
+    second: frasco_con_liquido_6
+  - first:
+      213: -4008322135346676695
+    second: frasco_con_liquido_7
+  - first:
+      213: 1120514337351688719
+    second: frasco_con_liquido_8
+  - first:
+      213: 3826053765443142921
+    second: frasco_con_liquido_9
+  - first:
+      213: 2581457731000786015
+    second: frasco_con_liquido_10
+  - first:
+      213: 4648125307247560077
+    second: frasco_con_liquido_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frasco_con_liquido_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b050055f6f62b4660800000000000000
+      internalID: 7371028057241421067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f169db88ee803d0800000000000000
+      internalID: -3240077660829376751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727eaf35db2a01b10800000000000000
+      internalID: 1950237572692895527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89b726fa8009dbd0800000000000000
+      internalID: -2605050312621835889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_4
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb10e4e4b4473570800000000000000
+      internalID: 8446295169881349082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_5
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9f3eb0727a58d60800000000000000
+      internalID: 7891897708181715421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_6
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc7dc2baf806e680800000000000000
+      internalID: -8726277355149099790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_7
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 235
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c735141449f58c0800000000000000
+      internalID: -4008322135346676695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0264936adddc8f00800000000000000
+      internalID: 1120514337351688719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 4
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905c8ccd0afd81530800000000000000
+      internalID: 3826053765443142921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 4
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cdcf2112e23d320800000000000000
+      internalID: 2581457731000786015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frasco_con_liquido_11
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 4
+        width: 133
+        height: 216
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d858ef11755718040800000000000000
+      internalID: 4648125307247560077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e066b32228254d04fa6db81364618a50
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      frasco_con_liquido_0: 7371028057241421067
+      frasco_con_liquido_1: -3240077660829376751
+      frasco_con_liquido_10: 2581457731000786015
+      frasco_con_liquido_11: 4648125307247560077
+      frasco_con_liquido_2: 1950237572692895527
+      frasco_con_liquido_3: -2605050312621835889
+      frasco_con_liquido_4: 8446295169881349082
+      frasco_con_liquido_5: 7891897708181715421
+      frasco_con_liquido_6: -8726277355149099790
+      frasco_con_liquido_7: -4008322135346676695
+      frasco_con_liquido_8: 1120514337351688719
+      frasco_con_liquido_9: 3826053765443142921
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

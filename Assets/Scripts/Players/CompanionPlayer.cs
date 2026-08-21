@@ -29,12 +29,11 @@ public class CompanionPlayer : BaseIsometricPlayer
     public void BePickedUp(Transform mainPlayerTransform)
     {
         canMove = false;
-        rb.simulated = false; // Desactiva físicas (para no empujar al jugador)
+        rb.simulated = false;
 
-        // Emparentar y posicionar sobre la cabeza
         transform.SetParent(mainPlayerTransform);
-        transform.localPosition = new Vector3(0f, 0.5f, 0f); // Ajusta la Y para que encaje visualmente
-        spriteRenderer.sortingOrder = 10; // Dibujarse por delante del main player
+        transform.localPosition = new Vector3(0f, 0.5f, 0f);
+        spriteRenderer.sortingOrder = 10;
     }
 
     // Método llamado cuando el MainPlayer suelta la R
@@ -46,20 +45,20 @@ public class CompanionPlayer : BaseIsometricPlayer
 
     private IEnumerator FlightRoutine(Vector2 targetPosition)
     {
+        rb.simulated = true; 
+        col.isTrigger = true;
+
         Vector2 startPosition = transform.position;
-        float duration = 0.5f; // Segundos que tarda en aterrizar
+        float duration = 0.5f;
         float timePassed = 0f;
-        float arcHeight = 2f; // Altura visual de la parábola de la catapulta
+        float arcHeight = 2f;
 
         while (timePassed < duration)
         {
             timePassed += Time.deltaTime;
-            float linearT = timePassed / duration; // Progresión de 0 a 1
+            float linearT = timePassed / duration;
 
-            // Movimiento plano (Lerp entre inicio y fin)
             Vector2 currentPos = Vector2.Lerp(startPosition, targetPosition, linearT);
-
-            // Elevación parabólica simulada
             float heightOffset = Mathf.Sin(linearT * Mathf.PI) * arcHeight;
             currentPos.y += heightOffset;
 
@@ -69,7 +68,8 @@ public class CompanionPlayer : BaseIsometricPlayer
 
         // Aterrizaje
         transform.position = targetPosition;
-        rb.simulated = true; // Reactiva físicas
+        col.isTrigger = false; // Vuelve a ser sólida al caer al suelo
+
         canMove = true;
         spriteRenderer.sortingOrder = originalSortingOrder;
     }

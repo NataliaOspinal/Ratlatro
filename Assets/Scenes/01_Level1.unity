@@ -391,6 +391,7 @@ MonoBehaviour:
   - {fileID: 7362026603347181030, guid: e13a8349c75a5004dad8329327b4f820, type: 3}
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
+  interaccionBloqueada: 0
 --- !u!1001 &650567254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,7 +1547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167148631609489199, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147974348289981586, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_IsActive
@@ -1575,6 +1576,10 @@ PrefabInstance:
     - target: {fileID: 7362026603347181030, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_Name
       value: ROOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362026603347181030, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8238037037195754379, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_IsTrigger

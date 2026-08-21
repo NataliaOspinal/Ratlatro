@@ -14,10 +14,14 @@ public struct DirectionData
 public abstract class BaseIsometricPlayer : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public bool canMove = true;
+
     protected Rigidbody2D rb;
+    protected SpriteRenderer spriteRenderer;
+    protected CapsuleCollider2D col; // Referencia al colisionador
+    protected Vector2 lastFacingDirection = new Vector2(1, -0.5f).normalized; // Apunta catapulta
+
     private Vector2 currentMovement;
-    private SpriteRenderer spriteRenderer;
-    private CapsuleCollider2D col; // Referencia al colisionador
 
     // 0: Abajo-Izq, 1: Abajo-Der, 2: Arriba-Der, 3: Arriba-Izq
     public DirectionData[] directionData = new DirectionData[4];
@@ -38,10 +42,12 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
 
     protected virtual void Update()
     {
-        Vector2 rawInput = GetInput();
+        // Si no puede moverse, anulamos el input
+        Vector2 rawInput = canMove ? GetInput() : Vector2.zero;
+
+        // Filtro para evitar diagonales 
         if (Mathf.Abs(rawInput.x) > 0 && Mathf.Abs(rawInput.y) > 0)
         {
-            // Anulamos el eje Y para priorizar el movimiento horizontal
             rawInput.y = 0f;
         }
 
@@ -56,6 +62,9 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
 
         if (currentMovement != Vector2.zero)
         {
+            // Guardamos la última dirección para saber a dónde lanzar a la ratita
+            lastFacingDirection = currentMovement;
+
             Vector2[] baseDirections = { downLeft, downRight, upRight, upLeft };
             int bestIndex = 0;
             float maxDot = -1f;
@@ -70,7 +79,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
                 }
             }
 
-            // Aplicamos los datos de la estructura según la dirección para el collision
+            // Aplicamos los sprites y colisiones exactos
             spriteRenderer.sprite = directionData[bestIndex].sprite;
             spriteRenderer.flipX = false;
 
@@ -94,6 +103,9 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        rb.MovePosition(rb.position + currentMovement * moveSpeed * Time.fixedDeltaTime);
+        if (canMove)
+        {
+            rb.MovePosition(rb.position + currentMovement * moveSpeed * Time.fixedDeltaTime);
+        }
     }
 }

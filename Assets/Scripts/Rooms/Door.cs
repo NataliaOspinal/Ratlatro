@@ -13,8 +13,6 @@ public class Door : MonoBehaviour
     public float duracionTemblor = 0.3f; 
     public float fuerzaTemblor = 0.03f;  
 
-    private bool puertaActivada = false;
-
 
     public void Abrir()
     {
@@ -28,9 +26,8 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !puertaActivada)
-        {
-            puertaActivada = true; 
+        if (collision.CompareTag("Player"))
+        {            
             RoomManager.Instance.LoadNextRoom(direccion, collision.gameObject);
         }
     }

@@ -28,6 +28,10 @@ public class RoomManager : MonoBehaviour
     public float tiempoDeEspera = 0.5f; 
     private bool isTransitioning = false;
 
+
+    [Header("Estado del Juego")]
+    public bool interaccionBloqueada = false;
+
     private void Awake()
     {
         if (Instance != null && Instance != this) Destroy(this);
@@ -41,7 +45,7 @@ public class RoomManager : MonoBehaviour
 
     public void LoadNextRoom(Door.PuertaDireccion exitDirection, GameObject player)
     {
-        if (isTransitioning) return; 
+        if (isTransitioning || interaccionBloqueada) return; 
         
         StartCoroutine(RutinaCambioSala(exitDirection, player));
     }

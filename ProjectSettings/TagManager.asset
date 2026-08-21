@@ -50,5 +50,11 @@ TagManager:
   - name: Entities
     uniqueID: 2565139689
     locked: 0
+  - name: New Layer 4
+    uniqueID: 4095709541
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 885723253
+    locked: 0
   m_RenderingLayers:
   - Default

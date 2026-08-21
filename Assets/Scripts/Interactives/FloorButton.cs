@@ -1,76 +1,88 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FloorButton : MonoBehaviour
 {
-    // Creamos una lista desplegable para el Inspector
     public enum ActivatorType
     {
         Cualquiera,
         SoloRataGrande,
-        SoloRataPequeña
+        SoloRataPequena
     }
 
-    [Tooltip("Define qué personaje puede activar este botón")]
+    // Config visual del botón y quién puede activarlo
     public ActivatorType quienPuedeActivar = ActivatorType.Cualquiera;
 
+    // Eventos que se disparan al presionar y soltar el botón
+    public UnityEvent AlPresionar;
+    public UnityEvent AlSoltar;
+
     private Animator animator;
-    private int ratsOnButton = 0;
+
+    // Cambiamos el nombre a objetos porque ahora se activa cn ratas y bloques
+    private int objectsOnButton = 0;
 
     void Start()
     {
-        // Busca el Animator
         animator = GetComponentInChildren<Animator>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (CanActivate(other))
+        // Revisamos si el objeto que entró tiene permiso de activar el botón
+        if (IsValidActivator(other))
         {
-            ratsOnButton++;
+            objectsOnButton++;
 
-            if (ratsOnButton > 0)
+            // Si es el primer objeto en pisarlo, se activa
+            if (objectsOnButton == 1)
             {
                 animator.SetBool("IsPressed", true);
+                AlPresionar.Invoke(); // Dispara la función lógica
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (CanActivate(other))
+        if (IsValidActivator(other))
         {
-            ratsOnButton--;
+            objectsOnButton--;
 
-            if (ratsOnButton <= 0)
+            // Si ya no queda nada encima, se desactiva
+            if (objectsOnButton <= 0)
             {
-                ratsOnButton = 0;
+                objectsOnButton = 0;
                 animator.SetBool("IsPressed", false);
+                AlSoltar.Invoke(); // Dispara la función lógica inversa (ej. Cerrar puerta)
             }
         }
     }
 
-    // Función auxiliar que decide si el objeto que pisó el botón tiene permiso
-    private bool CanActivate(Collider2D other)
+    // Función que decide quién tiene permiso de pisar el botón
+    private bool IsValidActivator(Collider2D other)
     {
-        // Solo hace caso si tiene tag de player
-        if (!other.CompareTag("Player")) return false;
-
-        // Comprobamos la configuración del botón en el Inspector
-        switch (quienPuedeActivar)
+        // Detecta bloque empujable, que siempre puede activar el botón
+        if (other.GetComponent<PushableBlock>() != null)
         {
-            case ActivatorType.Cualquiera:
-                return true;
-
-            case ActivatorType.SoloRataGrande:
-                // Retorna true solo si el objeto tiene el script de la rata grande
-                return other.GetComponent<MainPlayer>() != null;
-
-            case ActivatorType.SoloRataPequeña:
-                // Retorna true solo si el objeto tiene el script de la rata pequeña
-                return other.GetComponent<CompanionPlayer>() != null;
-
-            default:
-                return false;
+            return true;
         }
+
+        // Es jugador chi o ño
+        if (other.CompareTag("Player"))
+        {
+            switch (quienPuedeActivar)
+            {
+                case ActivatorType.Cualquiera:
+                    return true;
+                case ActivatorType.SoloRataGrande:
+                    return other.GetComponent<MainPlayer>() != null;
+                case ActivatorType.SoloRataPequena:
+                    return other.GetComponent<CompanionPlayer>() != null;
+            }
+        }
+
+        // Si no es ni bloque ni la rata correcta, lo ignoramos
+        return false;
     }
 }

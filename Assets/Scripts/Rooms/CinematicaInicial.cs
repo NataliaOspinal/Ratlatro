@@ -107,12 +107,17 @@ public class CinematicaInicial : MonoBehaviour
         Destroy(mascaraCirculo.gameObject);
         Destroy(pantallaNegra);
         
+        if (RoomManager.Instance != null)
+        {
+            RoomManager.Instance.interaccionBloqueada = true;
+        }
 
         panelNubeNegra.SetActive(true);
 
         foreach (string linea in lineasDialogo)
         {
             textoNarrativa.text = "";
+            
             
             foreach (char letra in linea.ToCharArray())
             {
@@ -127,6 +132,11 @@ public class CinematicaInicial : MonoBehaviour
 
         panelNubeNegra.SetActive(false);
         textoNarrativa.text = "";
+
+        if (RoomManager.Instance != null)
+        {
+            RoomManager.Instance.interaccionBloqueada = false;
+        }
 
         Door[] puertas = FindObjectsByType<Door>(FindObjectsSortMode.None);
 

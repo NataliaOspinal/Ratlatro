@@ -9,7 +9,6 @@ public struct EventoDeSala
     public GameObject prefabSalaEspecial;
 }
 
-
 public class RoomManager : MonoBehaviour
 {
     public static RoomManager Instance { get; private set; }
@@ -21,13 +20,12 @@ public class RoomManager : MonoBehaviour
     public List<GameObject> roomPrefabs;
     private GameObject currentRoom;
 
-    private int numeroActualDeSala=0;
+    private int numeroActualDeSala = 0;
 
     [Header("Transicion de Barrido")]
     public Animator panelAnimator;
-    public float tiempoDeEspera = 0.5f; 
+    public float tiempoDeEspera = 0.5f;
     private bool isTransitioning = false;
-
 
     [Header("Estado del Juego")]
     public bool interaccionBloqueada = false;
@@ -40,52 +38,104 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
+        // Intenta encontrar la sala si la pusiste a mano
         if (currentRoom == null) currentRoom = GameObject.Find("ROOM");
+
+        // Si no hay sala manual, genera la inicial automáticamente
+        if (currentRoom == null)
+        {
+            GenerarSalaInicial();
+        }
+    }
+
+    private void GenerarSalaInicial()
+    {
+        GameObject roomToLoad = null;
+
+        // Buscamos si hay sala 0 en el Inspector
+        foreach (EventoDeSala evento in salaEspecial)
+        {
+            if (evento.numeroDeSala == numeroActualDeSala)
+            {
+                roomToLoad = evento.prefabSalaEspecial;
+                break;
+            }
+        }
+
+        // Si no hay sala especial 0, toma el primer prefab de la lista aleatoria
+        if (roomToLoad == null && roomPrefabs.Count > 0)
+        {
+            roomToLoad = roomPrefabs[0];
+        }
+
+        if (roomToLoad != null)
+        {
+            // Instanciamos el primer nivel
+            currentRoom = Instantiate(roomToLoad, Vector3.zero, Quaternion.identity);
+
+            // Ubicamos a la rata en el punto de aparición izquierdo por defecto
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
+                if (spawnFolder != null)
+                {
+                    Transform targetSpawn = spawnFolder.Find("Spawn_L");
+                    if (targetSpawn != null)
+                    {
+                        player.transform.position = targetSpawn.position;
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Alerta: No hay prefabs asignados en el RoomManager"); //xsiacaso
+        }
     }
 
     public void LoadNextRoom(Door.PuertaDireccion exitDirection, GameObject player)
     {
-        if (isTransitioning || interaccionBloqueada) return; 
-        
+        if (isTransitioning || interaccionBloqueada) return;
+
         StartCoroutine(RutinaCambioSala(exitDirection, player));
     }
 
     private IEnumerator RutinaCambioSala(Door.PuertaDireccion exitDirection, GameObject player)
-{
-    isTransitioning = true;
-
-    if (panelAnimator != null)
     {
-        panelAnimator.SetTrigger("CambiarSala");
-    }
+        isTransitioning = true;
 
-   
-    yield return new WaitForSeconds(tiempoDeEspera);
+        if (panelAnimator != null)
+        {
+            panelAnimator.SetTrigger("CambiarSala");
+        }
 
-   
-    Vector3 posicionSala = Vector3.zero;
-    if (currentRoom != null)
-    {
-        posicionSala = currentRoom.transform.position;
-        currentRoom.SetActive(false); 
-        Destroy(currentRoom);
-    }
-    numeroActualDeSala++;
-    GameObject roomToLoad=null;
+        yield return new WaitForSeconds(tiempoDeEspera);
 
-   foreach (EventoDeSala evento in salaEspecial)
+        Vector3 posicionSala = Vector3.zero;
+        if (currentRoom != null)
+        {
+            posicionSala = currentRoom.transform.position;
+            currentRoom.SetActive(false);
+            Destroy(currentRoom);
+        }
+
+        numeroActualDeSala++;
+        GameObject roomToLoad = null;
+
+        foreach (EventoDeSala evento in salaEspecial)
         {
             if (evento.numeroDeSala == numeroActualDeSala)
             {
-                roomToLoad = evento.prefabSalaEspecial; 
-                break; 
+                roomToLoad = evento.prefabSalaEspecial;
+                break;
             }
         }
 
-        if (roomToLoad == null)
+        if (roomToLoad == null && roomPrefabs.Count > 0)
         {
-            int randomIndex = Random.Range(0, roomPrefabs.Count);
-            roomToLoad = roomPrefabs[randomIndex];
+            int indiceSecuencial = numeroActualDeSala % roomPrefabs.Count;
+            roomToLoad = roomPrefabs[indiceSecuencial];
         }
 
         currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
@@ -99,6 +149,5 @@ public class RoomManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         isTransitioning = false;
-    
     }
 }

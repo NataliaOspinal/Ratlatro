@@ -132,10 +132,10 @@ public class RoomManager : MonoBehaviour
             }
         }
 
-        if (roomToLoad == null)
+        if (roomToLoad == null && roomPrefabs.Count > 0)
         {
-            int randomIndex = Random.Range(0, roomPrefabs.Count);
-            roomToLoad = roomPrefabs[randomIndex];
+            int indiceSecuencial = numeroActualDeSala % roomPrefabs.Count;
+            roomToLoad = roomPrefabs[indiceSecuencial];
         }
 
         currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);

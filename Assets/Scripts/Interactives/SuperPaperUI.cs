@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using System.Collections; // ¡Necesario para las Corrutinas!
+using System.Collections;
 
 public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {

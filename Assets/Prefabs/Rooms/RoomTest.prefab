@@ -1488,6 +1488,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4570074551095392699, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
+      propertyPath: colisionadorPuerta
+      value: 
+      objectReference: {fileID: 5018254353484386914}
+    - target: {fileID: 4617439131532157900, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
+      propertyPath: colisionadorPuerta
+      value: 
+      objectReference: {fileID: 8238037037195754379}
     - target: {fileID: 7812781672727189323, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
       propertyPath: m_Name
       value: AreaCONPUERTAS
@@ -1497,9 +1505,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
+--- !u!60 &5018254353484386914 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1308363779706461860, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
+  m_PrefabInstance: {fileID: 6308512096105172166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5918253806164369001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 409135050573828783, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
+  m_PrefabInstance: {fileID: 6308512096105172166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &8238037037195754379 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2728958559957743437, guid: 1f46ee0c1ee18114e80a7bedf7c2cfb1, type: 3}
   m_PrefabInstance: {fileID: 6308512096105172166}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7164377991116778030

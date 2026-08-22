@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512355504469678474}
   - component: {fileID: 3448430862922014301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2532951655240509672}
   - component: {fileID: 5574491612363990640}
   - component: {fileID: 2599365697840565352}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniRata
   m_TagString: Player
   m_Icon: {fileID: 0}

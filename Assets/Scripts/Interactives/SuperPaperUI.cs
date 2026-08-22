@@ -1,13 +1,15 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class SuperPaperUI : MonoBehaviour
+public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static SuperPaperUI Instance;
 
     [Header("Referencias")]
-    public GameObject outlineVerde;
+    public Image imagenOutline;
     public TMP_Text textoPapel;
 
     [Header("Posiciones")]
@@ -39,26 +41,23 @@ public class SuperPaperUI : MonoBehaviour
 
     public void MostrarPapel(string nuevoTexto)
     {
-        StopAllCoroutines();
+        if(textoPapel != null) textoPapel.text = nuevoTexto;
 
-        if(textoPapel!=null) textoPapel.text=nuevoTexto;
-
-        transform.position=puntoInicial.position;
-        outlineVerde.SetActive(true);
-        mouseEncima=false;
-
-        if (outlineVerde != null) outlineVerde.SetActive(true);
+        transform.position = puntoInicial.position;
+        mouseEncima = false; 
+        
+        if (imagenOutline != null) imagenOutline.enabled = true;
 
         gameObject.SetActive(true);
     }
 
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
         mouseEncima=true;
-        if (outlineVerde != null) outlineVerde.SetActive(false);
+        if (imagenOutline != null) imagenOutline.enabled = false;
     }
 
-    private void OnMouseExit()
+    public void OnPointerExit(PointerEventData eventData)
     {
         mouseEncima = false;
         

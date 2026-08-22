@@ -574,8 +574,9 @@ MonoBehaviour:
   - numeroDeSala: 0
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
   roomPrefabs:
-  - {fileID: 7362026603347181030, guid: 01d70d11e271b474f99b868cd6ce2a92, type: 3}
   - {fileID: 7362026603347181030, guid: e13a8349c75a5004dad8329327b4f820, type: 3}
+  - {fileID: 7362026603347181030, guid: e13a8349c75a5004dad8329327b4f820, type: 3}
+  - {fileID: 7362026603347181030, guid: 01d70d11e271b474f99b868cd6ce2a92, type: 3}
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
   interaccionBloqueada: 0

@@ -65,13 +65,13 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8125787093864402402}
-    m_Position: {x: 405.22137, y: 53.912384, z: 0}
+    m_Position: {x: 400, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6045684035004092988}
-    m_Position: {x: 480, y: 180, z: 0}
+    m_Position: {x: 540, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6790555386971825949}
-    m_Position: {x: 257.95346, y: 224.24026, z: 0}
+    m_Position: {x: 290, y: 200, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -177,7 +177,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Normal
+  m_Name: NormalPuerta
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -192,7 +192,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 050080ed9b9b8ac4e99d08878a91fc1c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 87184cfef34b1fd4d902706fa2a75f35, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

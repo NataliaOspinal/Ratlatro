@@ -1,28 +1,35 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Collections; // ¡Necesario para las Corrutinas!
 
 public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static SuperPaperUI Instance;
 
-    [Header("Referencias")]
+    [Header("Referencias Visuales")]
     public Image imagenOutline;
     public TMP_Text textoPapel;
 
-    [Header("Posiciones")]
-    public Transform puntoInicial;
-    public Transform puntoFinal;
-    public float suavidadMovimiento = 8f;
+    [Header("Coordenadas y Tiempo")]
+    public RectTransform posicionCentro;
+    public RectTransform posicionDerecha;
+    [Tooltip("Segundos que tarda en hacer el viaje completo")]
+    public float duracionMovimiento = 0.3f;
 
-    private bool mouseEncima=false;
+    private RectTransform miRectTransform;
+
+    // Máquina de estados para bloquear el temblor
+    private bool estaAnimando = false;
+    private bool estaEnCentro = false;
 
     private void Awake()
     {
-        if(Instance==null) Instance=this;
+        if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        miRectTransform = GetComponent<RectTransform>();
     }
 
     private void Start()
@@ -30,22 +37,15 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         gameObject.SetActive(false);
     }
 
-
-    private void Update()
-    {
-        Transform destino = mouseEncima ? puntoFinal : puntoInicial;
-
-        transform.position = Vector3.Lerp(transform.position, destino.position, suavidadMovimiento * Time.deltaTime);
-    
-    }
-
     public void MostrarPapel(string nuevoTexto)
     {
-        if(textoPapel != null) textoPapel.text = nuevoTexto;
+        if (textoPapel != null) textoPapel.text = nuevoTexto;
 
-        transform.position = puntoInicial.position;
-        mouseEncima = false; 
-        
+        // Reiniciamos los estados y lo ponemos a la derecha
+        estaAnimando = false;
+        estaEnCentro = false;
+        miRectTransform.anchoredPosition = posicionDerecha.anchoredPosition;
+
         if (imagenOutline != null) imagenOutline.enabled = true;
 
         gameObject.SetActive(true);
@@ -53,17 +53,47 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        mouseEncima=true;
-        if (imagenOutline != null) imagenOutline.enabled = false;
+        // Solo viaja al centro si está quieto a la derecha
+        if (!estaAnimando && !estaEnCentro)
+        {
+            if (imagenOutline != null) imagenOutline.enabled = false;
+            StartCoroutine(RutinaMoverPapel(posicionCentro.anchoredPosition, true));
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        mouseEncima = false;
-        
+        // Solo regresa a la derecha si está quieto en el centro
+        if (!estaAnimando && estaEnCentro)
+        {
+            if (imagenOutline != null) imagenOutline.enabled = true;
+            StartCoroutine(RutinaMoverPapel(posicionDerecha.anchoredPosition, false));
+        }
     }
 
+    // La Corrutina que fuerza a terminar el movimiento
+    private IEnumerator RutinaMoverPapel(Vector2 destino, bool haciaCentro)
+    {
+        estaAnimando = true; // Bloqueamos el input
+        Vector2 origen = miRectTransform.anchoredPosition;
+        float tiempoPasado = 0f;
 
+        while (tiempoPasado < duracionMovimiento)
+        {
+            tiempoPasado += Time.deltaTime;
 
+            // SmoothStep da un efecto de ease-in / ease-out muy pulido
+            float porcentaje = Mathf.SmoothStep(0f, 1f, tiempoPasado / duracionMovimiento);
+            miRectTransform.anchoredPosition = Vector2.Lerp(origen, destino, porcentaje);
 
+            yield return null; // Esperamos al siguiente frame
+        }
+
+        // Aseguramos que llegue exactamente a la coordenada final
+        miRectTransform.anchoredPosition = destino;
+
+        // Actualizamos el estado y abrimos el candado
+        estaEnCentro = haciaCentro;
+        estaAnimando = false;
+    }
 }

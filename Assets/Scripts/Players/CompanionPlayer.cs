@@ -25,7 +25,7 @@ public class CompanionPlayer : BaseIsometricPlayer
         return input;
     }
 
-    // Método llamado cuando el MainPlayer presiona R
+    // Mï¿½todo llamado cuando el MainPlayer presiona R
     public void BePickedUp(Transform mainPlayerTransform)
     {
         canMove = false;
@@ -36,7 +36,7 @@ public class CompanionPlayer : BaseIsometricPlayer
         spriteRenderer.sortingOrder = 10;
     }
 
-    // Método llamado cuando el MainPlayer suelta la R
+    // Mï¿½todo llamado cuando el MainPlayer suelta la R
     public void BeThrown(Vector2 targetPosition)
     {
         transform.SetParent(null); // Desemparentar
@@ -68,7 +68,7 @@ public class CompanionPlayer : BaseIsometricPlayer
 
         // Aterrizaje
         transform.position = targetPosition;
-        col.isTrigger = false; // Vuelve a ser sólida al caer al suelo
+        col.isTrigger = false; 
 
         canMove = true;
         spriteRenderer.sortingOrder = originalSortingOrder;

@@ -416,6 +416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estante
       objectReference: {fileID: 0}
+    - target: {fileID: 4548800590339929965, guid: 47c477296ac21ac44aebf1f38a29234d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: 47c477296ac21ac44aebf1f38a29234d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5615797
@@ -1092,6 +1096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Contenedor
       objectReference: {fileID: 0}
+    - target: {fileID: 4548800590339929965, guid: f8092de102ec6174f9c768de27f7f23b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: f8092de102ec6174f9c768de27f7f23b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65412
@@ -1547,11 +1555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167148631609489199, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4147974348289981586, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4824509992612864358, guid: 18928068689830a409dfb36edbe4d20c, type: 3}
       propertyPath: m_Color.b

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 28743d9f1be239046bcbde0d36075c6e
+guid: 189fe9f044429bb4b9230159d01fb66d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7053944169341458471
-    second: papelRealverde_0
+      213: -801061959682993103
+    second: pared-computadora_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papelRealverde_0
+      name: pared-computadora_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 65
-        width: 2056
-        height: 2908
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 361
+        height: 612
+      alignment: 9
+      pivot: {x: 0.33711165, y: 0.123059854}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d7e6f0c62b5b1e90800000000000000
-      internalID: -7053944169341458471
+      spriteID: 1345402546e02e4f0800000000000000
+      internalID: -801061959682993103
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 96886b0e54e69934f81f2fdda03fc809
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      papelRealverde_0: -7053944169341458471
+      pared-computadora_0: -801061959682993103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

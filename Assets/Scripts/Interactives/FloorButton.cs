@@ -3,86 +3,84 @@ using UnityEngine.Events;
 
 public class FloorButton : MonoBehaviour
 {
-    public enum ActivatorType
-    {
-        Cualquiera,
-        SoloRataGrande,
-        SoloRataPequena
-    }
+    public enum TipoActivador { Cualquiera, SoloRataGrande, SoloRataPequeña, SoloBloque }
 
-    // Config visual del botón y quién puede activarlo
-    public ActivatorType quienPuedeActivar = ActivatorType.Cualquiera;
+    [Header("Configuración")]
+    public TipoActivador quienPuedeActivar = TipoActivador.Cualquiera;
+    [Tooltip("True: se queda presionado para siempre. False: se levanta al salir.")]
+    public bool seQuedaPresionado = true;
 
-    // Eventos que se disparan al presionar y soltar el botón
+    [Header("Animación Visual")]
+    public Animator animatorBoton;
+    public string parametroAnim = "IsPressed";
+
+    [Header("Eventos Mecánicos")]
     public UnityEvent AlPresionar;
     public UnityEvent AlSoltar;
 
-    private Animator animator;
+    private bool estaPresionado = false;
+    private int objetosEncima = 0;
 
-    // Cambiamos el nombre a objetos porque ahora se activa cn ratas y bloques
-    private int objectsOnButton = 0;
-
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        animator = GetComponentInChildren<Animator>();
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Revisamos si el objeto que entró tiene permiso de activar el botón
-        if (IsValidActivator(other))
+        if (EsActivadorValido(collision))
         {
-            objectsOnButton++;
+            // EL DETECTIVE: Esto imprimirá en consola el nombre exacto del objeto que tocó el botón
+            Debug.Log(" ALERTA: El botón fue pisado por el objeto llamado -> " + collision.gameObject.name);
 
-            // Si es el primer objeto en pisarlo, se activa
-            if (objectsOnButton == 1)
+            objetosEncima++;
+
+            if (!estaPresionado)
             {
-                animator.SetBool("IsPressed", true);
-                AlPresionar.Invoke(); // Dispara la función lógica
+                estaPresionado = true;
+
+                // Disparamos la animación del botón
+                if (animatorBoton != null) animatorBoton.SetBool(parametroAnim, true);
+
+                // Abrimos las puertas
+                AlPresionar.Invoke();
             }
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (IsValidActivator(other))
+        if (EsActivadorValido(collision))
         {
-            objectsOnButton--;
-
-            // Si ya no queda nada encima, se desactiva
-            if (objectsOnButton <= 0)
+            objetosEncima--;
+            if (objetosEncima <= 0)
             {
-                objectsOnButton = 0;
-                animator.SetBool("IsPressed", false);
-                AlSoltar.Invoke(); // Dispara la función lógica inversa (ej. Cerrar puerta)
+                objetosEncima = 0;
+
+                if (!seQuedaPresionado && estaPresionado)
+                {
+                    estaPresionado = false;
+
+                    // Levantamos el botón visualmente
+                    if (animatorBoton != null) animatorBoton.SetBool(parametroAnim, false);
+
+                    AlSoltar.Invoke();
+                }
             }
         }
     }
 
-    // Función que decide quién tiene permiso de pisar el botón
-    private bool IsValidActivator(Collider2D other)
+    private bool EsActivadorValido(Collider2D col)
     {
-        // Detecta bloque empujable, que siempre puede activar el botón
-        if (other.GetComponent<PushableBlock>() != null)
-        {
-            return true;
-        }
+        string nombreLayer = LayerMask.LayerToName(col.gameObject.layer);
 
-        // Es jugador chi o ño
-        if (other.CompareTag("Player"))
+        switch (quienPuedeActivar)
         {
-            switch (quienPuedeActivar)
-            {
-                case ActivatorType.Cualquiera:
-                    return true;
-                case ActivatorType.SoloRataGrande:
-                    return other.GetComponent<MainPlayer>() != null;
-                case ActivatorType.SoloRataPequena:
-                    return other.GetComponent<CompanionPlayer>() != null;
-            }
+            case TipoActivador.Cualquiera:
+                return nombreLayer == "RataGrande" || nombreLayer == "RataPequeña" || col.CompareTag("PushableBlock") || col.CompareTag("Player");
+            case TipoActivador.SoloRataGrande:
+                return nombreLayer == "RataGrande";
+            case TipoActivador.SoloRataPequeña:
+                return nombreLayer == "RataPequeña";
+            case TipoActivador.SoloBloque:
+                return col.CompareTag("PushableBlock");
+            default:
+                return false;
         }
-
-        // Si no es ni bloque ni la rata correcta, lo ignoramos
-        return false;
     }
 }

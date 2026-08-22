@@ -97,6 +97,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   direccion: 0
+  puertaAnimator: {fileID: 0}
+  nombreTriggerAnimacion: Abrir
+  esVentilacion: 0
+  colliderViaje: {fileID: 0}
 --- !u!1 &3232358655939624066
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +231,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   direccion: 1
+  puertaAnimator: {fileID: 0}
+  nombreTriggerAnimacion: Abrir
+  esVentilacion: 0
+  colliderViaje: {fileID: 0}
 --- !u!1 &4314665984239377293
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +320,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 26d7f2e15708ffc408f1a509f1eb8034, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

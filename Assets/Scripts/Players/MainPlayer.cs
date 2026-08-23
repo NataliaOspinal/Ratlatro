@@ -14,6 +14,9 @@ public class MainPlayer : BaseIsometricPlayer
     private bool isHoldingCompanion = false;
     private float currentChargeTime = 0f;
 
+    //Progresión de juego
+    public bool puedeInvocarCompañero = false;
+
     protected override Vector2 GetInput()
     {
         Vector2 input = Vector2.zero;
@@ -27,7 +30,7 @@ public class MainPlayer : BaseIsometricPlayer
             if (Keyboard.current.sKey.isPressed) input.y -= 1f;
 
             // Spawn/Despawn (Letra E)
-            if (Keyboard.current.eKey.wasPressedThisFrame)
+            if (puedeInvocarCompañero && Keyboard.current.eKey.wasPressedThisFrame)
             {
                 if (spawnedCompanion == null)
                 {
@@ -82,5 +85,10 @@ public class MainPlayer : BaseIsometricPlayer
         }
 
         return input;
+    }
+
+    public void DesbloquearCompañero()
+    {
+        puedeInvocarCompañero = true;
     }
 }

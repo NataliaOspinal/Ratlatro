@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 8c1b4c82bc2bced4ba1b5250bff2f7f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4385678457541450288
+    second: recuerdo1_0
+  - first:
+      213: -6731021416125486392
+    second: recuerdo1_1
+  - first:
+      213: 6998914558795576945
+    second: recuerdo1_2
+  - first:
+      213: 411787278361649461
+    second: recuerdo1_3
+  - first:
+      213: -9110648381679756109
+    second: recuerdo1_4
+  - first:
+      213: 3245743825956517584
+    second: recuerdo1_5
+  - first:
+      213: 2204861247921669730
+    second: recuerdo1_6
+  - first:
+      213: 35162173446986102
+    second: recuerdo1_7
+  - first:
+      213: -3310840478788601887
+    second: recuerdo1_8
+  - first:
+      213: -5677884716426820812
+    second: recuerdo1_9
+  - first:
+      213: 5211604168786514829
+    second: recuerdo1_10
+  - first:
+      213: -6911260800040537517
+    second: recuerdo1_11
+  - first:
+      213: -8249646778148954676
+    second: recuerdo1_12
+  - first:
+      213: -9052159815972651723
+    second: recuerdo1_13
+  - first:
+      213: 268086157409106572
+    second: recuerdo1_14
+  - first:
+      213: -1109533647520765692
+    second: recuerdo1_15
+  - first:
+      213: 3437800183246545466
+    second: recuerdo1_16
+  - first:
+      213: 6766844019754432209
+    second: recuerdo1_17
+  - first:
+      213: 7537637709933849949
+    second: recuerdo1_18
+  - first:
+      213: -3013737412413782536
+    second: recuerdo1_19
+  - first:
+      213: -756882648948498098
+    second: recuerdo1_20
+  - first:
+      213: 5518155408959142136
+    second: recuerdo1_21
+  - first:
+      213: 2117481126855782486
+    second: recuerdo1_22
+  - first:
+      213: -6027748729933652156
+    second: recuerdo1_23
+  - first:
+      213: -2693959696687908063
+    second: recuerdo1_24
+  - first:
+      213: 4423011055246449731
+    second: recuerdo1_25
+  - first:
+      213: 2352420417123293869
+    second: recuerdo1_26
+  - first:
+      213: -199658424505307742
+    second: recuerdo1_27
+  - first:
+      213: 2008054091847501419
+    second: recuerdo1_28
+  - first:
+      213: -890262775759067888
+    second: recuerdo1_29
+  - first:
+      213: -7255047671053551207
+    second: recuerdo1_30
+  - first:
+      213: -2378700493934539765
+    second: recuerdo1_31
+  - first:
+      213: -8359868860113914389
+    second: recuerdo1_32
+  - first:
+      213: -9104977505301699703
+    second: recuerdo1_33
+  - first:
+      213: 2518865687904915357
+    second: recuerdo1_34
+  - first:
+      213: -9138780624146964648
+    second: recuerdo1_35
+  - first:
+      213: 7167045707710322513
+    second: recuerdo1_36
+  - first:
+      213: 2486709735660160051
+    second: recuerdo1_37
+  - first:
+      213: 5073968863197232945
+    second: recuerdo1_38
+  - first:
+      213: 6586711922192547715
+    second: recuerdo1_39
+  - first:
+      213: -846008862658763948
+    second: recuerdo1_40
+  - first:
+      213: -7933599826735452420
+    second: recuerdo1_41
+  - first:
+      213: 6278081893118455631
+    second: recuerdo1_42
+  - first:
+      213: 1087756193430213687
+    second: recuerdo1_43
+  - first:
+      213: -4488992360183417927
+    second: recuerdo1_44
+  - first:
+      213: 205511355896864780
+    second: recuerdo1_45
+  - first:
+      213: -431638480783905358
+    second: recuerdo1_46
+  - first:
+      213: 944600234756926299
+    second: recuerdo1_47
+  - first:
+      213: 872230590766791480
+    second: recuerdo1_48
+  - first:
+      213: -8773234312755887780
+    second: recuerdo1_49
+  - first:
+      213: 8891347196564172372
+    second: recuerdo1_50
+  - first:
+      213: -4103813704016386630
+    second: recuerdo1_51
+  - first:
+      213: -3407457513189771943
+    second: recuerdo1_52
+  - first:
+      213: 781910959949760982
+    second: recuerdo1_53
+  - first:
+      213: 7120115130344630094
+    second: recuerdo1_54
+  - first:
+      213: 4648325428499227540
+    second: recuerdo1_55
+  - first:
+      213: -371177518456506056
+    second: recuerdo1_56
+  - first:
+      213: -7291201403875297485
+    second: recuerdo1_57
+  - first:
+      213: 4358144578090175550
+    second: recuerdo1_58
+  - first:
+      213: -5840600087959020871
+    second: recuerdo1_59
+  - first:
+      213: 5317199704645981342
+    second: recuerdo1_60
+  - first:
+      213: -6180099279135702026
+    second: recuerdo1_61
+  - first:
+      213: -8695182386135339862
+    second: recuerdo1_62
+  - first:
+      213: -3014077448208667464
+    second: recuerdo1_63
+  - first:
+      213: -3434748576277962413
+    second: recuerdo1_64
+  - first:
+      213: -5455099035461241173
+    second: recuerdo1_65
+  - first:
+      213: -2472762754867515710
+    second: recuerdo1_66
+  - first:
+      213: 4938821984219323869
+    second: recuerdo1_67
+  - first:
+      213: -5513705043514922461
+    second: recuerdo1_68
+  - first:
+      213: 7578269310498957000
+    second: recuerdo1_69
+  - first:
+      213: -1408977485710779900
+    second: recuerdo1_70
+  - first:
+      213: -4604813137787915184
+    second: recuerdo1_71
+  - first:
+      213: 1683455664874676521
+    second: recuerdo1_72
+  - first:
+      213: 8528253507622899771
+    second: recuerdo1_73
+  - first:
+      213: -6960671723472250132
+    second: recuerdo1_74
+  - first:
+      213: -9041883219988332173
+    second: recuerdo1_75
+  - first:
+      213: -8513354658640924124
+    second: recuerdo1_76
+  - first:
+      213: 6028036520183934835
+    second: recuerdo1_77
+  - first:
+      213: -4602967918851196075
+    second: recuerdo1_78
+  - first:
+      213: 2713719564201013972
+    second: recuerdo1_79
+  - first:
+      213: 130782830314833536
+    second: recuerdo1_80
+  - first:
+      213: -2645240152421113776
+    second: recuerdo1_81
+  - first:
+      213: 5661878541469779119
+    second: recuerdo1_82
+  - first:
+      213: 7711129480964566658
+    second: recuerdo1_83
+  - first:
+      213: 5338094975933746175
+    second: recuerdo1_84
+  - first:
+      213: 334035491042181252
+    second: recuerdo1_85
+  - first:
+      213: -1350595703830801750
+    second: recuerdo1_86
+  - first:
+      213: -3965543068530257802
+    second: recuerdo1_87
+  - first:
+      213: -4212622369865640166
+    second: recuerdo1_88
+  - first:
+      213: -2345393314275619417
+    second: recuerdo1_89
+  - first:
+      213: -3998909231388160385
+    second: recuerdo1_90
+  - first:
+      213: -69410039757638892
+    second: recuerdo1_91
+  - first:
+      213: 6810587718538387120
+    second: recuerdo1_92
+  - first:
+      213: -2369311041184217468
+    second: recuerdo1_93
+  - first:
+      213: -679846523463420187
+    second: recuerdo1_94
+  - first:
+      213: -1098099959561111554
+    second: recuerdo1_95
+  - first:
+      213: 2535291040342804817
+    second: recuerdo1_96
+  - first:
+      213: 429068290479656540
+    second: recuerdo1_97
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: recuerdo1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a57d0225f0ddc30800000000000000
+      internalID: 4385678457541450288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca2b4c3fab9692a0800000000000000
+      internalID: -6731021416125486392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176f15a95b3212160800000000000000
+      internalID: 6998914558795576945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53165c11956f6b500800000000000000
+      internalID: 411787278361649461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc9d703199709180800000000000000
+      internalID: -9110648381679756109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d63e0220d23b0d20800000000000000
+      internalID: 3245743825956517584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26645658f9d399e10800000000000000
+      internalID: 2204861247921669730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo1_7
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67996d97fcbec7000800000000000000
+      internalID: 35162173446986102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 350928c724d35284a8011270d90eb694
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      recuerdo1_0: 4385678457541450288
+      recuerdo1_1: -6731021416125486392
+      recuerdo1_2: 6998914558795576945
+      recuerdo1_3: 411787278361649461
+      recuerdo1_4: -9110648381679756109
+      recuerdo1_5: 3245743825956517584
+      recuerdo1_6: 2204861247921669730
+      recuerdo1_7: 35162173446986102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -79,10 +79,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.9362141, y: 0.78033817}
+    - - {x: -0.97331154, y: 1.002923}
+      - {x: -1.1884373, y: 0.8454173}
       - {x: -1.2025373, y: 0.55215174}
       - {x: 1.1664667, y: -0.83076406}
-      - {x: 1.5011563, y: -0.6422906}
+      - {x: 1.4467767, y: -0.67621493}
+      - {x: 1.4547845, y: -0.382609}
   m_UseDelaunayMesh: 1
 --- !u!1 &5436562699923781362
 GameObject:
@@ -174,4 +176,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1

@@ -3,25 +3,25 @@ using UnityEngine.InputSystem;
 
 public class MainPlayer : BaseIsometricPlayer
 {
-    [Header("Catapulta y Compañero")]
+    [Header("Catapulta y Compaï¿½ero")]
     public GameObject companionPrefab;
     public float pickupRange = 1.5f;
 
-    [Header("Configuración de Apuntado")]
+    [Header("Configuraciï¿½n de Apuntado")]
     public float maxThrowDistance = 5f;
     public float maxArcHeight = 6f;
     public float minArcHeight = 0.5f;
     public float tiempoCargaDistancia = 1f;
     public float tiempoCargaAltura = 1f;
 
-    [Header("Láser de Apuntado")]
-    public LineRenderer laserApuntado; // Arrastra tu nuevo objeto aquí
+    [Header("Lï¿½ser de Apuntado")]
+    public LineRenderer laserApuntado; // Arrastra tu nuevo objeto aquï¿½
 
     private GameObject spawnedCompanion;
     private CompanionPlayer companionScript;
     private bool isHoldingCompanion = false;
     private float currentChargeTime = 0f;
-    public bool puedeInvocarCompañero = false;
+    public bool puedeInvocarCompanero = false;
 
     protected override Vector2 GetInput()
     {
@@ -36,7 +36,7 @@ public class MainPlayer : BaseIsometricPlayer
             if (Keyboard.current.sKey.isPressed) input.y -= 1f;
 
             // Spawn/Despawn (Letra E)
-            if (puedeInvocarCompañero && Keyboard.current.eKey.wasPressedThisFrame)
+            if (puedeInvocarCompanero && Keyboard.current.eKey.wasPressedThisFrame)
             {
                 if (spawnedCompanion == null)
                 {
@@ -63,12 +63,12 @@ public class MainPlayer : BaseIsometricPlayer
                         currentChargeTime = 0f;
                         companionScript.BePickedUp(transform);
 
-                        // Encendemos el láser
+                        // Encendemos el lï¿½ser
                         if (laserApuntado != null) laserApuntado.gameObject.SetActive(true);
                     }
                 }
 
-                // CARGAR Y DIBUJAR LÁSER
+                // CARGAR Y DIBUJAR Lï¿½SER
                 if (Keyboard.current.rKey.isPressed && isHoldingCompanion)
                 {
                     currentChargeTime += Time.deltaTime;
@@ -76,12 +76,12 @@ public class MainPlayer : BaseIsometricPlayer
                     Vector2 startPos = transform.position;
                     Vector2 dir = lastFacingDirection.normalized;
 
-                    // Cálculos de distancia máxima permitida por muros
+                    // Cï¿½lculos de distancia mï¿½xima permitida por muros
                     float ratioDistancia = Mathf.Clamp01(currentChargeTime / tiempoCargaDistancia);
                     float distanciaTeorica = Mathf.Max(ratioDistancia * maxThrowDistance, 1f);
                     float distanciaReal = distanciaTeorica;
 
-                    // Escáner de seguridad
+                    // Escï¿½ner de seguridad
                     RaycastHit2D[] hits = Physics2D.RaycastAll(startPos, dir, distanciaTeorica);
                     foreach (RaycastHit2D hit in hits)
                     {
@@ -93,7 +93,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 posicionCodo = startPos + (dir * distanciaReal);
 
-                    // Cálculo de altura
+                    // Cï¿½lculo de altura
                     float alturaActual = 0f;
                     if (currentChargeTime > tiempoCargaDistancia)
                     {
@@ -114,17 +114,17 @@ public class MainPlayer : BaseIsometricPlayer
                     }
                 }
 
-                // 2. CARGAR Y DIBUJAR LÁSER
+                // 2. CARGAR Y DIBUJAR Lï¿½SER
                 if (Keyboard.current.rKey.isPressed && isHoldingCompanion)
                 {
                     currentChargeTime += Time.deltaTime;
 
                     Vector2 startPos = transform.position;
 
-                    // ¡Volvemos a tu dirección original perfecta!
+                    // ï¿½Volvemos a tu direcciï¿½n original perfecta!
                     Vector2 dir = lastFacingDirection.normalized;
 
-                    // Cálculos de distancia
+                    // Cï¿½lculos de distancia
                     float ratioDistancia = Mathf.Clamp01(currentChargeTime / tiempoCargaDistancia);
                     float distanciaTeorica = Mathf.Max(ratioDistancia * maxThrowDistance, 1f);
                     float distanciaReal = distanciaTeorica;
@@ -141,7 +141,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 posicionCodo = startPos + (dir * distanciaReal);
 
-                    // Cálculo de altura (Línea Verde)
+                    // Cï¿½lculo de altura (Lï¿½nea Verde)
                     float alturaActual = 0f;
                     if (currentChargeTime > tiempoCargaDistancia)
                     {
@@ -179,7 +179,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 startPos = (Vector2)transform.position;
 
-                    // ¡Usamos la misma dirección recta para disparar!
+                    // ï¿½Usamos la misma direcciï¿½n recta para disparar!
                     Vector2 dir = lastFacingDirection.normalized;
 
                     float distanciaFinal = distanciaCalculada;
@@ -195,7 +195,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 targetPos = startPos + (dir * Mathf.Max(distanciaFinal, 1.0f));
 
-                    // ¡Fuego!
+                    // ï¿½Fuego!
                     companionScript.BeThrown(targetPos, alturaCalculada);
                 }
             }
@@ -204,8 +204,8 @@ public class MainPlayer : BaseIsometricPlayer
         return input;
     }
 
-    public void DesbloquearCompañero()
+    public void DesbloquearCompanero()
     {
-        puedeInvocarCompañero = true;
+        puedeInvocarCompanero = true;
     }
 }

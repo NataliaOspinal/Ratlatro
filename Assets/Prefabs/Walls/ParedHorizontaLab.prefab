@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 5675560724728892618}
   m_Layer: 0
   m_Name: ParedHorizontaLab
-  m_TagString: Untagged
+  m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
+  permiteTransparencia: 1
   alphaTransparente: 0.4
 --- !u!114 &1398548379111749868
 MonoBehaviour:

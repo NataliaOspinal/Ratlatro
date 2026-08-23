@@ -8,7 +8,7 @@ public class ObstaculoHundible : MonoBehaviour
     public Transform objetoVisual;
 
     //Config movement
-    public float distanciaY = 4f;
+    public float distanciaY = 4.5f;
     public float duracion = 0.5f;
 
     private Vector3 posOriginal;

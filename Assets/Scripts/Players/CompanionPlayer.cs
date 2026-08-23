@@ -6,7 +6,11 @@ public class CompanionPlayer : BaseIsometricPlayer
 {
     private int originalSortingOrder;
     private Coroutine flightCoroutine;
+    private Coroutine fallCoroutine;
     public bool isFlying = false;
+
+    private Vector2 savedColliderSize;
+    private float currentZHeight = 0f; // Altura virtual actual
 
     protected override void Start()
     {
@@ -27,7 +31,6 @@ public class CompanionPlayer : BaseIsometricPlayer
         return input;
     }
 
-    // M�todo llamado cuando el MainPlayer presiona R
     public void BePickedUp(Transform mainPlayerTransform)
     {
         canMove = false;
@@ -38,55 +41,94 @@ public class CompanionPlayer : BaseIsometricPlayer
         spriteRenderer.sortingOrder = 10;
     }
 
-    // M�todo llamado cuando el MainPlayer suelta la R
-
-
-    
-
-    public void BeThrown(Vector2 targetPosition)
+    public void BeThrown(Vector2 floorTargetPosition, float alturaDinamica)
     {
         transform.SetParent(null);
 
         if (flightCoroutine != null) StopCoroutine(flightCoroutine);
-        flightCoroutine = StartCoroutine(FlightRoutine(targetPosition));
+        if (fallCoroutine != null) StopCoroutine(fallCoroutine);
+
+        flightCoroutine = StartCoroutine(FlightRoutine(floorTargetPosition, alturaDinamica));
     }
 
-    private IEnumerator FlightRoutine(Vector2 targetPosition)
+    private IEnumerator FlightRoutine(Vector2 floorTarget, float targetHeight)
     {
         isFlying = true;
         rb.simulated = true;
-        col.isTrigger = true; // Se vuelve fantasma para el vuelo
+        col.isTrigger = true;
 
-        Vector2 startPosition = transform.position;
-        float duration = 0.5f;
+        savedColliderSize = col.size;
+        col.size = new Vector2(0.1f, 0.1f); // Píxel perfecto
+
+        Vector2 startFloorPos = transform.position;
+        float distanciaReal = Vector2.Distance(startFloorPos, floorTarget);
+        float duration = Mathf.Clamp(distanciaReal * 0.15f, 0.4f, 0.8f);
+
         float timePassed = 0f;
-        float arcHeight = 5f; // Tu altura perfecta
 
         while (timePassed < duration)
         {
             timePassed += Time.deltaTime;
             float linearT = timePassed / duration;
 
-            Vector2 currentPos = Vector2.Lerp(startPosition, targetPosition, linearT);
-            float heightOffset = Mathf.Sin(linearT * Mathf.PI) * arcHeight;
-            currentPos.y += heightOffset;
+            // Movimiento lineal en el piso
+            Vector2 currentFloorPos = Vector2.Lerp(startFloorPos, floorTarget, linearT);
 
-            transform.position = currentPos;
+            // ¡LA HIPOTENUSA! Movimiento lineal directo hacia arriba, sin curva.
+            currentZHeight = Mathf.Lerp(0f, targetHeight, linearT);
+
+            transform.position = currentFloorPos + new Vector2(0f, currentZHeight);
             yield return null;
         }
 
-        // Aterrizaje natural si no chocó con nada
-        transform.position = targetPosition;
+        // Si llega al final del láser sin chocar con nada ni entrar al hueco:
         InterrumpirVuelo();
     }
 
-    // Este método lo llamará el Hueco o la propia rata al chocar
     public void InterrumpirVuelo()
     {
         if (flightCoroutine != null) StopCoroutine(flightCoroutine);
 
+        // Inicia la caída libre por gravedad
+        if (fallCoroutine != null) StopCoroutine(fallCoroutine);
+        fallCoroutine = StartCoroutine(FallRoutine());
+    }
+
+    private IEnumerator FallRoutine()
+    {
+        // Guardamos el punto exacto del piso debajo de la rata
+        Vector2 floorPos = (Vector2)transform.position - new Vector2(0f, currentZHeight);
+
+        float fallSpeed = 15f; // Velocidad de la gravedad
+        while (currentZHeight > 0f)
+        {
+            currentZHeight -= fallSpeed * Time.deltaTime;
+            if (currentZHeight < 0f) currentZHeight = 0f;
+
+            transform.position = floorPos + new Vector2(0f, currentZHeight);
+            yield return null;
+        }
+
+        RestaurarFisicas();
+    }
+
+    // Nuevo método: El ducto llama a este método si el tiro fue perfecto
+    public void AterrizajePerfecto(Vector2 nuevaPosicion)
+    {
+        if (flightCoroutine != null) StopCoroutine(flightCoroutine);
+        if (fallCoroutine != null) StopCoroutine(fallCoroutine);
+
+        transform.position = nuevaPosicion;
+        currentZHeight = 0f;
+
+        RestaurarFisicas();
+    }
+
+    private void RestaurarFisicas()
+    {
         isFlying = false;
-        col.isTrigger = false; // Vuelve a ser sólida
+        col.isTrigger = false;
+        if (savedColliderSize != Vector2.zero) col.size = savedColliderSize;
         canMove = true;
         spriteRenderer.sortingOrder = originalSortingOrder;
     }
@@ -94,19 +136,12 @@ public class CompanionPlayer : BaseIsometricPlayer
     // El radar anti-choques aéreos
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Si está volando y toca el marco de la pared...
+        // Como el láser del MainPlayer ya revisó el suelo, 
+        // ahora la rata es un fantasma para las paredes normales.
+        // ¡SOLO vigilamos los marcos altos (MuroAlto) por si fallamos el tiro al ducto!
         if (isFlying && collision.CompareTag("MuroAlto"))
         {
-            // ¡Pum! Chocó contra la pared. Cae al suelo inmediatamente.
             InterrumpirVuelo();
         }
-    }
-
-    private void TerminarVuelo()
-    {
-        isFlying = false;
-        col.isTrigger = false;
-        canMove = true;
-        spriteRenderer.sortingOrder = originalSortingOrder;
     }
 }

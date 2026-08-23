@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7442837f7e08524984a8cfde65ea962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CompanionPlayer
-  moveSpeed: 15
+  moveSpeed: 10
   canMove: 1
   directionData:
   - sprite: {fileID: -3952138306342900696, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
@@ -277,6 +277,7 @@ MonoBehaviour:
     colliderSize: {x: 0.6205202, y: 0.263881}
     colliderOffset: {x: -0.042835303, y: -0.02487409}
     colliderDirection: 1
+  isFlying: 0
 --- !u!114 &2599365697840565352
 MonoBehaviour:
   m_ObjectHideFlags: 0

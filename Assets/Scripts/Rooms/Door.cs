@@ -54,7 +54,8 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        // Filtramos para que SOLO la rata que tenga el script MainPlayer pueda viajar
+        if (collision.CompareTag("Player") && collision.GetComponent<MainPlayer>() != null)
         {
             RoomManager.Instance.LoadNextRoom(direccion, collision.gameObject);
         }

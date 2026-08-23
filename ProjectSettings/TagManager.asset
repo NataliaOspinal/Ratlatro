@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - PushableBlock
+  - MuroAlto
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - RataGrande
   - Water
   - UI
   - MiniRata

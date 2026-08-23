@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class FloorButton : MonoBehaviour
 {
-    public enum TipoActivador { Cualquiera, SoloRataGrande, SoloRataPequeña, SoloBloque }
+    public enum TipoActivador { Cualquiera, SoloRataGrande, SoloRataPequeña, SoloBloque, RataGrandeYBloque }
 
     //Config del botón
     public TipoActivador quienPuedeActivar = TipoActivador.Cualquiera;
@@ -77,6 +77,8 @@ public class FloorButton : MonoBehaviour
                 return nombreLayer == "RataPequeña";
             case TipoActivador.SoloBloque:
                 return col.CompareTag("PushableBlock");
+            case TipoActivador.RataGrandeYBloque:
+                return nombreLayer == "RataGrande" || col.CompareTag("PushableBlock");
             default:
                 return false;
         }

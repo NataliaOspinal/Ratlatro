@@ -267,10 +267,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   salaEspecial:
   - numeroDeSala: 0
-    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 3963d5130c1cbbc4ea03098755d331e8, type: 3}
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
   roomPrefabs:
+  - {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
   - {fileID: 7362026603347181030, guid: ca89ad7547c154443b2665eb71a0035e, type: 3}
   - {fileID: 7362026603347181030, guid: db85cf7e8a1762f4db81ea4ac413deac, type: 3}
+  - {fileID: 7362026603347181030, guid: ca18d3e4e2c34774e9c127f4926b6281, type: 3}
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
   interaccionBloqueada: 0
@@ -1080,6 +1082,10 @@ PrefabInstance:
       propertyPath: companionPrefab
       value: 
       objectReference: {fileID: 9089966177106744579, guid: 1b9ac3321a6a9534b8ddc0bc9e486955, type: 3}
+    - target: {fileID: 2210392969534872341, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6004177839473615881, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.48
@@ -1127,6 +1133,10 @@ PrefabInstance:
     - target: {fileID: 9089966177106744579, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
       propertyPath: m_Name
       value: Rata
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089966177106744579, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9089966177106744579, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
       propertyPath: m_TagString

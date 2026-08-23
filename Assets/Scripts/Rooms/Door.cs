@@ -10,6 +10,7 @@ public class Door : MonoBehaviour
     public Animator puertaAnimator;
     public string nombreTriggerAnimacion = "Abrir";
     public bool esVentilacion = false;
+    public string nombreTriggerCerrar = "Cerrar";
 
     //Fisicas de la puerta
     public Collider2D colliderViaje; // El portal trigger
@@ -35,6 +36,20 @@ public class Door : MonoBehaviour
 
         // Apagamos el 
         if (colliderBloqueo != null) colliderBloqueo.enabled = false;
+    }
+
+    public void Cerrar()
+    {
+        if (puertaAnimator != null)
+        {
+            puertaAnimator.SetTrigger(nombreTriggerCerrar);
+        }
+
+        // Apagamos el portal de viaje para que no puedan salir
+        if (colliderViaje != null) colliderViaje.enabled = false;
+
+        // Y volvemos a activar el bloqueo
+        if (colliderBloqueo != null) colliderBloqueo.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

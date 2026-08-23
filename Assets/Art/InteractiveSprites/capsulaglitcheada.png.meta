@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: f2130cfad7b51974695fcd4f65506e03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8723631839646419444
+    second: asset capsula_0
+  - first:
+      213: 5896203706518896774
+    second: asset capsula_1
+  - first:
+      213: -5691170262392309437
+    second: asset capsula_2
+  - first:
+      213: -1811740638190319718
+    second: asset capsula_3
+  - first:
+      213: 7822000788074373682
+    second: asset capsula_4
+  - first:
+      213: 358810318117190080
+    second: asset capsula_5
+  - first:
+      213: -1608883840819064431
+    second: asset capsula_6
+  - first:
+      213: -325846895434589203
+    second: asset capsula_7
+  - first:
+      213: -3334382262287612236
+    second: asset capsula_8
+  - first:
+      213: -5378884130241205832
+    second: asset capsula_9
+  - first:
+      213: -5246443620894472609
+    second: asset capsula_10
+  - first:
+      213: 6398521062657229896
+    second: asset capsula_11
+  - first:
+      213: 1254231759470587579
+    second: asset capsula_12
+  - first:
+      213: 9011639888308454730
+    second: asset capsula_13
+  - first:
+      213: -928282739888737905
+    second: asset capsula_14
+  - first:
+      213: -5877503133322456267
+    second: asset capsula_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: capsulaglitcheada_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eadba52a98fbfd45951f392f60bd26a
+      internalID: 939359635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c29ac4c37bfb824aab1082850c29117
+      internalID: -1429206317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35acff7b30461040abd2967469f9041
+      internalID: 1185709409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca896ac747f2834e895341f7b3c42d4
+      internalID: 677792254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22e4fe4fb703194bab1e00cf3ebc471
+      internalID: 592701333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_5
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb91a5826b98d1a479f8129547a59764
+      internalID: 379960687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_6
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39de4481c46503349b287d7c61e0f12f
+      internalID: 102123416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_7
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 346
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0839fbd65496a0428c97c16440eb81d
+      internalID: -788778876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3514af17e6328db4f840f6cb929760c4
+      internalID: -743575381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_9
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8690cd73b3d8b343ba8a32e7644a653
+      internalID: -1257000620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7887e85004c14bc489f302eb02684f31
+      internalID: -1271051973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e1f62d4cfb4254b8495bed608d8f81
+      internalID: -81364513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54770795cf0c6da46a92c2d64959761c
+      internalID: -41993241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_13
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a6ef5b181ca5949b7c68308f5c60cc
+      internalID: 1969676832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_14
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba3ed13df81a0a4f9a4e7cb1522c2f1
+      internalID: 1268433672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capsulaglitcheada_15
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 15
+        width: 169
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1379dc0789daec4f8c32bd3f88d08d6
+      internalID: -2054167424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a476aca40cc7d2c4793fe396ebfffeeb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.49000000953674319,"y":0.20000000298023225},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      capsulaglitcheada_0: 939359635
+      capsulaglitcheada_1: -1429206317
+      capsulaglitcheada_10: -1271051973
+      capsulaglitcheada_11: -81364513
+      capsulaglitcheada_12: -41993241
+      capsulaglitcheada_13: 1969676832
+      capsulaglitcheada_14: 1268433672
+      capsulaglitcheada_15: -2054167424
+      capsulaglitcheada_2: 1185709409
+      capsulaglitcheada_3: 677792254
+      capsulaglitcheada_4: 592701333
+      capsulaglitcheada_5: 379960687
+      capsulaglitcheada_6: 102123416
+      capsulaglitcheada_7: -788778876
+      capsulaglitcheada_8: -743575381
+      capsulaglitcheada_9: -1257000620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

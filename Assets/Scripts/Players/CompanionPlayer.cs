@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 public class CompanionPlayer : BaseIsometricPlayer
 {
     private int originalSortingOrder;
+    private Coroutine flightCoroutine;
+    public bool isFlying = false;
 
     protected override void Start()
     {
@@ -37,21 +39,28 @@ public class CompanionPlayer : BaseIsometricPlayer
     }
 
     // M�todo llamado cuando el MainPlayer suelta la R
+
+
+    
+
     public void BeThrown(Vector2 targetPosition)
     {
-        transform.SetParent(null); // Desemparentar
-        StartCoroutine(FlightRoutine(targetPosition));
+        transform.SetParent(null);
+
+        if (flightCoroutine != null) StopCoroutine(flightCoroutine);
+        flightCoroutine = StartCoroutine(FlightRoutine(targetPosition));
     }
 
     private IEnumerator FlightRoutine(Vector2 targetPosition)
     {
-        rb.simulated = true; 
-        col.isTrigger = true;
+        isFlying = true;
+        rb.simulated = true;
+        col.isTrigger = true; // Se vuelve fantasma para el vuelo
 
         Vector2 startPosition = transform.position;
         float duration = 0.5f;
         float timePassed = 0f;
-        float arcHeight = 2f;
+        float arcHeight = 5f; // Tu altura perfecta
 
         while (timePassed < duration)
         {
@@ -66,10 +75,37 @@ public class CompanionPlayer : BaseIsometricPlayer
             yield return null;
         }
 
-        // Aterrizaje
+        // Aterrizaje natural si no chocó con nada
         transform.position = targetPosition;
-        col.isTrigger = false; 
+        InterrumpirVuelo();
+    }
 
+    // Este método lo llamará el Hueco o la propia rata al chocar
+    public void InterrumpirVuelo()
+    {
+        if (flightCoroutine != null) StopCoroutine(flightCoroutine);
+
+        isFlying = false;
+        col.isTrigger = false; // Vuelve a ser sólida
+        canMove = true;
+        spriteRenderer.sortingOrder = originalSortingOrder;
+    }
+
+    // El radar anti-choques aéreos
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Si está volando y toca el marco de la pared...
+        if (isFlying && collision.CompareTag("MuroAlto"))
+        {
+            // ¡Pum! Chocó contra la pared. Cae al suelo inmediatamente.
+            InterrumpirVuelo();
+        }
+    }
+
+    private void TerminarVuelo()
+    {
+        isFlying = false;
+        col.isTrigger = false;
         canMove = true;
         spriteRenderer.sortingOrder = originalSortingOrder;
     }

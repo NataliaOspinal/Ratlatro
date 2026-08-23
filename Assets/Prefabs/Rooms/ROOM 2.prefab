@@ -694,11 +694,11 @@ PrefabInstance:
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4411392274651436020}
+      objectReference: {fileID: 3086231743745326231}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 4773871804498430339}
+      objectReference: {fileID: 8431200358237300012}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -797,6 +797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedHorizontaLab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8515759259049973259, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
+      propertyPath: permiteTransparencia
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -858,6 +862,10 @@ PrefabInstance:
     - target: {fileID: 1535163954388747613, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
       propertyPath: m_Name
       value: ParedHorizontaLab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515759259049973259, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
+      propertyPath: permiteTransparencia
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -921,6 +929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedHorizontaLab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8515759259049973259, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
+      propertyPath: permiteTransparencia
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -982,6 +994,10 @@ PrefabInstance:
     - target: {fileID: 1535163954388747613, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
       propertyPath: m_Name
       value: ParedHorizontaLab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8515759259049973259, guid: acbb76a36d07ddb4d903f1920e352882, type: 3}
+      propertyPath: permiteTransparencia
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1179,9 +1195,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8353329750280802514, guid: a07cb8dc664c10548afe1f8e790c4d37, type: 3}
   m_PrefabInstance: {fileID: 8364649601688037426}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4411392274651436020 stripped
+--- !u!114 &3086231743745326231 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5272973646216444870, guid: a07cb8dc664c10548afe1f8e790c4d37, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6827821067650929829, guid: a07cb8dc664c10548afe1f8e790c4d37, type: 3}
   m_PrefabInstance: {fileID: 8364649601688037426}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1190,9 +1206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5eaa275123b8394d8999a7c59a8ad58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
---- !u!114 &4773871804498430339 stripped
+--- !u!114 &8431200358237300012 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3915043569720336817, guid: a07cb8dc664c10548afe1f8e790c4d37, type: 3}
+  m_CorrespondingSourceObject: {fileID: 77845906931256606, guid: a07cb8dc664c10548afe1f8e790c4d37, type: 3}
   m_PrefabInstance: {fileID: 8364649601688037426}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

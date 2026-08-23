@@ -1,24 +1,25 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Door : MonoBehaviour
 {
-    public enum PuertaDireccion {Right, Left}
+    public enum PuertaDireccion { Right, Left }
     public PuertaDireccion direccion;
 
-    [Header("Animación y Efectos")]
-    public Animator puertaAnimator; 
-    public string nombreTriggerAnimacion = "Abrir"; 
-
+    //Animación y efectos
+    public Animator puertaAnimator;
+    public string nombreTriggerAnimacion = "Abrir";
     public bool esVentilacion = false;
-    
-  
-    public Collider2D colliderViaje;
+
+    //Fisicas de la puerta
+    public Collider2D colliderViaje; // El portal trigger
+    public Collider2D colliderBloqueo; // La pared física
 
     private void Start()
     {
+        // Al iniciar, el portal está apagado y el bloqueo físico está encendido
         if (colliderViaje != null) colliderViaje.enabled = false;
+        if (colliderBloqueo != null) colliderBloqueo.enabled = true;
     }
 
     public void Abrir()
@@ -26,28 +27,21 @@ public class Door : MonoBehaviour
         if (puertaAnimator != null)
         {
             puertaAnimator.SetBool("esVentilacion", esVentilacion);
-
             puertaAnimator.SetTrigger(nombreTriggerAnimacion);
         }
 
+        // Encendemos el portal para cambiar de sala...
         if (colliderViaje != null) colliderViaje.enabled = true;
-    
+
+        // Apagamos el 
+        if (colliderBloqueo != null) colliderBloqueo.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        {            
+        {
             RoomManager.Instance.LoadNextRoom(direccion, collision.gameObject);
         }
     }
-
-    private void Update()
-    {
-        if (Keyboard.current != null && Keyboard.current.tabKey.wasPressedThisFrame)
-        {
-            Abrir();
-        }
-    }
-
 }

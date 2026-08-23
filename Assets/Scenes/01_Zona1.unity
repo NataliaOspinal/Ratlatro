@@ -979,12 +979,26 @@ PrefabInstance:
       value: 1241
       objectReference: {fileID: 0}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_text
+      value: "1ro de Noviembre de 1996\r\nAl parecer los preparativos han sido terminados
+        y aprobado por los superiores, vamos a empezar por fin el Proyecto \u2588\u2588\u2588
+        , el Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran
+        honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan
+        en un proyecto tan ambicioso como este, sobre todo ya que esta involucrado
+        \u2588\u2588\u2588\u2588\r\n\u2588\u2588\u2588\u2588 \u2588\u2588\u2588 \u2588\u2588\u2588\u2588
+        \u2588 \u2588\u2588 \u2588\u2588"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_fontSize
+      value: 37.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_margin.w
       value: -672.1669
       objectReference: {fileID: 0}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_margin.x
-      value: 0.9342041
+      value: -11.813538
       objectReference: {fileID: 0}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_margin.y
@@ -992,11 +1006,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_margin.z
-      value: -312.68555
+      value: -310.1361
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 37.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8704355427874378708, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+    - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5324225019051038311, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 463
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260308080733920498, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 330
       objectReference: {fileID: 0}
     - target: {fileID: 6867020725195300512, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_Pivot.x

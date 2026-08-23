@@ -1126,6 +1126,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.12
       objectReference: {fileID: 0}
+    - target: {fileID: 6634638678703063352, guid: 92ed860f128707f499fb031e31560064, type: 3}
+      propertyPath: permiteTransparencia
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1422,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4077759220677850299, guid: 75fd22ea2f4cb34458fa4e77b757f7ce, type: 3}
       propertyPath: distanciaY
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1676,6 +1680,14 @@ PrefabInstance:
     - target: {fileID: 1535163954388747613, guid: e1a1819884147f347b8eeffcefef21de, type: 3}
       propertyPath: m_Name
       value: ParedHuecoArribaHorizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412201711696218497, guid: e1a1819884147f347b8eeffcefef21de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412201711696218497, guid: e1a1819884147f347b8eeffcefef21de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 6634638678703063352, guid: e1a1819884147f347b8eeffcefef21de, type: 3}
       propertyPath: permiteTransparencia
@@ -2013,7 +2025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4077759220677850299, guid: 75fd22ea2f4cb34458fa4e77b757f7ce, type: 3}
       propertyPath: distanciaY
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1026,24 +1026,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[0].texto
-      value: 'meow4 '
+      value: Muy bien hecho R4T-001
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[1].texto
-      value: meow5
+      value: "Como ver\xE1s solo tienes que hacer unos cuantos desaf\xEDos l\xF3gicos,
+        mover algunos bloques, presionar un par de botones."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].texto
+      value: Incluso puede que llegues a comer bastante quesito en estas pruebas
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].texto
+      value: "!A que no es emocionante el progreso cient\xEDfico! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].texto
+      value: "Mientras tanto seguir\xE9 recopilando los datos de tus progresos.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[5].texto
+      value: "Dime si no es emocionante el progreso cient\xEDfico :D"
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
       value: 
-      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
       value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[5].expresionPersonaje
+      value: 
       objectReference: {fileID: -1351476107054982038, guid: 0b80673d98cbc6b409295dabbe641de9, type: 3}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5951448649317203603, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2834443587584373729, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: b65b51a6526450347b9b3f145f13c70a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8645878836964400392
+    second: rata_0
+  - first:
+      213: -3124218240065553890
+    second: rata_1
+  - first:
+      213: -5401989631952666311
+    second: rata_2
+  - first:
+      213: -3951042861352376489
+    second: rata_3
+  - first:
+      213: -9003830677745917652
+    second: rata_4
+  - first:
+      213: 8504349930519587072
+    second: rata_5
+  - first:
+      213: 4574946350869772642
+    second: rata_6
+  - first:
+      213: 53480979249723076
+    second: rata_7
+  - first:
+      213: 2927347072991807697
+    second: rata_8
+  - first:
+      213: -11311752128499474
+    second: rata_9
+  - first:
+      213: -1679689626783851817
+    second: rata_10
+  - first:
+      213: -952360337993768772
+    second: rata_11
+  - first:
+      213: -2081831113222597758
+    second: rata_12
+  - first:
+      213: 4366236448291316223
+    second: rata_13
+  - first:
+      213: -2859892760828970975
+    second: rata_14
+  - first:
+      213: -4528536028568416040
+    second: rata_15
+  - first:
+      213: -6564805917249283368
+    second: rata_16
+  - first:
+      213: 3140040099213227457
+    second: rata_17
+  - first:
+      213: 5918531514513340963
+    second: rata_18
+  - first:
+      213: -3499536522018816217
+    second: rata_19
+  - first:
+      213: -4318210098041305753
+    second: rata_20
+  - first:
+      213: -2288088439359052991
+    second: rata_21
+  - first:
+      213: 2482641554468292662
+    second: rata_22
+  - first:
+      213: 3161817796379113029
+    second: rata_23
+  - first:
+      213: -3070483745485356799
+    second: rata_24
+  - first:
+      213: 1182863959834466350
+    second: rata_25
+  - first:
+      213: 2785536467270851681
+    second: rata_26
+  - first:
+      213: -8029557223129909071
+    second: rata_27
+  - first:
+      213: 2077076070377478334
+    second: rata_28
+  - first:
+      213: 282972909594455695
+    second: rata_29
+  - first:
+      213: -2424090641602221410
+    second: rata_30
+  - first:
+      213: -6561340616473648771
+    second: rata_31
+  - first:
+      213: 3649643948688025818
+    second: rata_32
+  - first:
+      213: 5525398251068893405
+    second: rata_33
+  - first:
+      213: 7183678916354458806
+    second: rata_34
+  - first:
+      213: 916829069150568067
+    second: rata_35
+  - first:
+      213: -6786576279780062589
+    second: rata_36
+  - first:
+      213: -3318147239685264781
+    second: rata_37
+  - first:
+      213: -7391317458785346360
+    second: rata_38
+  - first:
+      213: -7051823091930289085
+    second: rata_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rata_0
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 2249
+        width: 564
+        height: 674
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f26baf610ba30880800000000000000
+      internalID: -8645878836964400392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_2
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2249
+        width: 564
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9314e1bfc074805b0800000000000000
+      internalID: -5401989631952666311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_4
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 2249
+        width: 564
+        height: 676
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21a033f3b7fb0380800000000000000
+      internalID: -9003830677745917652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_6
+      rect:
+        serializedVersion: 2
+        x: 7023
+        y: 2249
+        width: 564
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269ff0e87797d7f30800000000000000
+      internalID: 4574946350869772642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_8
+      rect:
+        serializedVersion: 2
+        x: 8975
+        y: 2244
+        width: 540
+        height: 756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8c4f337a600a820800000000000000
+      internalID: 2927347072991807697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_9
+      rect:
+        serializedVersion: 2
+        x: 10895
+        y: 2244
+        width: 540
+        height: 756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0f7987500d7dff0800000000000000
+      internalID: -11311752128499474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_10
+      rect:
+        serializedVersion: 2
+        x: 12815
+        y: 2244
+        width: 540
+        height: 756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dad3ae0f2b80b8e0800000000000000
+      internalID: -1679689626783851817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_11
+      rect:
+        serializedVersion: 2
+        x: 14735
+        y: 2244
+        width: 540
+        height: 756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0e5b3815988c2f0800000000000000
+      internalID: -952360337993768772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_12
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1175
+        width: 558
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d20ee1a9db13e0800000000000000
+      internalID: -2081831113222597758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_13
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 1167
+        width: 558
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff164c99aecf79c30800000000000000
+      internalID: 4366236448291316223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_14
+      rect:
+        serializedVersion: 2
+        x: 5133
+        y: 1167
+        width: 558
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128f317bfae9f48d0800000000000000
+      internalID: -2859892760828970975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_15
+      rect:
+        serializedVersion: 2
+        x: 7053
+        y: 1167
+        width: 558
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d01f98a9786721c0800000000000000
+      internalID: -4528536028568416040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_16
+      rect:
+        serializedVersion: 2
+        x: 8951
+        y: 1161
+        width: 573
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da59f2dccf15e4a0800000000000000
+      internalID: -6564805917249283368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_19
+      rect:
+        serializedVersion: 2
+        x: 10871
+        y: 1161
+        width: 576
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fff8613162f6fc0800000000000000
+      internalID: -3499536522018816217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_22
+      rect:
+        serializedVersion: 2
+        x: 12791
+        y: 1161
+        width: 575
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638c4b6175d147220800000000000000
+      internalID: 2482641554468292662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_25
+      rect:
+        serializedVersion: 2
+        x: 14711
+        y: 1161
+        width: 576
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e289b8f11806a6010800000000000000
+      internalID: 1182863959834466350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_36
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 76
+        width: 578
+        height: 641
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a0e9294dc31d1a0800000000000000
+      internalID: -6786576279780062589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_37
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 76
+        width: 578
+        height: 641
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aed127aa293f1d0800000000000000
+      internalID: -3318147239685264781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_38
+      rect:
+        serializedVersion: 2
+        x: 5083
+        y: 76
+        width: 578
+        height: 641
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccd4fe9ee3cc6990800000000000000
+      internalID: -7391317458785346360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rata_39
+      rect:
+        serializedVersion: 2
+        x: 7003
+        y: 76
+        width: 578
+        height: 641
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c29929244e22e90800000000000000
+      internalID: -7051823091930289085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21c4dd986fc29844783e97bc2f1bf9a4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rata_0: -8645878836964400392
+      rata_1: -3124218240065553890
+      rata_10: -1679689626783851817
+      rata_11: -952360337993768772
+      rata_12: -2081831113222597758
+      rata_13: 4366236448291316223
+      rata_14: -2859892760828970975
+      rata_15: -4528536028568416040
+      rata_16: -6564805917249283368
+      rata_17: 3140040099213227457
+      rata_18: 5918531514513340963
+      rata_19: -3499536522018816217
+      rata_2: -5401989631952666311
+      rata_20: -4318210098041305753
+      rata_21: -2288088439359052991
+      rata_22: 2482641554468292662
+      rata_23: 3161817796379113029
+      rata_24: -3070483745485356799
+      rata_25: 1182863959834466350
+      rata_26: 2785536467270851681
+      rata_27: -8029557223129909071
+      rata_28: 2077076070377478334
+      rata_29: 282972909594455695
+      rata_3: -3951042861352376489
+      rata_30: -2424090641602221410
+      rata_31: -6561340616473648771
+      rata_32: 3649643948688025818
+      rata_33: 5525398251068893405
+      rata_34: 7183678916354458806
+      rata_35: 916829069150568067
+      rata_36: -6786576279780062589
+      rata_37: -3318147239685264781
+      rata_38: -7391317458785346360
+      rata_39: -7051823091930289085
+      rata_4: -9003830677745917652
+      rata_5: 8504349930519587072
+      rata_6: 4574946350869772642
+      rata_7: 53480979249723076
+      rata_8: 2927347072991807697
+      rata_9: -11311752128499474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

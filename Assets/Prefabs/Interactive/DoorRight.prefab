@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &675224704574148445
+--- !u!1 &1868978326119658208
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8618404794295450162}
-  - component: {fileID: 8694778633951705206}
+  - component: {fileID: 4949401510625891294}
+  - component: {fileID: 947409213732302815}
+  - component: {fileID: 160218955671064959}
   m_Layer: 0
-  m_Name: ParedInamovibleLabSprite
+  m_Name: DoorRightSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8618404794295450162
+--- !u!4 &4949401510625891294
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675224704574148445}
+  m_GameObject: {fileID: 1868978326119658208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1297476494764808201}
+  m_Father: {fileID: 4334529388876269664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8694778633951705206
+--- !u!212 &947409213732302815
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675224704574148445}
+  m_GameObject: {fileID: 1868978326119658208}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,11 +78,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1729827607
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3376575286659403755, guid: 726a63e91965b53419daaf7b9ba47366, type: 3}
+  m_Sprite: {fileID: 8816501376554062725, guid: 9df8ae115b9c33e4b8872d0b1b55eb89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91,7 +92,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!1 &1535163954388747613
+--- !u!95 &160218955671064959
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868978326119658208}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c2735d34cb4f334c8ee7a3bde93924c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &4217656146028491778
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,38 +122,109 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1297476494764808201}
-  - component: {fileID: 5725530280013561844}
+  - component: {fileID: 4334529388876269664}
+  - component: {fileID: 2186707775327973506}
+  - component: {fileID: 5688153304769953502}
+  - component: {fileID: 5508505750710741926}
   m_Layer: 0
-  m_Name: ParedVerticalLab 1
+  m_Name: DoorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1297476494764808201
+--- !u!4 &4334529388876269664
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535163954388747613}
+  m_GameObject: {fileID: 4217656146028491778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8618404794295450162}
+  - {fileID: 4949401510625891294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &5725530280013561844
+--- !u!60 &2186707775327973506
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535163954388747613}
+  m_GameObject: {fileID: 4217656146028491778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2366437, y: 1.3804626}
+      - {x: -1.2583851, y: 2.7080421}
+      - {x: -1.1813738, y: -1.3535495}
+      - {x: 1.242193, y: -2.7288058}
+  m_UseDelaunayMesh: 1
+--- !u!114 &5688153304769953502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217656146028491778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5eaa275123b8394d8999a7c59a8ad58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  direccion: 1
+  puertaAnimator: {fileID: 160218955671064959}
+  nombreTriggerAnimacion: Abrir
+  esVentilacion: 0
+  colliderViaje: {fileID: 2186707775327973506}
+  colliderBloqueo: {fileID: 5508505750710741926}
+--- !u!60 &5508505750710741926
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217656146028491778}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -170,8 +264,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.018059552, y: 1.2076845}
-      - {x: -1.050384, y: 0.54379046}
-      - {x: 1.3174942, y: -0.8451363}
-      - {x: 2.4840355, y: -0.10469484}
+    - - {x: 1.0501528, y: -3.1472468}
+      - {x: -1.7957714, y: -1.5256864}
+      - {x: -1.4285713, y: -1.2398306}
+      - {x: 1.4043487, y: -2.8642735}
   m_UseDelaunayMesh: 1

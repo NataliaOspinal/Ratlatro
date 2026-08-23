@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class TransparentWall : MonoBehaviour
 {
+    //config
+    [Tooltip("Desmarca esta casilla si quieres que esta pared siempre sea sólida")]
+    public bool permiteTransparencia = true;
+
     [Tooltip("Nivel de transparencia (0 = invisible, 1 = sólido)")]
     public float alphaTransparente = 0.4f;
 
@@ -10,7 +14,6 @@ public class TransparentWall : MonoBehaviour
 
     void Start()
     {
-        // Busca el SpriteRenderer en los hijos eo
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (spriteRenderer != null)
         {
@@ -20,9 +23,11 @@ public class TransparentWall : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
+        // Si el interruptor está apagado, cancelamos la función inmediatamente
+        if (!permiteTransparencia) return;
+
         if (other.CompareTag("Player") && spriteRenderer != null)
         {
-            // Si la rata está más arriba en Y, significa que está por detrás
             if (other.transform.position.y > transform.position.y)
             {
                 Color nuevoColor = colorOriginal;
@@ -31,7 +36,6 @@ public class TransparentWall : MonoBehaviour
             }
             else
             {
-                // Si está por delante la pared vuelve a ser sólida
                 spriteRenderer.color = colorOriginal;
             }
         }
@@ -39,9 +43,11 @@ public class TransparentWall : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        // Si el interruptor está apagado, cancelamos la función inmediatamente
+        if (!permiteTransparencia) return;
+
         if (other.CompareTag("Player") && spriteRenderer != null)
         {
-            // Restaura la opacidad al salir del área
             spriteRenderer.color = colorOriginal;
         }
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8618404794295450162}
   - component: {fileID: 8694778633951705206}
   m_Layer: 0
-  m_Name: ParedInamovibleLabSprite
+  m_Name: ParedHuecoAbajoSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,9 +81,9 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3376575286659403755, guid: 726a63e91965b53419daaf7b9ba47366, type: 3}
+  m_Sprite: {fileID: 8901374488737789482, guid: 726a63e91965b53419daaf7b9ba47366, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -101,11 +101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1297476494764808201}
   - component: {fileID: 5725530280013561844}
-  - component: {fileID: 8515759259049973259}
-  - component: {fileID: 1398548379111749868}
-  - component: {fileID: 5675560724728892618}
+  - component: {fileID: 7365988591993465984}
+  - component: {fileID: 3370778103958894644}
+  - component: {fileID: 8769763932757979650}
+  - component: {fileID: 1081821732473228247}
   m_Layer: 0
-  m_Name: ParedHorizontaLab
+  m_Name: ParedHuecoAbajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,12 +174,67 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.497498, y: -0.067808986}
-      - {x: -1.3102068, y: -0.837996}
-      - {x: 1.0222414, y: 0.5248395}
-      - {x: -0.24807355, y: 1.2537637}
+    - - {x: -1.5935041, y: 1.644196}
+      - {x: -2.2452788, y: 1.1589205}
+      - {x: -0.91016394, y: 0.39118958}
+      - {x: -0.62498146, y: 0.5584232}
+      - {x: -0.4706881, y: 0.3320694}
+      - {x: -0.03855624, y: 0.61886746}
   m_UseDelaunayMesh: 1
---- !u!114 &8515759259049973259
+--- !u!60 &7365988591993465984
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535163954388747613}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.5130847, y: -0.83519435}
+      - {x: 1.1204902, y: 0.20513117}
+      - {x: 0.65956074, y: -0.25340244}
+      - {x: 1.0229633, y: -0.47204328}
+      - {x: 0.973463, y: -0.73988265}
+      - {x: 2.358942, y: -1.5267551}
+  m_UseDelaunayMesh: 1
+--- !u!114 &3370778103958894644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,8 +246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
+  permiteTransparencia: 1
   alphaTransparente: 0.4
---- !u!114 &1398548379111749868
+--- !u!114 &8769763932757979650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748cdeda78f8870419d845b54b8544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObstruction
---- !u!60 &5675560724728892618
+--- !u!60 &1081821732473228247
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,8 +306,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.11558476, y: 5.253521}
-      - {x: -2.4536593, y: 3.9499385}
-      - {x: -2.5064933, y: -0.08083284}
-      - {x: -0.17905176, y: 1.2841772}
+    - - {x: -0.9779501, y: 5.7031293}
+      - {x: -1.9310677, y: 5.118199}
+      - {x: -1.9474709, y: 1.72962}
+      - {x: 3.4317808, y: -0.7845906}
+      - {x: 3.4119394, y: 3.256458}
   m_UseDelaunayMesh: 1

@@ -1152,6 +1152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstanteSlimey
       objectReference: {fileID: 0}
+    - target: {fileID: 4548800590339929965, guid: 4bdc2e00477e8b74ca3f76ce34a83b25, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: 4bdc2e00477e8b74ca3f76ce34a83b25, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.022766

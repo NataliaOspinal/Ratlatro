@@ -270,6 +270,7 @@ MonoBehaviour:
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 3963d5130c1cbbc4ea03098755d331e8, type: 3}
   roomPrefabs:
   - {fileID: 7362026603347181030, guid: ca89ad7547c154443b2665eb71a0035e, type: 3}
+  - {fileID: 7362026603347181030, guid: db85cf7e8a1762f4db81ea4ac413deac, type: 3}
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
   interaccionBloqueada: 0

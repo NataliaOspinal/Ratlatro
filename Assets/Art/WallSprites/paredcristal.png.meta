@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 726a63e91965b53419daaf7b9ba47366
+guid: a24faed0381831a40bbcbcdcce3ef814
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8901374488737789482
-    second: pared_0
-  - first:
-      213: -3376575286659403755
-    second: pared_1
-  - first:
-      213: 3335758289868141822
-    second: pared_2
+      213: 4343666113748775113
+    second: paredcristal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,67 +113,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pared_0
+      name: paredcristal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 583
-        height: 743
+        width: 266
+        height: 556
       alignment: 9
-      pivot: {x: 0.3942199, y: 0.2043392}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a26b0fd9fe8088b70800000000000000
-      internalID: 8901374488737789482
+      spriteID: 9c0b5e4115dc74c30800000000000000
+      internalID: 4343666113748775113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pared_1
+      name: paredcristal_1
       rect:
         serializedVersion: 2
-        x: 582
-        y: 130
-        width: 362
-        height: 613
+        x: 266
+        y: 0
+        width: 266
+        height: 556
       alignment: 9
-      pivot: {x: 0.28881618, y: 0.13816978}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 510bd49aaaef321d0800000000000000
-      internalID: -3376575286659403755
+      spriteID: 27203fb3b413dcc47beeddedf42bef1f
+      internalID: -795293891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pared_2
+      name: paredcristal_2
       rect:
         serializedVersion: 2
-        x: 1163
-        y: 130
-        width: 363
-        height: 613
+        x: 532
+        y: 0
+        width: 266
+        height: 556
       alignment: 9
-      pivot: {x: 0.31134218, y: 0.12983263}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef4b724bd7efa4e20800000000000000
-      internalID: 3335758289868141822
+      spriteID: be40a0f58275be442acac39a924b9d17
+      internalID: -1282024500
       vertices: []
       indices: 
       edges: []
@@ -188,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2c5d4c4195ec36d47bbbd33cc512ccda
+    spriteID: 8a3f6591a41de37418a50ee9b402830b
     internalID: 0
     vertices: []
     indices: 
@@ -196,11 +190,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":266.0,"y":556.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.44999998807907107,"y":0.15000000596046449},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      pared_0: 8901374488737789482
-      pared_1: -3376575286659403755
-      pared_2: 3335758289868141822
+      paredcristal_0: 4343666113748775113
+      paredcristal_1: -795293891
+      paredcristal_2: -1282024500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

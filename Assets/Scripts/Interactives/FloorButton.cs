@@ -5,16 +5,16 @@ public class FloorButton : MonoBehaviour
 {
     public enum TipoActivador { Cualquiera, SoloRataGrande, SoloRataPequeña, SoloBloque }
 
-    [Header("Configuración")]
+    //Config del botón
     public TipoActivador quienPuedeActivar = TipoActivador.Cualquiera;
     [Tooltip("True: se queda presionado para siempre. False: se levanta al salir.")]
     public bool seQuedaPresionado = true;
 
-    [Header("Animación Visual")]
+    //Animación
     public Animator animatorBoton;
     public string parametroAnim = "IsPressed";
 
-    [Header("Eventos Mecánicos")]
+    //Eventos
     public UnityEvent AlPresionar;
     public UnityEvent AlSoltar;
 
@@ -25,9 +25,7 @@ public class FloorButton : MonoBehaviour
     {
         if (EsActivadorValido(collision))
         {
-            // EL DETECTIVE: Esto imprimirá en consola el nombre exacto del objeto que tocó el botón
-            Debug.Log(" ALERTA: El botón fue pisado por el objeto llamado -> " + collision.gameObject.name);
-
+            //Contador de objetos encima duh
             objetosEncima++;
 
             if (!estaPresionado)

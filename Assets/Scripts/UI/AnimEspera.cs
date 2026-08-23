@@ -18,13 +18,16 @@ public class AnimacionConEspera : MonoBehaviour
     private IEnumerator RutinaDeEspera()
     {
         while (true)
-        {
+        {   
+           
+            yield return new WaitForSeconds(segundosDeEspera);
+            
             if (miAnimator != null)
             {
                 miAnimator.SetTrigger(nombreDelTrigger);
             }
 
-            yield return new WaitForSeconds(segundosDeEspera);
+            
         }
     }
 }

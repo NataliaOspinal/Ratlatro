@@ -1141,9 +1141,101 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].texto
+      value: "\xBFHola? \xA1hola! los sensores de movimiento de mi capsula han captado
+        un organismo vivo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].texto
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].texto
+      value: "\xA1Oh! Hola peque\xF1in, no te hab\xEDa visto bien "
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].texto
+      value: Creo que quizas estas algo confusa, quizas no lo recuerdes pero tu nombre
+        es R4T-001, en el pasado trabajamos juntos
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].texto
+      value: "Creo que a\xFAn no te has aclimatizado, y pareces algo m\xE1s confusa
+        de lo que puedo recordar. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[5].texto
+      value: Permite me que me presente, puedes llamarme Rodriguez, Doctor Rodriguez
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[6].texto
+      value: A partir de ahora vamos a trabajar juntos en las siguientes salas de
+        pruebas, pura rutina, como en los viejos tiempos
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1351476107054982038, guid: 0b80673d98cbc6b409295dabbe641de9, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[5].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[6].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 553338511837023662, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5951448649317203603, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834443587584373729, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_Name
       value: CilindroGlitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468182868530978505, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_LocalPosition.x

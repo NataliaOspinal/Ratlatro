@@ -126,7 +126,8 @@ public class CinematicaInicial : MonoBehaviour
             }
 
             yield return new WaitUntil(() => 
-                (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+                (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
         }
 

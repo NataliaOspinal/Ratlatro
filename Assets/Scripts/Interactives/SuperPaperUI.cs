@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
+using DG.Tweening;
 
 public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -12,15 +13,17 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public Image imagenOutline;
     public TMP_Text textoPapel;
 
+    [Header("Tutorial Flecha")]
+    public GameObject flechaTutorial;
+    private Vector3 escalaOriginalFlecha;
+
     [Header("Coordenadas y Tiempo")]
     public RectTransform posicionCentro;
     public RectTransform posicionDerecha;
-    [Tooltip("Segundos que tarda en hacer el viaje completo")]
     public float duracionMovimiento = 0.3f;
 
     private RectTransform miRectTransform;
 
-    // M·quina de estados para bloquear el temblor
     private bool estaAnimando = false;
     private bool estaEnCentro = false;
 
@@ -35,25 +38,46 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private void Start()
     {
         gameObject.SetActive(false);
+        if (flechaTutorial != null) 
+        {
+            escalaOriginalFlecha = flechaTutorial.transform.localScale;
+            flechaTutorial.SetActive(false);
+        }
     }
 
     public void MostrarPapel(string nuevoTexto)
     {
         if (textoPapel != null) textoPapel.text = nuevoTexto;
 
-        // Reiniciamos los estados y lo ponemos a la derecha
         estaAnimando = false;
         estaEnCentro = false;
         miRectTransform.anchoredPosition = posicionDerecha.anchoredPosition;
 
         if (imagenOutline != null) imagenOutline.enabled = true;
 
+       if (flechaTutorial != null)
+        {
+            DOTween.Kill(flechaTutorial.transform); 
+            
+            flechaTutorial.SetActive(true); 
+            flechaTutorial.transform.localScale = escalaOriginalFlecha; 
+            
+            // La hacemos palpitar un 20% m√°s grande
+            Vector3 escalaPalpito = escalaOriginalFlecha * 1.2f;
+            flechaTutorial.transform.DOScale(escalaPalpito, 0.4f).SetLoops(-1, LoopType.Yoyo);
+        }
+
         gameObject.SetActive(true);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Solo viaja al centro si est· quieto a la derecha
+        if (flechaTutorial != null)
+        {
+            DOTween.Kill(flechaTutorial.transform);
+            flechaTutorial.SetActive(false); 
+        }
+
         if (!estaAnimando && !estaEnCentro)
         {
             if (imagenOutline != null) imagenOutline.enabled = false;
@@ -63,7 +87,6 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // Solo regresa a la derecha si est· quieto en el centro
         if (!estaAnimando && estaEnCentro)
         {
             if (imagenOutline != null) imagenOutline.enabled = true;
@@ -71,10 +94,9 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         }
     }
 
-    // La Corrutina que fuerza a terminar el movimiento
     private IEnumerator RutinaMoverPapel(Vector2 destino, bool haciaCentro)
     {
-        estaAnimando = true; // Bloqueamos el input
+        estaAnimando = true; 
         Vector2 origen = miRectTransform.anchoredPosition;
         float tiempoPasado = 0f;
 
@@ -82,14 +104,12 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         {
             tiempoPasado += Time.deltaTime;
 
-            // SmoothStep da un efecto de ease-in / ease-out muy pulido
             float porcentaje = Mathf.SmoothStep(0f, 1f, tiempoPasado / duracionMovimiento);
             miRectTransform.anchoredPosition = Vector2.Lerp(origen, destino, porcentaje);
 
-            yield return null; // Esperamos al siguiente frame
+            yield return null;
         }
 
-        // Aseguramos que llegue exactamente a la coordenada final
         miRectTransform.anchoredPosition = destino;
 
         // Actualizamos el estado y abrimos el candado

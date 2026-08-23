@@ -142,9 +142,11 @@ MonoBehaviour:
   panelNubeNegra: {fileID: 8356074294336621520}
   textoNarrativa: {fileID: 4802234687592377662}
   lineasDialogo:
-  - Hola soy un laboratorio viviente
-  - Ayudame y te libero y esas cosas
-  - No cuestiones nada por favor
+  - "Hey, hola peque\xF1\xEDn"
+  - "Espero que no te hayas hecho da\xF1o con esa ca\xEDda, , llevas mucho tiempo
+    encerrado en esa jaula, \xBFNo es cierto?"
+  - "Trata de estirar tus peque\xF1as patitas, tenemos mucho que hacer"
+  - "Prueba moviendote a esos papeles que se encuentran all\xED delante"
   velocidadEscritura: 0.05
   mesaAnimator: {fileID: 1045444307163702565}
   mascaraCirculo: {fileID: 5580458108868490683}
@@ -434,7 +436,7 @@ Transform:
   m_GameObject: {fileID: 2663192162865352264}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71, y: -0.55, z: 0}
+  m_LocalPosition: {x: 1.33, y: 0.83, z: 0}
   m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -636,7 +638,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3406644483425771658, guid: ca8f0e2418bd6f046889f69a5c691469, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -929,7 +931,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b693d368aeb99041ad03a10f0feb9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PapelInteractuable
-  textoHoja: Esta es mi Hoja Tutorial
+  textoHoja: "1ro de Noviembre de 1996,\nAl parecer los preparativos han sido terminados
+    y aprobado por los superiores, vamos a empezar por fin el Proyecto \u2588\u2588\u2588
+    , el Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran
+    honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan
+    en un proyecto tan ambicioso como este, sobre todo ya que esta involucrado \u2588\u2588\u2588\u2588\n\u2588\u2588\u2588\u2588
+    \u2588\u2588\u2588 \u2588\u2588\u2588\u2588 \u2588 \u2588\u2588 \u2588\u2588 "
   papelOutline: {fileID: 3075733971687765461}
   tecla: {fileID: 2663192162865352264}
 --- !u!1 &3936823068418589525
@@ -1304,13 +1311,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654633499240119919}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.010471772, w: 0.99994516}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9050956788827591518}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -782.1671, y: 86.00012}
@@ -1344,14 +1351,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hola, si soy un laboratorio viviente blabla bla, liberame porfa
-
+  m_text: 'meow
 
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b1796d8576e3ed245b6718c322a8c247, type: 2}
+  m_sharedMaterial: {fileID: -7460009676567722391, guid: b1796d8576e3ed245b6718c322a8c247, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1375,8 +1381,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 46.6
+  m_fontSizeBase: 46.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1414,7 +1420,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1577.5912, w: -195.03186}
+  m_margin: {x: 71.49754, y: -74.28646, z: -1132.6211, w: -182.76575}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1831,16 +1837,16 @@ RectTransform:
   m_GameObject: {fileID: 8356074294336621520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.51, y: 0.51, z: 0.51}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6786179892898448901}
   m_Father: {fileID: 3263484146043803370}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1671, y: 377}
-  m_SizeDelta: {x: 2531.0996, y: 404.04}
+  m_AnchoredPosition: {x: -397, y: -335}
+  m_SizeDelta: {x: 1941, y: 686}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1558325326922984015
 CanvasRenderer:
@@ -1863,14 +1869,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -6677904753533098079, guid: f230a5693813ef64a9c55b4bff69ca0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

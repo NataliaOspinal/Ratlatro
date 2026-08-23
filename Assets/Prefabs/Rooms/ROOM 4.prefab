@@ -1012,6 +1012,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5040006400427079751}
     m_Modifications:
+    - target: {fileID: 542683471346444638, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 542683471346444638, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 542683471346444638, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1729827607
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].texto
+      value: 'meow4 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].texto
+      value: meow5
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1351476107054982038, guid: 0b80673d98cbc6b409295dabbe641de9, type: 3}
+    - target: {fileID: 2834443587584373729, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_Name
       value: CilindroGlitch

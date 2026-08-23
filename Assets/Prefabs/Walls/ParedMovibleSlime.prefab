@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstaculoHundible
   objetoVisual: {fileID: 8618404794295450162}
-  distanciaY: 3.5
+  distanciaY: 6
   duracion: 0.5
 --- !u!1 &9090382760488229820
 GameObject:

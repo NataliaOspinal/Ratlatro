@@ -27,7 +27,7 @@ public class MenuOpcionesAnimado : MonoBehaviour
         if (panelOpciones != null)
         {
             
-            panelOpciones.DOAnchorPosX(posicionVisibleX, duracionAnimacion).SetEase(Ease.OutBack);
+            panelOpciones.DOAnchorPosX(posicionVisibleX, duracionAnimacion).SetEase(Ease.OutBack, 0.7f);
         }
     }
 
@@ -35,7 +35,7 @@ public class MenuOpcionesAnimado : MonoBehaviour
     {
         if (panelOpciones != null)
         {
-            panelOpciones.DOAnchorPosX(posicionOcultaX, duracionAnimacion).SetEase(Ease.InBack);
+            panelOpciones.DOAnchorPosX(posicionOcultaX, duracionAnimacion).SetEase(Ease.InBack, 0.7f);
         }
     }
 }

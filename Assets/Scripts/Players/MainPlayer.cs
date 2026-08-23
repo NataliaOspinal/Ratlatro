@@ -121,18 +121,15 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 startPos = transform.position;
 
-                    // --- ¡MAGIA ISOMÉTRICA AQUÍ! ---
-                    Vector2 rawDir = lastFacingDirection.normalized;
-                    // Proyectamos el vector plano (WASD) a los ejes diagonales de tu mapa
-                    Vector2 dir = new Vector2(rawDir.x - rawDir.y, (rawDir.x + rawDir.y) * 0.5f).normalized;
-                    // ------------------------------
+                    // ¡Volvemos a tu dirección original perfecta!
+                    Vector2 dir = lastFacingDirection.normalized;
 
-                    // Cálculos de distancia máxima permitida por muros
+                    // Cálculos de distancia
                     float ratioDistancia = Mathf.Clamp01(currentChargeTime / tiempoCargaDistancia);
                     float distanciaTeorica = Mathf.Max(ratioDistancia * maxThrowDistance, 1f);
                     float distanciaReal = distanciaTeorica;
 
-                    // Escáner de seguridad (Ahora viaja perfecto por el pasillo isométrico)
+                    // El raycast ahora viaja recto por tu pasillo
                     RaycastHit2D[] hits = Physics2D.RaycastAll(startPos, dir, distanciaTeorica);
                     foreach (RaycastHit2D hit in hits)
                     {
@@ -144,7 +141,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 posicionCodo = startPos + (dir * distanciaReal);
 
-                    // Cálculo de altura
+                    // Cálculo de altura (Línea Verde)
                     float alturaActual = 0f;
                     if (currentChargeTime > tiempoCargaDistancia)
                     {
@@ -153,15 +150,13 @@ public class MainPlayer : BaseIsometricPlayer
                         alturaActual = Mathf.Max(ratioAltura * maxArcHeight, minArcHeight);
                     }
 
-                    // Calculamos la punta sumando Y
                     Vector2 posicionPunta = posicionCodo + new Vector2(0f, alturaActual);
 
-                    // Actualizamos los puntos del LineRenderer
                     if (laserApuntado != null)
                     {
-                        laserApuntado.SetPosition(0, startPos);       // Origen (Rata)
-                        laserApuntado.SetPosition(1, posicionCodo);   // Destino en suelo
-                        laserApuntado.SetPosition(2, posicionPunta);  // Altura final
+                        laserApuntado.SetPosition(0, startPos);
+                        laserApuntado.SetPosition(1, posicionCodo);
+                        laserApuntado.SetPosition(2, posicionPunta);
                     }
                 }
 
@@ -184,10 +179,8 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 startPos = (Vector2)transform.position;
 
-                    // --- ¡REPETIMOS LA CONVERSIÓN PARA EL TIRO REAL! ---
-                    Vector2 rawDir = lastFacingDirection.normalized;
-                    Vector2 dir = new Vector2(rawDir.x - rawDir.y, (rawDir.x + rawDir.y) * 0.5f).normalized;
-                    // ---------------------------------------------------
+                    // ¡Usamos la misma dirección recta para disparar!
+                    Vector2 dir = lastFacingDirection.normalized;
 
                     float distanciaFinal = distanciaCalculada;
 
@@ -202,7 +195,7 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 targetPos = startPos + (dir * Mathf.Max(distanciaFinal, 1.0f));
 
-                    // ¡Fuego en diagonal perfecta!
+                    // ¡Fuego!
                     companionScript.BeThrown(targetPos, alturaCalculada);
                 }
             }

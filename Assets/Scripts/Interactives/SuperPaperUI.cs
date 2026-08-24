@@ -9,6 +9,10 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 {
     public static SuperPaperUI Instance;
 
+    [Header("Efectos de Sonido")]
+    public AudioSource fuenteSonido;
+    public AudioClip sonidoEntrar;
+
     [Header("Referencias Visuales")]
     public Image imagenOutline;
     public TMP_Text textoPapel;
@@ -81,6 +85,12 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         if (!estaAnimando && !estaEnCentro)
         {
             if (imagenOutline != null) imagenOutline.enabled = false;
+
+            if (fuenteSonido != null && sonidoEntrar != null)
+            {
+                fuenteSonido.PlayOneShot(sonidoEntrar);
+            }
+
             StartCoroutine(RutinaMoverPapel(posicionCentro.anchoredPosition, true));
         }
     }
@@ -90,6 +100,12 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         if (!estaAnimando && estaEnCentro)
         {
             if (imagenOutline != null) imagenOutline.enabled = true;
+
+            if (fuenteSonido != null && sonidoEntrar != null)
+            {
+                fuenteSonido.PlayOneShot(sonidoEntrar);
+            }
+            
             StartCoroutine(RutinaMoverPapel(posicionDerecha.anchoredPosition, false));
         }
     }
@@ -112,7 +128,6 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         miRectTransform.anchoredPosition = destino;
 
-        // Actualizamos el estado y abrimos el candado
         estaEnCentro = haciaCentro;
         estaAnimando = false;
     }

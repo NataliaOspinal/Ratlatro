@@ -1,0 +1,976 @@
+fileFormatVersion: 2
+guid: 7563b47075e52a84ab864df2fd98dc14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3128372438733265153
+    second: ratadead_0
+  - first:
+      213: 3082051894109888638
+    second: ratadead_1
+  - first:
+      213: 5913680440858375844
+    second: ratadead_2
+  - first:
+      213: 1123369016373719478
+    second: ratadead_3
+  - first:
+      213: 3735687836019748518
+    second: ratadead_4
+  - first:
+      213: -3906515142590585961
+    second: ratadead_5
+  - first:
+      213: 4091704383182994725
+    second: ratadead_6
+  - first:
+      213: -1511213284833706642
+    second: ratadead_7
+  - first:
+      213: -6818008984357025116
+    second: ratadead_8
+  - first:
+      213: -8526733293148255253
+    second: ratadead_9
+  - first:
+      213: 8086423064176232233
+    second: ratadead_10
+  - first:
+      213: 8972666383200739444
+    second: ratadead_11
+  - first:
+      213: 1847599699635934931
+    second: ratadead_12
+  - first:
+      213: -1180037247530500817
+    second: ratadead_13
+  - first:
+      213: -4654741868377896016
+    second: ratadead_14
+  - first:
+      213: -6812815094037184162
+    second: ratadead_15
+  - first:
+      213: -1042303052333808236
+    second: ratadead_16
+  - first:
+      213: 8689596925892188282
+    second: ratadead_17
+  - first:
+      213: 8740497540252865898
+    second: ratadead_18
+  - first:
+      213: -3501714623246737168
+    second: ratadead_19
+  - first:
+      213: -7582825330247268692
+    second: ratadead_20
+  - first:
+      213: -835161944888334499
+    second: ratadead_21
+  - first:
+      213: -8151308646950558395
+    second: ratadead_22
+  - first:
+      213: 5390894526918159628
+    second: ratadead_23
+  - first:
+      213: -5888985706409485034
+    second: ratadead_24
+  - first:
+      213: -1857200130967996436
+    second: ratadead_25
+  - first:
+      213: 7856355412496916227
+    second: ratadead_26
+  - first:
+      213: -4051260022692157684
+    second: ratadead_27
+  - first:
+      213: -4189928261581505844
+    second: ratadead_28
+  - first:
+      213: 846742533892541283
+    second: ratadead_29
+  - first:
+      213: 1140326683034059549
+    second: ratadead_30
+  - first:
+      213: -6805748411690306519
+    second: ratadead_31
+  - first:
+      213: -3126047275898524735
+    second: ratadead_32
+  - first:
+      213: 4445019295955452409
+    second: ratadead_33
+  - first:
+      213: 1725885337457440856
+    second: ratadead_34
+  - first:
+      213: -3496639261657040515
+    second: ratadead_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ratadead_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10991df78263a6b20800000000000000
+      internalID: 3128372438733265153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e706db74ed5a5ca20800000000000000
+      internalID: 3082051894109888638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6f988670d911250800000000000000
+      internalID: 5913680440858375844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1b2a42b22079f00800000000000000
+      internalID: 1123369016373719478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae64b95b44d7d330800000000000000
+      internalID: 3735687836019748518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7932438ec2549c9c0800000000000000
+      internalID: -3906515142590585961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52df78d2577a8c830800000000000000
+      internalID: 4091704383182994725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_7
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 4800
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6db2a13687170be0800000000000000
+      internalID: -1511213284833706642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa4afbb3f09161a0800000000000000
+      internalID: -6818008984357025116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebc6671f35faa980800000000000000
+      internalID: -8526733293148255253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92700c3eeeeb83070800000000000000
+      internalID: 8086423064176232233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_11
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470e4ca4980558c70800000000000000
+      internalID: 8972666383200739444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_12
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d61be7432ef3a910800000000000000
+      internalID: 1847599699635934931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_13
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2df63f106aaf9fe0800000000000000
+      internalID: -1180037247530500817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_14
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb823ebee8076fb0800000000000000
+      internalID: -4654741868377896016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_15
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e518e7f84c40471a0800000000000000
+      internalID: -6812815094037184162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495865175eef881f0800000000000000
+      internalID: -1042303052333808236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_17
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7851295d56a79870800000000000000
+      internalID: 8689596925892188282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_18
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6592f6243c7c4970800000000000000
+      internalID: 8740497540252865898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_19
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f066906a19676fc0800000000000000
+      internalID: -3501714623246737168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_20
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca607c4a98464c690800000000000000
+      internalID: -7582825330247268692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_21
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57a101d2a8e864f0800000000000000
+      internalID: -835161944888334499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_22
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54521fb19fbb0ee80800000000000000
+      internalID: -8151308646950558395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_23
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ded82920e40da40800000000000000
+      internalID: 5390894526918159628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d1c1283be164ea0800000000000000
+      internalID: -5888985706409485034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7f7dc1256e936e0800000000000000
+      internalID: -1857200130967996436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f98177f91670d60800000000000000
+      internalID: 7856355412496916227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_27
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0761be497807c7c0800000000000000
+      internalID: -4051260022692157684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_28
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca701ef1726ad5c0800000000000000
+      internalID: -4189928261581505844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_29
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b01ec29db30cb00800000000000000
+      internalID: 846742533892541283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_30
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d130526931143df00800000000000000
+      internalID: 1140326683034059549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratadead_31
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9243582c0ef1d81a0800000000000000
+      internalID: -6805748411690306519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d0d9b00c64d99b544a9d8c394abaa19b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":4.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ratadead_0: 3128372438733265153
+      ratadead_1: 3082051894109888638
+      ratadead_10: 8086423064176232233
+      ratadead_11: 8972666383200739444
+      ratadead_12: 1847599699635934931
+      ratadead_13: -1180037247530500817
+      ratadead_14: -4654741868377896016
+      ratadead_15: -6812815094037184162
+      ratadead_16: -1042303052333808236
+      ratadead_17: 8689596925892188282
+      ratadead_18: 8740497540252865898
+      ratadead_19: -3501714623246737168
+      ratadead_2: 5913680440858375844
+      ratadead_20: -7582825330247268692
+      ratadead_21: -835161944888334499
+      ratadead_22: -8151308646950558395
+      ratadead_23: 5390894526918159628
+      ratadead_24: -5888985706409485034
+      ratadead_25: -1857200130967996436
+      ratadead_26: 7856355412496916227
+      ratadead_27: -4051260022692157684
+      ratadead_28: -4189928261581505844
+      ratadead_29: 846742533892541283
+      ratadead_3: 1123369016373719478
+      ratadead_30: 1140326683034059549
+      ratadead_31: -6805748411690306519
+      ratadead_4: 3735687836019748518
+      ratadead_5: -3906515142590585961
+      ratadead_6: 4091704383182994725
+      ratadead_7: -1511213284833706642
+      ratadead_8: -6818008984357025116
+      ratadead_9: -8526733293148255253
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

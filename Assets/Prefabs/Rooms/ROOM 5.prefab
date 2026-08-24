@@ -745,17 +745,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1276987256092046046, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.96
+      value: -4.77
       objectReference: {fileID: 0}
     - target: {fileID: 1276987256092046046, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.66
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: textoHoja
       value: "\u2588 de Noviembre de 1996,\nUna rata se mueve con los controles ASWD,
         pero si esta fuera a reproducir una rata m\xE1s peque\xF1a \xBFC\xF3mo se
-        moveria? Controles direccionales parece la opci\xF3n m\xE1s l\xF3gica \xBFNo
+        moveria? Controles direccionales parecen la opci\xF3n m\xE1s l\xF3gica \xBFNo
         crees? Especialmente cuando la rata m\xE1s grande es capaz de lanzarla con
         R e invocarla con E"
       objectReference: {fileID: 0}
@@ -772,12 +772,20 @@ PrefabInstance:
       value: Papeles
       objectReference: {fileID: 0}
     - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.18
+      value: 4.007
       objectReference: {fileID: 0}
     - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.49
+      value: 3.128
       objectReference: {fileID: 0}
     - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.z
@@ -939,6 +947,10 @@ PrefabInstance:
     - target: {fileID: 1535163954388747613, guid: 80aa55192eb23c247b2f395dd22c68bc, type: 3}
       propertyPath: m_Name
       value: ParedMovibleSlime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535163954388747613, guid: 80aa55192eb23c247b2f395dd22c68bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4077759220677850299, guid: 80aa55192eb23c247b2f395dd22c68bc, type: 3}
       propertyPath: distanciaY
@@ -1410,12 +1422,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
     - target: {fileID: 1934103027309319218, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934103027309319218, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934103027309319218, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 1934103027309319218, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.29
+      value: 4.44
       objectReference: {fileID: 0}
     - target: {fileID: 1934103027309319218, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1469,7 +1489,7 @@ PrefabInstance:
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[1]'
       value: "<font=\"shortStack\">\"La sensaci\xF3n de tu c\xE1lido y mullido pelaje,
-        la sesaci\xF3n peludita en tu interior..\".</font>"
+        la sensaci\xF3n peludita en tu interior..\".</font>"
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[2]'
@@ -1478,8 +1498,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[3]'
-      value: "Tu cuerpo plasm\xE1tico es capaz de separarse, es algo util que te
-        permitir\xE1 escapar de este sitio"
+      value: "Tu cuerpo plasm\xE1tico es capaz de separarse, es algo \xFAtil que
+        te permitir\xE1 escapar de este sitio"
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[4]'

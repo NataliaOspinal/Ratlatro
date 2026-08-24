@@ -1030,7 +1030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[0].texto
-      value: Muy bien hecho R4T-001
+      value: Muy bien hecho R4T-001.
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[1].texto

@@ -753,7 +753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: textoHoja
-      value: Instrucciones de PowerUp
+      value: "\u2588 de Noviembre de 1996,\nUna rata se mueve con los controles ASWD,
+        pero si esta fuera a reproducir una rata m\xE1s peque\xF1a \xBFC\xF3mo se
+        moveria? Controles direccionales parece la opci\xF3n m\xE1s l\xF3gica \xBFNo
+        crees? Especialmente cuando la rata m\xE1s grande es capaz de lanzarla con
+        R e invocarla con E"
       objectReference: {fileID: 0}
     - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: papelOutline
@@ -1454,12 +1458,38 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7684555354074976907}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: lineasDialogo.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[0]'
-      value: linea1
+      value: "<font=\"shortStack\">\"Sientes lo que una vez fuiste, un fragmento
+        de una memoria pasada vuelve a tu peque\xF1a mente\"</font>"
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[1]'
-      value: linea2
+      value: "<font=\"shortStack\">\"La sensaci\xF3n de tu c\xE1lido y mullido pelaje,
+        la sesaci\xF3n peludita en tu interior..\".</font>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: 'lineasDialogo.Array.data[2]'
+      value: "Est\xE1s empezando a recordar lo que fuiste, pero para escapar, debes
+        saber lo que eres ahora"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: 'lineasDialogo.Array.data[3]'
+      value: "Tu cuerpo plasm\xE1tico es capaz de separarse, es algo util que te
+        permitir\xE1 escapar de este sitio"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: 'lineasDialogo.Array.data[4]'
+      value: "Vamos, intenta usar un fragmento de ti para alcanzar ese bot\xF3n detr\xE1s
+        de aquel conducto de ventilaci\xF3n."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: 'lineasDialogo.Array.data[5]'
+      value: "Vamos, intenta usar un fragmento de ti para alcanzar ese bot\xF3n detr\xE1s
+        de aquel conducto de ventilaci\xF3n."
       objectReference: {fileID: 0}
     - target: {fileID: 8778810363775790931, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: m_Name

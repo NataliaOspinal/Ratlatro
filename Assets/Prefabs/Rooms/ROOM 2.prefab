@@ -1218,21 +1218,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[2].texto
-      value: "\xA1Oh! Hola peque\xF1in, no te hab\xEDa visto bien "
+      value: "\xA1Oh! Hola peque\xF1\xEDn, no te hab\xEDa visto bien "
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[3].texto
-      value: Creo que quizas estas algo confusa, quizas no lo recuerdes pero tu nombre
-        es R4T-001, en el pasado trabajamos juntos
+      value: "Creo que quiz\xE1s estes algo confundida. Capaz no lo recuerdes pero
+        tu nombre es R4T-001, en el pasado sol\xEDamos trabajar  juntos"
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[4].texto
-      value: "Creo que a\xFAn no te has aclimatizado, y pareces algo m\xE1s confusa
-        de lo que puedo recordar. "
+      value: "Creo que a\xFAn no te has aclimatizado, y te ves m\xE1s confundida
+        de lo normal "
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[5].texto
-      value: Permite me que me presente, puedes llamarme Rodriguez, Doctor Rodriguez
+      value: "Perm\xEDteme que me presente, puedes llamarme Rodriguez, Doctor Rodriguez"
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[6].texto

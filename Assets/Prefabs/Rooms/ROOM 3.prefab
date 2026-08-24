@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1792939120987863391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604789191075599421}
+  - component: {fileID: 2652007679287739087}
+  m_Layer: 0
+  m_Name: Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604789191075599421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792939120987863391}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.85706, y: -0.55077004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 856629393313047508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2652007679287739087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792939120987863391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ebdea839a9eb34eb80bab0aefb989a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoDeSala
+  panelNarracion: {fileID: 4692976166335579174}
+  textoNarrativa: {fileID: 2916013767135108663}
+  lineasDialogo:
+  - "Necesitas ser escurridiza, y no le prestes mucha atenci\xF3n a ese pat\xE1n
+    hologr\xE1fico"
+  - "Debes escapar, y recordar quien eres. Eres una alima\xF1a despu\xE9s de todo,
+    deber\xEDas poder escabullirte f\xE1cilmente debajo de espacios peque\xF1os."
+  velocidadEscritura: 0.05
+  esperaInicial: 0.5
 --- !u!1 &3232358655939624066
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +226,12 @@ Transform:
   - {fileID: 7300619829783582409}
   - {fileID: 224781587161327581}
   - {fileID: 8945579332856889688}
+  - {fileID: 35535619991102367}
+  - {fileID: 4746230438145755716}
+  - {fileID: 5487232619062069905}
+  - {fileID: 6280458517367353307}
+  - {fileID: 5159169800038213091}
+  - {fileID: 1604789191075599421}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8363761752229870690
@@ -769,6 +828,27 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1297476494764808201, guid: b3f2048929513db4a9ff571ea5dc899e, type: 3}
   m_PrefabInstance: {fileID: 2489562977155325813}
+  m_SourcePrefab: {fileID: 100100000, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+--- !u!114 &2916013767135108663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 12932960064184419, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 2907690828488621652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &4692976166335579174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7600666126014954098, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 2907690828488621652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5159169800038213091 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8053347622025092023, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 2907690828488621652}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3904771566952069707
 PrefabInstance:

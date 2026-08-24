@@ -67,20 +67,28 @@ public class RecuerdoPowerUp : MonoBehaviour
 
         foreach (string linea in lineasDialogo)
         {
-            textoNarrativa.text = "";
+            if (textoNarrativa == null) continue;
+
+            textoNarrativa.text = linea;
             
-            foreach (char letra in linea.ToCharArray())
+            textoNarrativa.maxVisibleCharacters = 0;
+            
+            textoNarrativa.ForceMeshUpdate();
+            int totalCaracteres = textoNarrativa.textInfo.characterCount;
+
+            for (int i = 0; i <= totalCaracteres; i++)
             {
-                textoNarrativa.text += letra;
+                textoNarrativa.maxVisibleCharacters = i;
                 yield return new WaitForSeconds(velocidadEscritura);
             }
+
+            yield return null; 
 
             yield return new WaitUntil(() => 
                 (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
         }
-
         if (textoNarrativa != null) textoNarrativa.text = "";
         if (panelNubeNegra != null) panelNubeNegra.SetActive(false);
 

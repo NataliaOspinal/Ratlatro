@@ -6,8 +6,14 @@ public class MenuOpcionesAnimado : MonoBehaviour
     [Header("Referencias")]
     public RectTransform panelOpciones;
 
+    [Header("Configuración de Sonido")]
+    public AudioSource fuenteSonido; 
+    public AudioClip sonidoAbrirPapel;
+   
+
     [Header("Configuración de Posiciones")]
     public float posicionOcultaX; 
+
     
 
     public float posicionVisibleX; 
@@ -20,6 +26,11 @@ public class MenuOpcionesAnimado : MonoBehaviour
         {
             panelOpciones.anchoredPosition = new Vector2(posicionOcultaX, panelOpciones.anchoredPosition.y);
         }
+
+        if (fuenteSonido != null && sonidoAbrirPapel != null)
+            {
+                fuenteSonido.PlayOneShot(sonidoAbrirPapel);
+            }
     }
 
     public void MostrarOpciones()
@@ -37,6 +48,11 @@ public class MenuOpcionesAnimado : MonoBehaviour
         {
             panelOpciones.DOAnchorPosX(posicionOcultaX, duracionAnimacion).SetEase(Ease.InBack, 0.7f);
         }
+
+        if (fuenteSonido != null && sonidoAbrirPapel != null)
+            {
+                fuenteSonido.PlayOneShot(sonidoAbrirPapel);
+            }
     }
 }
 

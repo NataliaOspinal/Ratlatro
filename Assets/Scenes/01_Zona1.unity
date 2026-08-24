@@ -221,6 +221,81 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 2
   m_TargetDisplay: 0
+--- !u!1001 &231680491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3441800267110607921, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: reproductorMusica
+      value: 
+      objectReference: {fileID: 320326269}
+    - target: {fileID: 5009974410396844560, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_Name
+      value: AudioGlobal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180898708134502343, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b7c14d79da1a2b449c5c1dead4bb636, type: 3}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.49742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.73819
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+--- !u!82 &320326269 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6180898708134502343, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+  m_PrefabInstance: {fileID: 231680491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &417956110 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 690425019839733150, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+  m_PrefabInstance: {fileID: 231680491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &628894537
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +1053,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 1241
       objectReference: {fileID: 0}
+    - target: {fileID: 3711608048889506904, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: fuenteSonido
+      value: 
+      objectReference: {fileID: 417956110}
+    - target: {fileID: 3711608048889506904, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: sonidoEntrar
+      value: 
+      objectReference: {fileID: 8300000, guid: 8e65bb3755dcc9542abff180dfdf8509, type: 3}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_text
       value: "1ro de Noviembre de 1996\r\nAl parecer los preparativos han sido terminados
@@ -1234,3 +1317,4 @@ SceneRoots:
   - {fileID: 900644225}
   - {fileID: 1486279977}
   - {fileID: 2022849628}
+  - {fileID: 231680491}

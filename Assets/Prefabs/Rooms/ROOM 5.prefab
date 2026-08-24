@@ -1283,11 +1283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: bd2b9508a68172649a36e92d8d6e800f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.81
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: bd2b9508a68172649a36e92d8d6e800f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.02
+      value: 4.07
       objectReference: {fileID: 0}
     - target: {fileID: 6808370412745188382, guid: bd2b9508a68172649a36e92d8d6e800f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1339,6 +1339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4952111872590074355}
     m_Modifications:
+    - target: {fileID: 38299563195648058, guid: 6c4ab5dd87615e34eaf01f493f713d29, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1726811163559729696, guid: 6c4ab5dd87615e34eaf01f493f713d29, type: 3}
       propertyPath: m_Name
       value: PanelCristalEsqIz (1)
@@ -1479,6 +1483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4952111872590074355}
     m_Modifications:
+    - target: {fileID: 38299563195648058, guid: 99f9fa8a789a940478078d96eb647f9d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1726811163559729696, guid: 99f9fa8a789a940478078d96eb647f9d, type: 3}
       propertyPath: m_Name
       value: PanelCristalEsqDer

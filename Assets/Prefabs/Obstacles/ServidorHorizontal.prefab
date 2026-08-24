@@ -83,7 +83,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: -801061959682993103, guid: 189fe9f044429bb4b9230159d01fb66d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -101,11 +101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1297476494764808201}
   - component: {fileID: 5725530280013561844}
-  - component: {fileID: 5020815620468052546}
-  - component: {fileID: 4230664502261152064}
+  - component: {fileID: 8515759259049973259}
+  - component: {fileID: 1398548379111749868}
+  - component: {fileID: 5675560724728892618}
   m_Layer: 0
-  m_Name: Servidor
-  m_TagString: Untagged
+  m_Name: ServidorHorizontal
+  m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,12 +173,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.11117613, y: 1.298149}
-      - {x: -1.1925433, y: 0.6342553}
-      - {x: 1.1236407, y: -0.7546712}
-      - {x: 2.3031063, y: 0.011616468}
+    - - {x: -2.3193142, y: -0.023262978}
+      - {x: -1.1498414, y: -0.748904}
+      - {x: 1.2182438, y: 0.60502225}
+      - {x: -0.0060110986, y: 1.3096249}
   m_UseDelaunayMesh: 1
---- !u!60 &5020815620468052546
+--- !u!114 &8515759259049973259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535163954388747613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
+  permiteTransparencia: 1
+  alphaTransparente: 0.4
+--- !u!114 &1398548379111749868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535163954388747613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748cdeda78f8870419d845b54b8544b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleObstruction
+--- !u!60 &5675560724728892618
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,23 +250,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.031089306, y: 4.9173636}
-      - {x: -0.73736143, y: 4.4385643}
-      - {x: -0.76451534, y: 0.7753697}
-      - {x: 2.2103312, y: 0.030416608}
-      - {x: 2.1140208, y: 3.6976526}
+    - - {x: -0.034090996, y: 4.9434743}
+      - {x: -1.9073461, y: 3.960193}
+      - {x: -1.87382, y: 0.24750197}
+      - {x: -0.010451376, y: 1.3021584}
   m_UseDelaunayMesh: 1
---- !u!114 &4230664502261152064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535163954388747613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
-  permiteTransparencia: 1
-  alphaTransparente: 0.4

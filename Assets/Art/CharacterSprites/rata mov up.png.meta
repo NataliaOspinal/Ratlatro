@@ -1,76 +1,76 @@
 fileFormatVersion: 2
-guid: 8d47eb0568603584fa9e6853309169d1
+guid: 36a234dfe784d9d46981989c1ceda8ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2466034669503858497
-    second: ratatruco_0
+      213: 6802078620580015358
+    second: rata mov up_0
   - first:
-      213: -140673845677586411
-    second: ratatruco_1
+      213: 4503077603927478918
+    second: rata mov up_1
   - first:
-      213: -2423040457078716038
-    second: ratatruco_2
+      213: -4865503396136145221
+    second: rata mov up_2
   - first:
-      213: 5313029725493589490
-    second: ratatruco_3
+      213: -8696067297310789672
+    second: rata mov up_3
   - first:
-      213: 4380506017477451748
-    second: ratatruco_4
+      213: -1028849915890214290
+    second: rata mov up_4
   - first:
-      213: -2412004862883120673
-    second: ratatruco_5
+      213: 2233934506923457547
+    second: rata mov up_5
   - first:
-      213: 6551426184367580631
-    second: ratatruco_6
+      213: -1303515330131889824
+    second: rata mov up_6
   - first:
-      213: -610245479513941506
-    second: ratatruco_7
+      213: -8801226451285824328
+    second: rata mov up_7
   - first:
-      213: -7664497389514739522
-    second: ratatruco_8
+      213: 391701119432174035
+    second: rata mov up_8
   - first:
-      213: 2623789992114120138
-    second: ratatruco_9
+      213: 6049049011696161772
+    second: rata mov up_9
   - first:
-      213: 7176222478034652609
-    second: ratatruco_10
+      213: -5505475979123678924
+    second: rata mov up_10
   - first:
-      213: 2488519117116114744
-    second: ratatruco_11
+      213: 4388535587384556853
+    second: rata mov up_11
   - first:
-      213: 8212284494048541205
-    second: ratatruco_12
+      213: 6155170698109212304
+    second: rata mov up_12
   - first:
-      213: 8433149389889543855
-    second: ratatruco_13
+      213: 471726989282886238
+    second: rata mov up_13
   - first:
-      213: -1646198905419823513
-    second: ratatruco_14
+      213: 2231023052466569615
+    second: rata mov up_14
   - first:
-      213: 7088652892288321615
-    second: ratatruco_15
+      213: -2757083168134629874
+    second: rata mov up_15
   - first:
-      213: 2695656036363005670
-    second: ratatruco_16
+      213: -2556215353064065635
+    second: rata mov up_16
   - first:
-      213: 3596227021889229751
-    second: ratatruco_17
+      213: -3336202024578497852
+    second: rata mov up_17
   - first:
-      213: -5025857539218949919
-    second: ratatruco_18
+      213: -6597566030321005452
+    second: rata mov up_18
   - first:
-      213: 8369727152284463877
-    second: ratatruco_19
+      213: 445875955784180606
+    second: rata mov up_19
   - first:
-      213: 5517466595745522580
-    second: ratatruco_20
+      213: 6687683520565428939
+    second: rata mov up_20
   - first:
-      213: -3696213598963808590
-    second: ratatruco_21
+      213: 5244972815210599545
+    second: rata mov up_21
   - first:
-      213: -1061007395966131179
-    second: ratatruco_22
+      213: 2864597925107338009
+    second: rata mov up_22
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -179,7 +179,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ratatruco_0
+      name: rata mov up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -187,21 +187,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb8bc60a882e6cdd0800000000000000
-      internalID: -2466034669503858497
+      spriteID: efc63f96776d56e50800000000000000
+      internalID: 6802078620580015358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_1
+      name: rata mov up_1
       rect:
         serializedVersion: 2
         x: 1600
@@ -209,21 +209,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5180337f1e93c0ef0800000000000000
-      internalID: -140673845677586411
+      spriteID: 6825d12f8352e7e30800000000000000
+      internalID: 4503077603927478918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_2
+      name: rata mov up_2
       rect:
         serializedVersion: 2
         x: 3200
@@ -231,21 +231,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a794c67ca81af5ed0800000000000000
-      internalID: -2423040457078716038
+      spriteID: bbe29d390724a7cb0800000000000000
+      internalID: -4865503396136145221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_3
+      name: rata mov up_3
       rect:
         serializedVersion: 2
         x: 4800
@@ -253,21 +253,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f5f22db26cabb940800000000000000
-      internalID: 5313029725493589490
+      spriteID: 8df26e8eddc515780800000000000000
+      internalID: -8696067297310789672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_4
+      name: rata mov up_4
       rect:
         serializedVersion: 2
         x: 6400
@@ -275,21 +275,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ef5434930faacc30800000000000000
-      internalID: 4380506017477451748
+      spriteID: e6a5c2cd37ac8b1f0800000000000000
+      internalID: -1028849915890214290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_5
+      name: rata mov up_5
       rect:
         serializedVersion: 2
         x: 8000
@@ -297,21 +297,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd936574b56d68ed0800000000000000
-      internalID: -2412004862883120673
+      spriteID: b0cf8a02997800f10800000000000000
+      internalID: 2233934506923457547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_6
+      name: rata mov up_6
       rect:
         serializedVersion: 2
         x: 9600
@@ -319,21 +319,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d52c6b57675bea50800000000000000
-      internalID: 6551426184367580631
+      spriteID: 061763ca6bbf8ede0800000000000000
+      internalID: -1303515330131889824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_7
+      name: rata mov up_7
       rect:
         serializedVersion: 2
         x: 11200
@@ -341,21 +341,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef998c738f8f787f0800000000000000
-      internalID: -610245479513941506
+      spriteID: 8bc26576c23cbd580800000000000000
+      internalID: -8801226451285824328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_8
+      name: rata mov up_8
       rect:
         serializedVersion: 2
         x: 0
@@ -363,21 +363,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb0b0148b3c32a590800000000000000
-      internalID: -7664497389514739522
+      spriteID: 3d9a0e1c71a9f6500800000000000000
+      internalID: 391701119432174035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_9
+      name: rata mov up_9
       rect:
         serializedVersion: 2
         x: 1600
@@ -385,21 +385,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac5ef2da813996420800000000000000
-      internalID: 2623789992114120138
+      spriteID: ce3d313e60a82f350800000000000000
+      internalID: 6049049011696161772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_10
+      name: rata mov up_10
       rect:
         serializedVersion: 2
         x: 3200
@@ -407,21 +407,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cdcd609250179360800000000000000
-      internalID: 7176222478034652609
+      spriteID: 43123e824ce9893b0800000000000000
+      internalID: -5505475979123678924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_11
+      name: rata mov up_11
       rect:
         serializedVersion: 2
         x: 4800
@@ -429,21 +429,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8378978c3fef88220800000000000000
-      internalID: 2488519117116114744
+      spriteID: 53d77328dd537ec30800000000000000
+      internalID: 4388535587384556853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_12
+      name: rata mov up_12
       rect:
         serializedVersion: 2
         x: 6400
@@ -451,21 +451,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51a363e9c35e7f170800000000000000
-      internalID: 8212284494048541205
+      spriteID: 09651b0732f8b6550800000000000000
+      internalID: 6155170698109212304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_13
+      name: rata mov up_13
       rect:
         serializedVersion: 2
         x: 8000
@@ -473,21 +473,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fae1b2a70b0980570800000000000000
-      internalID: 8433149389889543855
+      spriteID: e52cb2b8239eb8600800000000000000
+      internalID: 471726989282886238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_14
+      name: rata mov up_14
       rect:
         serializedVersion: 2
         x: 9600
@@ -495,21 +495,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76680d441d68729e0800000000000000
-      internalID: -1646198905419823513
+      spriteID: f814aff45af26fe10800000000000000
+      internalID: 2231023052466569615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_15
+      name: rata mov up_15
       rect:
         serializedVersion: 2
         x: 11200
@@ -517,21 +517,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4804ec8f34ff5260800000000000000
-      internalID: 7088652892288321615
+      spriteID: e06702b577fdcb9d0800000000000000
+      internalID: -2757083168134629874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_16
+      name: rata mov up_16
       rect:
         serializedVersion: 2
         x: 0
@@ -539,21 +539,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6eeed0402e4e86520800000000000000
-      internalID: 2695656036363005670
+      spriteID: d9577370eaf768cd0800000000000000
+      internalID: -2556215353064065635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_17
+      name: rata mov up_17
       rect:
         serializedVersion: 2
         x: 1600
@@ -561,21 +561,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b35e5b3c6d58e130800000000000000
-      internalID: 3596227021889229751
+      spriteID: 4c24f024fed63b1d0800000000000000
+      internalID: -3336202024578497852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_18
+      name: rata mov up_18
       rect:
         serializedVersion: 2
         x: 3200
@@ -583,21 +583,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e8b22b3231904ab0800000000000000
-      internalID: -5025857539218949919
+      spriteID: 47c488c96acb074a0800000000000000
+      internalID: -6597566030321005452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_19
+      name: rata mov up_19
       rect:
         serializedVersion: 2
         x: 4800
@@ -605,21 +605,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5037bd2108e372470800000000000000
-      internalID: 8369727152284463877
+      spriteID: e736766c1d1103600800000000000000
+      internalID: 445875955784180606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_20
+      name: rata mov up_20
       rect:
         serializedVersion: 2
         x: 6400
@@ -627,21 +627,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 493ee73d2aaf19c40800000000000000
-      internalID: 5517466595745522580
+      spriteID: bc24985aabc6fcc50800000000000000
+      internalID: 6687683520565428939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_21
+      name: rata mov up_21
       rect:
         serializedVersion: 2
         x: 8000
@@ -649,21 +649,21 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b64bcba05964bcc0800000000000000
-      internalID: -3696213598963808590
+      spriteID: 97455338cf2e9c840800000000000000
+      internalID: 5244972815210599545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ratatruco_22
+      name: rata mov up_22
       rect:
         serializedVersion: 2
         x: 9600
@@ -671,15 +671,15 @@ TextureImporter:
         width: 1600
         height: 1600
       alignment: 9
-      pivot: {x: 0.54, y: 0.33}
+      pivot: {x: 0.65, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5146063156b8641f0800000000000000
-      internalID: -1061007395966131179
+      spriteID: 91b0856b2a811c720800000000000000
+      internalID: 2864597925107338009
       vertices: []
       indices: 
       edges: []
@@ -688,7 +688,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: edaf4727a90b94a43b77e54e64be79ae
+    spriteID: c9c9d1de125726a4095ebbd95eb8745d
     internalID: 0
     vertices: []
     indices: 
@@ -698,31 +698,31 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5400000214576721,"y":0.33000001311302187},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.6499999761581421,"y":0.4000000059604645},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ratatruco_0: -2466034669503858497
-      ratatruco_1: -140673845677586411
-      ratatruco_10: 7176222478034652609
-      ratatruco_11: 2488519117116114744
-      ratatruco_12: 8212284494048541205
-      ratatruco_13: 8433149389889543855
-      ratatruco_14: -1646198905419823513
-      ratatruco_15: 7088652892288321615
-      ratatruco_16: 2695656036363005670
-      ratatruco_17: 3596227021889229751
-      ratatruco_18: -5025857539218949919
-      ratatruco_19: 8369727152284463877
-      ratatruco_2: -2423040457078716038
-      ratatruco_20: 5517466595745522580
-      ratatruco_21: -3696213598963808590
-      ratatruco_22: -1061007395966131179
-      ratatruco_3: 5313029725493589490
-      ratatruco_4: 4380506017477451748
-      ratatruco_5: -2412004862883120673
-      ratatruco_6: 6551426184367580631
-      ratatruco_7: -610245479513941506
-      ratatruco_8: -7664497389514739522
-      ratatruco_9: 2623789992114120138
+      rata mov up_0: 6802078620580015358
+      rata mov up_1: 4503077603927478918
+      rata mov up_10: -5505475979123678924
+      rata mov up_11: 4388535587384556853
+      rata mov up_12: 6155170698109212304
+      rata mov up_13: 471726989282886238
+      rata mov up_14: 2231023052466569615
+      rata mov up_15: -2757083168134629874
+      rata mov up_16: -2556215353064065635
+      rata mov up_17: -3336202024578497852
+      rata mov up_18: -6597566030321005452
+      rata mov up_19: 445875955784180606
+      rata mov up_2: -4865503396136145221
+      rata mov up_20: 6687683520565428939
+      rata mov up_21: 5244972815210599545
+      rata mov up_22: 2864597925107338009
+      rata mov up_3: -8696067297310789672
+      rata mov up_4: -1028849915890214290
+      rata mov up_5: 2233934506923457547
+      rata mov up_6: -1303515330131889824
+      rata mov up_7: -8801226451285824328
+      rata mov up_8: 391701119432174035
+      rata mov up_9: 6049049011696161772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

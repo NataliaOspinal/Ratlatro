@@ -1,76 +1,55 @@
 fileFormatVersion: 2
-guid: 3d15d58cf210c2c4ea2b8c54025edfcb
+guid: 939b284f7dbe21f4881612fd224d2149
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5111623292155974339
-    second: rataidle_0
+      213: -2477751479658236594
+    second: ratamovimiento1_0
   - first:
-      213: 519509029771604279
-    second: rataidle_1
+      213: -540920026076740056
+    second: ratamovimiento1_1
   - first:
-      213: -8709194726010528050
-    second: rataidle_2
+      213: -8187830683875113899
+    second: ratamovimiento1_2
   - first:
-      213: -3733445668402182931
-    second: rataidle_3
+      213: 715908324850122416
+    second: ratamovimiento1_3
   - first:
-      213: 471890957729739984
-    second: rataidle_4
+      213: -5360708709799725571
+    second: ratamovimiento1_4
   - first:
-      213: -6209295267907784859
-    second: rataidle_5
+      213: 278741417716831590
+    second: ratamovimiento1_5
   - first:
-      213: 2321517669448810713
-    second: rataidle_6
+      213: 7840354577893550110
+    second: ratamovimiento1_6
   - first:
-      213: -896470424654942967
-    second: rataidle_7
+      213: -8891711546524798214
+    second: ratamovimiento1_7
   - first:
-      213: -5880350461710030182
-    second: rataidle_8
+      213: -4044347869878293965
+    second: ratamovimiento1_8
   - first:
-      213: -8667087077066786282
-    second: rataidle_9
+      213: 2380544163332461286
+    second: ratamovimiento1_9
   - first:
-      213: -4076569944612664183
-    second: rataidle_10
+      213: 3785939138738610480
+    second: ratamovimiento1_10
   - first:
-      213: -1041483892944160111
-    second: rataidle_11
+      213: -8069414688752796576
+    second: ratamovimiento1_11
   - first:
-      213: -7698487567315668999
-    second: rataidle_12
+      213: -3554641961619463190
+    second: ratamovimiento1_12
   - first:
-      213: 5707746417045219777
-    second: rataidle_13
+      213: 43655612510404456
+    second: ratamovimiento1_13
   - first:
-      213: 999010662317773856
-    second: rataidle_14
+      213: -8794805442600573215
+    second: ratamovimiento1_14
   - first:
-      213: -3154500912922779608
-    second: rataidle_15
-  - first:
-      213: 8989713229217069993
-    second: rataidle_16
-  - first:
-      213: 4275395376988587814
-    second: rataidle_17
-  - first:
-      213: -4035378145583166548
-    second: rataidle_18
-  - first:
-      213: 8122003514596098993
-    second: rataidle_19
-  - first:
-      213: -5259033498163253853
-    second: rataidle_20
-  - first:
-      213: 3278578346288224167
-    second: rataidle_21
-  - first:
-      213: 6776409126061482683
-    second: rataidle_22
+      213: -1117187339396048899
+    second: ratamovimiento1_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -179,183 +158,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rataidle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c2d19a3d4220f640800000000000000
-      internalID: 5111623292155974339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_1
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 731f429c5baa53700800000000000000
-      internalID: 519509029771604279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_2
-      rect:
-        serializedVersion: 2
-        x: 3200
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecedf6c3a89b22780800000000000000
-      internalID: -8709194726010528050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_3
-      rect:
-        serializedVersion: 2
-        x: 4800
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de4caaaf1f2203cc0800000000000000
-      internalID: -3733445668402182931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_4
-      rect:
-        serializedVersion: 2
-        x: 6400
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d4333c635e7c8600800000000000000
-      internalID: 471890957729739984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_5
-      rect:
-        serializedVersion: 2
-        x: 8000
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56fa7d22ad624d9a0800000000000000
-      internalID: -6209295267907784859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_6
-      rect:
-        serializedVersion: 2
-        x: 9600
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d00a4b3500b73020800000000000000
-      internalID: 2321517669448810713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_7
-      rect:
-        serializedVersion: 2
-        x: 11200
-        y: 3200
-        width: 1600
-        height: 1600
-      alignment: 9
-      pivot: {x: 0.55, y: 0.32}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90d6cc206e81f83f0800000000000000
-      internalID: -896470424654942967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rataidle_8
+      name: ratamovimiento1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -370,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9a28f6196cc46ea0800000000000000
-      internalID: -5880350461710030182
+      spriteID: e45b54d28224d9dd0800000000000000
+      internalID: -2477751479658236594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_9
+      name: ratamovimiento1_1
       rect:
         serializedVersion: 2
         x: 1600
@@ -392,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61a3e0e393258b780800000000000000
-      internalID: -8667087077066786282
+      spriteID: 8260dc92a144e78f0800000000000000
+      internalID: -540920026076740056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_10
+      name: ratamovimiento1_2
       rect:
         serializedVersion: 2
         x: 3200
@@ -414,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98c0455eb3d1d67c0800000000000000
-      internalID: -4076569944612664183
+      spriteID: 554849ebf5bfe5e80800000000000000
+      internalID: -8187830683875113899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_11
+      name: ratamovimiento1_3
       rect:
         serializedVersion: 2
         x: 4800
@@ -436,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19ab5c9dae7eb81f0800000000000000
-      internalID: -1041483892944160111
+      spriteID: 0bebf6214da6fe900800000000000000
+      internalID: 715908324850122416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_12
+      name: ratamovimiento1_4
       rect:
         serializedVersion: 2
         x: 6400
@@ -458,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ff636a885a792590800000000000000
-      internalID: -7698487567315668999
+      spriteID: df57b08a4dfea95b0800000000000000
+      internalID: -5360708709799725571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_13
+      name: ratamovimiento1_5
       rect:
         serializedVersion: 2
         x: 8000
@@ -480,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c92df7102df53f40800000000000000
-      internalID: 5707746417045219777
+      spriteID: 6655333b7d94ed300800000000000000
+      internalID: 278741417716831590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_14
+      name: ratamovimiento1_6
       rect:
         serializedVersion: 2
         x: 9600
@@ -502,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 024574687e23ddd00800000000000000
-      internalID: 999010662317773856
+      spriteID: e18e378d2f88ecc60800000000000000
+      internalID: 7840354577893550110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_15
+      name: ratamovimiento1_7
       rect:
         serializedVersion: 2
         x: 11200
@@ -524,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 820a7990226f834d0800000000000000
-      internalID: -3154500912922779608
+      spriteID: af27620757b4a9480800000000000000
+      internalID: -8891711546524798214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_16
+      name: ratamovimiento1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -546,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9abfc1c6d80e1cc70800000000000000
-      internalID: 8989713229217069993
+      spriteID: 33aebcb4a079fd7c0800000000000000
+      internalID: -4044347869878293965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_17
+      name: ratamovimiento1_9
       rect:
         serializedVersion: 2
         x: 1600
@@ -568,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62780cf7171455b30800000000000000
-      internalID: 4275395376988587814
+      spriteID: 6e29f8bcd44690120800000000000000
+      internalID: 2380544163332461286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_18
+      name: ratamovimiento1_10
       rect:
         serializedVersion: 2
         x: 3200
@@ -590,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cab042af4f47ff7c0800000000000000
-      internalID: -4035378145583166548
+      spriteID: 03163c1869b5a8430800000000000000
+      internalID: 3785939138738610480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rataidle_19
+      name: ratamovimiento1_11
       rect:
         serializedVersion: 2
         x: 4800
@@ -612,8 +415,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b389ff0a2727b070800000000000000
-      internalID: 8122003514596098993
+      spriteID: 06cf19b181ea30090800000000000000
+      internalID: -8069414688752796576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratamovimiento1_12
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae369fd18ff5baec0800000000000000
+      internalID: -3554641961619463190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratamovimiento1_13
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f722c5c881b9000800000000000000
+      internalID: 43655612510404456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratamovimiento1_14
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6ee1dfb0392f580800000000000000
+      internalID: -8794805442600573215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ratamovimiento1_15
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df71cbfa804fe70f0800000000000000
+      internalID: -1117187339396048899
       vertices: []
       indices: 
       edges: []
@@ -622,7 +513,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7d0eef193a371c94bb2c5c5a3d4b0f40
+    spriteID: 15d14020b26a38744bc5d94c9549245b
     internalID: 0
     vertices: []
     indices: 
@@ -632,28 +523,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      rataidle_0: 5111623292155974339
-      rataidle_1: 519509029771604279
-      rataidle_10: -4076569944612664183
-      rataidle_11: -1041483892944160111
-      rataidle_12: -7698487567315668999
-      rataidle_13: 5707746417045219777
-      rataidle_14: 999010662317773856
-      rataidle_15: -3154500912922779608
-      rataidle_16: 8989713229217069993
-      rataidle_17: 4275395376988587814
-      rataidle_18: -4035378145583166548
-      rataidle_19: 8122003514596098993
-      rataidle_2: -8709194726010528050
-      rataidle_3: -3733445668402182931
-      rataidle_4: 471890957729739984
-      rataidle_5: -6209295267907784859
-      rataidle_6: 2321517669448810713
-      rataidle_7: -896470424654942967
-      rataidle_8: -5880350461710030182
-      rataidle_9: -8667087077066786282
+      ratamovimiento1_0: -2477751479658236594
+      ratamovimiento1_1: -540920026076740056
+      ratamovimiento1_10: 3785939138738610480
+      ratamovimiento1_11: -8069414688752796576
+      ratamovimiento1_12: -3554641961619463190
+      ratamovimiento1_13: 43655612510404456
+      ratamovimiento1_14: -8794805442600573215
+      ratamovimiento1_15: -1117187339396048899
+      ratamovimiento1_2: -8187830683875113899
+      ratamovimiento1_3: 715908324850122416
+      ratamovimiento1_4: -5360708709799725571
+      ratamovimiento1_5: 278741417716831590
+      ratamovimiento1_6: 7840354577893550110
+      ratamovimiento1_7: -8891711546524798214
+      ratamovimiento1_8: -4044347869878293965
+      ratamovimiento1_9: 2380544163332461286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 2532951655240509672}
   - component: {fileID: 1263429633649196632}
   - component: {fileID: 5323306760429173986}
+  - component: {fileID: 4212937606799184089}
   m_Layer: 0
   m_Name: Rata
   m_TagString: Player
@@ -316,7 +317,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8207660469152320697, guid: 029fab0d0678a1a459bb60746c98671b, type: 3}
+  m_Sprite: {fileID: 6018349825993882540, guid: 924521f99d9b8bf439bc5408d81038c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -387,8 +388,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.1525963, y: -0.0025467146}
-  m_Size: {x: 0.9227865, y: 0.30341664}
+  m_Offset: {x: 0.08780228, y: 0.10035713}
+  m_Size: {x: 0.9186832, y: 0.38029405}
   m_Direction: 1
 --- !u!114 &1263429633649196632
 MonoBehaviour:
@@ -404,23 +405,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainPlayer
   moveSpeed: 5
   canMove: 1
-  directionData:
-  - sprite: {fileID: 474054989493682514, guid: 029fab0d0678a1a459bb60746c98671b, type: 3}
-    colliderSize: {x: 0.99829566, y: 0.30234918}
-    colliderOffset: {x: -0.16275401, y: -0.003069173}
-    colliderDirection: 1
-  - sprite: {fileID: -16178919933305266, guid: 029fab0d0678a1a459bb60746c98671b, type: 3}
-    colliderSize: {x: 0.9401607, y: 0.31620482}
-    colliderOffset: {x: 0.22242606, y: 0.00385708}
-    colliderDirection: 1
-  - sprite: {fileID: -8207660469152320697, guid: 029fab0d0678a1a459bb60746c98671b, type: 3}
-    colliderSize: {x: 0.91246355, y: 0.524005}
-    colliderOffset: {x: -0.059249513, y: 0.10775235}
-    colliderDirection: 1
-  - sprite: {fileID: 1798371618735226033, guid: 029fab0d0678a1a459bb60746c98671b, type: 3}
-    colliderSize: {x: 0.8662927, y: 0.5494073}
-    colliderOffset: {x: 0.09313192, y: 0.12045043}
-    colliderDirection: 1
+  animator: {fileID: 4212937606799184089}
+  directionData: []
   companionPrefab: {fileID: 9089966177106744579, guid: 1b9ac3321a6a9534b8ddc0bc9e486955, type: 3}
   pickupRange: 1.5
   maxThrowDistance: 5
@@ -429,7 +415,7 @@ MonoBehaviour:
   tiempoCargaDistancia: 1
   tiempoCargaAltura: 1
   laserApuntado: {fileID: 1385913108474708556}
-  "puedeInvocarCompa\xF1ero": 0
+  puedeInvocarCompanero: 0
 --- !u!114 &5323306760429173986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,3 +431,25 @@ MonoBehaviour:
   auraLight: {fileID: 7543494767396336565}
   normalIntensity: 0.7
   dimmedIntensity: 0.2
+--- !u!95 &4212937606799184089
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089966177106744579}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8a113824441e52419af8e5559157a34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

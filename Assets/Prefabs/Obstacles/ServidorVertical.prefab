@@ -83,7 +83,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: -801061959682993103, guid: 189fe9f044429bb4b9230159d01fb66d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -101,11 +101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1297476494764808201}
   - component: {fileID: 5725530280013561844}
-  - component: {fileID: 5020815620468052546}
-  - component: {fileID: 4230664502261152064}
+  - component: {fileID: 724036003482762589}
+  - component: {fileID: 6634638678703063352}
+  - component: {fileID: 4043789871869303614}
   m_Layer: 0
-  m_Name: Servidor 1
-  m_TagString: Untagged
+  m_Name: ServidorVertical
+  m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +161,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.21, y: 0.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -172,19 +173,45 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.2932549, y: -0.04824078}
-      - {x: -1.1925433, y: -0.7469542}
-      - {x: 1.1816746, y: 0.6381444}
-      - {x: 0.028173208, y: 1.3347919}
+    - - {x: 0.018059552, y: 1.2076845}
+      - {x: -1.050384, y: 0.54379046}
+      - {x: 1.3174942, y: -0.8451363}
+      - {x: 2.4840355, y: -0.10469484}
   m_UseDelaunayMesh: 1
---- !u!60 &5020815620468052546
-PolygonCollider2D:
+--- !u!114 &724036003482762589
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535163954388747613}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748cdeda78f8870419d845b54b8544b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleObstruction
+--- !u!114 &6634638678703063352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535163954388747613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
+  permiteTransparencia: 0
+  alphaTransparente: 0.4
+--- !u!60 &4043789871869303614
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535163954388747613}
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -211,7 +238,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.15, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -223,22 +250,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.041154712, y: 5.106002}
-      - {x: -1.9834409, y: 3.9683788}
-      - {x: -1.9532948, y: 0.14044666}
-      - {x: 0.0698874, y: 1.3487171}
+    - - {x: 0.031089306, y: 4.9173636}
+      - {x: -0.73736143, y: 4.4385643}
+      - {x: -0.76451534, y: 0.7753697}
+      - {x: 2.2103312, y: 0.030416608}
+      - {x: 2.235565, y: 3.6368804}
   m_UseDelaunayMesh: 1
---- !u!114 &4230664502261152064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535163954388747613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4910a28edf27e648976cf79a35704c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TransparentWall
-  permiteTransparencia: 1
-  alphaTransparente: 0.4

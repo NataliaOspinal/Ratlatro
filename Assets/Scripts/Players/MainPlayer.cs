@@ -3,29 +3,36 @@ using UnityEngine.InputSystem;
 
 public class MainPlayer : BaseIsometricPlayer
 {
-    [Header("Catapulta y Compa�ero")]
+    //Catapulta de compañero
     public GameObject companionPrefab;
     public float pickupRange = 1.5f;
 
-    [Header("Configuraci�n de Apuntado")]
+    // Parámetros de lanzamiento
     public float maxThrowDistance = 5f;
     public float maxArcHeight = 6f;
     public float minArcHeight = 0.5f;
     public float tiempoCargaDistancia = 1f;
     public float tiempoCargaAltura = 1f;
 
-    [Header("L�ser de Apuntado")]
-    public LineRenderer laserApuntado; // Arrastra tu nuevo objeto aqu�
+    // Referencia al LineRenderer para el láser de apuntado
+    public LineRenderer laserApuntado;
 
+    // Estado del compañero
     private GameObject spawnedCompanion;
     private CompanionPlayer companionScript;
     private bool isHoldingCompanion = false;
     private float currentChargeTime = 0f;
     public bool puedeInvocarCompanero = false;
 
+    // Bandera para evitar moverse o disparar mientras invoca
+    private bool estaInvocando = false;
+
     protected override Vector2 GetInput()
     {
         Vector2 input = Vector2.zero;
+
+        // Si está a mitad de una invocación, anulamos todos los controles
+        if (estaInvocando) return input;
 
         if (Keyboard.current != null)
         {
@@ -38,13 +45,15 @@ public class MainPlayer : BaseIsometricPlayer
             // Spawn/Despawn (Letra E)
             if (puedeInvocarCompanero && Keyboard.current.eKey.wasPressedThisFrame)
             {
-                if (spawnedCompanion == null)
+                if (spawnedCompanion == null && !estaInvocando)
                 {
-                    Vector3 spawnPos = transform.position + new Vector3(1f, -0.5f, 0f);
-                    spawnedCompanion = Instantiate(companionPrefab, spawnPos, Quaternion.identity);
-                    companionScript = spawnedCompanion.GetComponent<CompanionPlayer>();
+                    estaInvocando = true;
+                    canMove = false; // Congelamos a la rata grande
+
+                    // Disparamos la animación
+                    if (animator != null) animator.SetTrigger("Invocar");
                 }
-                else if (!isHoldingCompanion)
+                else if (!isHoldingCompanion && spawnedCompanion != null && !estaInvocando)
                 {
                     Destroy(spawnedCompanion);
                 }
@@ -53,7 +62,7 @@ public class MainPlayer : BaseIsometricPlayer
             // Catapulta (Letra R)
             if (spawnedCompanion != null)
             {
-                // AGARRAR
+                // Agarrar rata (presionar R)
                 if (Keyboard.current.rKey.wasPressedThisFrame && !isHoldingCompanion)
                 {
                     float distance = Vector2.Distance(transform.position, spawnedCompanion.transform.position);
@@ -63,12 +72,11 @@ public class MainPlayer : BaseIsometricPlayer
                         currentChargeTime = 0f;
                         companionScript.BePickedUp(transform);
 
-                        // Encendemos el l�ser
                         if (laserApuntado != null) laserApuntado.gameObject.SetActive(true);
                     }
                 }
 
-                // CARGAR Y DIBUJAR L�SER
+                // Carga de lanzamiento (mantener R)
                 if (Keyboard.current.rKey.isPressed && isHoldingCompanion)
                 {
                     currentChargeTime += Time.deltaTime;
@@ -76,12 +84,10 @@ public class MainPlayer : BaseIsometricPlayer
                     Vector2 startPos = transform.position;
                     Vector2 dir = lastFacingDirection.normalized;
 
-                    // C�lculos de distancia m�xima permitida por muros
                     float ratioDistancia = Mathf.Clamp01(currentChargeTime / tiempoCargaDistancia);
                     float distanciaTeorica = Mathf.Max(ratioDistancia * maxThrowDistance, 1f);
                     float distanciaReal = distanciaTeorica;
 
-                    // Esc�ner de seguridad
                     RaycastHit2D[] hits = Physics2D.RaycastAll(startPos, dir, distanciaTeorica);
                     foreach (RaycastHit2D hit in hits)
                     {
@@ -93,55 +99,6 @@ public class MainPlayer : BaseIsometricPlayer
 
                     Vector2 posicionCodo = startPos + (dir * distanciaReal);
 
-                    // C�lculo de altura
-                    float alturaActual = 0f;
-                    if (currentChargeTime > tiempoCargaDistancia)
-                    {
-                        float tiempoSobrante = currentChargeTime - tiempoCargaDistancia;
-                        float ratioAltura = Mathf.Clamp01(tiempoSobrante / tiempoCargaAltura);
-                        alturaActual = Mathf.Max(ratioAltura * maxArcHeight, minArcHeight);
-                    }
-
-                    // Calculamos la punta sumando Y
-                    Vector2 posicionPunta = posicionCodo + new Vector2(0f, alturaActual);
-
-                    // Actualizamos los puntos del LineRenderer
-                    if (laserApuntado != null)
-                    {
-                        laserApuntado.SetPosition(0, startPos);       // Origen (Rata)
-                        laserApuntado.SetPosition(1, posicionCodo);   // Destino en suelo
-                        laserApuntado.SetPosition(2, posicionPunta);  // Altura final
-                    }
-                }
-
-                // 2. CARGAR Y DIBUJAR L�SER
-                if (Keyboard.current.rKey.isPressed && isHoldingCompanion)
-                {
-                    currentChargeTime += Time.deltaTime;
-
-                    Vector2 startPos = transform.position;
-
-                    // �Volvemos a tu direcci�n original perfecta!
-                    Vector2 dir = lastFacingDirection.normalized;
-
-                    // C�lculos de distancia
-                    float ratioDistancia = Mathf.Clamp01(currentChargeTime / tiempoCargaDistancia);
-                    float distanciaTeorica = Mathf.Max(ratioDistancia * maxThrowDistance, 1f);
-                    float distanciaReal = distanciaTeorica;
-
-                    // El raycast ahora viaja recto por tu pasillo
-                    RaycastHit2D[] hits = Physics2D.RaycastAll(startPos, dir, distanciaTeorica);
-                    foreach (RaycastHit2D hit in hits)
-                    {
-                        if (hit.collider != null && hit.collider.CompareTag("Pared"))
-                        {
-                            if (hit.distance < distanciaReal) distanciaReal = hit.distance - 0.4f;
-                        }
-                    }
-
-                    Vector2 posicionCodo = startPos + (dir * distanciaReal);
-
-                    // C�lculo de altura (L�nea Verde)
                     float alturaActual = 0f;
                     if (currentChargeTime > tiempoCargaDistancia)
                     {
@@ -160,7 +117,7 @@ public class MainPlayer : BaseIsometricPlayer
                     }
                 }
 
-                // 3. DISPARAR
+                // Tirar rata (soltar R)
                 if (Keyboard.current.rKey.wasReleasedThisFrame && isHoldingCompanion)
                 {
                     isHoldingCompanion = false;
@@ -178,10 +135,7 @@ public class MainPlayer : BaseIsometricPlayer
                     float alturaCalculada = Mathf.Max(ratioAltura * maxArcHeight, minArcHeight);
 
                     Vector2 startPos = (Vector2)transform.position;
-
-                    // �Usamos la misma direcci�n recta para disparar!
                     Vector2 dir = lastFacingDirection.normalized;
-
                     float distanciaFinal = distanciaCalculada;
 
                     RaycastHit2D[] hits = Physics2D.RaycastAll(startPos, dir, distanciaCalculada);
@@ -194,8 +148,6 @@ public class MainPlayer : BaseIsometricPlayer
                     }
 
                     Vector2 targetPos = startPos + (dir * Mathf.Max(distanciaFinal, 1.0f));
-
-                    // �Fuego!
                     companionScript.BeThrown(targetPos, alturaCalculada);
                 }
             }
@@ -207,5 +159,17 @@ public class MainPlayer : BaseIsometricPlayer
     public void DesbloquearCompanero()
     {
         puedeInvocarCompanero = true;
+    }
+
+    // Animación de invocación finalizada, llamada desde un evento de animación
+    public void TerminarInvocacion()
+    {
+        estaInvocando = false;
+        canMove = true; // Descongelamos a la rata grande
+
+        // La instanciamos al costado izquierdo
+        Vector3 spawnPos = transform.position + new Vector3(-1.5f, 0f, 0f);
+        spawnedCompanion = Instantiate(companionPrefab, spawnPos, Quaternion.identity);
+        companionScript = spawnedCompanion.GetComponent<CompanionPlayer>();
     }
 }

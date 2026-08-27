@@ -114,21 +114,52 @@ public class CinematicaInicial : MonoBehaviour
 
         panelNubeNegra.SetActive(true);
 
-        foreach (string linea in lineasDialogo)
+       foreach (string linea in lineasDialogo)
         {
-            textoNarrativa.text = "";
+            if (textoNarrativa == null) continue;
+
+            textoNarrativa.text = linea;
+            textoNarrativa.maxVisibleCharacters = 0;
+            textoNarrativa.ForceMeshUpdate(); 
+            int totalCaracteres = textoNarrativa.textInfo.characterCount;
             
-            
-            foreach (char letra in linea.ToCharArray())
+            for (int i = 0; i <= totalCaracteres; i++)
             {
-                textoNarrativa.text += letra;
-                yield return new WaitForSeconds(velocidadEscritura);
+                textoNarrativa.maxVisibleCharacters = i;
+
+                float cronometro = 0f;
+                bool saltoDetectado = false;
+
+                while (cronometro < velocidadEscritura)
+                {
+                    cronometro += Time.deltaTime;
+
+                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    {
+                        saltoDetectado = true;
+                        break;
+                    }
+                    
+                    yield return null; 
+                }
+
+                if (saltoDetectado)
+                {
+                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
+                    break; 
+                }
             }
+
+            yield return null;
 
             yield return new WaitUntil(() => 
                 (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
+
+        
+            yield return null; 
         }
 
         panelNubeNegra.SetActive(false);

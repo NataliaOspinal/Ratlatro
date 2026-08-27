@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6634638678703063352}
   - component: {fileID: 4043789871869303614}
   m_Layer: 0
-  m_Name: ParedVerticalLab
+  m_Name: ParedVerticalLab 1
   m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

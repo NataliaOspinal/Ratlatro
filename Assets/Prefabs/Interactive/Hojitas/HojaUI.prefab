@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5298223f295e060468546570f2d54182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuperPaperUI
+  fuenteSonido: {fileID: 0}
+  sonidoEntrar: {fileID: 0}
   imagenOutline: {fileID: 7722604256662502756}
   textoPapel: {fileID: 4748359533858212756}
   flechaTutorial: {fileID: 6723276110409035074}
@@ -238,10 +240,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

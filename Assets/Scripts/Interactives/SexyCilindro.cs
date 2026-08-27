@@ -15,6 +15,11 @@ public class PaginaDialogo
 
 public class SexyCilindro : MonoBehaviour
 {
+    [Header("Condición de Desbloqueo")]
+    public bool necesitaPuertaAbierta = false; 
+    public Door[] puertaRequisito;
+
+
     [Header("Configuración Visual")]
     public GameObject indicadorTeclaF; 
 
@@ -66,16 +71,27 @@ public class SexyCilindro : MonoBehaviour
 
     void Update()
     {
-        if (jugadorCerca && (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0)))
+        if (jugadorCerca)
         {
             if (!estaDialogando)
             {
-                IniciarDialogo();
+                bool puede = PuedeInteractuar();
+                if (indicadorTeclaF != null && indicadorTeclaF.activeSelf != puede) 
+                {
+                    indicadorTeclaF.SetActive(puede);
+                }
+
+                if (puede && (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0)))
+                {
+                    IniciarDialogo();
+                }
             }
-            else
-            if (!escribiendoTexto)
+            else if (!escribiendoTexto)
             {
-                AvanzarDialogo();
+                if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
+                {
+                    AvanzarDialogo();
+                }
             }
         }
     }
@@ -228,7 +244,7 @@ IEnumerator RutinaGlitchPeriodico()
         if (collision.CompareTag("Player"))
         {
             jugadorCerca = true;
-            if (indicadorTeclaF != null && !estaDialogando) indicadorTeclaF.SetActive(true);
+           
             
         }
     }
@@ -242,5 +258,21 @@ IEnumerator RutinaGlitchPeriodico()
             if (indicadorTeclaF != null) indicadorTeclaF.SetActive(false);
             
         }
+    }
+
+    private bool PuedeInteractuar()
+    {
+        if (!necesitaPuertaAbierta) return true;
+        
+        // Revisamos todas las puertas en la lista
+        foreach (Door puerta in puertaRequisito)
+        {
+            if (puerta != null && !puerta.estaAbierta)
+            {
+                return false; 
+            }
+        }
+
+        return true; 
     }
 }

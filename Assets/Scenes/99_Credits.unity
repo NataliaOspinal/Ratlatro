@@ -259,8 +259,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -399,8 +399,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Dise\xF1o de Nivel"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
-  m_sharedMaterial: {fileID: -8704355427874378708, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -919,8 +919,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nestor "@aatsarts" Joussef
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1068,8 +1068,8 @@ MonoBehaviour:
 
     greysound'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1446,8 +1446,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Creadores de Assets Externos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1813,8 +1813,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1950,8 +1950,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: uwauwauu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2262,8 +2262,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'FreeSound.org:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2402,8 +2402,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Arte/Animaciones
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2539,8 +2539,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nestor "@aatsarts" Joussef
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2679,8 +2679,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Guionizaci\xF3n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
-  m_sharedMaterial: {fileID: -8704355427874378708, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3036,8 +3036,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3306,8 +3306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "M\xFAsica/Sonido"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
-  m_sharedMaterial: {fileID: -8704355427874378708, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3443,8 +3443,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3580,8 +3580,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nestor "@aatsarts" Joussef
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3717,8 +3717,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pinwino
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3855,8 +3855,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Gracias Por Jugar!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb19505f173c2b54e90548de485e33d8, type: 2}
-  m_sharedMaterial: {fileID: -9150782872958288959, guid: eb19505f173c2b54e90548de485e33d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
+  m_sharedMaterial: {fileID: 4630983205270257940, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4086,8 +4086,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programaci\xF3n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
-  m_sharedMaterial: {fileID: -8704355427874378708, guid: 0d3fc56ef3e4c5e4ab0565bc6063daf1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4284,7 +4284,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.03, y: 2.08, z: 0}
-  m_LocalScale: {x: 0.26, y: 0.26, z: 0.26}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1719330653}
@@ -4410,8 +4410,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Haz click para salir...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: eb19505f173c2b54e90548de485e33d8, type: 2}
-  m_sharedMaterial: {fileID: -9150782872958288959, guid: eb19505f173c2b54e90548de485e33d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
+  m_sharedMaterial: {fileID: 4630983205270257940, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4442,7 +4442,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -3.36
@@ -4474,7 +4474,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -124.95874, y: 0, z: -777.1002, w: 0}
+  m_margin: {x: 174.69937, y: 0, z: -777.1002, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4504,7 +4504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 43, y: -6061}
+  m_AnchoredPosition: {x: 105, y: -6061}
   m_SizeDelta: {x: 394.15, y: 102.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1941943715
@@ -4657,8 +4657,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Liz Pineda Feijoo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
-  m_sharedMaterial: {fileID: 3360225926980567439, guid: e53b6c6d752f89448a230ae6c8baa852, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
+  m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

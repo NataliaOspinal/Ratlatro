@@ -450,6 +450,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
+    - target: {fileID: 210967380371486421, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Size.x
+      value: 3.5553107
+      objectReference: {fileID: 0}
+    - target: {fileID: 210967380371486421, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Size.y
+      value: 3.7899053
+      objectReference: {fileID: 0}
+    - target: {fileID: 210967380371486421, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06398773
+      objectReference: {fileID: 0}
+    - target: {fileID: 210967380371486421, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.043952346
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: alturaSaltoPersonaje
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.size
       value: 3
@@ -487,6 +507,22 @@ PrefabInstance:
     - target: {fileID: 860561257253625436, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029957029999239899, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5588697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029957029999239899, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Size.y
+      value: 0.94326437
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029957029999239899, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.33892325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029957029999239899, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.3830173
       objectReference: {fileID: 0}
     - target: {fileID: 2130622660893296387, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_LocalPosition.x

@@ -70,16 +70,38 @@ public class RecuerdoPowerUp : MonoBehaviour
             if (textoNarrativa == null) continue;
 
             textoNarrativa.text = linea;
-            
             textoNarrativa.maxVisibleCharacters = 0;
-            
             textoNarrativa.ForceMeshUpdate();
             int totalCaracteres = textoNarrativa.textInfo.characterCount;
+
+            yield return null;
 
             for (int i = 0; i <= totalCaracteres; i++)
             {
                 textoNarrativa.maxVisibleCharacters = i;
-                yield return new WaitForSeconds(velocidadEscritura);
+
+                float cronometro = 0f;
+                bool saltoDetectado = false;
+
+                while (cronometro < velocidadEscritura)
+                {
+                    cronometro += Time.deltaTime;
+
+                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    {
+                        saltoDetectado = true;
+                        break;
+                    }
+                    
+                    yield return null; 
+                }
+
+                if (saltoDetectado)
+                {
+                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
+                    break; 
+                }
             }
 
             yield return null; 
@@ -88,7 +110,10 @@ public class RecuerdoPowerUp : MonoBehaviour
                 (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
+
+            yield return null;
         }
+
         if (textoNarrativa != null) textoNarrativa.text = "";
         if (panelNubeNegra != null) panelNubeNegra.SetActive(false);
 

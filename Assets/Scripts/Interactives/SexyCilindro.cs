@@ -136,15 +136,38 @@ public class SexyCilindro : MonoBehaviour
     IEnumerator EscribirLetraPorLetra(string textoCompleto)
     {
         escribiendoTexto = true; 
-        textoDialogoUI.text = ""; 
+        
+        textoDialogoUI.text = textoCompleto;
+        textoDialogoUI.maxVisibleCharacters = 0;
+        textoDialogoUI.ForceMeshUpdate();
+        int totalCaracteres = textoDialogoUI.textInfo.characterCount;
 
-        // Recorremos cada letra del texto
-        foreach (char letra in textoCompleto.ToCharArray())
+        for (int i = 0; i <= totalCaracteres; i++)
         {
-            textoDialogoUI.text += letra;
-            yield return new WaitForSeconds(velocidadDeTexto); 
-        }
+            textoDialogoUI.maxVisibleCharacters = i;
 
+            float cronometro = 0f;
+            bool saltoDetectado = false;
+
+            while (cronometro < velocidadDeTexto)
+            {
+                cronometro += Time.deltaTime;
+
+                if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
+                {
+                    saltoDetectado = true;
+                    break;
+                }
+                
+                yield return null; 
+            }
+            if (saltoDetectado)
+            {
+                textoDialogoUI.maxVisibleCharacters = totalCaracteres;
+                break; 
+            }
+        }
+        yield return null;
         escribiendoTexto = false; 
     }
 

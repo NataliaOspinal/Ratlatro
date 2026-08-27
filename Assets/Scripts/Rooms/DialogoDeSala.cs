@@ -29,7 +29,7 @@ public class DialogoDeSala : MonoBehaviour
         StartCoroutine(RutinaDialogoEntrada());
     }
 
-    private IEnumerator RutinaDialogoEntrada()
+   private IEnumerator RutinaDialogoEntrada()
     {
         yield return new WaitForSeconds(esperaInicial);
 
@@ -42,12 +42,41 @@ public class DialogoDeSala : MonoBehaviour
 
         foreach (string linea in lineasDialogo)
         {
-            if (textoNarrativa != null) textoNarrativa.text = "";
-            
-            foreach (char letra in linea.ToCharArray())
+            if (textoNarrativa == null) continue;
+
+            textoNarrativa.text = linea;
+            textoNarrativa.maxVisibleCharacters = 0;
+            textoNarrativa.ForceMeshUpdate();
+            int totalCaracteres = textoNarrativa.textInfo.characterCount;
+
+            yield return null;
+
+            for (int i = 0; i <= totalCaracteres; i++)
             {
-                if (textoNarrativa != null) textoNarrativa.text += letra;
-                yield return new WaitForSeconds(velocidadEscritura);
+                textoNarrativa.maxVisibleCharacters = i;
+
+                float cronometro = 0f;
+                bool saltoDetectado = false;
+
+                while (cronometro < velocidadEscritura)
+                {
+                    cronometro += Time.deltaTime;
+
+                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    {
+                        saltoDetectado = true;
+                        break;
+                    }
+                    
+                    yield return null; 
+                }
+
+                if (saltoDetectado)
+                {
+                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
+                    break; 
+                }
             }
 
             yield return null; 
@@ -56,6 +85,8 @@ public class DialogoDeSala : MonoBehaviour
                 (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
+
+            yield return null;
         }
 
         if (textoNarrativa != null) textoNarrativa.text = "";

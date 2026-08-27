@@ -142,6 +142,9 @@ public class SexyCilindro : MonoBehaviour
         textoDialogoUI.ForceMeshUpdate();
         int totalCaracteres = textoDialogoUI.textInfo.characterCount;
 
+    
+        yield return null;
+
         for (int i = 0; i <= totalCaracteres; i++)
         {
             textoDialogoUI.maxVisibleCharacters = i;

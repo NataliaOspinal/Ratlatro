@@ -1630,9 +1630,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: necesitaPuertaAbierta
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: puertaRequisito.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: 'puertaRequisito.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3086231743745326231}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: 'puertaRequisito.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8431200358237300012}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[0].texto
       value: "\xBFHola? \xA1hola! los sensores de movimiento de mi capsula han captado
@@ -1700,11 +1716,11 @@ PrefabInstance:
     - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+      objectReference: {fileID: 11400000, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
     - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 5951448649317203603, guid: 24c8003036b2f174d9145d04a0ca6a4c, type: 2}
+      objectReference: {fileID: 4630983205270257940, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
     - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

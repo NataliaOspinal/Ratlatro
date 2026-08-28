@@ -8,21 +8,25 @@ public class Door : MonoBehaviour
 
     public bool estaAbierta { get; private set; } = false;
 
-
-
-    //Animación y efectos
+    [Header("Sonidos")]
+    public AudioSource fuenteDeAudio;
+    public AudioClip sfxAbrir;
+    [Header("Animaciones y efectos")]
     public Animator puertaAnimator;
     public string nombreTriggerAnimacion = "Abrir";
     public bool esVentilacion = false;
     public string nombreTriggerCerrar = "Cerrar";
-
+    [Header("Colisiones")]
     public Collider2D colliderViaje; 
     public Collider2D colliderBloqueo; 
+    
 
     private void Start()
     {
         if (colliderViaje != null) colliderViaje.enabled = false;
         if (colliderBloqueo != null) colliderBloqueo.enabled = true;
+
+        if(fuenteDeAudio==null) fuenteDeAudio = GetComponent<AudioSource>();
     }
 
     public void Abrir()
@@ -33,6 +37,11 @@ public class Door : MonoBehaviour
         {
             puertaAnimator.SetBool("esVentilacion", esVentilacion);
             puertaAnimator.SetTrigger(nombreTriggerAnimacion);
+        }
+
+        if (fuenteDeAudio != null && sfxAbrir != null)
+        {
+            fuenteDeAudio.PlayOneShot(sfxAbrir);
         }
 
         if (colliderViaje != null) colliderViaje.enabled = true;

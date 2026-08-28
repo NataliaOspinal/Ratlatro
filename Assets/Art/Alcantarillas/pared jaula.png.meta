@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2385a7e370d41d04dbd16b8230e6af5c
+guid: f5207348853dd6140b510c03d1faf5c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1417570214610721003
-    second: bolsa de basura_0
+      213: -4220521154280042367
+    second: pared jaula_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.498805, y: 0.18957885}
+  spritePivot: {x: 0.44301736, y: 0.22283824}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bolsa de basura_0
+      name: pared jaula_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 18
-        width: 246
-        height: 205
-      alignment: 9
-      pivot: {x: 0.50130194, y: 0.16253841}
+        x: 27
+        y: 11
+        width: 361
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be8db0e79983ca310800000000000000
-      internalID: 1417570214610721003
+      spriteID: 180dd181f52bd65c0800000000000000
+      internalID: -4220521154280042367
       vertices: []
       indices: 
       edges: []
@@ -125,8 +125,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0e59a5ecef5644749b48e017f2bfa202
-    internalID: 179782940
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bolsa de basura_0: 1417570214610721003
+      pared jaula_0: -4220521154280042367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -746,6 +746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedHuecoAbajo1
       objectReference: {fileID: 0}
+    - target: {fileID: 6254912115848628097, guid: a9170e1d5d5b8364baad4ec302a80ebb, type: 3}
+      propertyPath: escenaDestino
+      value: Trailer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

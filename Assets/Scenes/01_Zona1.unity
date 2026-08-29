@@ -341,10 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   salaEspecial:
-  - numeroDeSala: 4
-    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
-  - numeroDeSala: 5
-    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 045efedd0ddb3e64997706b18fd6734c, type: 3}
   - numeroDeSala: 0
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 3963d5130c1cbbc4ea03098755d331e8, type: 3}
   - numeroDeSala: 1
@@ -353,6 +349,10 @@ MonoBehaviour:
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: db85cf7e8a1762f4db81ea4ac413deac, type: 3}
   - numeroDeSala: 3
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: ca18d3e4e2c34774e9c127f4926b6281, type: 3}
+  - numeroDeSala: 4
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
+  - numeroDeSala: 5
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 045efedd0ddb3e64997706b18fd6734c, type: 3}
   - numeroDeSala: 6
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: d3b5cc1f5c57efd49baa9e0bc0a0714e, type: 3}
   - numeroDeSala: 7

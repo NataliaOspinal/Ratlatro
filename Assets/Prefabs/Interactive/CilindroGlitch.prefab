@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fbdbfdbdb
+  m_text: woof
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -286,8 +286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155, y: 258}
-  m_SizeDelta: {x: 1950, y: 834}
+  m_AnchoredPosition: {x: 120, y: 298}
+  m_SizeDelta: {x: 1900, y: 784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6972742666591024850
 CanvasRenderer:
@@ -527,6 +527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86535c131df109a40bc98820bc2c19ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SexyCilindro
+  necesitaPuertaAbierta: 0
+  puertaRequisito: []
   indicadorTeclaF: {fileID: 553338511837023662}
   paginasDeDialogo: []
   panelDialogoUI: {fileID: 1278053354939300025}
@@ -718,8 +720,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 591, y: -188}
-  m_SizeDelta: {x: 1229, y: 1584}
+  m_AnchoredPosition: {x: 591, y: -123}
+  m_SizeDelta: {x: 1029, y: 1389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6422683520894473996
 CanvasRenderer:

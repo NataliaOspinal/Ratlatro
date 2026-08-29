@@ -70,8 +70,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b1796d8576e3ed245b6718c322a8c247, type: 2}
-  m_sharedMaterial: {fileID: -7460009676567722391, guid: b1796d8576e3ed245b6718c322a8c247, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -175,8 +175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 69, y: 29}
-  m_SizeDelta: {x: 1100, y: 450}
+  m_AnchoredPosition: {x: 148, y: 202}
+  m_SizeDelta: {x: 900, y: 350}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &6280636731548542738
 CanvasRenderer:
@@ -276,7 +276,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 9999
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!114 &3013982132891220841
 MonoBehaviour:

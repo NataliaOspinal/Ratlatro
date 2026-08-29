@@ -40,6 +40,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         col = GetComponent<CapsuleCollider2D>();
+        if (spriteRenderer != null) spriteRenderer.enabled = true;
     }
 
     protected abstract Vector2 GetInput();

@@ -220,4 +220,27 @@ public class MainPlayer : BaseIsometricPlayer
             }
         }
     }
+
+    // Llamado por las trampas o enemigos
+    public void Morir()
+    {
+        // Evitamos que muera varias veces seguidas
+        if (!canMove) return;
+
+        canMove = false;
+        estaInvocando = false;
+
+        // Limpiamos al compañero si estaba en pantalla
+        ForzarDespawnCompanero();
+
+        // Ocultamos a la rata principal temporalmente
+        if (spriteRenderer != null) spriteRenderer.enabled = false;
+
+        // Ejecutamos el reinicio de la sala
+        if (RoomManager.Instance != null)
+        {
+            RoomManager.Instance.ResetCurrentRoom();
+        }
+    }
+
 }

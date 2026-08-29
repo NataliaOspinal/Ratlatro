@@ -406,6 +406,7 @@ MonoBehaviour:
   moveSpeed: 5
   canMove: 1
   animator: {fileID: 4212937606799184089}
+  tiempoParaIdleEspecial: 5
   directionData: []
   companionPrefab: {fileID: 9089966177106744579, guid: 1b9ac3321a6a9534b8ddc0bc9e486955, type: 3}
   pickupRange: 1.5
@@ -416,6 +417,8 @@ MonoBehaviour:
   tiempoCargaAltura: 1
   laserApuntado: {fileID: 1385913108474708556}
   puedeInvocarCompanero: 0
+  manchaPrefab: {fileID: 1411443912439395041, guid: 9a126cad3f9c72042a25a063fd314b27, type: 3}
+  tiempoEntreManchas: 0.2
 --- !u!114 &5323306760429173986
 MonoBehaviour:
   m_ObjectHideFlags: 0

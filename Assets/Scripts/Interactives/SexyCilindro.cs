@@ -51,6 +51,7 @@ public class SexyCilindro : MonoBehaviour
     private RectTransform rectPersonaje;
     private Coroutine corrutinaTexto;
     private Coroutine corrutinaGlitch;
+    private MainPlayer scriptRata;
 
     void Start()
     {
@@ -98,7 +99,10 @@ public class SexyCilindro : MonoBehaviour
 
     void IniciarDialogo()
     {
-        if (paginasDeDialogo.Length == 0) return; 
+        if (paginasDeDialogo.Length == 0) return;
+
+        scriptRata = FindAnyObjectByType<MainPlayer>();
+        if (scriptRata != null) scriptRata.canMove = false;
 
         estaDialogando = true;
         paginaActual = 0;
@@ -226,8 +230,10 @@ IEnumerator RutinaGlitchPeriodico()
     {
         estaDialogando = false;
 
+        if (scriptRata != null) scriptRata.canMove = true;
+
         if (corrutinaGlitch != null) StopCoroutine(corrutinaGlitch);
-        
+
         if (rectPanel != null)
         {
             DOTween.Kill(rectPanel);

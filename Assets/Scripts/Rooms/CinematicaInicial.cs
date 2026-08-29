@@ -39,24 +39,26 @@ public class CinematicaInicial : MonoBehaviour
     public float velocidadApertura = 3f;
 
     private GameObject jugador;
+    private MainPlayer scriptRata; // Nueva referencia
 
     private void Start()
     {
         panelNubeNegra.SetActive(false);
-
         jugador = GameObject.Find("Rata");
 
-       if (jugador != null && puntoDeSpawnMesa != null)
+        if (jugador != null && puntoDeSpawnMesa != null)
         {
-            
             jugador.transform.position = new Vector3(
                 puntoDeSpawnMesa.position.x, 
                 puntoDeSpawnMesa.position.y, 
                 jugador.transform.position.z
             );
+            
+            // Congelamos a la rata
+            scriptRata = jugador.GetComponent<MainPlayer>();
+            if (scriptRata != null) scriptRata.canMove = false;
         }
 
-        // Desactivar el script de movimiento de la rata
         StartCoroutine(EjecutarCinematica());
     }
 
@@ -169,6 +171,9 @@ public class CinematicaInicial : MonoBehaviour
         {
             RoomManager.Instance.interaccionBloqueada = false;
         }
+
+        // Devolvemos el control al terminar
+        if (scriptRata != null) scriptRata.canMove = true;
 
         Door[] puertas = FindObjectsByType<Door>(FindObjectsSortMode.None);
 

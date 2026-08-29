@@ -30,7 +30,6 @@ public class RecuerdoPowerUp : MonoBehaviour
             textoNarrativa.text = "";
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !yaRecogido)
@@ -39,29 +38,34 @@ public class RecuerdoPowerUp : MonoBehaviour
 
             if (jugador != null)
             {
-                yaRecogido = true; 
+                yaRecogido = true;
 
-                // 1. Desbloqueamos el compañero
+                // Desbloqueamos el compañero
                 jugador.DesbloquearCompanero();
                 Debug.Log("¡Poder desbloqueado!");
 
                 SpriteRenderer sr = GetComponent<SpriteRenderer>();
                 if (sr != null) sr.enabled = false;
-                
+
                 Collider2D col = GetComponent<Collider2D>();
                 if (col != null) col.enabled = false;
 
-                StartCoroutine(RutinaDialogoRecuerdo());
+                // PASO 1: Le enviamos la variable 'jugador' a la corrutina
+                StartCoroutine(RutinaDialogoRecuerdo(jugador));
             }
         }
     }
 
-    private IEnumerator RutinaDialogoRecuerdo()
+    // La corrutina ahora recibe al jugador como parámetro
+    private IEnumerator RutinaDialogoRecuerdo(MainPlayer scriptRata)
     {
         if (RoomManager.Instance != null)
         {
             RoomManager.Instance.interaccionBloqueada = true;
         }
+
+        // Congelamos a la rata
+        if (scriptRata != null) scriptRata.canMove = false;
 
         if (panelNubeNegra != null) panelNubeNegra.SetActive(true);
 
@@ -93,20 +97,20 @@ public class RecuerdoPowerUp : MonoBehaviour
                         saltoDetectado = true;
                         break;
                     }
-                    
-                    yield return null; 
+
+                    yield return null;
                 }
 
                 if (saltoDetectado)
                 {
                     textoNarrativa.maxVisibleCharacters = totalCaracteres;
-                    break; 
+                    break;
                 }
             }
 
-            yield return null; 
+            yield return null;
 
-            yield return new WaitUntil(() => 
+            yield return new WaitUntil(() =>
                 (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
@@ -121,6 +125,9 @@ public class RecuerdoPowerUp : MonoBehaviour
         {
             RoomManager.Instance.interaccionBloqueada = false;
         }
+
+        // Liberamos a la rata antes de destruir el objeto
+        if (scriptRata != null) scriptRata.canMove = true;
 
         Destroy(gameObject);
     }

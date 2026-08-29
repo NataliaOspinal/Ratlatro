@@ -27,6 +27,39 @@ public class MainPlayer : BaseIsometricPlayer
     // Bandera para evitar moverse o disparar mientras invoca
     private bool estaInvocando = false;
 
+    // Rastro manchitas
+    public GameObject manchaPrefab;
+    public float tiempoEntreManchas = 0.3f;
+    private float temporizadorMancha = 0f;
+
+    protected override void Update()
+    {
+        base.Update(); // Mantiene intacta la caminata y los idles especiales
+
+        // Si tenemos asignado el prefab y podemos movernos
+        if (manchaPrefab != null && canMove && !estaInvocando)
+        {
+            // Usamos GetInput() para saber si el jugador está presionando las teclas
+            Vector2 input = GetInput();
+
+            if (input != Vector2.zero)
+            {
+                temporizadorMancha += Time.deltaTime;
+                if (temporizadorMancha >= tiempoEntreManchas)
+                {
+                    // Instanciamos la mancha a la altura de los pies
+                    Vector3 posicionPies = transform.position + new Vector3(0f, -0.3f, 0f);
+                    Instantiate(manchaPrefab, posicionPies, Quaternion.identity);
+                    temporizadorMancha = 0f;
+                }
+            }
+            else
+            {
+                // Reseteamos al tope para que la primera mancha salga casi al instante al reanudar el paso
+                temporizadorMancha = tiempoEntreManchas;
+            }
+        }
+    }
     protected override Vector2 GetInput()
     {
         Vector2 input = Vector2.zero;

@@ -1085,7 +1085,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Continuar? (Y/N)
 
-    >> '
+    >>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e547c726284cfc48945292108b595d1, type: 2}
   m_sharedMaterial: {fileID: -7595274179092198371, guid: 7e547c726284cfc48945292108b595d1, type: 2}
@@ -2310,8 +2310,10 @@ MonoBehaviour:
   fuenteDeAudio: {fileID: 831124405}
   sonidoYes: {fileID: 8300000, guid: 7860f77f35de0504190410694683cd42, type: 3}
   sonidoNo: {fileID: 8300000, guid: f19da094b250b2442a4e294f5d091cf7, type: 3}
+  sonidoEscribir: {fileID: 8300000, guid: 030b568ea2e998c4cb85adf477cb5295, type: 3}
   tiempoViajeRata: 2
   nombreEscenaMenu: 00_MainMenu
+  velocidadTexto: 0.05
 --- !u!4 &1970174204
 Transform:
   m_ObjectHideFlags: 0

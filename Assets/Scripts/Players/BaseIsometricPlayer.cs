@@ -64,7 +64,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
 
         if (currentMovement != Vector2.zero)
         {
-            //¡SE ESTÁ MOVIENDO! Reiniciamos el reloj.
+            //ï¿½SE ESTï¿½ MOVIENDO! Reiniciamos el reloj.
             temporizadorIdle = 0f;
             lastFacingDirection = currentMovement;
 
@@ -120,7 +120,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
         }
         else
         {
-            // NO SE ESTÁ MOVIENDO
+            // NO SE ESTï¿½ MOVIENDO
             if (animator != null && canMove)
             {
                 temporizadorIdle += Time.deltaTime;
@@ -129,8 +129,8 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
                 {
                     int animacionRandom = Random.Range(0, 2);
 
-                    // ¡NUESTRA LUPA! Esto imprimirá un mensaje en la consola de Unity
-                    Debug.Log("¡Tiempo cumplido! Lanzando Idle Especial ID: " + animacionRandom);
+                    // ï¿½NUESTRA LUPA! Esto imprimirï¿½ un mensaje en la consola de Unity
+                    Debug.Log("ï¿½Tiempo cumplido! Lanzando Idle Especial ID: " + animacionRandom);
 
                     animator.SetInteger("IdleID", animacionRandom);
                     animator.SetTrigger("IdleEspecial");
@@ -151,6 +151,9 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
     {
         if (canMove)
         {
+            // Frenamos cualquier inercia fï¿½sica residual para evitar que patine
+            rb.linearVelocity = Vector2.zero;
+
             rb.MovePosition(rb.position + currentMovement * moveSpeed * Time.fixedDeltaTime);
         }
     }

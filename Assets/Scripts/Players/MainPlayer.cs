@@ -172,4 +172,19 @@ public class MainPlayer : BaseIsometricPlayer
         spawnedCompanion = Instantiate(companionPrefab, spawnPos, Quaternion.identity);
         companionScript = spawnedCompanion.GetComponent<CompanionPlayer>();
     }
+    
+    // Llamado externamente por el RoomManager para limpiar la sala
+    public void ForzarDespawnCompanero()
+    {
+        if (spawnedCompanion != null)
+        {
+            Destroy(spawnedCompanion);
+            isHoldingCompanion = false;
+
+            if (laserApuntado != null)
+            {
+                laserApuntado.gameObject.SetActive(false);
+            }
+        }
+    }
 }

@@ -13,21 +13,15 @@ public class RoomManager : MonoBehaviour
 {
     public static RoomManager Instance { get; private set; }
 
-    //Salas fijas
     public List<EventoDeSala> salaEspecial;
-
-    //Salas aleatorias (?
     public List<GameObject> roomPrefabs;
     private GameObject currentRoom;
 
     private int numeroActualDeSala = 0;
 
-    //Transición
     public Animator panelAnimator;
     public float tiempoDeEspera = 0.5f;
     private bool isTransitioning = false;
-
-    //GameState
     public bool interaccionBloqueada = false;
 
     private void Awake()
@@ -61,18 +55,22 @@ public class RoomManager : MonoBehaviour
 
         if (roomToLoad == null && roomPrefabs.Count > 0)
         {
-            // Usamos nuestra nueva función matemática
             int indice = ObtenerIndiceSecuencial();
             roomToLoad = roomPrefabs[indice];
         }
 
         if (roomToLoad != null)
         {
+            // La sala inicial siempre nace en el centro (Vector3.zero)
             currentRoom = Instantiate(roomToLoad, Vector3.zero, Quaternion.identity);
 
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
+                // Desaparecer a la rata al iniciar si quedó alguna residual
+                MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
+                if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
+
                 Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
                 if (spawnFolder != null)
                 {
@@ -131,7 +129,6 @@ public class RoomManager : MonoBehaviour
 
         if (roomToLoad == null && roomPrefabs.Count > 0)
         {
-            // Mantenemos la consistencia en el reset
             int indice = ObtenerIndiceSecuencial();
             roomToLoad = roomPrefabs[indice];
         }
@@ -140,9 +137,13 @@ public class RoomManager : MonoBehaviour
         {
             currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
 
+            // En el reset, buscamos al jugador manualmente y reaparecemos en Spawn_L
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
+                MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
+                if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
+
                 Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
                 if (spawnFolder != null)
                 {
@@ -186,12 +187,15 @@ public class RoomManager : MonoBehaviour
 
         if (roomToLoad == null && roomPrefabs.Count > 0)
         {
-            // Para no saltar salas
             int indice = ObtenerIndiceSecuencial();
             roomToLoad = roomPrefabs[indice];
         }
 
         currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
+
+        //Desaparecer a la rata usando el 'player' que llega por parámetro
+        MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
+        if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
 
         Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
         if (spawnFolder != null)
@@ -204,7 +208,6 @@ public class RoomManager : MonoBehaviour
         isTransitioning = false;
     }
 
-    // Esta función calcula el índice correcto restando las salas especiales que ya pasamos
     private int ObtenerIndiceSecuencial()
     {
         int salasEspecialesPasadas = 0;
@@ -215,7 +218,6 @@ public class RoomManager : MonoBehaviour
                 salasEspecialesPasadas++;
             }
         }
-
         return (numeroActualDeSala - salasEspecialesPasadas) % roomPrefabs.Count;
     }
 }

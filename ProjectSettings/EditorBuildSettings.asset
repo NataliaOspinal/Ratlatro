@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Trailer.unity
     guid: b81bcb26b1ba5cc48899047637a88fda
   - enabled: 1
-    path: Assets/Scenes/PantallaGuardado.unity
-    guid: 120e82978ccdb644a807770115398b53
-  - enabled: 1
     path: Assets/Scenes/99_Credits.unity
     guid: d9be711bce1f17142a57a18d4e5f998c
   m_configObjects:

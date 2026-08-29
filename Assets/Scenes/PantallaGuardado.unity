@@ -2306,7 +2306,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2b713dd49f2aff64a9a5f03eeb71d128, type: 3}
   escenasPorZona:
   - 01_Zona1
-  - Trailer
+  - 02_Zona2
   fuenteDeAudio: {fileID: 831124405}
   sonidoYes: {fileID: 8300000, guid: 7860f77f35de0504190410694683cd42, type: 3}
   sonidoNo: {fileID: 8300000, guid: f19da094b250b2442a4e294f5d091cf7, type: 3}

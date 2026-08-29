@@ -38,6 +38,10 @@ public class DialogoDeSala : MonoBehaviour
             RoomManager.Instance.interaccionBloqueada = true;
         }
 
+        // Buscamos a la rata y la congelamos
+        MainPlayer scriptRata = FindAnyObjectByType<MainPlayer>();
+        if (scriptRata != null) scriptRata.canMove = false;
+
         if (panelNarracion != null) panelNarracion.SetActive(true);
 
         foreach (string linea in lineasDialogo)
@@ -92,11 +96,12 @@ public class DialogoDeSala : MonoBehaviour
         if (textoNarrativa != null) textoNarrativa.text = "";
         if (panelNarracion != null) panelNarracion.SetActive(false);
 
-        // 8. Devolvemos el control al jugador
         if (RoomManager.Instance != null)
         {
             RoomManager.Instance.interaccionBloqueada = false;
         }
+
+        if (scriptRata != null) scriptRata.canMove = true;
 
         Destroy(gameObject);
     }

@@ -23,6 +23,11 @@ public class SexyCilindro : MonoBehaviour
     [Header("Configuración Visual")]
     public GameObject indicadorTeclaF; 
 
+    [Header("Activación")]
+    public GameObject signoInterrogacion;
+    public AudioSource fuenteAudio;
+    public AudioClip sonidoAparece;
+
 
     [Header("El Diálogo")]
     public PaginaDialogo[] paginasDeDialogo; 
@@ -45,6 +50,9 @@ public class SexyCilindro : MonoBehaviour
     private bool escribiendoTexto = false;
     private int paginaActual = 0;
 
+    private bool avisoMostrado = false;
+    private bool yaInteractuado = false;
+
     private Vector3 posOriginalPanel;
     private Vector3 posOriginalPersonaje;
     private RectTransform rectPanel;
@@ -56,6 +64,7 @@ public class SexyCilindro : MonoBehaviour
     void Start()
     {
         if (indicadorTeclaF != null) indicadorTeclaF.SetActive(false);
+        if (signoInterrogacion != null) signoInterrogacion.SetActive(false);
        if (panelDialogoUI != null)
         {
             panelDialogoUI.SetActive(false);
@@ -82,6 +91,25 @@ public class SexyCilindro : MonoBehaviour
                     indicadorTeclaF.SetActive(puede);
                 }
 
+                if (puede && !avisoMostrado && !yaInteractuado)
+                {
+                    avisoMostrado = true; 
+
+                    if (signoInterrogacion != null)
+                    {
+                        signoInterrogacion.SetActive(true);
+                        // Hacemos que flote usando DOTween (Sube 0.3 unidades en 0.8 segundos y repite tipo Yoyo)
+                        signoInterrogacion.transform.DOLocalMoveY(signoInterrogacion.transform.localPosition.y + 0.3f, 0.8f)
+                            .SetLoops(-1, LoopType.Yoyo)
+                            .SetEase(Ease.InOutSine);
+                    }
+                    
+                    if (fuenteAudio != null && sonidoAparece != null)
+                    {
+                        fuenteAudio.PlayOneShot(sonidoAparece);
+                    }
+                }
+
                 if (puede && (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0)))
                 {
                     IniciarDialogo();
@@ -100,6 +128,13 @@ public class SexyCilindro : MonoBehaviour
     void IniciarDialogo()
     {
         if (paginasDeDialogo.Length == 0) return;
+
+        yaInteractuado = true; 
+        if (signoInterrogacion != null)
+        {
+            DOTween.Kill(signoInterrogacion.transform); 
+            signoInterrogacion.SetActive(false);
+        }
 
         scriptRata = FindAnyObjectByType<MainPlayer>();
         if (scriptRata != null) scriptRata.canMove = false;

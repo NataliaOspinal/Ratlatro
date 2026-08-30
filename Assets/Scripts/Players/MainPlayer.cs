@@ -243,4 +243,13 @@ public class MainPlayer : BaseIsometricPlayer
         }
     }
 
+    public void Revivir()
+    {
+        canMove = true;
+
+        // Buscamos el SpriteRenderer para volver a hacerlo visible aka revivirlo
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = true;
+    }
+
 }

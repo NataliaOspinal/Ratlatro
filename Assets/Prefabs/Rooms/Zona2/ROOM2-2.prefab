@@ -273,6 +273,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 1.0376289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 1.3631608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.824932
+      objectReference: {fileID: 0}
     - target: {fileID: 3042691754192217761, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
       propertyPath: m_Name
       value: Tubo
@@ -727,6 +739,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: 9b01d22f3e18d624d9e96ef5d649a30c, type: 3}
+      propertyPath: quienPuedeActivar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: 9b01d22f3e18d624d9e96ef5d649a30c, type: 3}
       propertyPath: AlSoltar.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -852,17 +868,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.7290448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.38067892
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.9840605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.0753617
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 1.0376289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 1.3988383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277889894243966797, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.83734715
+      objectReference: {fileID: 0}
     - target: {fileID: 3042691754192217761, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
       propertyPath: m_Name
       value: Tubo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6682646930206885011, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.20554924
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682646930206885011, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 1.0090429
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682646930206885011, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.4364761
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682646930206885011, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.74431086
+      objectReference: {fileID: 0}
     - target: {fileID: 7277082579647377590, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.48
+      value: -5.47
       objectReference: {fileID: 0}
     - target: {fileID: 7277082579647377590, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 7277082579647377590, guid: efd410042b19ddd4b8fa3bfa4c1a95c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1892,13 +1952,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloqueEmpujable
       objectReference: {fileID: 0}
+    - target: {fileID: 7520050039340123812, guid: e346ae6d20adc814788659d932e1ee17, type: 3}
+      propertyPath: quienPuedeEmpujar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8282378522773457029, guid: e346ae6d20adc814788659d932e1ee17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.473888
+      value: 10.09
       objectReference: {fileID: 0}
     - target: {fileID: 8282378522773457029, guid: e346ae6d20adc814788659d932e1ee17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.325254
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 8282378522773457029, guid: e346ae6d20adc814788659d932e1ee17, type: 3}
       propertyPath: m_LocalPosition.z

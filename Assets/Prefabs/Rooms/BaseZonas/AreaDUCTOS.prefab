@@ -626,6 +626,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 356a10aa4a9644a4f83a8a11f96e8056, type: 3}
     - target: {fileID: 5688153304769953502, guid: b157ed5d4ab6d5b4d8f882a94f8c33ba, type: 3}
+      propertyPath: direccion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5688153304769953502, guid: b157ed5d4ab6d5b4d8f882a94f8c33ba, type: 3}
       propertyPath: esVentilacion
       value: 1
       objectReference: {fileID: 0}

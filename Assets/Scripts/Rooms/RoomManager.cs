@@ -143,7 +143,11 @@ public class RoomManager : MonoBehaviour
             if (player != null)
             {
                 MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
-                if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
+                if (mainPlayerScript != null)
+                {
+                    mainPlayerScript.ForzarDespawnCompanero();
+                    mainPlayerScript.Revivir();
+                }
 
                 Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
                 if (spawnFolder != null)

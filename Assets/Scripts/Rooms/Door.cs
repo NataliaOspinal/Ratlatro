@@ -18,15 +18,35 @@ public class Door : MonoBehaviour
     public string nombreTriggerCerrar = "Cerrar";
     [Header("Colisiones")]
     public Collider2D colliderViaje; 
-    public Collider2D colliderBloqueo; 
-    
+    public Collider2D colliderBloqueo;
+
 
     private void Start()
     {
+        // Comunicamos inmediatamente al Animator el tipo de puerta para que no desaparezca
+        if (puertaAnimator != null)
+        {
+            puertaAnimator.SetBool("esVentilacion", esVentilacion);
+        }
+
         if (colliderViaje != null) colliderViaje.enabled = false;
         if (colliderBloqueo != null) colliderBloqueo.enabled = true;
 
-        if(fuenteDeAudio==null) fuenteDeAudio = GetComponent<AudioSource>();
+        if (fuenteDeAudio == null) fuenteDeAudio = GetComponent<AudioSource>();
+    }
+
+    public void Cerrar()
+    {
+        estaAbierta = false;
+        if (puertaAnimator != null)
+        {
+            // Validamos que siga siendo ventilación al reproducir la animación de cierre
+            puertaAnimator.SetBool("esVentilacion", esVentilacion);
+            puertaAnimator.SetTrigger(nombreTriggerCerrar);
+        }
+
+        if (colliderViaje != null) colliderViaje.enabled = false;
+        if (colliderBloqueo != null) colliderBloqueo.enabled = true;
     }
 
     public void Abrir()
@@ -47,19 +67,6 @@ public class Door : MonoBehaviour
         if (colliderViaje != null) colliderViaje.enabled = true;
 
         if (colliderBloqueo != null) colliderBloqueo.enabled = false;
-    }
-
-    public void Cerrar()
-    {
-        estaAbierta=false;
-        if (puertaAnimator != null)
-        {
-            puertaAnimator.SetTrigger(nombreTriggerCerrar);
-        }
-
-        if (colliderViaje != null) colliderViaje.enabled = false;
-
-        if (colliderBloqueo != null) colliderBloqueo.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -8,7 +8,7 @@ public class VentiladorSuelo : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Llamado externamente para hacer la zona segura

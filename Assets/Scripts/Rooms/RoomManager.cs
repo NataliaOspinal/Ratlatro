@@ -64,21 +64,22 @@ public class RoomManager : MonoBehaviour
             // La sala inicial siempre nace en el centro (Vector3.zero)
             currentRoom = Instantiate(roomToLoad, Vector3.zero, Quaternion.identity);
 
+            // En el reset, buscamos al jugador manualmente y reaparecemos en Spawn_L
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
-                // Desaparecer a la rata al iniciar si quedó alguna residual
                 MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
-                if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
+                if (mainPlayerScript != null)
+                {
+                    mainPlayerScript.ForzarDespawnCompanero();
+                    mainPlayerScript.Revivir(); // Revivimos a la rata si estaba muerta
+                }
 
                 Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
                 if (spawnFolder != null)
                 {
                     Transform targetSpawn = spawnFolder.Find("Spawn_L");
-                    if (targetSpawn != null)
-                    {
-                        player.transform.position = targetSpawn.position;
-                    }
+                    if (targetSpawn != null) player.transform.position = targetSpawn.position;
                 }
             }
         }

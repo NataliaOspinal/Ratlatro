@@ -35,8 +35,12 @@ public class MainPlayer : BaseIsometricPlayer
     protected override void Start()
     {
         base.Start();
-        // Si la memoria devuelve 1, significa que ya lo habíamos agarrado en otra sala
+        
+        // Leemos el archivo de memoria
         bool poderGuardado = PlayerPrefs.GetInt("MitosisDesbloqueada", 0) == 1;
+        
+        // Conectamos la memoria con la variable de control real
+        puedeInvocarCompanero = poderGuardado;
     }
 
     protected override void Update()

@@ -1,9 +1,9 @@
 using UnityEngine;
+using System.Collections;
 
 public class VentiladorSuelo : MonoBehaviour
 {
     private Animator animator;
-
     public bool estaEncendido = true;
 
     void Start()
@@ -11,39 +11,81 @@ public class VentiladorSuelo : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
-    // Llamado externamente para hacer la zona segura
     public void Detenerse()
     {
-        estaEncendido = false; // La trampa ya no es letal yippie
-        if (animator != null)
-        {
-            animator.speed = 0f; // Congela visualmente las aspas
-        }
+        estaEncendido = false;
+        if (animator != null) animator.speed = 0f;
     }
 
-    // Llamado externamente por si el jugador desactiva el botón y la trampa revive
     public void Encender()
     {
-        estaEncendido = true; // Vuelve a ser letal
-        if (animator != null)
-        {
-            animator.speed = 1f; // Reanuda la animación
-        }
+        estaEncendido = true;
+        if (animator != null) animator.speed = 1f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // El ventilador solo ataca si está encendido
-        if (estaEncendido && collision.CompareTag("Player"))
-        {
-            // Trabamos las aspas al chocar con la rata idk si dejar esto la vd
-            if (animator != null) animator.speed = 0f;
+        if (!estaEncendido) return;
 
-            MainPlayer jugador = collision.GetComponent<MainPlayer>();
-            if (jugador != null)
+        if (collision.CompareTag("Player"))
+        {
+            MainPlayer rataGrande = collision.GetComponent<MainPlayer>();
+            CompanionPlayer rataChiquita = collision.GetComponent<CompanionPlayer>();
+
+            // 1. Si es la rata grande, muere normalmente
+            if (rataGrande != null)
             {
-                jugador.Morir();
+                if (animator != null) animator.speed = 0f;
+                rataGrande.Morir();
             }
+            // 2. Si es la chiquita, sale volando
+            else if (rataChiquita != null)
+            {
+                // Apagamos sus colisiones para que no active el ventilador mil veces
+                Collider2D col = collision.GetComponent<Collider2D>();
+                if (col != null) col.enabled = false;
+
+                StartCoroutine(VolarRataChiquita(collision.gameObject));
+            }
+        }
+    }
+
+    private IEnumerator VolarRataChiquita(GameObject rataChiquita)
+    {
+        // Sintaxis para buscar objetos
+        MainPlayer jugadorPrincipal = Object.FindFirstObjectByType<MainPlayer>();
+        if (jugadorPrincipal != null)
+        {
+            jugadorPrincipal.enabled = false;
+        }
+
+        // FÃ­sicas 2D 
+        Rigidbody2D rb = rataChiquita.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero; // Reemplazo de rb.velocity
+            rb.bodyType = RigidbodyType2D.Kinematic; // Reemplazo de rb.isKinematic = true
+        }
+
+        // Vuelo hacia la parte superior de la pantalla
+        float velocidadVuelo = 15f;
+        float tiempoVuelo = 1.2f;
+        float timer = 0f;
+
+        while (timer < tiempoVuelo)
+        {
+            if (rataChiquita != null)
+            {
+                rataChiquita.transform.Translate(Vector3.up * velocidadVuelo * Time.deltaTime, Space.World);
+            }
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reinicio automÃ¡tico de la sala
+        if (RoomManager.Instance != null)
+        {
+            RoomManager.Instance.ResetCurrentRoom();
         }
     }
 }

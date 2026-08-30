@@ -213,6 +213,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FloorButton
   quienPuedeActivar: 0
   seQuedaPresionado: 0
+  esFosa: 0
+  fuenteDeAudio: {fileID: 0}
+  sonidoFosaDefault: {fileID: 0}
+  sonidoFosaClick: {fileID: 0}
+  animatorBoton: {fileID: 3775931182701482796}
+  parametroAnim: IsPressed
   AlPresionar:
     m_PersistentCalls:
       m_Calls: []

@@ -21,14 +21,17 @@ public class Door : MonoBehaviour
     public Collider2D colliderBloqueo;
 
 
-    private void Start()
+    private void Awake()
     {
-        // Comunicamos inmediatamente al Animator el tipo de puerta para que no desaparezca
+        // Comunicamos el tipo de puerta ANTES de que el Animator evalúe su estado inicial
         if (puertaAnimator != null)
         {
             puertaAnimator.SetBool("esVentilacion", esVentilacion);
         }
+    }
 
+    private void Start()
+    {
         if (colliderViaje != null) colliderViaje.enabled = false;
         if (colliderBloqueo != null) colliderBloqueo.enabled = true;
 

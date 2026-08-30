@@ -828,7 +828,7 @@ PrefabInstance:
     - target: {fileID: 4736789713592533629, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: jugador
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7871736256915235743}
     - target: {fileID: 6722448589747806165, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1422,6 +1422,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1075467682}
   m_SourcePrefab: {fileID: 100100000, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+--- !u!4 &7871736256915235743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6004177839473615881, guid: e173b5633dd321e47bdbfee3d9ab52aa, type: 3}
+  m_PrefabInstance: {fileID: 7871736256915235742}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -341,8 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   salaEspecial:
-  - numeroDeSala: 0
-    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
   - numeroDeSala: 1
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: d577d3df441be384286907c82177b4bd, type: 3}
   - numeroDeSala: 2

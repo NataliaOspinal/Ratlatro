@@ -32,6 +32,17 @@ public class MainPlayer : BaseIsometricPlayer
     public float tiempoEntreManchas = 0.3f;
     private float temporizadorMancha = 0f;
 
+    protected override void Start()
+    {
+        base.Start();
+        
+        // Leemos el archivo de memoria
+        bool poderGuardado = PlayerPrefs.GetInt("MitosisDesbloqueada", 0) == 1;
+        
+        // Conectamos la memoria con la variable de control real
+        puedeInvocarCompanero = poderGuardado;
+    }
+
     protected override void Update()
     {
         base.Update(); // Mantiene intacta la caminata y los idles especiales

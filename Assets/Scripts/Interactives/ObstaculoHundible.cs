@@ -4,8 +4,12 @@ using UnityEngine;
 public class ObstaculoHundible : MonoBehaviour
 {
     //Refs
-    [Tooltip("Arrastra aquí el objeto hijo que tiene el SpriteRenderer")]
+    [Tooltip("Arrastra aquï¿½ el objeto hijo que tiene el SpriteRenderer")]
     public Transform objetoVisual;
+
+    [Header("Efectos de Sonido")]
+    public AudioSource fuenteAudio;
+    public AudioClip sonidoHundir;
 
     //Config movement
     public float distanciaY = 4.5f;
@@ -30,12 +34,18 @@ public class ObstaculoHundible : MonoBehaviour
 
     public void Ocultar()
     {
+        if (fuenteAudio != null && sonidoHundir != null)
+        {
+            fuenteAudio.PlayOneShot(sonidoHundir);
+        }
+        
         if (rutinaActual != null) StopCoroutine(rutinaActual);
         if (objetoVisual != null) rutinaActual = StartCoroutine(RutinaMovimiento(posOculta, false));
     }
 
     public void Mostrar()
     {
+        
         if (rutinaActual != null) StopCoroutine(rutinaActual);
         if (objetoVisual != null) rutinaActual = StartCoroutine(RutinaMovimiento(posOriginal, true));
     }

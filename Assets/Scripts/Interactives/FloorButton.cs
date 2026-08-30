@@ -14,6 +14,9 @@ public class FloorButton : MonoBehaviour
     public AudioSource fuenteDeAudio;
     public AudioClip sonidoFosaDefault;
     public AudioClip sonidoFosaClick;
+
+    [Header("Configuración Botón Normal")]
+    public AudioClip sonidoBotonClick;
     
     public Animator animatorBoton;
     public string parametroAnim = "IsPressed";
@@ -51,8 +54,11 @@ public class FloorButton : MonoBehaviour
 
                 if (esFosa && fuenteDeAudio != null && sonidoFosaClick != null)
                 {
-                    Debug.Log("¡La rata pisó la fosa! Reproduciendo Click.");
                     fuenteDeAudio.PlayOneShot(sonidoFosaClick);
+                }
+                else if (!esFosa && fuenteDeAudio != null && sonidoBotonClick != null)
+                {
+                    fuenteDeAudio.PlayOneShot(sonidoBotonClick);
                 }
 
                 AlPresionar.Invoke();

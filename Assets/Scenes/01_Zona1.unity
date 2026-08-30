@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2474, y: -12.9999695}
+  m_AnchoredPosition: {x: 2474, y: -13}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1070042619
@@ -1285,6 +1285,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7597581026120929, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597581026120929, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1296,6 +1300,14 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 877976805}
+    - target: {fileID: 4736789713592533629, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+      propertyPath: zoomNormal
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736789713592533629, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+      propertyPath: zoomAcercado
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6722448589747806165, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

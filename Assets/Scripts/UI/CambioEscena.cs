@@ -20,7 +20,8 @@ public class CambioDeEscena : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("NivelGuardado");
         PlayerPrefs.DeleteKey("SiguienteZona");
-        
+        PlayerPrefs.DeleteKey("MitosisDesbloqueada");
+
         SceneManager.LoadScene(nombrePrimerNivel);
     }
 

@@ -43,6 +43,8 @@ public class RecuerdoPowerUp : MonoBehaviour
                 // Desbloqueamos el compañero
                 jugador.DesbloquearCompanero();
                 Debug.Log("¡Poder desbloqueado!");
+                PlayerPrefs.SetInt("MitosisDesbloqueada", 1);
+                PlayerPrefs.Save();
 
                 SpriteRenderer sr = GetComponent<SpriteRenderer>();
                 if (sr != null) sr.enabled = false;
@@ -50,7 +52,7 @@ public class RecuerdoPowerUp : MonoBehaviour
                 Collider2D col = GetComponent<Collider2D>();
                 if (col != null) col.enabled = false;
 
-                // PASO 1: Le enviamos la variable 'jugador' a la corrutina
+                // Le enviamos la variable 'jugador' a la corrutina
                 StartCoroutine(RutinaDialogoRecuerdo(jugador));
             }
         }

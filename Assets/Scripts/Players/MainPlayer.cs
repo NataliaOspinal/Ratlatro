@@ -32,6 +32,13 @@ public class MainPlayer : BaseIsometricPlayer
     public float tiempoEntreManchas = 0.3f;
     private float temporizadorMancha = 0f;
 
+    protected override void Start()
+    {
+        base.Start();
+        // Si la memoria devuelve 1, significa que ya lo habíamos agarrado en otra sala
+        bool poderGuardado = PlayerPrefs.GetInt("MitosisDesbloqueada", 0) == 1;
+    }
+
     protected override void Update()
     {
         base.Update(); // Mantiene intacta la caminata y los idles especiales

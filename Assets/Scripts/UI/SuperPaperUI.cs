@@ -99,7 +99,6 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     {
         if (!estaAnimando && estaEnCentro)
         {
-            if (imagenOutline != null) imagenOutline.enabled = true;
 
             if (fuenteSonido != null && sonidoEntrar != null)
             {

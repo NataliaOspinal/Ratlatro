@@ -19,6 +19,7 @@ public class MenuOpcionesAnimado : MonoBehaviour
     public float posicionVisibleX; 
 
     public float duracionAnimacion = 0.5f;
+    private bool estaVisible = false;
 
     private void Start()
     {
@@ -27,10 +28,19 @@ public class MenuOpcionesAnimado : MonoBehaviour
             panelOpciones.anchoredPosition = new Vector2(posicionOcultaX, panelOpciones.anchoredPosition.y);
         }
 
-        if (fuenteSonido != null && sonidoAbrirPapel != null)
-            {
-                fuenteSonido.PlayOneShot(sonidoAbrirPapel);
-            }
+        
+    }
+
+    public void AlternarOpciones()
+    {
+        if (estaVisible)
+        {
+            OcultarOpciones();
+        }
+        else
+        {
+            MostrarOpciones();
+        }
     }
 
     public void MostrarOpciones()
@@ -40,6 +50,13 @@ public class MenuOpcionesAnimado : MonoBehaviour
             
             panelOpciones.DOAnchorPosX(posicionVisibleX, duracionAnimacion).SetEase(Ease.OutBack, 0.7f);
         }
+
+        if (fuenteSonido != null && sonidoAbrirPapel != null)
+        {
+            fuenteSonido.PlayOneShot(sonidoAbrirPapel);
+        }
+
+        estaVisible = true;
     }
 
     public void OcultarOpciones()
@@ -50,9 +67,11 @@ public class MenuOpcionesAnimado : MonoBehaviour
         }
 
         if (fuenteSonido != null && sonidoAbrirPapel != null)
-            {
-                fuenteSonido.PlayOneShot(sonidoAbrirPapel);
-            }
+        {
+            fuenteSonido.PlayOneShot(sonidoAbrirPapel);
+        }
+
+        estaVisible = false;
     }
 }
 

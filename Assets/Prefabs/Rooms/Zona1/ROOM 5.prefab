@@ -817,6 +817,14 @@ PrefabInstance:
       propertyPath: papelOutline
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: paginasHoja.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: 'paginasHoja.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4424807776451446444, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -824,6 +832,10 @@ PrefabInstance:
     - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_Name
       value: Papeles
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalScale.x

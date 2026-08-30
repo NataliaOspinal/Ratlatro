@@ -434,6 +434,7 @@ Transform:
   - {fileID: 6233838497452686212}
   - {fileID: 6060162892837762081}
   - {fileID: 2793220315490166779}
+  - {fileID: 7371589135871281957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8298649775730273679
@@ -822,6 +823,103 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2578311345046255188, guid: e2c01e840719d7246b7c11c3c68a3c0f, type: 3}
   m_PrefabInstance: {fileID: 1691902991581485648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1713648940862819358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 856629393313047508}
+    m_Modifications:
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: textoHoja
+      value: "<i>parece ser una impresi\xF3n de un correo electr\xF3nico</i>\r\n\r\n\"Hola
+        ma! me ha ido bien en el traslado a la nueva sede, aun no me acostumbro a
+        la comida de por aqu\xED, no tiene el saz\xF3n que tenemos por all\xE1 jaja\r\nComo
+        sigue mi pap\xE1? espero que no se queje mucho de que su florecita fuera
+        asignada a otro pais\r\nAqui las cosas van bien, reci\xE9n nos lleg\xF3 una
+        nueva supercomputadora que desarroll\xF3 la sede de neuro-tecnolog\xEDa de
+        Tokyo, es super bacana, ojal\xE1 poder mostr\xE1rtela, pero es gigaaante
+        dicen que es capaz de \u25A0\u25A0\u25A0\u25A0\n\r\n<i>el resto del correo
+        es ilegible</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: paginasHoja.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: 'paginasHoja.Array.data[0]'
+      value: "<i>Parece ser un correo electr\xF3nico impreso</i>\n\n\"Hola ma! me
+        ha ido bien en el traslado a la nueva sede, aun no me acostumbro a la comida
+        de por aqu\xED, no tiene el saz\xF3n que tenemos por all\xE1 jaja\nComo sigue
+        mi pap\xE1? espero que no se queje mucho de que su florecita fuera asignada
+        a otro pais"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: 'paginasHoja.Array.data[1]'
+      value: "Aqui las cosas van bien, reci\xE9n nos lleg\xF3 una nueva supercomputadora
+        que desarroll\xF3 la sede de neuro-tecnolog\xEDa de Tokyo, es super bacana,
+        ojal\xE1 poder mostr\xE1rtela, pero es gigaaante dicen que es capaz de \u25A0\u25A0\u25A0\u25A0\"\n\n<i>El
+        resto del correo es ilegible</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286215289534775112, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_Name
+      value: Papeles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.717032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.982449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+--- !u!4 &7371589135871281957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+  m_PrefabInstance: {fileID: 1713648940862819358}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1955719715153075791
 PrefabInstance:

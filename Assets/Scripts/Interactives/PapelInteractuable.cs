@@ -5,7 +5,7 @@ public class PapelInteractuable : MonoBehaviour
 {
     [Header("Contenido de la hoja")]
     [TextArea(3, 5)]
-    public string textoHoja;
+    public string[] paginasHoja;
 
     [Header("Visuales")]
     public GameObject papelOutline;
@@ -22,17 +22,17 @@ public class PapelInteractuable : MonoBehaviour
 
     private void Update()
     {
-        // Solo permite interactuar si está cerca, no se ha recogido, y pulsa F
+        // Solo permite interactuar si estï¿½ cerca, no se ha recogido, y pulsa F
         if (jugadorCerca && !yaRecogido && Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
         {
-            yaRecogido = true; // Lo marcamos como leído
-            SuperPaperUI.Instance.MostrarPapel(textoHoja);
+            yaRecogido = true; // Lo marcamos como leï¿½do
+            SuperPaperUI.Instance.MostrarPapel(paginasHoja);
 
-            // Apagamos los visuales de interacción
+            // Apagamos los visuales de interacciï¿½n
             if (papelOutline != null) papelOutline.SetActive(false);
             if (tecla != null) tecla.SetActive(false);
 
-            // Apagamos el dibujo del papel en el suelo para que parezca que lo guardó
+            // Apagamos el dibujo del papel en el suelo para que parezca que lo guardï¿½
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             if (sr != null) sr.enabled = false;
         }

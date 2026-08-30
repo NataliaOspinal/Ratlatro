@@ -969,12 +969,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b693d368aeb99041ad03a10f0feb9ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PapelInteractuable
-  textoHoja: "1ro de Noviembre de 1996,\nAl parecer los preparativos han sido terminados
-    y aprobado por los superiores, vamos a empezar por fin el Proyecto \u2588\u2588\u2588
-    , el Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran
-    honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan
-    en un proyecto tan ambicioso como este, sobre todo ya que esta involucrado \u2588\u2588\u2588\u2588\n\u2588\u2588\u2588\u2588
-    \u2588\u2588\u2588 \u2588\u2588\u2588\u2588 \u2588 \u2588\u2588 \u2588\u2588 "
+  paginasHoja:
+  - "1ro de Noviembre de 1996 Al parecer los preparativos han sido terminados y aprobado
+    por los superiores, vamos a empezar por fin el proyecto \u25A0\u25A0\u25A0, el
+    Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran honor
+    ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan en
+    un proyecto tan ambicioso como este, sobre todo ya que esta involucrado \u25A0\u25A0\u25A0
+    <i>A partir de este punto la nota se hace ilegible</i>"
   papelOutline: {fileID: 6378752641926612778}
   tecla: {fileID: 123117550488569043}
 --- !u!1 &7700963347178209736

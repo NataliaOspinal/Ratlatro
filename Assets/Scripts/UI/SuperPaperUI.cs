@@ -16,6 +16,7 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     [Header("Referencias Visuales")]
     public Image imagenOutline;
     public TMP_Text textoPapel;
+    public TMP_Text textoNumeracion;
 
     [Header("Tutorial Flecha")]
     public GameObject flechaTutorial;
@@ -30,6 +31,9 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     private bool estaAnimando = false;
     private bool estaEnCentro = false;
+
+    private string[] paginasActuales;
+    private int indicePaginaActual = 0;
 
     private void Awake()
     {
@@ -49,9 +53,12 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         }
     }
 
-    public void MostrarPapel(string nuevoTexto)
+    public void MostrarPapel(string[] nuevasPaginas)
     {
-        if (textoPapel != null) textoPapel.text = nuevoTexto;
+        paginasActuales = nuevasPaginas;
+        indicePaginaActual = 0; 
+        
+        ActualizarTextos(); 
 
         estaAnimando = false;
         estaEnCentro = false;
@@ -59,14 +66,13 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         if (imagenOutline != null) imagenOutline.enabled = true;
 
-       if (flechaTutorial != null)
+        if (flechaTutorial != null)
         {
             DOTween.Kill(flechaTutorial.transform); 
             
             flechaTutorial.SetActive(true); 
             flechaTutorial.transform.localScale = escalaOriginalFlecha; 
             
-            // La hacemos palpitar un 20% más grande
             Vector3 escalaPalpito = escalaOriginalFlecha * 1.2f;
             flechaTutorial.transform.DOScale(escalaPalpito, 0.4f).SetLoops(-1, LoopType.Yoyo);
         }
@@ -129,5 +135,41 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         estaEnCentro = haciaCentro;
         estaAnimando = false;
+    }
+
+    private void ActualizarTextos()
+    {
+        if (paginasActuales == null || paginasActuales.Length == 0) return;
+
+        if (textoPapel != null) textoPapel.text = paginasActuales[indicePaginaActual];
+
+        if (textoNumeracion != null)
+        {
+            if (paginasActuales.Length > 1)
+            {
+                textoNumeracion.gameObject.SetActive(true);
+                textoNumeracion.text = (indicePaginaActual + 1) + "/" + paginasActuales.Length;
+            }
+            else
+            {
+                textoNumeracion.gameObject.SetActive(false); 
+            }
+        }
+    }
+
+    public void SiguientePagina()
+    {
+        if (paginasActuales == null || paginasActuales.Length <= 1) return;
+
+        indicePaginaActual++;
+        
+        if (indicePaginaActual >= paginasActuales.Length)
+        {
+            indicePaginaActual = 0; 
+        }
+
+        ActualizarTextos();
+        
+        if (fuenteSonido != null && sonidoEntrar != null) fuenteSonido.PlayOneShot(sonidoEntrar);
     }
 }

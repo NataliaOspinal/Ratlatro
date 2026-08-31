@@ -175,6 +175,7 @@ Transform:
   - {fileID: 6597653379892815841}
   - {fileID: 5568113120870763373}
   - {fileID: 5897667808615149702}
+  - {fileID: 1547413668772662070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8363761752229870690
@@ -1166,6 +1167,111 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2578311345046255188, guid: b1100f7881640414ab5e209e411419d5, type: 3}
   m_PrefabInstance: {fileID: 4851816949550686887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5405925222361837352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 856629393313047508}
+    m_Modifications:
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].texto
+      value: " R4T-001, detente. Esos extractores de aire giran a una velocidad letal;
+        tu masa principal ser\xEDa triturada al instante."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].texto
+      value: "Sin embargo... esa tuber\xEDa estrecha parece intacta. Es el momento
+        perfecto para fragmentarte. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].texto
+      value: "Env\xEDa a tu clon a trav\xE9s del conducto, su volumen reducido le
+        permitir\xE1 pasar sin problemas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1351476107054982038, guid: 0b80673d98cbc6b409295dabbe641de9, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4630983205270257940, guid: bca1ac12388c5104a8ee89ac4159c684, type: 2}
+    - target: {fileID: 2178483040763518320, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Name
+      value: CilindroGlitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08608985
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.043514
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+--- !u!4 &1547413668772662070 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+  m_PrefabInstance: {fileID: 5405925222361837352}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6545440553510056433
 PrefabInstance:

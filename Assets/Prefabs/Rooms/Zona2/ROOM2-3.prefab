@@ -760,6 +760,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 2107565578644504364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7791668661642485478 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 2107565578644504364}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &2260631735256259674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1825,10 +1836,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
@@ -1836,7 +1851,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1083915139518357939}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7791668661642485478}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
@@ -1844,11 +1867,23 @@ PrefabInstance:
       value: Detenerse
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Detenerse
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: VentiladorSuelo, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: VentiladorSuelo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
       propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619957567945772694, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}
+      propertyPath: AlPresionar.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9080143263842046006, guid: aff38dfcaf34e6042b2f802e45d33cf4, type: 3}

@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: e2f96970cdccada4fb5d2af5f7716b33
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8406574757312106434
+    second: minirata idle_0
+  - first:
+      213: 972174596237490268
+    second: minirata idle_1
+  - first:
+      213: -8024779810659987532
+    second: minirata idle_2
+  - first:
+      213: 6109141271905646885
+    second: minirata idle_3
+  - first:
+      213: -512143949249090900
+    second: minirata idle_4
+  - first:
+      213: -2515977389490267592
+    second: minirata idle_5
+  - first:
+      213: 5964168711378413108
+    second: minirata idle_6
+  - first:
+      213: -8846680406437915363
+    second: minirata idle_7
+  - first:
+      213: 4985122002602155662
+    second: minirata idle_8
+  - first:
+      213: -1535800818734078020
+    second: minirata idle_9
+  - first:
+      213: -7938884655872879912
+    second: minirata idle_10
+  - first:
+      213: -2443894140950454535
+    second: minirata idle_11
+  - first:
+      213: -7449267545202802597
+    second: minirata idle_12
+  - first:
+      213: -6473133786342492159
+    second: minirata idle_13
+  - first:
+      213: -5294423719981834091
+    second: minirata idle_14
+  - first:
+      213: -1333679460293609500
+    second: minirata idle_15
+  - first:
+      213: -7662702974803006303
+    second: minirata idle_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minirata idle_0
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 3659
+        width: 1113
+        height: 474
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf8a5ba3372aa470800000000000000
+      internalID: 8406574757312106434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_1
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 3659
+        width: 1113
+        height: 474
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58f46cf4abdd7d00800000000000000
+      internalID: 972174596237490268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_2
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 3659
+        width: 1113
+        height: 474
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf82e0874142a090800000000000000
+      internalID: -8024779810659987532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_3
+      rect:
+        serializedVersion: 2
+        x: 5078
+        y: 3659
+        width: 1113
+        height: 474
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5293d928e9708c450800000000000000
+      internalID: 6109141271905646885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_4
+      rect:
+        serializedVersion: 2
+        x: 6678
+        y: 3659
+        width: 1113
+        height: 474
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa6427aacf74e8f0800000000000000
+      internalID: -512143949249090900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_5
+      rect:
+        serializedVersion: 2
+        x: 8284
+        y: 3659
+        width: 1088
+        height: 494
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a948cf4e3751dd0800000000000000
+      internalID: -2515977389490267592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_6
+      rect:
+        serializedVersion: 2
+        x: 9884
+        y: 3659
+        width: 1088
+        height: 494
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436a53ee7dbf4c250800000000000000
+      internalID: 5964168711378413108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_7
+      rect:
+        serializedVersion: 2
+        x: 11484
+        y: 3659
+        width: 1088
+        height: 494
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d151cd4ca074a3580800000000000000
+      internalID: -8846680406437915363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_8
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2059
+        width: 1088
+        height: 494
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ed51f8c06be2540800000000000000
+      internalID: 4985122002602155662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_9
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 2059
+        width: 1088
+        height: 494
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7e999da4dbfaae0800000000000000
+      internalID: -1535800818734078020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_10
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 2047
+        width: 1100
+        height: 462
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2d5eda77a63d190800000000000000
+      internalID: -7938884655872879912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_11
+      rect:
+        serializedVersion: 2
+        x: 5091
+        y: 2047
+        width: 1100
+        height: 462
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe5df32a3b851ed0800000000000000
+      internalID: -2443894140950454535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_12
+      rect:
+        serializedVersion: 2
+        x: 6691
+        y: 2047
+        width: 1100
+        height: 462
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b504753b2a2ee9890800000000000000
+      internalID: -7449267545202802597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_13
+      rect:
+        serializedVersion: 2
+        x: 8291
+        y: 2047
+        width: 1100
+        height: 462
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108f9711e1fca26a0800000000000000
+      internalID: -6473133786342492159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_14
+      rect:
+        serializedVersion: 2
+        x: 9891
+        y: 2047
+        width: 1100
+        height: 462
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590a4108dad6686b0800000000000000
+      internalID: -5294423719981834091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_15
+      rect:
+        serializedVersion: 2
+        x: 11497
+        y: 2066
+        width: 1056
+        height: 486
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7f6f4d891dd7de0800000000000000
+      internalID: -1333679460293609500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata idle_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 466
+        width: 1056
+        height: 486
+      alignment: 9
+      pivot: {x: 0.42366338, y: 0.24580944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aca98f3e3c98a590800000000000000
+      internalID: -7662702974803006303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7cf58d6cc2e18bb40a58af5e0140ff98
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4236633777618408,"y":0.2458094358444214},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      minirata idle_0: 8406574757312106434
+      minirata idle_1: 972174596237490268
+      minirata idle_10: -7938884655872879912
+      minirata idle_11: -2443894140950454535
+      minirata idle_12: -7449267545202802597
+      minirata idle_13: -6473133786342492159
+      minirata idle_14: -5294423719981834091
+      minirata idle_15: -1333679460293609500
+      minirata idle_16: -7662702974803006303
+      minirata idle_2: -8024779810659987532
+      minirata idle_3: 6109141271905646885
+      minirata idle_4: -512143949249090900
+      minirata idle_5: -2515977389490267592
+      minirata idle_6: 5964168711378413108
+      minirata idle_7: -8846680406437915363
+      minirata idle_8: 4985122002602155662
+      minirata idle_9: -1535800818734078020
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

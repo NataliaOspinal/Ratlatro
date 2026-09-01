@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 2532951655240509672}
   - component: {fileID: 5574491612363990640}
   - component: {fileID: 2599365697840565352}
+  - component: {fileID: 3231375152128185868}
   m_Layer: 6
   m_Name: MiniRata
   m_TagString: Player
@@ -172,7 +173,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7572081652871084037, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,7 +181,7 @@ SpriteRenderer:
   m_Size: {x: 1.225, y: 0.6125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 1
 --- !u!50 &3118978677766702937
 Rigidbody2D:
@@ -243,8 +244,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.019369783, y: -0.0014093795}
-  m_Size: {x: 0.5970549, y: 0.26388267}
+  m_Offset: {x: -0.05023934, y: 0.013284385}
+  m_Size: {x: 0.63886887, y: 0.23449904}
   m_Direction: 1
 --- !u!114 &5574491612363990640
 MonoBehaviour:
@@ -258,25 +259,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7442837f7e08524984a8cfde65ea962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CompanionPlayer
+  tieneIdleEspecial: 0
   moveSpeed: 10
   canMove: 1
-  directionData:
-  - sprite: {fileID: -3952138306342900696, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
-    colliderSize: {x: 0.62345344, y: 0.26681474}
-    colliderOffset: {x: 0.0055626025, y: -0.014608442}
-    colliderDirection: 1
-  - sprite: {fileID: -7572081652871084037, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
-    colliderSize: {x: 0.5970549, y: 0.26388267}
-    colliderOffset: {x: -0.019369783, y: -0.0014093795}
-    colliderDirection: 1
-  - sprite: {fileID: -5733309182433368606, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
-    colliderSize: {x: 0.6234528, y: 0.26387963}
-    colliderOffset: {x: 0.034894645, y: -0.024874102}
-    colliderDirection: 1
-  - sprite: {fileID: -8480662474396311198, guid: 78b7c7c07f6ff134484f350d1e80b84e, type: 3}
-    colliderSize: {x: 0.6205202, y: 0.263881}
-    colliderOffset: {x: -0.042835303, y: -0.02487409}
-    colliderDirection: 1
+  animator: {fileID: 3231375152128185868}
+  tiempoParaIdleEspecial: 5
+  directionData: []
   isFlying: 0
 --- !u!114 &2599365697840565352
 MonoBehaviour:
@@ -293,3 +281,25 @@ MonoBehaviour:
   auraLight: {fileID: 3448430862922014301}
   normalIntensity: 0.7
   dimmedIntensity: 0.2
+--- !u!95 &3231375152128185868
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089966177106744579}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c45c341f50bc77147af5ee92249404ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

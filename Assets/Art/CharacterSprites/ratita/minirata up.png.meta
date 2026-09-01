@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: e05ffa19c1c47dd45889b1a349081856
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8306849741729023275
+    second: minirata up_0
+  - first:
+      213: 7193365719887329817
+    second: minirata up_1
+  - first:
+      213: 8245601516007581689
+    second: minirata up_2
+  - first:
+      213: 2906568521606167691
+    second: minirata up_3
+  - first:
+      213: -1681086812306413708
+    second: minirata up_4
+  - first:
+      213: -7421524606882409780
+    second: minirata up_5
+  - first:
+      213: -5279953172854912129
+    second: minirata up_6
+  - first:
+      213: -1043907017324809594
+    second: minirata up_7
+  - first:
+      213: 2208148057480236984
+    second: minirata up_8
+  - first:
+      213: -5608601352453449763
+    second: minirata up_9
+  - first:
+      213: -5963861569927685379
+    second: minirata up_10
+  - first:
+      213: 6763890422291436698
+    second: minirata up_11
+  - first:
+      213: 5360909867422855417
+    second: minirata up_12
+  - first:
+      213: 347191912987642539
+    second: minirata up_13
+  - first:
+      213: -5766177234404160984
+    second: minirata up_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minirata up_0
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2003
+        width: 838
+        height: 531
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25cd4a14dbd74370800000000000000
+      internalID: 8306849741729023275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_1
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 2003
+        width: 838
+        height: 531
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a3b599208f3d360800000000000000
+      internalID: 7193365719887329817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_2
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 2003
+        width: 838
+        height: 531
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7ed0944e24e6270800000000000000
+      internalID: 8245601516007581689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_3
+      rect:
+        serializedVersion: 2
+        x: 5203
+        y: 2003
+        width: 838
+        height: 531
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cfaa5bba4365820800000000000000
+      internalID: 2906568521606167691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_4
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 1941
+        width: 813
+        height: 587
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477e1e373749ba8e0800000000000000
+      internalID: -1681086812306413708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_5
+      rect:
+        serializedVersion: 2
+        x: 8434
+        y: 1941
+        width: 813
+        height: 587
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc214f2e0b2710990800000000000000
+      internalID: -7421524606882409780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_6
+      rect:
+        serializedVersion: 2
+        x: 10034
+        y: 1941
+        width: 813
+        height: 587
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b494d4096d9b6b0800000000000000
+      internalID: -5279953172854912129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_7
+      rect:
+        serializedVersion: 2
+        x: 11634
+        y: 1941
+        width: 813
+        height: 587
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68231dd391c4381f0800000000000000
+      internalID: -1043907017324809594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_8
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 316
+        width: 756
+        height: 612
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf049185fae4ae10800000000000000
+      internalID: 2208148057480236984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_9
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 316
+        width: 756
+        height: 612
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd79c3c19ce3a22b0800000000000000
+      internalID: -5608601352453449763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_10
+      rect:
+        serializedVersion: 2
+        x: 3691
+        y: 316
+        width: 756
+        height: 612
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa5bd2008b1c3da0800000000000000
+      internalID: -5963861569927685379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_11
+      rect:
+        serializedVersion: 2
+        x: 5291
+        y: 316
+        width: 756
+        height: 612
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a941950a08a2edd50800000000000000
+      internalID: 6763890422291436698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_12
+      rect:
+        serializedVersion: 2
+        x: 6922
+        y: 303
+        width: 719
+        height: 631
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f030a00f17c56a40800000000000000
+      internalID: 5360909867422855417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_13
+      rect:
+        serializedVersion: 2
+        x: 8522
+        y: 303
+        width: 719
+        height: 631
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa4482943971d400800000000000000
+      internalID: 347191912987642539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minirata up_14
+      rect:
+        serializedVersion: 2
+        x: 10122
+        y: 303
+        width: 719
+        height: 631
+      alignment: 9
+      pivot: {x: 0.55831337, y: 0.27742767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a45671b5c6affa0800000000000000
+      internalID: -5766177234404160984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3821c2cce902a3e4e9200514a1962e5e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5583133697509766,"y":0.27742767333984377},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      minirata up_0: 8306849741729023275
+      minirata up_1: 7193365719887329817
+      minirata up_10: -5963861569927685379
+      minirata up_11: 6763890422291436698
+      minirata up_12: 5360909867422855417
+      minirata up_13: 347191912987642539
+      minirata up_14: -5766177234404160984
+      minirata up_2: 8245601516007581689
+      minirata up_3: 2906568521606167691
+      minirata up_4: -1681086812306413708
+      minirata up_5: -7421524606882409780
+      minirata up_6: -5279953172854912129
+      minirata up_7: -1043907017324809594
+      minirata up_8: 2208148057480236984
+      minirata up_9: -5608601352453449763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

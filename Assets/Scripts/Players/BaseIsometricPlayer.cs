@@ -12,6 +12,7 @@ public struct DirectionData
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(CapsuleCollider2D))]
 public abstract class BaseIsometricPlayer : MonoBehaviour
 {
+    public bool tieneIdleEspecial = true;
     public float moveSpeed = 5f;
     public bool canMove = true;
 
@@ -65,7 +66,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
 
         if (currentMovement != Vector2.zero)
         {
-            //�SE EST� MOVIENDO! Reiniciamos el reloj.
+            //Se está moviendo: Reiniciamos el reloj
             temporizadorIdle = 0f;
             lastFacingDirection = currentMovement;
 
@@ -121,8 +122,7 @@ public abstract class BaseIsometricPlayer : MonoBehaviour
         }
         else
         {
-            // NO SE EST� MOVIENDO
-            if (animator != null && canMove)
+            if (animator != null && canMove && tieneIdleEspecial)
             {
                 temporizadorIdle += Time.deltaTime;
 

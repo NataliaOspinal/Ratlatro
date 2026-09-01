@@ -3,6 +3,11 @@ using System.Collections;
 
 public class VentiladorSuelo : MonoBehaviour
 {
+    [Header("Efectos de Sonido")]
+    public AudioSource fuenteDeAudio;
+    public AudioClip sonidoVolar;
+    
+
     private Animator animator;
     public bool estaEncendido = true;
 
@@ -36,6 +41,8 @@ public class VentiladorSuelo : MonoBehaviour
             if (rataGrande != null)
             {
                 if (animator != null) animator.speed = 0f;
+
+                
                 rataGrande.Morir();
             }
             // Si es la chiquita, sale volando
@@ -44,6 +51,11 @@ public class VentiladorSuelo : MonoBehaviour
                 // Apagamos sus colisiones para que no active el ventilador mil veces
                 Collider2D col = collision.GetComponent<Collider2D>();
                 if (col != null) col.enabled = false;
+
+                if (fuenteDeAudio != null && sonidoVolar != null)
+                {
+                    fuenteDeAudio.PlayOneShot(sonidoVolar);
+                }
 
                 StartCoroutine(VolarRataChiquita(collision.gameObject));
             }

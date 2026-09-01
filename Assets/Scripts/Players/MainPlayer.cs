@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 public class MainPlayer : BaseIsometricPlayer
 {
+    [Header("Efectos de Sonido")]
+    public AudioSource fuenteDeAudio;
+    public AudioClip sonidoSqueak;
+
     //Catapulta de compañero
     public GameObject companionPrefab;
     public float pickupRange = 1.5f;
@@ -237,7 +241,10 @@ public class MainPlayer : BaseIsometricPlayer
     {
         // Evitamos que muera varias veces seguidas
         if (!canMove) return;
-
+        if (fuenteDeAudio != null && sonidoSqueak != null)
+                {
+                    fuenteDeAudio.PlayOneShot(sonidoSqueak);
+                }
         canMove = false;
         estaInvocando = false;
 

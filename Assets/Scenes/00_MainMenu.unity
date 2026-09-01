@@ -2941,7 +2941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851bd3a12b0a6ba4bb0ce06036e3b9ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioDeEscena
-  nombreEscenaCreditos: 99_Credits
+  nombreEscena: 99_Credits
   nombrePrimerNivel: 01_Zona1
 --- !u!4 &1388641938
 Transform:
@@ -3654,7 +3654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -304, y: -88.5}
+  m_AnchoredPosition: {x: -355, y: -122}
   m_SizeDelta: {x: 538.6548, y: 98.89172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1764293159486899450

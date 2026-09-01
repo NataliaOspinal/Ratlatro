@@ -261,6 +261,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7806545788165060970, guid: 4cbe71e5cfa404a4fa730167729d5534, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1564106242}
+    - target: {fileID: 7806545788165060970, guid: 4cbe71e5cfa404a4fa730167729d5534, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8532492103932120936, guid: 4cbe71e5cfa404a4fa730167729d5534, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -377,7 +385,7 @@ PrefabInstance:
     - target: {fileID: 6180898708134502343, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: d5e89735b637a0b458e9918bfe2eab09, type: 3}
+      objectReference: {fileID: 8300000, guid: 19ee00bb67518964b862973dd53374a7, type: 3}
     - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.49742
@@ -1049,6 +1057,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+--- !u!20 &1564106242 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7597581026120929, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+  m_PrefabInstance: {fileID: 1564106241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1642196070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 900644225}
     m_Modifications:
+    - target: {fileID: 443906057133157476, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 2144062210477435657, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1241

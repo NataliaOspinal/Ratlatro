@@ -1522,6 +1522,14 @@ PrefabInstance:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3532694924986529257, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532694924986529257, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7600666126014954098, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
       propertyPath: m_Name
       value: narracion

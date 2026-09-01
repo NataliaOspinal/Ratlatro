@@ -1346,8 +1346,124 @@ Transform:
   - {fileID: 6797235606322462098}
   - {fileID: 1033429643804876486}
   - {fileID: 8190559415384403691}
+  - {fileID: 1470622118375112315}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8025606406372689581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470622118375112315}
+  - component: {fileID: 7990576152659822481}
+  m_Layer: 0
+  m_Name: GestorVentiladores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470622118375112315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025606406372689581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 856629393313047508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7990576152659822481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025606406372689581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851e6547e806a704da41c1c9ff668155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GestorGrillaVentiladores
+  tiempoConstante: 4
+  tiempoTitileo: 0.2
+  colorVerde: {r: 0, g: 1, b: 0, a: 0.7}
+  colorAmarillo: {r: 1, g: 0.9, b: 0, a: 0.7}
+  colorRojo: {r: 1, g: 0, b: 0, a: 0.7}
+  todosLosVentiladores:
+  - {fileID: 5409506893374940477}
+  - {fileID: 2910720055823492572}
+  - {fileID: 3373879527554249748}
+  - {fileID: 2884674677696688273}
+  - {fileID: 8241730511380689730}
+  - {fileID: 1746939059581919226}
+  - {fileID: 588326849968957110}
+  - {fileID: 2772359359607487733}
+  - {fileID: 8624414482191075620}
+  - {fileID: 3115899805584446062}
+  - {fileID: 5557089095742201222}
+  - {fileID: 1528974533401544381}
+  - {fileID: 2261573506074627863}
+  - {fileID: 369321943344759364}
+  - {fileID: 1154876600974068981}
+  - {fileID: 8823909126413978865}
+  - {fileID: 7142426850580018435}
+  - {fileID: 1483223685190667481}
+  - {fileID: 2147969837610113454}
+  - {fileID: 7079207081566058938}
+  - {fileID: 1686211629580574195}
+  - {fileID: 4498051306541778369}
+  - {fileID: 1340906265220986292}
+  - {fileID: 7866951082907182536}
+  filasDelPuzzle:
+  - identificador: 
+    grupoSeguroInicial:
+    - {fileID: 1483223685190667481}
+    - {fileID: 369321943344759364}
+    - {fileID: 5557089095742201222}
+    grupoPeligroInicial:
+    - {fileID: 8823909126413978865}
+    - {fileID: 1528974533401544381}
+  - identificador: 
+    grupoSeguroInicial:
+    - {fileID: 5557089095742201222}
+    - {fileID: 1686211629580574195}
+    - {fileID: 1340906265220986292}
+    grupoPeligroInicial:
+    - {fileID: 8624414482191075620}
+    - {fileID: 2147969837610113454}
+  - identificador: 
+    grupoSeguroInicial:
+    - {fileID: 1340906265220986292}
+    - {fileID: 1154876600974068981}
+    - {fileID: 7866951082907182536}
+    grupoPeligroInicial:
+    - {fileID: 7142426850580018435}
+    - {fileID: 2261573506074627863}
+  - identificador: 
+    grupoSeguroInicial:
+    - {fileID: 7866951082907182536}
+    - {fileID: 4498051306541778369}
+    - {fileID: 1483223685190667481}
+    grupoPeligroInicial:
+    - {fileID: 7079207081566058938}
+    - {fileID: 3115899805584446062}
+  - identificador: 
+    grupoSeguroInicial:
+    - {fileID: 7866951082907182536}
+    - {fileID: 4498051306541778369}
+    - {fileID: 1483223685190667481}
+    grupoPeligroInicial:
+    - {fileID: 7079207081566058938}
+    - {fileID: 3115899805584446062}
 --- !u!1 &8363761752229870690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1789,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 251780313138877064}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8241730511380689730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 251780313138877064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &481341591516588270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1735,6 +1862,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 481341591516588270}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8624414482191075620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 481341591516588270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &822699125382835515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1797,6 +1935,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 822699125382835515}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8823909126413978865 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 822699125382835515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &1297315450157585609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1859,6 +2008,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 1297315450157585609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7142426850580018435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 1297315450157585609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &1378215503589333104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1921,6 +2081,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 1378215503589333104}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7079207081566058938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 1378215503589333104}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &2031973026626716674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1983,6 +2154,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 2031973026626716674}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7866951082907182536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 2031973026626716674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &3396507455270719341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2190,6 +2372,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &5409506893374940477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 4182840458532062455}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &7237390073436266729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -2252,6 +2445,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &5557089095742201222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 4323664483309681740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &7096702289885370450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -2443,6 +2647,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 5724720760714159115}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4498051306541778369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 5724720760714159115}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6298113387019525439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2505,6 +2720,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 6298113387019525439}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2772359359607487733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6298113387019525439}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6419440031389225307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2567,6 +2793,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 6419440031389225307}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2884674677696688273 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6419440031389225307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6447736981454226454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2629,6 +2866,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 6447736981454226454}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2910720055823492572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6447736981454226454}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6495286578818954148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2691,6 +2939,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 6495286578818954148}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3115899805584446062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6495286578818954148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6791680244018361409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2936,6 +3195,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
   m_PrefabInstance: {fileID: 6903014828124214750}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3373879527554249748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6903014828124214750}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!1001 &6996606736315723071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2993,6 +3263,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1154876600974068981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 6996606736315723071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &4567987099726301473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3055,6 +3336,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1340906265220986292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7171377414690034814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &4465856769942302816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3117,6 +3409,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1528974533401544381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7216456394198280055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &4204726022815089513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3179,6 +3482,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1483223685190667481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7317077203042184467}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &4321003884748523789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3241,6 +3555,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1686211629580574195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7383830176398064697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &4036512510586705959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3303,6 +3628,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &1746939059581919226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7575157060785864240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &3989184210242509358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3365,6 +3701,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &2147969837610113454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7841081172138227812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &3651624459048688762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3427,6 +3774,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &2261573506074627863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 7961444917263150813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &3458917526035745475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3551,6 +3909,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &369321943344759364 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 8376161761906008974}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &3045042955114694544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
@@ -3777,6 +4146,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+--- !u!114 &588326849968957110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8150955569286242762, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}
+  m_PrefabInstance: {fileID: 8733652584712439676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dc09475624b0542a7b3f65a60c4d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
 --- !u!4 &2830541029634073442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 44dbfd5417b34fb44a4b59dea01d40ce, type: 3}

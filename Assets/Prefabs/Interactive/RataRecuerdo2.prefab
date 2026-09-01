@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934103027309319218}
   - component: {fileID: 5617996268461267937}
-  - component: {fileID: 1980529272907901484}
+  - component: {fileID: 1638496932916355701}
   m_Layer: 0
   m_Name: RataRecuerdo2
   m_TagString: Untagged
@@ -185,7 +185,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.16162519, y: 0.24907069}
   m_Size: {x: 3.495222, y: 2.0324676}
   m_Direction: 1
---- !u!114 &1980529272907901484
+--- !u!114 &1638496932916355701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,12 +194,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8778810363775790931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fb973d47d1d019468fa850b01e9dc71, type: 3}
+  m_Script: {fileID: 11500000, guid: 1848f23dd295cdf47bc540f136ecabdd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RecuerdoPowerUp
+  m_EditorClassIdentifier: Assembly-CSharp::RecuerdoNarrativo
   panelNubeNegra: {fileID: 0}
   textoNarrativa: {fileID: 0}
   lineasDialogo:
   - linea1
   - linea2
   velocidadEscritura: 0.05
+  puertasParaAbrir: []

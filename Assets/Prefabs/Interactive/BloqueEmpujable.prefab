@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3243254604199266331}
   - component: {fileID: 7520050039340123812}
   - component: {fileID: 7736763884822016305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BloqueEmpujable
   m_TagString: PushableBlock
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3145883470558687296}
   - component: {fileID: 4957811598322880007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlockSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

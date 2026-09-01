@@ -26,28 +26,22 @@ public class GestorSemaforoVentiladores : MonoBehaviour
     {
         while (true)
         {
-            // Grupo Sincronizado verde (Detenido), Grupo Opuesto Rojo (Peligro)
+            // Grupo Sincronizado verde, Grupo Opuesto rojo
             AplicarEstado(grupoSincronizado, colorVerde, false);
             AplicarEstado(grupoOpuesto, colorRojo, true);
             yield return new WaitForSeconds(tiempoConstante);
 
-            // Titilan 2 veces en su propio color antes del cambio
-            yield return StartCoroutine(TitileoGrupos(grupoSincronizado, colorVerde, grupoOpuesto, colorRojo));
-
-            // Transición Amarillo (Todos los que vayan a cambiar se detienen y titilan 2 veces)
+            // Transición Amarillo (todos se detienen y titilan 2 veces)
             AplicarEstado(grupoSincronizado, colorAmarillo, false);
             AplicarEstado(grupoOpuesto, colorAmarillo, false);
             yield return StartCoroutine(TitileoGrupos(grupoSincronizado, colorAmarillo, grupoOpuesto, colorAmarillo));
 
-            // Sincronizados Rojo (Peligro), Opuestos Verde (Detenido)
+            // Sincronizados rojo, Opuestos verde
             AplicarEstado(grupoSincronizado, colorRojo, true);
             AplicarEstado(grupoOpuesto, colorVerde, false);
             yield return new WaitForSeconds(tiempoConstante);
 
-            // Titilan 2 veces en su propio color
-            yield return StartCoroutine(TitileoGrupos(grupoSincronizado, colorRojo, grupoOpuesto, colorVerde));
-
-            // Transición Amarillo (Todos los que vayan a cambiar se detienen y titilan 2 veces)
+            // Transición Amarillo (todos se detienen y titilan 2 veces)
             AplicarEstado(grupoSincronizado, colorAmarillo, false);
             AplicarEstado(grupoOpuesto, colorAmarillo, false);
             yield return StartCoroutine(TitileoGrupos(grupoSincronizado, colorAmarillo, grupoOpuesto, colorAmarillo));

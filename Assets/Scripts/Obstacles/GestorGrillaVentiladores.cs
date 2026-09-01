@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class FilaEspiral
 {
-    public string identificador; // Ej: "Fila 1 (Borde Inferior)"
-    public List<VentiladorSuelo> grupoSeguroInicial; // Ventiladores que inician en VERDE
-    public List<VentiladorSuelo> grupoPeligroInicial; // Ventiladores que inician en ROJO
+    public string identificador;
+    public List<VentiladorSuelo> grupoSeguroInicial; // Ventiladores que inician en verde aka seguros
+    public List<VentiladorSuelo> grupoPeligroInicial; // Ventiladores que inician en rojo aka peligrosos
 }
 
 public class GestorGrillaVentiladores : MonoBehaviour
@@ -23,6 +23,8 @@ public class GestorGrillaVentiladores : MonoBehaviour
     public List<VentiladorSuelo> todosLosVentiladores; // Específico para los 25 ventiladores del nivel 4 zona2
     public List<FilaEspiral> filasDelPuzzle;
 
+    public bool puzzleCompletado = false;
+
     private Coroutine rutinaActual;
     private int indiceFilaActual = -1;
 
@@ -34,16 +36,70 @@ public class GestorGrillaVentiladores : MonoBehaviour
 
     public void ActivarFila(int indiceFila)
     {
-        if (indiceFila == indiceFilaActual) return; // Evita reiniciar si ya estamos en esta fila
+        if (puzzleCompletado) return;
+        if (indiceFila == indiceFilaActual) return;
 
-        indiceFilaActual = indiceFila;
         if (rutinaActual != null) StopCoroutine(rutinaActual);
 
-        // Apagamos todo el tablero a rojo mortal
-        SetEstadoGlobal(colorRojo, true);
+        // Si venimos de una fila anterior, disparamos la trampa con retraso
+        if (indiceFilaActual != -1)
+        {
+            FilaEspiral filaAnterior = filasDelPuzzle[indiceFilaActual];
+            FilaEspiral filaNueva = filasDelPuzzle[indiceFila];
+            StartCoroutine(ConvertirAnteriorEnTrampaConRetraso(filaAnterior, filaNueva));
+        }
+        else
+        {
+            SetEstadoGlobal(colorRojo, true);
+        }
 
-        // Encendemos el patrón rítmico solo para la fila donde pisó la rata
+        //Actualizamos el índice y arrancamos el ritmo para la nueva fila
+        indiceFilaActual = indiceFila;
         rutinaActual = StartCoroutine(CicloSemaforo(filasDelPuzzle[indiceFila]));
+    }
+
+    private IEnumerator ConvertirAnteriorEnTrampaConRetraso(FilaEspiral anterior, FilaEspiral nueva)
+    {
+        List<VentiladorSuelo> ventiladoresNuevos = new List<VentiladorSuelo>();
+        ventiladoresNuevos.AddRange(nueva.grupoSeguroInicial);
+        ventiladoresNuevos.AddRange(nueva.grupoPeligroInicial);
+
+        // Apagamos la fila anterior a Amarillo así no se re muere la rata al toque
+        AplicarEstadoExcluyendo(anterior.grupoSeguroInicial, ventiladoresNuevos, colorAmarillo, false);
+        AplicarEstadoExcluyendo(anterior.grupoPeligroInicial, ventiladoresNuevos, colorAmarillo, false);
+
+        // Le damos 0.8 segundos a la rata para que termine de entrar a la nueva baldosa
+        yield return new WaitForSeconds(0.8f);
+
+        // Volvemos la fila anterior Roja
+        AplicarEstadoExcluyendo(anterior.grupoSeguroInicial, ventiladoresNuevos, colorRojo, true);
+        AplicarEstadoExcluyendo(anterior.grupoPeligroInicial, ventiladoresNuevos, colorRojo, true);
+    }
+
+    private void AplicarEstadoExcluyendo(List<VentiladorSuelo> grupoAnterior, List<VentiladorSuelo> exclusion, Color colorEstado, bool encender)
+    {
+        foreach (VentiladorSuelo vent in grupoAnterior)
+        {
+            // Si el ventilador viejo NO pertenece a la nueva fila, le aplicamos el cambio
+            if (!exclusion.Contains(vent))
+            {
+                if (encender) vent.Encender();
+                else vent.Detenerse();
+
+                SpriteRenderer sr = vent.GetComponentInChildren<SpriteRenderer>();
+                if (sr != null) sr.color = colorEstado;
+            }
+        }
+    }
+
+    public void DesactivarPuzzle()
+    {
+        puzzleCompletado = true;
+        // Frena el reloj interno del semáforo
+        if (rutinaActual != null) StopCoroutine(rutinaActual);
+
+        // Pone absolutamente todos los ventiladores en Verde (apagados y seguros)
+        SetEstadoGlobal(colorVerde, false);
     }
 
     private IEnumerator CicloSemaforo(FilaEspiral fila)
@@ -55,21 +111,15 @@ public class GestorGrillaVentiladores : MonoBehaviour
             AplicarEstado(fila.grupoPeligroInicial, colorRojo, true);
             yield return new WaitForSeconds(tiempoConstante);
 
-            // Titilan 2 veces antes del cambio
-            yield return StartCoroutine(TitileoGrupos(fila.grupoSeguroInicial, colorVerde, fila.grupoPeligroInicial, colorRojo));
-
             // Transición Amarillo
             AplicarEstado(fila.grupoSeguroInicial, colorAmarillo, false);
             AplicarEstado(fila.grupoPeligroInicial, colorAmarillo, false);
             yield return StartCoroutine(TitileoGrupos(fila.grupoSeguroInicial, colorAmarillo, fila.grupoPeligroInicial, colorAmarillo));
 
-            // Inversión
+            // Inversión (meow)
             AplicarEstado(fila.grupoSeguroInicial, colorRojo, true);
             AplicarEstado(fila.grupoPeligroInicial, colorVerde, false);
             yield return new WaitForSeconds(tiempoConstante);
-
-            //Titilan 2 veces
-            yield return StartCoroutine(TitileoGrupos(fila.grupoSeguroInicial, colorRojo, fila.grupoPeligroInicial, colorVerde));
 
             // Transición Amarillo
             AplicarEstado(fila.grupoSeguroInicial, colorAmarillo, false);

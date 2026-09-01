@@ -3,18 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class VentiladorPared : MonoBehaviour
 {
-    // Configuración de la fuerza del viento
-    public float fuerzaBase = 30f;
-    // Distancia máxima a la que el viento tiene efecto (en unidades de Unity)
-    public float distanciaMaximaViento = 5f;
-
-    // Físicas de la Rata Pequeña
-    // Multiplicador de fuerza para simular que la rata pequeña pesa menos
+    public float fuerzaBase = 500f;
+    public float distanciaMaximaViento = 40f;
     public float multiplicadorRataPequena = 2.0f;
-
-    //Dirección hacia la que sopla el viento
-    //Crear un objeto vacío en la escena y colocarlo en la dirección deseada, luego asignarlo a esta variable
     public Transform objetivoDireccion;
+
+    // Capa de obstáculos para comprobar línea de visión
+    public LayerMask capaObstaculos;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -25,25 +20,32 @@ public class VentiladorPared : MonoBehaviour
 
         if (esRataGrande || esRataPequena)
         {
+            // Trazamos un vector exacto desde el ventilador hasta el centro de la rata
+            Vector2 direccionHaciaRata = collision.transform.position - transform.position;
+            float distanciaActual = direccionHaciaRata.magnitude;
+
+            // Lanzamos el rayo para comprobar línea de visión
+            RaycastHit2D impacto = Physics2D.Raycast(transform.position, direccionHaciaRata.normalized, distanciaActual, capaObstaculos);
+
+            // Si el rayo choca con la capa de obstáculos antes de tocar a la rata, cortamos el viento
+            if (impacto.collider != null)
+            {
+                return;
+            }
+
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                // Calculamos la proximidad (1 = pegado al ventilador, 0 = al borde de la zona)
-                float distanciaActual = Vector2.Distance(transform.position, collision.transform.position);
                 float intensidad = Mathf.Clamp01(1f - (distanciaActual / distanciaMaximaViento));
-
-                // Aplicamos la fuerza base y el multiplicador de masa simulada
                 float fuerzaFinal = fuerzaBase * intensidad;
                 if (esRataPequena) fuerzaFinal *= multiplicadorRataPequena;
 
-                // Empujamos en la dirección isométrica configurada
-                Vector2 direccion = (objetivoDireccion.position - transform.position).normalized;
-                rb.AddForce(direccion * fuerzaFinal, ForceMode2D.Force);
+                Vector2 direccionViento = (objetivoDireccion.position - transform.position).normalized;
+                rb.AddForce(direccionViento * fuerzaFinal, ForceMode2D.Force);
             }
         }
     }
 
-    // Dibuja una línea celeste en el editor para se vea exactamente hacia dónde sopla
     private void OnDrawGizmosSelected()
     {
         if (objetivoDireccion != null)

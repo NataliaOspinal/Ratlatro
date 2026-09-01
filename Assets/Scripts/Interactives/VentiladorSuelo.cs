@@ -32,13 +32,13 @@ public class VentiladorSuelo : MonoBehaviour
             MainPlayer rataGrande = collision.GetComponent<MainPlayer>();
             CompanionPlayer rataChiquita = collision.GetComponent<CompanionPlayer>();
 
-            // 1. Si es la rata grande, muere normalmente
+            // Si es la rata grande, muere normalmente
             if (rataGrande != null)
             {
                 if (animator != null) animator.speed = 0f;
                 rataGrande.Morir();
             }
-            // 2. Si es la chiquita, sale volando
+            // Si es la chiquita, sale volando
             else if (rataChiquita != null)
             {
                 // Apagamos sus colisiones para que no active el ventilador mil veces
@@ -48,6 +48,13 @@ public class VentiladorSuelo : MonoBehaviour
                 StartCoroutine(VolarRataChiquita(collision.gameObject));
             }
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        // Se ejecuta constantemente mientras el jugador esté dentro del área
+        if (!estaEncendido) return;
+        OnTriggerEnter2D(collision);
     }
 
     private IEnumerator VolarRataChiquita(GameObject rataChiquita)

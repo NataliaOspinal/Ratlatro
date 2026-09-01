@@ -566,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2474, y: -12.999786}
+  m_AnchoredPosition: {x: 2474, y: -12.999695}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1070042619
@@ -1000,6 +1000,10 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 7871736256915235743}
+    - target: {fileID: 4736789713592533629, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+      propertyPath: zoomNormal
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6722448589747806165, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1223,6 +1227,10 @@ PrefabInstance:
     - target: {fileID: 2832007200571662519, guid: ed99033ba0efcb84aa76c5f12fecb54c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732534873730345035, guid: ed99033ba0efcb84aa76c5f12fecb54c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 6955389348272553979, guid: ed99033ba0efcb84aa76c5f12fecb54c, type: 3}
       propertyPath: m_Name

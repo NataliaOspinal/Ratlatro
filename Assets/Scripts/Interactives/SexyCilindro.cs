@@ -81,6 +81,7 @@ public class SexyCilindro : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return;
         if (jugadorCerca)
         {
             if (!estaDialogando)
@@ -98,7 +99,6 @@ public class SexyCilindro : MonoBehaviour
                     if (signoInterrogacion != null)
                     {
                         signoInterrogacion.SetActive(true);
-                        // Hacemos que flote usando DOTween (Sube 0.3 unidades en 0.8 segundos y repite tipo Yoyo)
                         signoInterrogacion.transform.DOLocalMoveY(signoInterrogacion.transform.localPosition.y + 0.3f, 0.8f)
                             .SetLoops(-1, LoopType.Yoyo)
                             .SetEase(Ease.InOutSine);
@@ -110,14 +110,14 @@ public class SexyCilindro : MonoBehaviour
                     }
                 }
 
-                if (puede && (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0)))
+                if (puede && (Input.GetKeyDown(KeyCode.F)))
                 {
                     IniciarDialogo();
                 }
             }
             else if (!escribiendoTexto)
             {
-                if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
+                if (Input.GetKeyDown(KeyCode.F))
                 {
                     AvanzarDialogo();
                 }

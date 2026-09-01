@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class CambioDeEscena : MonoBehaviour
 {
     [Header("Configuración de Escenas")]
-    public string nombreEscenaCreditos = "99_Credits"; 
+    public string nombreEscena = "99_Credits"; 
     
     public string nombrePrimerNivel = "01_Zona1"; 
 
@@ -27,6 +27,6 @@ public class CambioDeEscena : MonoBehaviour
 
     public void IrACreditos()
     {
-        SceneManager.LoadScene(nombreEscenaCreditos);
+        SceneManager.LoadScene(nombreEscena);
     }
 }

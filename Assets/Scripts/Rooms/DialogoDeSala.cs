@@ -19,6 +19,11 @@ public class DialogoDeSala : MonoBehaviour
     
     public float esperaInicial = 0.5f; 
 
+    void Update()
+    {
+        if (Time.timeScale == 0f) return;
+    }
+
     private void Start()
     {
         if (panelNarracion != null)
@@ -66,7 +71,7 @@ public class DialogoDeSala : MonoBehaviour
                 {
                     cronometro += Time.deltaTime;
 
-                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                    if (
                         (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
                     {
                         saltoDetectado = true;
@@ -86,7 +91,7 @@ public class DialogoDeSala : MonoBehaviour
             yield return null; 
 
             yield return new WaitUntil(() => 
-                (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+                
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
 

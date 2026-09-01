@@ -1,0 +1,449 @@
+fileFormatVersion: 2
+guid: 3c60e75968f3f354c8a8f4fbb3306e2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3420857412836267510
+    second: recuerdo3_0
+  - first:
+      213: -870476957205333439
+    second: recuerdo3_1
+  - first:
+      213: 3010779495749908383
+    second: recuerdo3_2
+  - first:
+      213: 9049036816014219333
+    second: recuerdo3_3
+  - first:
+      213: -5209692046761997782
+    second: recuerdo3_4
+  - first:
+      213: 7363072358466736054
+    second: recuerdo3_5
+  - first:
+      213: -2240886182343619511
+    second: recuerdo3_6
+  - first:
+      213: -7839477014866040798
+    second: recuerdo3_7
+  - first:
+      213: -1828958076516189904
+    second: recuerdo3_8
+  - first:
+      213: 3867279680602412182
+    second: recuerdo3_9
+  - first:
+      213: -5668436476047334965
+    second: recuerdo3_10
+  - first:
+      213: 4750704572184657296
+    second: recuerdo3_11
+  - first:
+      213: -4243058800366196026
+    second: recuerdo3_12
+  - first:
+      213: 163676725845833662
+    second: recuerdo3_13
+  - first:
+      213: -3283525187387172685
+    second: recuerdo3_14
+  - first:
+      213: -2634250297566334448
+    second: recuerdo3_15
+  - first:
+      213: -5274882359290434761
+    second: recuerdo3_16
+  - first:
+      213: -8338306247800200614
+    second: recuerdo3_17
+  - first:
+      213: 7744252673878007101
+    second: recuerdo3_18
+  - first:
+      213: 5801728807927318375
+    second: recuerdo3_19
+  - first:
+      213: 6054411649531352824
+    second: recuerdo3_20
+  - first:
+      213: -5879652827338120623
+    second: recuerdo3_21
+  - first:
+      213: -4887846553864094913
+    second: recuerdo3_22
+  - first:
+      213: -9008443492010699942
+    second: recuerdo3_23
+  - first:
+      213: 7808640833669073091
+    second: recuerdo3_24
+  - first:
+      213: 4475420521915157915
+    second: recuerdo3_25
+  - first:
+      213: -1994926876469427286
+    second: recuerdo3_26
+  - first:
+      213: 144781931981120899
+    second: recuerdo3_27
+  - first:
+      213: 5123480367107628861
+    second: recuerdo3_28
+  - first:
+      213: 8189094894385803054
+    second: recuerdo3_29
+  - first:
+      213: -3750297308352913690
+    second: recuerdo3_30
+  - first:
+      213: -4485645638672873719
+    second: recuerdo3_31
+  - first:
+      213: 1537604525174115346
+    second: recuerdo3_32
+  - first:
+      213: -8845331423362978039
+    second: recuerdo3_33
+  - first:
+      213: 1755328087823481294
+    second: recuerdo3_34
+  - first:
+      213: -7527911490104853506
+    second: recuerdo3_35
+  - first:
+      213: -247219837483127823
+    second: recuerdo3_36
+  - first:
+      213: 2836213610680807817
+    second: recuerdo3_37
+  - first:
+      213: 9221251649998225041
+    second: recuerdo3_38
+  - first:
+      213: 8791609299728268412
+    second: recuerdo3_39
+  - first:
+      213: 5527952495534401625
+    second: recuerdo3_40
+  - first:
+      213: -6619130787138542900
+    second: recuerdo3_41
+  - first:
+      213: -8514947969855946981
+    second: recuerdo3_42
+  - first:
+      213: -1166582815231235524
+    second: recuerdo3_43
+  - first:
+      213: 7951319948614695748
+    second: recuerdo3_44
+  - first:
+      213: -5231593036780415606
+    second: recuerdo3_45
+  - first:
+      213: -8155726260538150337
+    second: recuerdo3_46
+  - first:
+      213: 3106551935554180994
+    second: recuerdo3_47
+  - first:
+      213: -1984656057082540681
+    second: recuerdo3_48
+  - first:
+      213: -5589067949892071448
+    second: recuerdo3_49
+  - first:
+      213: -627961116297998516
+    second: recuerdo3_50
+  - first:
+      213: -255502031038704653
+    second: recuerdo3_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: recuerdo3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f51e5741b3597f20800000000000000
+      internalID: 3420857412836267510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14afc94c1d17be3f0800000000000000
+      internalID: -870476957205333439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97f335efff68c920800000000000000
+      internalID: 3010779495749908383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54895f15a03a49d70800000000000000
+      internalID: 9049036816014219333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ac2938fa473b7b0800000000000000
+      internalID: -5209692046761997782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf48ed7c43ee2660800000000000000
+      internalID: 7363072358466736054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recuerdo3_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.42, y: 0.038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cc35fc3e5c6e0e0800000000000000
+      internalID: -2240886182343619511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 285c6be5f418ad24aa4576cdc6e95efb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.41999998688697817,"y":0.03799999877810478},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      recuerdo3_0: 3420857412836267510
+      recuerdo3_1: -870476957205333439
+      recuerdo3_2: 3010779495749908383
+      recuerdo3_3: 9049036816014219333
+      recuerdo3_4: -5209692046761997782
+      recuerdo3_5: 7363072358466736054
+      recuerdo3_6: -2240886182343619511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

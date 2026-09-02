@@ -1025,6 +1025,10 @@ PrefabInstance:
       value: -1729827607
       objectReference: {fileID: 0}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: imagenRataUI
+      value: 
+      objectReference: {fileID: 6138040410687787959}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: necesitaPuertaAbierta
       value: 1
       objectReference: {fileID: 0}
@@ -1069,6 +1073,26 @@ PrefabInstance:
       propertyPath: paginasDeDialogo.Array.data[5].texto
       value: "Dime si no es emocionante el progreso cient\xEDfico :D"
       objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: cf9f6cbdffeb98948946baa746ba3635, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 232156d64762aa4499eba88ac6fcc79a, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 93b2913c135fa204ba0a7faf7ad5a464, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: cf9f6cbdffeb98948946baa746ba3635, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: cf9f6cbdffeb98948946baa746ba3635, type: 3}
     - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
       value: 
@@ -1163,6 +1187,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
   m_PrefabInstance: {fileID: 5723192747255684766}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6138040410687787959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1892196016775335209, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+  m_PrefabInstance: {fileID: 5723192747255684766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &6310116238816935958
 PrefabInstance:
   m_ObjectHideFlags: 0

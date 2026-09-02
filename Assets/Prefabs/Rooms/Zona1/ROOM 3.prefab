@@ -46,11 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoDeSala
   panelNarracion: {fileID: 3935658284571236869}
   textoNarrativa: {fileID: 6902131177478619156}
+  imagenPersonajeUI: {fileID: 1819975365204389372}
+  fuerzaSalto: 20
+  duracionSalto: 0.3
   lineasDialogo:
-  - "Necesitas ser escurridiza, y no le prestes mucha atenci\xF3n a ese pat\xE1n
-    hologr\xE1fico"
-  - "Debes escapar, y recordar qui\xE9n eres. Eres una alima\xF1a despu\xE9s de todo,
-    deber\xEDas poder escabullirte f\xE1cilmente debajo de espacios peque\xF1os."
+  - texto: "Necesitas ser escurridiza, y no le prestes mucha atenci\xF3n a ese pat\xE1n
+      hologr\xE1fico"
+    spritePersonaje: {fileID: 21300000, guid: 15a016ff4830aef4da443df704d89cb6, type: 3}
+  - texto: "Debes escapar, y recordar qui\xE9n eres. Eres una alima\xF1a despu\xE9s
+      de todo, deber\xEDas poder escabullirte f\xE1cilmente debajo."
+    spritePersonaje: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
   velocidadEscritura: 0.05
   esperaInicial: 0.5
 --- !u!1 &2398648336381672981
@@ -1135,6 +1140,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5138245111952596515, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 429
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138245111952596515, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 7600666126014954098, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
       propertyPath: m_Name
       value: narracion
@@ -1224,6 +1237,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+--- !u!114 &1819975365204389372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5090580758162967947, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 6909852004592787575}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!224 &3469888512131398592 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8053347622025092023, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}

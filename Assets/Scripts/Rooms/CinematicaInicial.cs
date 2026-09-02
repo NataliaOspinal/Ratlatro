@@ -2,10 +2,19 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using DG.Tweening;
+
+[System.Serializable]
+public struct LineaNarrativa
+{
+    [TextArea(2, 4)]
+    public string texto;
+    public Sprite spritePersonaje; 
+}
 
 public class CinematicaInicial : MonoBehaviour
 {
-
     [Header("Sonidos (SFX)")]
     public AudioSource reproductorAudio; 
     public AudioClip sfxTemblor; 
@@ -14,20 +23,20 @@ public class CinematicaInicial : MonoBehaviour
     [Header("UI Narrativa")]
     public GameObject panelNubeNegra;
     public TextMeshProUGUI textoNarrativa;
-    [TextArea(2, 4)]
-    public string[] lineasDialogo = {
-        "Hola soy un laboratorio viviente",
-        "Ayudame y te libero y esas cosas",
-        "No cuestiones nada por favor"
-    };
+    
+    public LineaNarrativa[] lineasDialogo; 
     public float velocidadEscritura = 0.05f;
+
+    [Header("Personaje UI")]
+    public Image imagenPersonajeUI; 
+    public float fuerzaSalto = 30f; 
+    public float duracionSalto = 0.35f;
 
     [Header("Referencias")]
     public Animator mesaAnimator;
     public Transform mascaraCirculo;
     public GameObject pantallaNegra;
     
-
     [Header("Posicionamiento")]
     public Transform puntoDeSpawnMesa;
    
@@ -39,15 +48,26 @@ public class CinematicaInicial : MonoBehaviour
     public float velocidadApertura = 3f;
 
     private GameObject jugador;
-    private MainPlayer scriptRata; // Nueva referencia
+    private MainPlayer scriptRata; 
+
+    private RectTransform rectPersonaje;
+    private Vector2 posOriginalPersonaje;
 
     void Update()
     {
         if (Time.timeScale == 0f) return;
     }
+
     private void Start()
     {
         panelNubeNegra.SetActive(false);
+        if (imagenPersonajeUI != null)
+        {
+            imagenPersonajeUI.gameObject.SetActive(false);
+            rectPersonaje = imagenPersonajeUI.GetComponent<RectTransform>();
+            posOriginalPersonaje = rectPersonaje.anchoredPosition;
+        }
+
         jugador = GameObject.Find("Rata");
 
         if (jugador != null && puntoDeSpawnMesa != null)
@@ -58,7 +78,6 @@ public class CinematicaInicial : MonoBehaviour
                 jugador.transform.position.z
             );
             
-            // Congelamos a la rata
             scriptRata = jugador.GetComponent<MainPlayer>();
             if (scriptRata != null) scriptRata.canMove = false;
         }
@@ -120,11 +139,35 @@ public class CinematicaInicial : MonoBehaviour
 
         panelNubeNegra.SetActive(true);
 
-       foreach (string linea in lineasDialogo)
+        Sprite spriteAnterior = null;
+
+        foreach (LineaNarrativa linea in lineasDialogo)
         {
             if (textoNarrativa == null) continue;
 
-            textoNarrativa.text = linea;
+            if (linea.spritePersonaje != null && imagenPersonajeUI != null)
+            {
+                imagenPersonajeUI.sprite = linea.spritePersonaje;
+                imagenPersonajeUI.gameObject.SetActive(true);
+
+                if (linea.spritePersonaje != spriteAnterior)
+                {
+                    if (rectPersonaje != null)
+                    {
+                        DOTween.Kill(rectPersonaje);
+                        rectPersonaje.anchoredPosition = posOriginalPersonaje; // Reseteo vital
+                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
+                    }
+                    spriteAnterior = linea.spritePersonaje; 
+                }
+            }
+            else if (imagenPersonajeUI != null)
+            {
+                imagenPersonajeUI.gameObject.SetActive(false); 
+                spriteAnterior = null;
+            }
+
+            textoNarrativa.text = linea.texto;
             textoNarrativa.maxVisibleCharacters = 0;
             textoNarrativa.ForceMeshUpdate(); 
             int totalCaracteres = textoNarrativa.textInfo.characterCount;
@@ -140,8 +183,7 @@ public class CinematicaInicial : MonoBehaviour
                 {
                     cronometro += Time.deltaTime;
 
-                    if (
-                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
                     {
                         saltoDetectado = true;
                         break;
@@ -158,17 +200,16 @@ public class CinematicaInicial : MonoBehaviour
             }
 
             yield return null;
-
-            yield return new WaitUntil(() => 
-                
-                (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
-            );
-
-        
+            yield return new WaitUntil(() => (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame));
             yield return null; 
         }
 
         panelNubeNegra.SetActive(false);
+        if (imagenPersonajeUI != null)
+        {
+            imagenPersonajeUI.transform.DOKill(); 
+            imagenPersonajeUI.gameObject.SetActive(false);
+        }
         textoNarrativa.text = "";
 
         if (RoomManager.Instance != null)
@@ -176,32 +217,14 @@ public class CinematicaInicial : MonoBehaviour
             RoomManager.Instance.interaccionBloqueada = false;
         }
 
-        // Devolvemos el control al terminar
         if (scriptRata != null) scriptRata.canMove = true;
 
         Door[] puertas = FindObjectsByType<Door>(FindObjectsSortMode.None);
-
         foreach (Door puerta in puertas)
         {
             Collider2D col = puerta.GetComponent<Collider2D>();
             if (col != null) col.enabled = true;
-
             puerta.Abrir();
-        }
-    }
-
-    private void ControlarPuertas(bool activar)
-    {
-        
-        Door[] puertas = FindObjectsByType<Door>(FindObjectsSortMode.None);
-        
-        foreach (Door puerta in puertas)
-        {
-            Collider2D col = puerta.GetComponent<Collider2D>();
-            if (col != null)
-            {
-                col.enabled = activar;
-            }
         }
     }
 }

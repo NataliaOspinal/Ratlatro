@@ -2,6 +2,16 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using DG.Tweening;
+
+[System.Serializable]
+public struct LineaDialogoSala
+{
+    [TextArea(2, 4)]
+    public string texto;
+    public Sprite spritePersonaje;
+}
 
 public class DialogoDeSala : MonoBehaviour
 {
@@ -9,15 +19,19 @@ public class DialogoDeSala : MonoBehaviour
     public GameObject panelNarracion; 
     public TextMeshProUGUI textoNarrativa;
     
+    [Header("Personaje UI (DOTween)")]
+    public Image imagenPersonajeUI;
+    public float fuerzaSalto = 20f; 
+    public float duracionSalto = 0.3f;
+
     [Header("Historia de la Sala")]
-    [TextArea(2, 4)]
-    public string[] lineasDialogo = {
-        "linea1",
-        "linea2"
-    };
+    public LineaDialogoSala[] lineasDialogo; 
     public float velocidadEscritura = 0.05f;
-    
     public float esperaInicial = 0.5f; 
+
+    // Variables para el control de animación
+    private RectTransform rectPersonaje;
+    private Vector2 posOriginalPersonaje; 
 
     void Update()
     {
@@ -29,6 +43,13 @@ public class DialogoDeSala : MonoBehaviour
         if (panelNarracion != null)
         {
             panelNarracion.SetActive(false);
+        }
+
+        if (imagenPersonajeUI != null)
+        {
+            imagenPersonajeUI.gameObject.SetActive(false);
+            rectPersonaje = imagenPersonajeUI.GetComponent<RectTransform>();
+            posOriginalPersonaje = rectPersonaje.anchoredPosition;
         }
 
         StartCoroutine(RutinaDialogoEntrada());
@@ -43,17 +64,40 @@ public class DialogoDeSala : MonoBehaviour
             RoomManager.Instance.interaccionBloqueada = true;
         }
 
-        // Buscamos a la rata y la congelamos
         MainPlayer scriptRata = FindAnyObjectByType<MainPlayer>();
         if (scriptRata != null) scriptRata.canMove = false;
 
         if (panelNarracion != null) panelNarracion.SetActive(true);
 
-        foreach (string linea in lineasDialogo)
+        Sprite spriteAnterior = null;
+
+        foreach (LineaDialogoSala linea in lineasDialogo)
         {
             if (textoNarrativa == null) continue;
 
-            textoNarrativa.text = linea;
+            if (linea.spritePersonaje != null && imagenPersonajeUI != null)
+            {
+                imagenPersonajeUI.sprite = linea.spritePersonaje;
+                imagenPersonajeUI.gameObject.SetActive(true);
+
+                if (linea.spritePersonaje != spriteAnterior)
+                {
+                    if (rectPersonaje != null)
+                    {
+                        DOTween.Kill(rectPersonaje);
+                        rectPersonaje.anchoredPosition = posOriginalPersonaje; 
+                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
+                    }
+                    spriteAnterior = linea.spritePersonaje; 
+                }
+            }
+            else if (imagenPersonajeUI != null)
+            {
+                imagenPersonajeUI.gameObject.SetActive(false); 
+                spriteAnterior = null;
+            }
+
+            textoNarrativa.text = linea.texto;
             textoNarrativa.maxVisibleCharacters = 0;
             textoNarrativa.ForceMeshUpdate();
             int totalCaracteres = textoNarrativa.textInfo.characterCount;
@@ -71,8 +115,7 @@ public class DialogoDeSala : MonoBehaviour
                 {
                     cronometro += Time.deltaTime;
 
-                    if (
-                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
                     {
                         saltoDetectado = true;
                         break;
@@ -91,7 +134,6 @@ public class DialogoDeSala : MonoBehaviour
             yield return null; 
 
             yield return new WaitUntil(() => 
-                
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
 
@@ -100,6 +142,16 @@ public class DialogoDeSala : MonoBehaviour
 
         if (textoNarrativa != null) textoNarrativa.text = "";
         if (panelNarracion != null) panelNarracion.SetActive(false);
+
+        if (imagenPersonajeUI != null)
+        {
+            if (rectPersonaje != null)
+            {
+                DOTween.Kill(rectPersonaje);
+                rectPersonaje.anchoredPosition = posOriginalPersonaje;
+            }
+            imagenPersonajeUI.gameObject.SetActive(false);
+        }
 
         if (RoomManager.Instance != null)
         {

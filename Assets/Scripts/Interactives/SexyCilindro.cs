@@ -11,6 +11,7 @@ public class PaginaDialogo
     [TextArea(2, 5)]
     public string texto;
     public Sprite expresionPersonaje; 
+    public Sprite expresionRata;
 }
 
 public class SexyCilindro : MonoBehaviour
@@ -38,6 +39,7 @@ public class SexyCilindro : MonoBehaviour
 
     [Header("Placeholder para Sexyman")]
     public Image imagenExpresionUI; 
+    public Image imagenRataUI;
 
     [Header("Ajustes de Animación")]
     
@@ -53,10 +55,18 @@ public class SexyCilindro : MonoBehaviour
     private bool avisoMostrado = false;
     private bool yaInteractuado = false;
 
-    private Vector3 posOriginalPanel;
-    private Vector3 posOriginalPersonaje;
     private RectTransform rectPanel;
+    private Vector3 posOriginalPanel;
+    
     private RectTransform rectPersonaje;
+    private Vector3 posOriginalPersonaje;
+    
+    private RectTransform rectRata;
+    private Vector3 posOriginalRata;
+
+    private Sprite spriteAnteriorDoctor = null;
+    private Sprite spriteAnteriorRata = null;
+
     private Coroutine corrutinaTexto;
     private Coroutine corrutinaGlitch;
     private MainPlayer scriptRata;
@@ -76,6 +86,12 @@ public class SexyCilindro : MonoBehaviour
             imagenExpresionUI.gameObject.SetActive(false);
             rectPersonaje = imagenExpresionUI.GetComponent<RectTransform>();
             posOriginalPersonaje = rectPersonaje.anchoredPosition;
+        }
+        if (imagenRataUI != null)
+        {
+            rectRata = imagenRataUI.GetComponent<RectTransform>();
+            posOriginalRata = rectRata.anchoredPosition;
+            imagenRataUI.gameObject.SetActive(false); 
         }
     }
 
@@ -167,25 +183,60 @@ public class SexyCilindro : MonoBehaviour
 
     void MostrarPaginaActual()
     {
+        PaginaDialogo pagina = paginasDeDialogo[paginaActual];
+
         if (imagenExpresionUI != null)
         {
-            Sprite caraActual = paginasDeDialogo[paginaActual].expresionPersonaje;
-            
-            if (caraActual != null)
+            if (pagina.expresionPersonaje != null)
             {
-                imagenExpresionUI.sprite = caraActual;
+                imagenExpresionUI.sprite = pagina.expresionPersonaje;
                 imagenExpresionUI.gameObject.SetActive(true);
+
+                if (pagina.expresionPersonaje != spriteAnteriorDoctor)
+                {
+                    if (rectPersonaje != null)
+                    {
+                        DOTween.Kill(rectPersonaje);
+                        rectPersonaje.anchoredPosition = posOriginalPersonaje;
+                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, alturaSaltoPersonaje), 0.3f, 1, 0.5f);
+                    }
+                    spriteAnteriorDoctor = pagina.expresionPersonaje;
+                }
             }
             else
             {
                 imagenExpresionUI.gameObject.SetActive(false);
+                spriteAnteriorDoctor = null;
             }
         }
 
-        EfectoSaltoPersonaje();
+        if (imagenRataUI != null)
+        {
+            if (pagina.expresionRata != null)
+            {
+                bool esNuevoSprite = (pagina.expresionRata != spriteAnteriorRata);
+
+                imagenRataUI.sprite = pagina.expresionRata;
+                imagenRataUI.gameObject.SetActive(true);
+
+                if (esNuevoSprite && rectRata != null)
+                {
+                    rectRata.DOKill(true); 
+                    rectRata.anchoredPosition = posOriginalRata;
+                    rectRata.DOPunchAnchorPos(new Vector2(0, alturaSaltoPersonaje), 0.3f, 1, 0.5f);
+                    
+                    spriteAnteriorRata = pagina.expresionRata;
+                }
+            }
+            else
+            {
+                imagenRataUI.gameObject.SetActive(false);
+                spriteAnteriorRata = null;
+            }
+        }
 
         if (corrutinaTexto != null) StopCoroutine(corrutinaTexto);
-        corrutinaTexto = StartCoroutine(EscribirLetraPorLetra(paginasDeDialogo[paginaActual].texto));
+        corrutinaTexto = StartCoroutine(EscribirLetraPorLetra(pagina.texto));
     }
 
     IEnumerator EscribirLetraPorLetra(string textoCompleto)
@@ -276,7 +327,26 @@ IEnumerator RutinaGlitchPeriodico()
         }
 
         if (panelDialogoUI != null) panelDialogoUI.SetActive(false);
-        if (imagenExpresionUI != null) imagenExpresionUI.gameObject.SetActive(false);
+        if (imagenExpresionUI != null)
+        {
+            if (rectPersonaje != null)
+            {
+                DOTween.Kill(rectPersonaje);
+                rectPersonaje.anchoredPosition = posOriginalPersonaje;
+            }
+            imagenExpresionUI.gameObject.SetActive(false);
+        }
+        
+        if (imagenRataUI != null)
+        {
+            if (rectRata != null)
+            {
+                DOTween.Kill(rectRata);
+                rectRata.anchoredPosition = posOriginalRata;
+            }
+            imagenRataUI.gameObject.SetActive(false);
+        }
+
         if (jugadorCerca && indicadorTeclaF != null) indicadorTeclaF.SetActive(true);
     }
 
@@ -305,7 +375,6 @@ IEnumerator RutinaGlitchPeriodico()
     {
         if (!necesitaPuertaAbierta) return true;
         
-        // Revisamos todas las puertas en la lista
         foreach (Door puerta in puertaRequisito)
         {
             if (puerta != null && !puerta.estaAbierta)

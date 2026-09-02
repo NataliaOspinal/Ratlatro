@@ -501,6 +501,8 @@ MonoBehaviour:
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 1d253feb28321f5469892a9673611c8c, type: 3}
   - numeroDeSala: 4
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 9e42290dd5dd1e54e80a0df82840107a, type: 3}
+  - numeroDeSala: 5
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: bd7b84c82fe12dd4689d72885c14bf3d, type: 3}
   roomPrefabs: []
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
@@ -574,7 +576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2474, y: -12.999695}
+  m_AnchoredPosition: {x: 2474, y: -12.999603}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1070042619

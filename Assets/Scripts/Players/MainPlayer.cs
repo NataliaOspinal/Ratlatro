@@ -97,13 +97,19 @@ public class MainPlayer : BaseIsometricPlayer
                 {
                     estaInvocando = true;
                     canMove = false; // Congelamos a la rata grande
-
-                    // Disparamos la animación
+                    
                     if (animator != null) animator.SetTrigger("Invocar");
                 }
                 else if (!isHoldingCompanion && spawnedCompanion != null && !estaInvocando)
                 {
-                    Destroy(spawnedCompanion);
+                    estaInvocando = true;
+                    canMove = false; // Congelamos a la rata grande para el despawn
+                    
+                    // Desaparece a la rata chiquita inmediatamente
+                    Destroy(spawnedCompanion); 
+                    
+                    // Disparamos la nueva animación de comer
+                    if (animator != null) animator.SetTrigger("RataChomp"); 
                 }
             }
 
@@ -220,7 +226,14 @@ public class MainPlayer : BaseIsometricPlayer
         spawnedCompanion = Instantiate(companionPrefab, spawnPos, Quaternion.identity);
         companionScript = spawnedCompanion.GetComponent<CompanionPlayer>();
     }
-    
+
+    // Animación de RataChomp finalizada, llamada desde un evento de animación
+    public void TerminarDesinvocacion()
+    {
+        estaInvocando = false;
+        canMove = true; // Descongelamos a la rata grande
+    }
+
     // Llamado externamente por el RoomManager para limpiar la sala
     public void ForzarDespawnCompanero()
     {

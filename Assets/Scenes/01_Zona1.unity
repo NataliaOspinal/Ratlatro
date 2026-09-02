@@ -224,7 +224,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 90
   m_TargetDisplay: 0
 --- !u!1001 &231680491
 PrefabInstance:
@@ -1059,13 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8e65bb3755dcc9542abff180dfdf8509, type: 3}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_text
-      value: "1ro de Noviembre de 1996\r\nAl parecer los preparativos han sido terminados
-        y aprobado por los superiores, vamos a empezar por fin el Proyecto \u2588\u2588\u2588
-        , el Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran
-        honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan
-        en un proyecto tan ambicioso como este, sobre todo ya que esta involucrado
-        \u2588\u2588\u2588\u2588\r\n\u2588\u2588\u2588\u2588 \u2588\u2588\u2588 \u2588\u2588\u2588\u2588
-        \u2588 \u2588\u2588 \u2588\u2588"
+      value: meow
       objectReference: {fileID: 0}
     - target: {fileID: 4748359533858212756, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_fontSize

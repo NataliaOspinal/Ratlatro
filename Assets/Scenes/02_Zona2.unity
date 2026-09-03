@@ -503,6 +503,8 @@ MonoBehaviour:
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 9e42290dd5dd1e54e80a0df82840107a, type: 3}
   - numeroDeSala: 5
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: bd7b84c82fe12dd4689d72885c14bf3d, type: 3}
+  - numeroDeSala: 6
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: 896d7a402a90a844da3acb18f51819a0, type: 3}
   roomPrefabs: []
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
@@ -576,7 +578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2474, y: -12.999603}
+  m_AnchoredPosition: {x: 2474, y: -12.999634}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1070042619
@@ -998,6 +1000,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7597581026120929, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7597581026120929, guid: 5f8c7f7f974356940ba731673f3b85bd, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295

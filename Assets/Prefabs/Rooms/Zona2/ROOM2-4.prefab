@@ -4260,6 +4260,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
     - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      propertyPath: imagenRataUI
+      value: 
+      objectReference: {fileID: 2702477973027750592}
+    - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
       propertyPath: panelNubeNegra
       value: 
       objectReference: {fileID: 5934611158713338310}
@@ -4301,6 +4305,22 @@ PrefabInstance:
       propertyPath: 'puertasParaAbrir.Array.data[1]'
       value: 
       objectReference: {fileID: 5719771653891981035}
+    - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      propertyPath: lineasDialogo.Array.data[0].spriteRata
+      value: 
+      objectReference: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
+    - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      propertyPath: lineasDialogo.Array.data[1].spriteRata
+      value: 
+      objectReference: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
+    - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      propertyPath: lineasDialogo.Array.data[2].spriteRata
+      value: 
+      objectReference: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
+    - target: {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      propertyPath: lineasDialogo.Array.data[3].spriteRata
+      value: 
+      objectReference: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
     - target: {fileID: 1934103027309319218, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.32720363
@@ -4411,11 +4431,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: RataRecuerdo2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1638496932916355701, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8778810363775790931, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6529875016286034241}
   m_SourcePrefab: {fileID: 100100000, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+--- !u!1 &2852041564616596242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8778810363775790931, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
+  m_PrefabInstance: {fileID: 6791680244018361409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6529875016286034241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852041564616596242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1848f23dd295cdf47bc540f136ecabdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecuerdoNarrativo
+  panelNubeNegra: {fileID: 747242180139693369}
+  textoNarrativa: {fileID: 7136432081803423528}
+  imagenRataUI: {fileID: 2702477973027750592}
+  fuerzaSalto: 20
+  duracionSalto: 0.3
+  lineasDialogo:
+  - texto: "Aqu\xED abajo, las paredes han absorbido los recuerdos de todos los experimentos
+      fallidos"
+    spriteRata: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
+  - texto: "Escucho el eco de garras ara\xF1ando metal, de ratas corriendo en ruedas
+      interminables sin llegar a ning\xFAn lado "
+    spriteRata: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
+  - texto: "\xBFT\xFA tambi\xE9n lo recuerdas?"
+    spriteRata: {fileID: 21300000, guid: f841accd5ea7fe34b83727e8b958c6b0, type: 3}
+  - texto: "Sigan bajando. Mi bilis limpiar\xE1 esas ilusiones"
+    spriteRata: {fileID: 21300000, guid: f841accd5ea7fe34b83727e8b958c6b0, type: 3}
+  velocidadEscritura: 0.05
+  puertasParaAbrir:
+  - {fileID: 1203988763601823568}
+  - {fileID: 5719771653891981035}
 --- !u!4 &4942618428466208883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1934103027309319218, guid: a67933d7bcc09344d800b06b852c9683, type: 3}
@@ -4817,11 +4878,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+--- !u!1 &747242180139693369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7600666126014954098, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 7143906787695857483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &929849982588540156 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8053347622025092023, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
   m_PrefabInstance: {fileID: 7143906787695857483}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2702477973027750592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5090580758162967947, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}
+  m_PrefabInstance: {fileID: 7143906787695857483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &5934611158713338310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3566771982675510925, guid: 3bdcdedf50661e94f9f043d4de4f63d0, type: 3}

@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/02_Zona2.unity
     guid: 4a3df64a8591da64e901e6bd4b2cc198
   - enabled: 1
+    path: Assets/Scenes/03_Zona3.unity
+    guid: eb4ef457e43b0054086486c1e20d4a10
+  - enabled: 1
     path: Assets/Scenes/Trailer.unity
     guid: b81bcb26b1ba5cc48899047637a88fda
   - enabled: 1

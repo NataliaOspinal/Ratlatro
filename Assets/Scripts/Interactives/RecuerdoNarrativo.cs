@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI; 
+using DG.Tweening;
+
+[System.Serializable]
+public class LineaRecuerdo 
+{
+    [TextArea(2, 4)]
+    public string texto;
+    public Sprite spriteRata; 
+}
 
 public class RecuerdoNarrativo : MonoBehaviour
 {
@@ -10,22 +20,33 @@ public class RecuerdoNarrativo : MonoBehaviour
     public GameObject panelNubeNegra;
     public TextMeshProUGUI textoNarrativa;
 
-    [TextArea(2, 4)]
-    public string[] lineasDialogo = {
-        "linea1",
-        "linea2"
-    };
+    [Header("UI Rata")]
+    public Image imagenRataUI;
+    public float fuerzaSalto = 20f;
+    public float duracionSalto = 0.3f;
+
+    [Header("Di√°logo")]
+    public LineaRecuerdo[] lineasDialogo;
     public float velocidadEscritura = 0.05f;
 
-    // Lista de puertas que se abrir·n al finalizar el di·logo
     public List<Door> puertasParaAbrir;
 
     private bool yaRecogido = false;
+
+    private RectTransform rectRata;
+    private Vector2 posOriginalRata;
 
     private void Start()
     {
         if (panelNubeNegra != null) panelNubeNegra.SetActive(false);
         if (textoNarrativa != null) textoNarrativa.text = "";
+
+        if (imagenRataUI != null)
+        {
+            rectRata = imagenRataUI.GetComponent<RectTransform>();
+            posOriginalRata = rectRata.anchoredPosition;
+            imagenRataUI.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,11 +77,38 @@ public class RecuerdoNarrativo : MonoBehaviour
         if (scriptRata != null) scriptRata.canMove = false;
         if (panelNubeNegra != null) panelNubeNegra.SetActive(true);
 
-        foreach (string linea in lineasDialogo)
+        Sprite spriteAnterior = null;
+
+        foreach (LineaRecuerdo linea in lineasDialogo)
         {
             if (textoNarrativa == null) continue;
 
-            textoNarrativa.text = linea;
+            if (imagenRataUI != null)
+            {
+                if (linea.spriteRata != null)
+                {
+                    imagenRataUI.sprite = linea.spriteRata;
+                    imagenRataUI.gameObject.SetActive(true);
+
+                    if (linea.spriteRata != spriteAnterior)
+                    {
+                        if (rectRata != null)
+                        {
+                            rectRata.DOKill(true); 
+                            rectRata.anchoredPosition = posOriginalRata; 
+                            rectRata.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
+                        }
+                        spriteAnterior = linea.spriteRata;
+                    }
+                }
+                else
+                {
+                    imagenRataUI.gameObject.SetActive(false);
+                    spriteAnterior = null;
+                }
+            }
+
+            textoNarrativa.text = linea.texto;
             textoNarrativa.maxVisibleCharacters = 0;
             textoNarrativa.ForceMeshUpdate();
             int totalCaracteres = textoNarrativa.textInfo.characterCount;
@@ -76,8 +124,7 @@ public class RecuerdoNarrativo : MonoBehaviour
                 while (cronometro < velocidadEscritura)
                 {
                     cronometro += Time.deltaTime;
-                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
-                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
+                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
                     {
                         saltoDetectado = true;
                         break;
@@ -94,7 +141,6 @@ public class RecuerdoNarrativo : MonoBehaviour
 
             yield return null;
             yield return new WaitUntil(() =>
-                (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
                 (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
             );
             yield return null;
@@ -105,11 +151,10 @@ public class RecuerdoNarrativo : MonoBehaviour
         if (RoomManager.Instance != null) RoomManager.Instance.interaccionBloqueada = false;
         if (scriptRata != null) scriptRata.canMove = true;
 
-        // Abre puertas al finalizar el di·logo
         AbrirPuertas();
 
         Destroy(gameObject);
-    }
+    } 
 
     private void AbrirPuertas()
     {
@@ -117,7 +162,6 @@ public class RecuerdoNarrativo : MonoBehaviour
         {
             if (puerta != null)
             {
-                // EO
                 puerta.Abrir();
             }
         }

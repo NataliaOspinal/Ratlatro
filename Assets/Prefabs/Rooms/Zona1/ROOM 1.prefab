@@ -149,8 +149,7 @@ MonoBehaviour:
     spritePersonaje: {fileID: 21300000, guid: 15a016ff4830aef4da443df704d89cb6, type: 3}
   - texto: "Trata de estirar tus peque\xF1as patitas, tenemos mucho que hacer"
     spritePersonaje: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
-  - texto: "Prueba movi\xE9ndote (utiliza WASD) a esos papeles que encontrar\xE1s
-      m\xE1s adelante"
+  - texto: "Prueba movi\xE9ndote (utiliza WASD) para ir a la siguiente habitaci\xF3n"
     spritePersonaje: {fileID: 21300000, guid: de04a4531a39e854c8b9b532795de4dd, type: 3}
   velocidadEscritura: 0.05
   imagenPersonajeUI: {fileID: 300726662389792982}

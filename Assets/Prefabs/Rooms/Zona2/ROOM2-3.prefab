@@ -237,6 +237,7 @@ Transform:
   - {fileID: 1213434680834017721}
   - {fileID: 3013202444509036320}
   - {fileID: 4202145052587054437}
+  - {fileID: 392593528082111416}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7480170316329850249
@@ -2474,6 +2475,28 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.23
       objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: paginasHoja.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: 'paginasHoja.Array.data[0]'
+      value: "<i>Parece ser una queja por parte de una compa\xF1\xEDa de reparaci\xF3n
+        de aires acondicionados</i>\n\nQueridos REDACTED\r\nSe les notifica desde
+        Happy Icy Cool Airs que dejaremos de prestar servicio en el mantenimiento
+        del sistema de enfriamiento y aires acondicionados de su instalaci\xF3n,
+        es la 5ta vez que encontramos desechos biol\xF3gicos inesperados en nuestras
+        rondas de mantenimiento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: 'paginasHoja.Array.data[1]'
+      value: "Agradecemos su consideraci\xF3n, pero ni siquiera el aumento que el
+        Dr. Rodriguez nos insinu\xF3 es suficiente para arriesgarnos a los peligros
+        que puede presentar.\r\nTal como qued\xF3 estipulado en el contrato inicial
+        no se hablar\xE1 m\xE1s de nuestro partnership y toda copia y papeleo correspondiente
+        a nuestra asociaci\xF3n ser\xE1 destruida de inmediato\r\n\r\nCon amor, el
+        equipo de Happy Icy Cool Airs."
+      objectReference: {fileID: 0}
     - target: {fileID: 4687428136521720718, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -2547,6 +2570,138 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
   m_PrefabInstance: {fileID: 6364769666772662299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6561451545836617638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 856629393313047508}
+    m_Modifications:
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].texto
+      value: Querido R4T-001, te he estado observando a medida que has ido avanzando.
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].texto
+      value: "Mis receptores sonoros han captado cierta se\xF1al que viene de lo
+        m\xE1s profundo del reactor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].texto
+      value: No me gustan las ondas en las que se comunica. No creo que debas hacerle
+        caso o seguir sus consejos.
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].texto
+      value: "Recuerda que siempre puedes confiar en m\xED en lo que necesites."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 232156d64762aa4499eba88ac6fcc79a, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: a8f0cb9762061684192db263e8e17eb9, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 232156d64762aa4499eba88ac6fcc79a, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 232156d64762aa4499eba88ac6fcc79a, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionPersonaje
+      value: 
+      objectReference: {fileID: -1464113051628181325, guid: 8d48b8b2db1052d48b9e60d2d34f27c7, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_Name
+      value: CilindroGlitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.49277174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.63689125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+--- !u!4 &392593528082111416 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6808370412745188382, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+  m_PrefabInstance: {fileID: 6561451545836617638}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7404713236179179548
 PrefabInstance:

@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: afa2c2a75d7f1a843a9a9ff3f4f72b91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 593073697678117793
+    second: rataelectro-movUp-Izq_0
+  - first:
+      213: 8559289597786266015
+    second: rataelectro-movUp-Izq_1
+  - first:
+      213: -1524273157100709819
+    second: rataelectro-movUp-Izq_2
+  - first:
+      213: 3908638396386756177
+    second: rataelectro-movUp-Izq_3
+  - first:
+      213: -719390388018870695
+    second: rataelectro-movUp-Izq_4
+  - first:
+      213: 3314874772717673831
+    second: rataelectro-movUp-Izq_5
+  - first:
+      213: -5907935516926949424
+    second: rataelectro-movUp-Izq_6
+  - first:
+      213: -7168455639458477976
+    second: rataelectro-movUp-Izq_7
+  - first:
+      213: -2021577733551158119
+    second: rataelectro-movUp-Izq_8
+  - first:
+      213: -8579343256338398004
+    second: rataelectro-movUp-Izq_9
+  - first:
+      213: -1329265290692596725
+    second: rataelectro-movUp-Izq_10
+  - first:
+      213: 5824830513049623916
+    second: rataelectro-movUp-Izq_11
+  - first:
+      213: -5396049283867224394
+    second: rataelectro-movUp-Izq_12
+  - first:
+      213: 5010695713856237341
+    second: rataelectro-movUp-Izq_13
+  - first:
+      213: 5743909167799625743
+    second: rataelectro-movUp-Izq_14
+  - first:
+      213: -4838524124521011704
+    second: rataelectro-movUp-Izq_15
+  - first:
+      213: -5956416370025278246
+    second: rataelectro-movUp-Izq_16
+  - first:
+      213: -2210033630083737293
+    second: rataelectro-movUp-Izq_17
+  - first:
+      213: -3476787035454563771
+    second: rataelectro-movUp-Izq_18
+  - first:
+      213: 716906826950773357
+    second: rataelectro-movUp-Izq_19
+  - first:
+      213: -1808804893846904587
+    second: rataelectro-movUp-Izq_20
+  - first:
+      213: 4458408136504255687
+    second: rataelectro-movUp-Izq_21
+  - first:
+      213: 8369705748012023711
+    second: rataelectro-movUp-Izq_22
+  - first:
+      213: -2879963592447782189
+    second: rataelectro-movUp-Izq_23
+  - first:
+      213: 768728573816564138
+    second: rataelectro-movUp-Izq_24
+  - first:
+      213: 2530852031113153098
+    second: rataelectro-movUp-Izq_25
+  - first:
+      213: -3290486335929545831
+    second: rataelectro-movUp-Izq_26
+  - first:
+      213: 8802238881859818952
+    second: rataelectro-movUp-Izq_27
+  - first:
+      213: 8972589962219614886
+    second: rataelectro-movUp-Izq_28
+  - first:
+      213: -5373745883419973255
+    second: rataelectro-movUp-Izq_29
+  - first:
+      213: -6585029984611913231
+    second: rataelectro-movUp-Izq_30
+  - first:
+      213: -2961929311595439378
+    second: rataelectro-movUp-Izq_31
+  - first:
+      213: 4669796510684991574
+    second: rataelectro-movUp-Izq_32
+  - first:
+      213: -146074705870711186
+    second: rataelectro-movUp-Izq_33
+  - first:
+      213: -6017926478376343848
+    second: rataelectro-movUp-Izq_34
+  - first:
+      213: 8041574943790439241
+    second: rataelectro-movUp-Izq_35
+  - first:
+      213: 3769915226392134193
+    second: rataelectro-movUp-Izq_36
+  - first:
+      213: -6717111202044614842
+    second: rataelectro-movUp-Izq_37
+  - first:
+      213: 682573134144339447
+    second: rataelectro-movUp-Izq_38
+  - first:
+      213: -8401592778620022009
+    second: rataelectro-movUp-Izq_39
+  - first:
+      213: 1333737921504369020
+    second: rataelectro-movUp-Izq_40
+  - first:
+      213: -7072341420200380180
+    second: rataelectro-movUp-Izq_41
+  - first:
+      213: -8762088510998915462
+    second: rataelectro-movUp-Izq_42
+  - first:
+      213: 5317479222964644769
+    second: rataelectro-movUp-Izq_43
+  - first:
+      213: -2407341230291122350
+    second: rataelectro-movUp-Izq_44
+  - first:
+      213: 6819430459327174638
+    second: rataelectro-movUp-Izq_45
+  - first:
+      213: -1950459612029917295
+    second: rataelectro-movUp-Izq_46
+  - first:
+      213: -4932025768936244298
+    second: rataelectro-movUp-Izq_47
+  - first:
+      213: -7917217863072223376
+    second: rataelectro-movUp-Izq_48
+  - first:
+      213: -2812741452338103824
+    second: rataelectro-movUp-Izq_49
+  - first:
+      213: 3712672430027616624
+    second: rataelectro-movUp-Izq_50
+  - first:
+      213: -4429269131332000915
+    second: rataelectro-movUp-Izq_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab4bb3c2650b3800800000000000000
+      internalID: 593073697678117793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f991fb54a84b8c670800000000000000
+      internalID: 8559289597786266015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548595ab3a1b8dae0800000000000000
+      internalID: -1524273157100709819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c514a9e54e3630800000000000000
+      internalID: 3908638396386756177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9560e4be0463406f0800000000000000
+      internalID: -719390388018870695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d9db6fa0dc00e20800000000000000
+      internalID: 3314874772717673831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7c7ade2fbc20ea0800000000000000
+      internalID: -5907935516926949424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_7
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8688ee57397848c90800000000000000
+      internalID: -7168455639458477976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c08d913c9e1f3e0800000000000000
+      internalID: -2021577733551158119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc48ecf73cc00f880800000000000000
+      internalID: -8579343256338398004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ce208c2408d8de0800000000000000
+      internalID: -1329265290692596725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_11
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ddd278d74f5d050800000000000000
+      internalID: 5824830513049623916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_12
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6d79c04c16d15b0800000000000000
+      internalID: -5396049283867224394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_13
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f29f53431998540800000000000000
+      internalID: 5010695713856237341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_14
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f086ec0a4f676bf40800000000000000
+      internalID: 5743909167799625743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_15
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80664c0c1fb1adcb0800000000000000
+      internalID: -4838524124521011704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-Izq_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad45252bede865da0800000000000000
+      internalID: -5956416370025278246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c49009d8831bb5945942fcd772348dec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      rataelectro-movUp-Izq_0: 593073697678117793
+      rataelectro-movUp-Izq_1: 8559289597786266015
+      rataelectro-movUp-Izq_10: -1329265290692596725
+      rataelectro-movUp-Izq_11: 5824830513049623916
+      rataelectro-movUp-Izq_12: -5396049283867224394
+      rataelectro-movUp-Izq_13: 5010695713856237341
+      rataelectro-movUp-Izq_14: 5743909167799625743
+      rataelectro-movUp-Izq_15: -4838524124521011704
+      rataelectro-movUp-Izq_16: -5956416370025278246
+      rataelectro-movUp-Izq_17: -2210033630083737293
+      rataelectro-movUp-Izq_18: -3476787035454563771
+      rataelectro-movUp-Izq_19: 716906826950773357
+      rataelectro-movUp-Izq_2: -1524273157100709819
+      rataelectro-movUp-Izq_20: -1808804893846904587
+      rataelectro-movUp-Izq_21: 4458408136504255687
+      rataelectro-movUp-Izq_22: 8369705748012023711
+      rataelectro-movUp-Izq_3: 3908638396386756177
+      rataelectro-movUp-Izq_4: -719390388018870695
+      rataelectro-movUp-Izq_5: 3314874772717673831
+      rataelectro-movUp-Izq_6: -5907935516926949424
+      rataelectro-movUp-Izq_7: -7168455639458477976
+      rataelectro-movUp-Izq_8: -2021577733551158119
+      rataelectro-movUp-Izq_9: -8579343256338398004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

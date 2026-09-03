@@ -22,7 +22,10 @@ public class ManagerSimon : MonoBehaviour
     
     [Header("Diseño de Niveles")]
     public RondaSimon[] rondas; 
-    public float velocidadLuces = 0.8f; 
+    public float velocidadLuces = 0.8f;
+
+    public GestorParedesAlternas gestorParedes;
+    public TorretaElectrica torreta;
 
     private int rondaActual = 0; 
     private int pasoActual = 0;  

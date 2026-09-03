@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: 509dd1cabd8a5ad4fb2716a1175e96e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4169591029675458882
+    second: rataelectro-movDown-Izq_0
+  - first:
+      213: -6354503696193732894
+    second: rataelectro-movDown-Izq_1
+  - first:
+      213: 7343937802330127021
+    second: rataelectro-movDown-Izq_2
+  - first:
+      213: 9071782378363397432
+    second: rataelectro-movDown-Izq_3
+  - first:
+      213: -4184862625664222677
+    second: rataelectro-movDown-Izq_4
+  - first:
+      213: -1877138475735344129
+    second: rataelectro-movDown-Izq_5
+  - first:
+      213: -3156862574979252540
+    second: rataelectro-movDown-Izq_6
+  - first:
+      213: -8016038918121133137
+    second: rataelectro-movDown-Izq_7
+  - first:
+      213: 6337532662764048396
+    second: rataelectro-movDown-Izq_8
+  - first:
+      213: 4429582713269062653
+    second: rataelectro-movDown-Izq_9
+  - first:
+      213: -1478085393548317309
+    second: rataelectro-movDown-Izq_10
+  - first:
+      213: -2795804247168090547
+    second: rataelectro-movDown-Izq_11
+  - first:
+      213: -8602239442739422642
+    second: rataelectro-movDown-Izq_12
+  - first:
+      213: -3799682597917739274
+    second: rataelectro-movDown-Izq_13
+  - first:
+      213: 1823357949994084421
+    second: rataelectro-movDown-Izq_14
+  - first:
+      213: -5693472416621617586
+    second: rataelectro-movDown-Izq_15
+  - first:
+      213: -2757910202249131860
+    second: rataelectro-movDown-Izq_16
+  - first:
+      213: -1524195516049675576
+    second: rataelectro-movDown-Izq_17
+  - first:
+      213: -3373979498053455804
+    second: rataelectro-movDown-Izq_18
+  - first:
+      213: -1949156329593552216
+    second: rataelectro-movDown-Izq_19
+  - first:
+      213: 6979021730851538648
+    second: rataelectro-movDown-Izq_20
+  - first:
+      213: -8491739286106185231
+    second: rataelectro-movDown-Izq_21
+  - first:
+      213: 4408318526301560991
+    second: rataelectro-movDown-Izq_22
+  - first:
+      213: 8759648331995919610
+    second: rataelectro-movDown-Izq_23
+  - first:
+      213: -951122688236404120
+    second: rataelectro-movDown-Izq_24
+  - first:
+      213: 8559831667922579753
+    second: rataelectro-movDown-Izq_25
+  - first:
+      213: 483826011127520778
+    second: rataelectro-movDown-Izq_26
+  - first:
+      213: -7594170079786435951
+    second: rataelectro-movDown-Izq_27
+  - first:
+      213: -5566672893590499248
+    second: rataelectro-movDown-Izq_28
+  - first:
+      213: 1000493666562835427
+    second: rataelectro-movDown-Izq_29
+  - first:
+      213: -7723996035787901779
+    second: rataelectro-movDown-Izq_30
+  - first:
+      213: 2301756291549469331
+    second: rataelectro-movDown-Izq_31
+  - first:
+      213: 1112237332279203142
+    second: rataelectro-movDown-Izq_32
+  - first:
+      213: 4631374548270576630
+    second: rataelectro-movDown-Izq_33
+  - first:
+      213: -1337314871657446846
+    second: rataelectro-movDown-Izq_34
+  - first:
+      213: 5944612868942535464
+    second: rataelectro-movDown-Izq_35
+  - first:
+      213: -8057052485993228146
+    second: rataelectro-movDown-Izq_36
+  - first:
+      213: -5830202083877154668
+    second: rataelectro-movDown-Izq_37
+  - first:
+      213: 5742913505663598355
+    second: rataelectro-movDown-Izq_38
+  - first:
+      213: -6422524297197435138
+    second: rataelectro-movDown-Izq_39
+  - first:
+      213: 5680320794307622777
+    second: rataelectro-movDown-Izq_40
+  - first:
+      213: 5868429847388150495
+    second: rataelectro-movDown-Izq_41
+  - first:
+      213: -679107661095023036
+    second: rataelectro-movDown-Izq_42
+  - first:
+      213: -8714104717501543758
+    second: rataelectro-movDown-Izq_43
+  - first:
+      213: 1152376654613615963
+    second: rataelectro-movDown-Izq_44
+  - first:
+      213: 5677205704081212557
+    second: rataelectro-movDown-Izq_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebef989cc03a226c0800000000000000
+      internalID: -4169591029675458882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee37705e8440d7a0800000000000000
+      internalID: -6354503696193732894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa33787588eae560800000000000000
+      internalID: 7343937802330127021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835affd320275ed70800000000000000
+      internalID: 9071782378363397432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ab9734d916ce5c0800000000000000
+      internalID: -4184862625664222677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb9397708013f5e0800000000000000
+      internalID: -1877138475735344129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cef2adb6329034d0800000000000000
+      internalID: -3156862574979252540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_7
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabeea3231f41c090800000000000000
+      internalID: -8016038918121133137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009c7c016073f750800000000000000
+      internalID: 6337532662764048396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb0d9f320a097d30800000000000000
+      internalID: 4429582713269062653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38debd17a29cc7be0800000000000000
+      internalID: -1478085393548317309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_11
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e740a99de4339d0800000000000000
+      internalID: -2795804247168090547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_12
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a99aeadc4be9880800000000000000
+      internalID: -8602239442739422642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_13
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f631eb0fc0d44bc0800000000000000
+      internalID: -3799682597917739274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_14
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54828cb156edd4910800000000000000
+      internalID: 1823357949994084421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_15
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e98cc9009bcf0b0800000000000000
+      internalID: -5693472416621617586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movDown-Izq_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8c388784fe9b9d0800000000000000
+      internalID: -2757910202249131860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e580be1bcb121a34fa589e0ee6551c4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      rataelectro-movDown-Izq_0: -4169591029675458882
+      rataelectro-movDown-Izq_1: -6354503696193732894
+      rataelectro-movDown-Izq_10: -1478085393548317309
+      rataelectro-movDown-Izq_11: -2795804247168090547
+      rataelectro-movDown-Izq_12: -8602239442739422642
+      rataelectro-movDown-Izq_13: -3799682597917739274
+      rataelectro-movDown-Izq_14: 1823357949994084421
+      rataelectro-movDown-Izq_15: -5693472416621617586
+      rataelectro-movDown-Izq_16: -2757910202249131860
+      rataelectro-movDown-Izq_17: -1524195516049675576
+      rataelectro-movDown-Izq_18: -3373979498053455804
+      rataelectro-movDown-Izq_19: -1949156329593552216
+      rataelectro-movDown-Izq_2: 7343937802330127021
+      rataelectro-movDown-Izq_20: 6979021730851538648
+      rataelectro-movDown-Izq_21: -8491739286106185231
+      rataelectro-movDown-Izq_3: 9071782378363397432
+      rataelectro-movDown-Izq_4: -4184862625664222677
+      rataelectro-movDown-Izq_5: -1877138475735344129
+      rataelectro-movDown-Izq_6: -3156862574979252540
+      rataelectro-movDown-Izq_7: -8016038918121133137
+      rataelectro-movDown-Izq_8: 6337532662764048396
+      rataelectro-movDown-Izq_9: 4429582713269062653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

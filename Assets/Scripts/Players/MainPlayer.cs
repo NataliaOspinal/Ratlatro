@@ -274,6 +274,27 @@ public class MainPlayer : BaseIsometricPlayer
         }
     }
 
+    public void ReproducirAnimacionElectrocutada()
+    {
+        if (animator == null) return;
+
+        // Comprobamos la dirección en el eje X e Y basándonos en el lastFacingDirection
+        bool miraIzquierda = lastFacingDirection.x < 0;
+        bool miraArriba = lastFacingDirection.y > 0;
+
+        if (miraArriba)
+        {
+            if (miraIzquierda) animator.SetTrigger("RataElectrocutadaUpIzq");
+            else animator.SetTrigger("RataElectrocutadaUpDer");
+        }
+        else
+        {
+            // Esta sección cubre el movimiento hacia abajo y el estado Idle lateral
+            if (miraIzquierda) animator.SetTrigger("RataElectrocutadaIzq");
+            else animator.SetTrigger("RataElectrocutadaDer");
+        }
+    }
+
     public void Revivir()
     {
         this.enabled = true; // para que vuelva encender el script

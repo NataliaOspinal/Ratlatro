@@ -22,17 +22,39 @@ public class ManagerSimon : MonoBehaviour
     
     [Header("Diseño de Niveles")]
     public RondaSimon[] rondas; 
-    public float velocidadLuces = 0.8f; 
+    public float velocidadLuces = 0.8f;
+
+    public GestorParedesAlternas gestorParedes;
+    public TorretaElectrica torreta;
 
     private int rondaActual = 0; 
-    private int pasoActual = 0;  
-    
+    private int pasoActual = 0;
+    private bool puzzleIniciado = false;
     [HideInInspector] 
     public bool esperandoJugador = false;
 
+    void Awake()
+    {
+        // El gestor se presenta a sí mismo exclusivamente ante sus propias baldosas
+        foreach (var baldosa in baldosas)
+        {
+            if (baldosa != null) baldosa.manager = this;
+        }
+    }
     void Start()
     {
-        Invoke("EmpezarNuevaRonda", 2f); 
+        //Invoke("EmpezarNuevaRonda", 2f); 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Si el jugador entra a la zona y el puzzle está apagado, lo arrancamos
+        if (!puzzleIniciado && collision.CompareTag("Player"))
+        {
+            puzzleIniciado = true;
+            // Le damos 1 segundo de cortesía para que la rata termine de acercarse antes de brillar
+            Invoke("EmpezarNuevaRonda", 1f);
+        }
     }
 
     public void EmpezarNuevaRonda()
@@ -44,6 +66,7 @@ public class ManagerSimon : MonoBehaviour
                     fuenteDeAudio.PlayOneShot(sonidoFinish);
                 }   
             Debug.Log("Puzzle completado");
+            if (gestorParedes != null) gestorParedes.AlternarGrupos();
             return; 
         }
 
@@ -110,17 +133,12 @@ public class ManagerSimon : MonoBehaviour
         else
         {
             esperandoJugador = false;
-            MatarRata();
-        }
-    }
 
-    void MatarRata()
-    {
-        MainPlayer rata = FindAnyObjectByType<MainPlayer>();
-        if (rata != null)
-        {
-            Debug.Log("rip");
-            rata.Morir(); 
+            // En lugar de matar instantáneamente, encendemos la trampa
+            if (torreta != null)
+            {
+                torreta.ActivarTrampa();
+            }
         }
     }
 }

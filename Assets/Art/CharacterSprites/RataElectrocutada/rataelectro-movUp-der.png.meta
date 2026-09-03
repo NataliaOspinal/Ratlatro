@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: 1cb96879eafe80a43a73e6bce4ee75b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5675309565413434773
+    second: rataelectro-movUp-der_0
+  - first:
+      213: 365715120045253844
+    second: rataelectro-movUp-der_1
+  - first:
+      213: 3640660135062067617
+    second: rataelectro-movUp-der_2
+  - first:
+      213: 8038940495597686724
+    second: rataelectro-movUp-der_3
+  - first:
+      213: -7418777531737798378
+    second: rataelectro-movUp-der_4
+  - first:
+      213: -7459450755408026561
+    second: rataelectro-movUp-der_5
+  - first:
+      213: -5880504059022356793
+    second: rataelectro-movUp-der_6
+  - first:
+      213: 704052326609519555
+    second: rataelectro-movUp-der_7
+  - first:
+      213: -8624526282005891980
+    second: rataelectro-movUp-der_8
+  - first:
+      213: -8075970130270699163
+    second: rataelectro-movUp-der_9
+  - first:
+      213: 5426796095892432958
+    second: rataelectro-movUp-der_10
+  - first:
+      213: -5683320215380962387
+    second: rataelectro-movUp-der_11
+  - first:
+      213: 5552158640766002751
+    second: rataelectro-movUp-der_12
+  - first:
+      213: 511518426588442600
+    second: rataelectro-movUp-der_13
+  - first:
+      213: -7909517301724369281
+    second: rataelectro-movUp-der_14
+  - first:
+      213: -1618038324865099176
+    second: rataelectro-movUp-der_15
+  - first:
+      213: 6650782814615179485
+    second: rataelectro-movUp-der_16
+  - first:
+      213: 5931069824115685628
+    second: rataelectro-movUp-der_17
+  - first:
+      213: -2901637836316749583
+    second: rataelectro-movUp-der_18
+  - first:
+      213: -5493589673078955421
+    second: rataelectro-movUp-der_19
+  - first:
+      213: 6276616761126136192
+    second: rataelectro-movUp-der_20
+  - first:
+      213: 3779023118110281456
+    second: rataelectro-movUp-der_21
+  - first:
+      213: -5486059528554068367
+    second: rataelectro-movUp-der_22
+  - first:
+      213: 128655998846743586
+    second: rataelectro-movUp-der_23
+  - first:
+      213: -8294658346077807386
+    second: rataelectro-movUp-der_24
+  - first:
+      213: -3848634503125091607
+    second: rataelectro-movUp-der_25
+  - first:
+      213: 2903446143800754560
+    second: rataelectro-movUp-der_26
+  - first:
+      213: -6086862751811794206
+    second: rataelectro-movUp-der_27
+  - first:
+      213: -7044770409385616366
+    second: rataelectro-movUp-der_28
+  - first:
+      213: -6484612156886327174
+    second: rataelectro-movUp-der_29
+  - first:
+      213: -2469253628740918339
+    second: rataelectro-movUp-der_30
+  - first:
+      213: 311874508056025123
+    second: rataelectro-movUp-der_31
+  - first:
+      213: -5253194434178081050
+    second: rataelectro-movUp-der_32
+  - first:
+      213: 4057903554598929420
+    second: rataelectro-movUp-der_33
+  - first:
+      213: -89629984396733550
+    second: rataelectro-movUp-der_34
+  - first:
+      213: 7710766067192077047
+    second: rataelectro-movUp-der_35
+  - first:
+      213: -744346636162581609
+    second: rataelectro-movUp-der_36
+  - first:
+      213: -5666720110827376312
+    second: rataelectro-movUp-der_37
+  - first:
+      213: -4904077971487997561
+    second: rataelectro-movUp-der_38
+  - first:
+      213: 7727970779228411178
+    second: rataelectro-movUp-der_39
+  - first:
+      213: 7271064915538035076
+    second: rataelectro-movUp-der_40
+  - first:
+      213: -2610637874051773882
+    second: rataelectro-movUp-der_41
+  - first:
+      213: -7383634887657715914
+    second: rataelectro-movUp-der_42
+  - first:
+      213: -473839981011443141
+    second: rataelectro-movUp-der_43
+  - first:
+      213: -3133038072203845215
+    second: rataelectro-movUp-der_44
+  - first:
+      213: -5081011399097979046
+    second: rataelectro-movUp-der_45
+  - first:
+      213: 8648379577733822180
+    second: rataelectro-movUp-der_46
+  - first:
+      213: 6541373738427090541
+    second: rataelectro-movUp-der_47
+  - first:
+      213: -3631508746147753911
+    second: rataelectro-movUp-der_48
+  - first:
+      213: 1279798276643088236
+    second: rataelectro-movUp-der_49
+  - first:
+      213: 7356267345960431053
+    second: rataelectro-movUp-der_50
+  - first:
+      213: 7827720453310325997
+    second: rataelectro-movUp-der_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59528dc0bffb2ce40800000000000000
+      internalID: 5675309565413434773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4694bc6f7431500800000000000000
+      internalID: 365715120045253844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_2
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9dc429a19368230800000000000000
+      internalID: 3640660135062067617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_3
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf4a92e9cd009f60800000000000000
+      internalID: 8038940495597686724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_4
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6198e1924253b0990800000000000000
+      internalID: -7418777531737798378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_5
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34a2605f05ba7890800000000000000
+      internalID: -7459450755408026561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_6
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cecabde6b0446ea0800000000000000
+      internalID: -5880504059022356793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_7
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 3200
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c309de5cdb45c900800000000000000
+      internalID: 704052326609519555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474b40d8a078f4880800000000000000
+      internalID: -8624526282005891980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561cc8074f36cef80800000000000000
+      internalID: -8075970130270699163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38252cfb4adf4b40800000000000000
+      internalID: 5426796095892432958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_11
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3db69206ac021b0800000000000000
+      internalID: -5683320215380962387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_12
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36297ffdda3d0d40800000000000000
+      internalID: 5552158640766002751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_13
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efeed08c47491700800000000000000
+      internalID: 511518426588442600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_14
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ea9e5abefbb3290800000000000000
+      internalID: -7909517301724369281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_15
+      rect:
+        serializedVersion: 2
+        x: 11200
+        y: 1600
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a927d57b29b89e0800000000000000
+      internalID: -1618038324865099176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rataelectro-movUp-der_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 1600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd019678bb35c4c50800000000000000
+      internalID: 6650782814615179485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6b6430bf31b1df1448ee969760ac13e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":1600.0,"y":1600.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.550000011920929,"y":0.3199999928474426},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      rataelectro-movUp-der_0: 5675309565413434773
+      rataelectro-movUp-der_1: 365715120045253844
+      rataelectro-movUp-der_10: 5426796095892432958
+      rataelectro-movUp-der_11: -5683320215380962387
+      rataelectro-movUp-der_12: 5552158640766002751
+      rataelectro-movUp-der_13: 511518426588442600
+      rataelectro-movUp-der_14: -7909517301724369281
+      rataelectro-movUp-der_15: -1618038324865099176
+      rataelectro-movUp-der_16: 6650782814615179485
+      rataelectro-movUp-der_17: 5931069824115685628
+      rataelectro-movUp-der_18: -2901637836316749583
+      rataelectro-movUp-der_19: -5493589673078955421
+      rataelectro-movUp-der_2: 3640660135062067617
+      rataelectro-movUp-der_20: 6276616761126136192
+      rataelectro-movUp-der_21: 3779023118110281456
+      rataelectro-movUp-der_22: -5486059528554068367
+      rataelectro-movUp-der_3: 8038940495597686724
+      rataelectro-movUp-der_4: -7418777531737798378
+      rataelectro-movUp-der_5: -7459450755408026561
+      rataelectro-movUp-der_6: -5880504059022356793
+      rataelectro-movUp-der_7: 704052326609519555
+      rataelectro-movUp-der_8: -8624526282005891980
+      rataelectro-movUp-der_9: -8075970130270699163
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

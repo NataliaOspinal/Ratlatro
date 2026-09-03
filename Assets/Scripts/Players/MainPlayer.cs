@@ -302,6 +302,12 @@ public class MainPlayer : BaseIsometricPlayer
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         if (sr != null) sr.enabled = true;
+
+        if (animator != null)
+        {
+            animator.ResetTrigger("RataElectrocutada");
+            animator.Play("Idle Normal"); // Vuelve directamente a tu estado por defecto
+        }
     }
 
 }

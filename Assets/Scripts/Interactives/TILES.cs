@@ -9,15 +9,14 @@ public class TILES : MonoBehaviour
     public Color colorPisado = Color.gray;
 
     private SpriteRenderer spriteRenderer;
-    private ManagerSimon manager;
-    
+    public ManagerSimon manager;
+
     private bool haSidoPisada = false; 
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = colorNormal;
-        manager = FindAnyObjectByType<ManagerSimon>(); 
     }
 
     public void Brillar() => spriteRenderer.color = colorBrillo;

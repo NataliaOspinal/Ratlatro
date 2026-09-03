@@ -14,9 +14,17 @@ public class GestorParedesAlternas : MonoBehaviour
 
     private void Start()
     {
-        // Forzamos el estado inicial exacto al cargar la habitación
-        AplicarEstado(grupoA, true);
-        AplicarEstado(grupoB, false);
+        // El Grupo A se asegura de estar arriba
+        foreach (ObstaculoHundible pared in grupoA)
+        {
+            if (pared != null) pared.Mostrar();
+        }
+
+        // El Grupo B arranca hundido al instante de forma invisible
+        foreach (ObstaculoHundible pared in grupoB)
+        {
+            if (pared != null) pared.HundirInstantaneo();
+        }
     }
 
     public void AlternarGrupos()

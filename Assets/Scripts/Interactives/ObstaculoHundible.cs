@@ -20,9 +20,8 @@ public class ObstaculoHundible : MonoBehaviour
     private Coroutine rutinaActual;
     private Collider2D colisionadorFisico;
 
-    private void Start()
+    private void Awake()
     {
-        // Guardamos las posiciones locales del DIBUJO, no del padre
         if (objetoVisual != null)
         {
             posOriginal = objetoVisual.localPosition;
@@ -30,6 +29,13 @@ public class ObstaculoHundible : MonoBehaviour
         }
 
         colisionadorFisico = GetComponent<Collider2D>();
+    }
+
+    // Teletransporta la pared hacia abajo sin animación ni sonido
+    public void HundirInstantaneo()
+    {
+        if (objetoVisual != null) objetoVisual.localPosition = posOculta;
+        if (colisionadorFisico != null) colisionadorFisico.enabled = false;
     }
 
     public void Ocultar()

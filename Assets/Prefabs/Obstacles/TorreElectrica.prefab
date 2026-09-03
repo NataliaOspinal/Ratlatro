@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 6808370412745188382}
   - component: {fileID: 549470930229821993}
   - component: {fileID: 751952023464305066}
+  - component: {fileID: 7492936569279914090}
   m_Layer: 0
   m_Name: TorreElectrica
   m_TagString: Untagged
@@ -231,9 +232,22 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.008998236, y: 0.3956375}
   m_Radius: 4.360025
+--- !u!114 &7492936569279914090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548800590339929965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cb7f73ba8611c4ba967814a2cefbc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TorretaElectrica
+  tiempoElectrocutado: 1.2

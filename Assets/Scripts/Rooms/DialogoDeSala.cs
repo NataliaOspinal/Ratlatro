@@ -15,6 +15,10 @@ public struct LineaDialogoSala
 
 public class DialogoDeSala : MonoBehaviour
 {
+    [Header("Sonidos (SFX)")] 
+    public AudioSource fuenteAudio;
+    public AudioClip sfxDialogoLinea;
+
     [Header("UI Narrativa")]
     public GameObject panelNarracion; 
     public TextMeshProUGUI textoNarrativa;
@@ -75,6 +79,12 @@ public class DialogoDeSala : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
+            if (fuenteAudio != null && sfxDialogoLinea != null)
+            {
+                fuenteAudio.clip = sfxDialogoLinea;
+                fuenteAudio.Play();
+            }
+
             if (linea.spritePersonaje != null && imagenPersonajeUI != null)
             {
                 imagenPersonajeUI.sprite = linea.spritePersonaje;
@@ -129,6 +139,11 @@ public class DialogoDeSala : MonoBehaviour
                     textoNarrativa.maxVisibleCharacters = totalCaracteres;
                     break; 
                 }
+            }
+
+            if (fuenteAudio != null)
+            {
+                fuenteAudio.Stop();
             }
 
             yield return null; 

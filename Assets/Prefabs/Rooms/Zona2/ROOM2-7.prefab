@@ -574,6 +574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ebdea839a9eb34eb80bab0aefb989a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogoDeSala
+  fuenteAudio: {fileID: 6462850291406040232}
+  sfxDialogoLinea: {fileID: 8300000, guid: 5b64827a6baa34149bec9317e90a4560, type: 3}
   panelNarracion: {fileID: 4529231251398194990}
   textoNarrativa: {fileID: 6308417404579736895}
   imagenPersonajeUI: {fileID: 1226266058397499607}
@@ -848,6 +850,11 @@ PrefabInstance:
 --- !u!4 &3048325235912736564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+  m_PrefabInstance: {fileID: 5774821972842098998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6462850291406040232 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 690425019839733150, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
   m_PrefabInstance: {fileID: 5774821972842098998}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6314594517099531612

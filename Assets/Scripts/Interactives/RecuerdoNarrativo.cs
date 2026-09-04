@@ -16,6 +16,10 @@ public class LineaRecuerdo
 
 public class RecuerdoNarrativo : MonoBehaviour
 {
+    [Header("Sonidos (SFX)")]
+    public AudioSource fuenteAudio;
+    public AudioClip sfxDialogoLinea;
+
     [Header("UI Narrativa")]
     public GameObject panelNubeNegra;
     public TextMeshProUGUI textoNarrativa;
@@ -83,6 +87,12 @@ public class RecuerdoNarrativo : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
+            if (fuenteAudio != null && sfxDialogoLinea != null)
+            {
+                fuenteAudio.clip = sfxDialogoLinea;
+                fuenteAudio.Play();
+            }
+
             if (imagenRataUI != null)
             {
                 if (linea.spriteRata != null)
@@ -137,6 +147,11 @@ public class RecuerdoNarrativo : MonoBehaviour
                     textoNarrativa.maxVisibleCharacters = totalCaracteres;
                     break;
                 }
+            }
+
+            if (fuenteAudio != null)
+            {
+                fuenteAudio.Stop();
             }
 
             yield return null;

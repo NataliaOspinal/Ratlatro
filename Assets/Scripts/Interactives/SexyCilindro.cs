@@ -28,6 +28,7 @@ public class SexyCilindro : MonoBehaviour
     public GameObject signoInterrogacion;
     public AudioSource fuenteAudio;
     public AudioClip sonidoAparece;
+    public AudioClip sfxDialogoLinea;
 
 
     [Header("El Diálogo")]
@@ -266,6 +267,12 @@ public class SexyCilindro : MonoBehaviour
     IEnumerator EscribirLetraPorLetra(string textoCompleto)
     {
         escribiendoTexto = true; 
+
+        if (fuenteAudio != null && sfxDialogoLinea != null)
+        {
+            fuenteAudio.clip = sfxDialogoLinea;
+            fuenteAudio.Play();
+        }
         
         textoDialogoUI.text = textoCompleto;
         textoDialogoUI.maxVisibleCharacters = 0;
@@ -300,6 +307,12 @@ public class SexyCilindro : MonoBehaviour
                 break; 
             }
         }
+
+        if (fuenteAudio != null)
+        {
+            fuenteAudio.Stop();
+        }
+
         yield return null;
         escribiendoTexto = false; 
     }
@@ -343,6 +356,11 @@ IEnumerator RutinaGlitchPeriodico()
         if (scriptRata != null) scriptRata.canMove = true;
 
         if (corrutinaGlitch != null) StopCoroutine(corrutinaGlitch);
+
+        if (fuenteAudio != null)
+        {
+            fuenteAudio.Stop();
+        }
 
         if (rectPanel != null)
         {

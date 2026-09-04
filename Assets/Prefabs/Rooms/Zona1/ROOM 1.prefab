@@ -139,6 +139,7 @@ MonoBehaviour:
   reproductorAudio: {fileID: 2364139623473513305}
   sfxTemblor: {fileID: 8300000, guid: 2cb19d534b82fb04f90311c309a0577a, type: 3}
   sfxRomper: {fileID: 8300000, guid: 29d526186ba38354cb10b2467af70400, type: 3}
+  sfxDialogoLinea: {fileID: 8300000, guid: 5b64827a6baa34149bec9317e90a4560, type: 3}
   panelNubeNegra: {fileID: 8356074294336621520}
   textoNarrativa: {fileID: 4802234687592377662}
   lineasDialogo:

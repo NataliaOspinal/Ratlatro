@@ -27,13 +27,13 @@ public class TerminalTrailer : MonoBehaviour
 
     [Header("Textos de la Terminal")]
     private string[] secuenciaArranque = {
-        "USTED HA TERMINADO LA DEMO DE <color=#00FF00>SLIMIN' OUT</color>\n",
-        "Registrando informacion del usuario... [<color=#00FF00>OK</color>]\n",
+        "USTED HA TERMINADO LA BETA DE <color=#00FF00>SLIMIN' OUT</color>\n",
+        "Registrando nueva informacion del usuario... [<color=#00FF00>OK</color>]\n",
         
         "SISTEMA R4T-001 <color=yellow>EN LÍNEA.</color>\n"
     };
 
-    private string preguntaFinal = "ARCHIVO DE GUARDADO DETECTADO.\n¿Desea saber sobre el lanzamiento total de 'Slimin' Out'? (Y/N):_";
+    private string preguntaFinal = "ARCHIVO DE GUARDADO DETECTADO.\n¿Desea saber sobre el lanzamiento oficial de 'Slimin' Out'? (Y/N):_";
 
     private bool esperandoRespuesta = false;
 
@@ -119,7 +119,7 @@ public class TerminalTrailer : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        string anuncio = "\n\n<color=#00FF00>ACCESO CONCEDIDO.</color>\nDESENCRIPTANDO ARCHIVOS CLASIFICADOS...\n\n<color=yellow>>> PRÓXIMAMENTE: MÁS HISTORIA <<</color>\n<color=yellow>>> NUEVAS MECÁNICAS Y NUEVA MÚSICA <<</color>\n<color=yellow>>> NUEVO ....ROMANCE? <<</color>\nBUSCANDO FRAGMENTOS DE MEMORIA FALTANTES...";
+        string anuncio = "\n\n<color=#00FF00>ACCESO CONCEDIDO.</color>\nDESENCRIPTANDO ARCHIVOS CLASIFICADOS...\n\n<color=yellow>>> PRÓXIMAMENTE: MÁS NIVELES <<</color>\n<color=yellow>>> NUEVAS MECÁNICAS Y NUEVA MÚSICA <<</color>\n<color=yellow>>> NUEVO ....ROMANCE? <<</color>\nBUSCANDO MÁS FRAGMENTOS DE MEMORIA FALTANTES...";
         yield return StartCoroutine(EscribirLinea(anuncio));
 
         yield return new WaitForSeconds(tiempoEsperaParaSalir);
@@ -146,7 +146,7 @@ public class TerminalTrailer : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        string anuncio = "\n\n<color=#00FF00>ACCESO CONCEDIDO.</color>\nDESENCRIPTANDO ARCHIVOS CLASIFICADOS...\n\n<color=yellow>>> PRÓXIMAMENTE: MÁS HISTORIA <<</color>\n<color=yellow>>> NUEVAS MECÁNICAS Y NUEVA MÚSICA <<</color>\n<color=yellow>>> NUEVO ....ROMANCE? <<</color>\nBUSCANDO FRAGMENTOS DE MEMORIA FALTANTES...";
+        string anuncio = "\n\n<color=#00FF00>ACCESO CONCEDIDO.</color>\nDESENCRIPTANDO ARCHIVOS CLASIFICADOS...\n\n<color=yellow>>> PRÓXIMAMENTE: MÁS NIVELES <<</color>\n<color=yellow>>> NUEVAS MECÁNICAS Y NUEVA MÚSICA <<</color>\n<color=yellow>>> NUEVO ....ROMANCE? <<</color>\nBUSCANDO MÁS FRAGMENTOS DE MEMORIA FALTANTES...";
         yield return StartCoroutine(EscribirLinea(anuncio));
 
         yield return new WaitForSeconds(tiempoEsperaParaSalir);

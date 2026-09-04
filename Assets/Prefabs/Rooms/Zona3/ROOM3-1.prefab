@@ -949,6 +949,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.52
       objectReference: {fileID: 0}
+    - target: {fileID: 644848899582633456, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.b
+      value: 0.0966835
+      objectReference: {fileID: 0}
+    - target: {fileID: 644848899582633456, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 644848899582633456, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 946688118513657252, guid: b0418081c8d79944397da0bc52730cac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.13
@@ -1073,6 +1085,18 @@ PrefabInstance:
       propertyPath: 'rondas.Array.data[2].rutaExacta.Array.data[3]'
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5959228381692080822, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959228381692080822, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.g
+      value: 0.58381355
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959228381692080822, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6033799434440249974, guid: b0418081c8d79944397da0bc52730cac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.41
@@ -1080,6 +1104,22 @@ PrefabInstance:
     - target: {fileID: 6033799434440249974, guid: b0418081c8d79944397da0bc52730cac, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213055662333986263, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.b
+      value: 0.06781483
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743704202234698636, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743704202234698636, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743704202234698636, guid: b0418081c8d79944397da0bc52730cac, type: 3}
+      propertyPath: colorBrillo.r
+      value: 0.99107003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2942,6 +2982,14 @@ PrefabInstance:
     - target: {fileID: 1886415086692324662, guid: b45ad2f61c609ae43860aa8db45e5d79, type: 3}
       propertyPath: m_Name
       value: AreaBACKROOMS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2095570171077313956, guid: b45ad2f61c609ae43860aa8db45e5d79, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810177084602178591, guid: b45ad2f61c609ae43860aa8db45e5d79, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8353329750280802514, guid: b45ad2f61c609ae43860aa8db45e5d79, type: 3}
       propertyPath: m_LocalPosition.x

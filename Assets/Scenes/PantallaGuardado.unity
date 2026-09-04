@@ -2456,14 +2456,17 @@ MonoBehaviour:
   - Vivario Pulsante
   - Conducto Digestivo
   - 'Laberinto de Skinner '
+  - ????
   spritesPorZona:
   - {fileID: 21300000, guid: b803da9693a84ea40ba7ce2c03074449, type: 3}
   - {fileID: 21300000, guid: 2b713dd49f2aff64a9a5f03eeb71d128, type: 3}
   - {fileID: 21300000, guid: ddf8a2ae5483be140bda7766872220b1, type: 3}
+  - {fileID: -7307295411344423234, guid: f39051a8846dcd7419374032f328cbc2, type: 3}
   escenasPorZona:
   - 01_Zona1
   - 02_Zona2
   - 03_Zona3
+  - Trailer
   fuenteDeAudio: {fileID: 831124405}
   sonidoYes: {fileID: 8300000, guid: 7860f77f35de0504190410694683cd42, type: 3}
   sonidoNo: {fileID: 8300000, guid: f19da094b250b2442a4e294f5d091cf7, type: 3}

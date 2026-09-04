@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct EventoDeSala
@@ -21,6 +22,12 @@ public class RoomManager : MonoBehaviour
     public GameObject prefabSalaSorpresa;
     public int rangoMinimo = 3;
     public int rangoMaximo = 6;
+
+    [Header("Fin del Nivel (Cambio de Escena)")]
+    public bool terminarNivel = false;
+    public int salaParaSalirDelNivel = 0;
+    public string escenaTransicion = "PantallaGuardado";
+    public int numeroSiguienteZona = 3;
     private GameObject currentRoom;
 
     private int numeroActualDeSala = 0;
@@ -202,6 +209,18 @@ public class RoomManager : MonoBehaviour
         if (panelAnimator != null) panelAnimator.SetTrigger("CambiarSala");
 
         yield return new WaitForSeconds(tiempoDeEspera);
+        numeroActualDeSala++;
+
+        if (terminarNivel && numeroActualDeSala >= salaParaSalirDelNivel)
+        {
+            MainPlayer scriptRata = player.GetComponent<MainPlayer>();
+            if (scriptRata != null) scriptRata.canMove = false;
+
+            PlayerPrefs.SetInt("SiguienteZona", numeroSiguienteZona);
+
+            SceneManager.LoadScene(escenaTransicion);
+            yield break; 
+        }
 
         Vector3 posicionSala = Vector3.zero;
         if (currentRoom != null)
@@ -211,7 +230,7 @@ public class RoomManager : MonoBehaviour
             Destroy(currentRoom);
         }
 
-        numeroActualDeSala++;
+        
         GameObject roomToLoad = null;
 
         foreach (EventoDeSala evento in salaEspecial)

@@ -1181,7 +1181,13 @@ MonoBehaviour:
 
     ElanHickler
 
-    Huminaatio'
+    Huminaatio
+
+    Diboz
+
+    szegvari
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}
   m_sharedMaterial: {fileID: 2641790366136426958, guid: 4529bf00a008ea045acb9fea1ddb1476, type: 2}

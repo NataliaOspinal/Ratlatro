@@ -506,6 +506,14 @@ MonoBehaviour:
   - numeroDeSala: 6
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 896d7a402a90a844da3acb18f51819a0, type: 3}
   roomPrefabs: []
+  activarSalaSorpresa: 0
+  prefabSalaSorpresa: {fileID: 0}
+  rangoMinimo: 3
+  rangoMaximo: 6
+  terminarNivel: 0
+  salaParaSalirDelNivel: 0
+  escenaTransicion: PantallaGuardado
+  numeroSiguienteZona: 3
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
   interaccionBloqueada: 0
@@ -1372,7 +1380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2144062210477435657, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1241
+      value: 1146
       objectReference: {fileID: 0}
     - target: {fileID: 3711608048889506904, guid: 7a0a23db2d9381c4d8f93bafe49501b5, type: 3}
       propertyPath: fuenteSonido

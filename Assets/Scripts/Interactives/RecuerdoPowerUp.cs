@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 
 public class RecuerdoPowerUp : MonoBehaviour
 {
+    [Header("Sonidos (SFX)")]
+    public AudioSource fuenteAudio;
+    public AudioClip sfxDialogoLinea;
+
     [Header("UI Narrativa (Como en la cinemática)")]
     public GameObject panelNubeNegra;
     public TextMeshProUGUI textoNarrativa;
@@ -75,6 +79,12 @@ public class RecuerdoPowerUp : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
+            if (fuenteAudio != null && sfxDialogoLinea != null)
+            {
+                fuenteAudio.clip = sfxDialogoLinea;
+                fuenteAudio.Play();
+            }
+
             textoNarrativa.text = linea;
             textoNarrativa.maxVisibleCharacters = 0;
             textoNarrativa.ForceMeshUpdate();
@@ -108,6 +118,11 @@ public class RecuerdoPowerUp : MonoBehaviour
                     textoNarrativa.maxVisibleCharacters = totalCaracteres;
                     break;
                 }
+            }
+
+            if (fuenteAudio != null)
+            {
+                fuenteAudio.Stop();
             }
 
             yield return null;

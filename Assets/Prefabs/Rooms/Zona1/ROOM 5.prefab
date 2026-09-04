@@ -202,6 +202,7 @@ Transform:
   - {fileID: 6435970944502933157}
   - {fileID: 4952111872590074355}
   - {fileID: 8005092125874064911}
+  - {fileID: 7343937910194817364}
   - {fileID: 8815034292429029582}
   - {fileID: 371991433316113665}
   - {fileID: 2553242092765629908}
@@ -602,6 +603,74 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1297476494764808201, guid: 0536c7b575da29a4f9318e188465e994, type: 3}
   m_PrefabInstance: {fileID: 2117538609171074010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2270784826613139286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 856629393313047508}
+    m_Modifications:
+    - target: {fileID: 5009974410396844560, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_Name
+      value: AudioGlobal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.38046998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13446999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8134965843065973931, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+--- !u!82 &1591902763309685448 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 690425019839733150, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+  m_PrefabInstance: {fileID: 2270784826613139286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7343937910194817364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8820751057898458626, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+  m_PrefabInstance: {fileID: 2270784826613139286}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2320226488094929760
 PrefabInstance:
@@ -1387,6 +1456,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: fuenteAudio
+      value: 
+      objectReference: {fileID: 1591902763309685448}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: panelNubeNegra
       value: 
       objectReference: {fileID: 284300199546128538}
@@ -1394,6 +1467,10 @@ PrefabInstance:
       propertyPath: textoNarrativa
       value: 
       objectReference: {fileID: 7684555354074976907}
+    - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
+      propertyPath: sfxDialogoLinea
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b64827a6baa34149bec9317e90a4560, type: 3}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: lineasDialogo.Array.size
       value: 7

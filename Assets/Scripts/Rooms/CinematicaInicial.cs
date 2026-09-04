@@ -19,6 +19,7 @@ public class CinematicaInicial : MonoBehaviour
     public AudioSource reproductorAudio; 
     public AudioClip sfxTemblor; 
     public AudioClip sfxRomper;
+    public AudioClip sfxDialogoLinea;
 
     [Header("UI Narrativa")]
     public GameObject panelNubeNegra;
@@ -145,6 +146,11 @@ public class CinematicaInicial : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
+            if (reproductorAudio != null && sfxDialogoLinea != null)
+            {
+                reproductorAudio.clip = sfxDialogoLinea;
+                reproductorAudio.Play();
+            }
             if (linea.spritePersonaje != null && imagenPersonajeUI != null)
             {
                 imagenPersonajeUI.sprite = linea.spritePersonaje;
@@ -197,6 +203,11 @@ public class CinematicaInicial : MonoBehaviour
                     textoNarrativa.maxVisibleCharacters = totalCaracteres;
                     break; 
                 }
+            }
+
+            if (reproductorAudio != null)
+            {
+                reproductorAudio.Stop();
             }
 
             yield return null;

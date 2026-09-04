@@ -423,6 +423,7 @@ Transform:
   - {fileID: 5325204263404337066}
   - {fileID: 5007236524093302544}
   - {fileID: 4713214634114360281}
+  - {fileID: 2590620864472326177}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7602450698364022581
@@ -5462,6 +5463,72 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8809337468419314478}
     m_Modifications:
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].texto
+      value: "R4T-001, han llegado a la zona de... [Ruido de est\xE1tica severa]
+        a la caja."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].texto
+      value: Al Laberinto de Skinner
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].texto
+      value: "No te preocupes, yo los guiar\xE9 a trav\xE9s del..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].texto
+      value: "Sujeto de prueba introducido en la rec\xE1mara. Iniciando protocolo
+        de condicionamiento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].texto
+      value: Toca la palanca, recibe el premio... o la descarga.
+      objectReference: {fileID: 0}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: a8f0cb9762061684192db263e8e17eb9, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: a8f0cb9762061684192db263e8e17eb9, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 232156d64762aa4499eba88ac6fcc79a, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 3545c1a61bb461c43b70156cffbbe212, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].expresionRata
+      value: 
+      objectReference: {fileID: 21300000, guid: 3545c1a61bb461c43b70156cffbbe212, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[0].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[1].expresionPersonaje
+      value: 
+      objectReference: {fileID: -5461496712832900230, guid: e9981d294cc7daf40a00a5dafd1529b6, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[2].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[3].expresionPersonaje
+      value: 
+      objectReference: {fileID: 3756130549519544496, guid: 592a1962d4c255b4fa7a044ad1610ff5, type: 3}
+    - target: {fileID: 547714282067996350, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
+      propertyPath: paginasDeDialogo.Array.data[4].expresionPersonaje
+      value: 
+      objectReference: {fileID: -3739555217517325293, guid: e326c26dc319ee446b0a4718c9e8920f, type: 3}
     - target: {fileID: 4548800590339929965, guid: 1b5e27bda6eab944e9f77e6edf7dd372, type: 3}
       propertyPath: m_Name
       value: CilindroGlitch
@@ -6559,6 +6626,86 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2578311345046255188, guid: 77924a3b2d72e76489ab0a3a99821d87, type: 3}
   m_PrefabInstance: {fileID: 5844050662331990706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5942081970987099930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 856629393313047508}
+    m_Modifications:
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: "8ro de Noviembre de 1996\n\nEl Dr rodriguez ha empezado a movilizar
+        los sujetos de prueba, hemos tenido que limpiar excrementos de roedores por
+        una semana.\nLas hemos aclimatado a las diversas \xE1reas de prueba, las
+        m\xE1s inteligentes han sido transferidas a la r\xE9plica tama\xF1o humano
+        del Laboratorio de Skinner. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].texto
+      value: "Esa \xE1rea da una sensaci\xF3n bien ominosa, no me gusta tener que
+        bajar a esa \xE1rea.\nNo obstante, hay un esp\xE9cimen en particular que
+        ha respondido bien a los est\xEDmulos. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_Name
+      value: Papeles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.313902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7095492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+--- !u!4 &2590620864472326177 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+  m_PrefabInstance: {fileID: 5942081970987099930}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6056285072518426390
 PrefabInstance:

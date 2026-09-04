@@ -535,6 +535,7 @@ MonoBehaviour:
   signoInterrogacion: {fileID: 8629562087279452820}
   fuenteAudio: {fileID: 3957186416867164388}
   sonidoAparece: {fileID: 8300000, guid: 1c7ad77e4b449724cb62c58bc9a9648a, type: 3}
+  sfxDialogoLinea: {fileID: 8300000, guid: 90d5bac49b5538e40ae6fb66a13f1c86, type: 3}
   paginasDeDialogo: []
   panelDialogoUI: {fileID: 1278053354939300025}
   textoDialogoUI: {fileID: 2178483040763518320}

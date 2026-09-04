@@ -492,6 +492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   salaEspecial:
   - numeroDeSala: 0
+    prefabSalaEspecial: {fileID: 7362026603347181030, guid: bd7817b6efb63fb4687ab63b8fb7b945, type: 3}
+  - numeroDeSala: 1
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 392bc53958b6f694dbe5023b6b827d94, type: 3}
   roomPrefabs: []
   panelAnimator: {fileID: 1070042619}

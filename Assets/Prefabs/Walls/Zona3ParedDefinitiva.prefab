@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 5778285544964997963}
   - component: {fileID: 7276113150401095771}
   - component: {fileID: 7475431866631377110}
+  - component: {fileID: 8928093963206019644}
   m_Layer: 0
   m_Name: Zona3ParedDefinitiva
   m_TagString: Untagged
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7992661c4cf1054ab0534dffd88c918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControladorDePared
-  spriteSeleccionado: {fileID: 0}
+  spriteSeleccionado: {fileID: 21300000, guid: e776d2dd8038d574882a09833541f3f0, type: 3}
   objetoVisual: {fileID: 5179916760619721530}
   esHundible: 0
 --- !u!60 &5902748906291768487
@@ -382,6 +383,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748cdeda78f8870419d845b54b8544b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleObstruction
+--- !u!210 &8928093963206019644
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8201720572792257328}
+  m_Enabled: 1
+  m_SortingLayerID: -1729827607
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1001 &1132464746298549490
 PrefabInstance:
   m_ObjectHideFlags: 0

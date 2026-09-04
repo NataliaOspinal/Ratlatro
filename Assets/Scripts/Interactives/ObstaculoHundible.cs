@@ -40,18 +40,33 @@ public class ObstaculoHundible : MonoBehaviour
 
     public void Ocultar()
     {
-        if (fuenteAudio != null && sonidoHundir != null)
+        // Si la pared está apagada (ej. reiniciando la sala), se hunde al instante y aborta (rip) el resto
+        if (!gameObject.activeInHierarchy)
+        {
+            HundirInstantaneo();
+            return;
+        }
+
+        // Nos aseguramos de que el AudioSource esté encendido antes de reproducir
+        if (fuenteAudio != null && sonidoHundir != null && fuenteAudio.isActiveAndEnabled)
         {
             fuenteAudio.PlayOneShot(sonidoHundir);
         }
-        
+
         if (rutinaActual != null) StopCoroutine(rutinaActual);
         if (objetoVisual != null) rutinaActual = StartCoroutine(RutinaMovimiento(posOculta, false));
     }
 
     public void Mostrar()
     {
-        
+        // Si la pared está apagada, la restauramos a su posición original al instante
+        if (!gameObject.activeInHierarchy)
+        {
+            if (objetoVisual != null) objetoVisual.localPosition = posOriginal;
+            if (colisionadorFisico != null) colisionadorFisico.enabled = true;
+            return;
+        }
+
         if (rutinaActual != null) StopCoroutine(rutinaActual);
         if (objetoVisual != null) rutinaActual = StartCoroutine(RutinaMovimiento(posOriginal, true));
     }

@@ -200,7 +200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VentiladorSuelo
   fuenteDeAudio: {fileID: 2274760607643082836}
   sonidoVolar: {fileID: 8300000, guid: b0e908def68890d4d8642adf8367a97c, type: 3}
-  sonidoSqueak: {fileID: 8300000, guid: 6cfe3802936ea814ca1bc3687d66ed42, type: 3}
   estaEncendido: 1
 --- !u!1001 &1586801289873391050
 PrefabInstance:
@@ -210,6 +209,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6808370412745188382}
     m_Modifications:
+    - target: {fileID: 690425019839733150, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690425019839733150, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 618396a3e04aa8e468730b388db0d53f, type: 3}
     - target: {fileID: 5009974410396844560, guid: ce05d634cdea6364fa2f07b8b497743d, type: 3}
       propertyPath: m_Name
       value: AudioGlobal

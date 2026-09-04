@@ -540,6 +540,10 @@ MonoBehaviour:
   textoDialogoUI: {fileID: 2178483040763518320}
   imagenExpresionUI: {fileID: 64732313637320731}
   imagenRataUI: {fileID: 1892196016775335209}
+  usarAccesorio: 0
+  accesorioUI: {fileID: 0}
+  alturaDeCaida: 400
+  duracionDeCaida: 2.5
   fuerzaTemblorGlitch: 5
   alturaSaltoPersonaje: 20
   velocidadDeTexto: 0.03

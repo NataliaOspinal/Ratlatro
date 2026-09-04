@@ -15,6 +15,12 @@ public class RoomManager : MonoBehaviour
 
     public List<EventoDeSala> salaEspecial;
     public List<GameObject> roomPrefabs;
+
+    [Header("Sala Aleatoria en Rango")]
+    public bool activarSalaSorpresa = false;
+    public GameObject prefabSalaSorpresa;
+    public int rangoMinimo = 3;
+    public int rangoMaximo = 6;
     private GameObject currentRoom;
 
     private int numeroActualDeSala = 0;
@@ -32,12 +38,42 @@ public class RoomManager : MonoBehaviour
 
     private void Start()
     {
+        if (activarSalaSorpresa && prefabSalaSorpresa != null)
+        {
+            InsertarSalaSorpresa();
+        }
+
         if (currentRoom == null) currentRoom = GameObject.Find("ROOM");
 
         if (currentRoom == null)
         {
             GenerarSalaInicial();
         }
+    }
+
+    private void InsertarSalaSorpresa()
+    {
+        int salaElegida = Random.Range(rangoMinimo, rangoMaximo + 1);
+
+        for (int i = 0; i < salaEspecial.Count; i++)
+        {
+            if (salaEspecial[i].numeroDeSala >= salaElegida)
+            {
+                EventoDeSala eventoModificado = salaEspecial[i];
+                eventoModificado.numeroDeSala++; 
+                salaEspecial[i] = eventoModificado;
+            }
+        }
+
+        EventoDeSala nuevaSalaAleatoria = new EventoDeSala
+        {
+            numeroDeSala = salaElegida,
+            prefabSalaEspecial = prefabSalaSorpresa
+        };
+
+        salaEspecial.Add(nuevaSalaAleatoria);
+        
+        Debug.Log("La sala sorpresa ha sido insertada en la posicion: " + salaElegida);
     }
 
     private void GenerarSalaInicial()
@@ -61,10 +97,8 @@ public class RoomManager : MonoBehaviour
 
         if (roomToLoad != null)
         {
-            // La sala inicial siempre nace en el centro (Vector3.zero)
             currentRoom = Instantiate(roomToLoad, Vector3.zero, Quaternion.identity);
 
-            // En el reset, buscamos al jugador manualmente y reaparecemos en Spawn_L
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
@@ -72,7 +106,7 @@ public class RoomManager : MonoBehaviour
                 if (mainPlayerScript != null)
                 {
                     mainPlayerScript.ForzarDespawnCompanero();
-                    mainPlayerScript.Revivir(); // Revivimos a la rata si estaba muerta
+                    mainPlayerScript.Revivir(); 
                 }
 
                 Transform spawnFolder = currentRoom.transform.Find("SpawnPts");
@@ -138,7 +172,6 @@ public class RoomManager : MonoBehaviour
         {
             currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
 
-            // En el reset, buscamos al jugador manualmente y reaparecemos en Spawn_L
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
@@ -198,7 +231,6 @@ public class RoomManager : MonoBehaviour
 
         currentRoom = Instantiate(roomToLoad, posicionSala, Quaternion.identity);
 
-        //Desaparecer a la rata usando el 'player' que llega por parámetro
         MainPlayer mainPlayerScript = player.GetComponent<MainPlayer>();
         if (mainPlayerScript != null) mainPlayerScript.ForzarDespawnCompanero();
 

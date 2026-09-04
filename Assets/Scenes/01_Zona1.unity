@@ -349,22 +349,24 @@ MonoBehaviour:
   - numeroDeSala: 0
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 3963d5130c1cbbc4ea03098755d331e8, type: 3}
   - numeroDeSala: 1
-    prefabSalaEspecial: {fileID: 1886415086692324662, guid: 641b4ba867c48d34eaf3e5846c62da2f, type: 3}
-  - numeroDeSala: 2
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: ca89ad7547c154443b2665eb71a0035e, type: 3}
-  - numeroDeSala: 3
+  - numeroDeSala: 2
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: db85cf7e8a1762f4db81ea4ac413deac, type: 3}
-  - numeroDeSala: 4
+  - numeroDeSala: 3
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: ca18d3e4e2c34774e9c127f4926b6281, type: 3}
-  - numeroDeSala: 5
+  - numeroDeSala: 4
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 665bc39e65e54754a884ae832051acfc, type: 3}
-  - numeroDeSala: 6
+  - numeroDeSala: 5
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 045efedd0ddb3e64997706b18fd6734c, type: 3}
-  - numeroDeSala: 7
+  - numeroDeSala: 6
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: d3b5cc1f5c57efd49baa9e0bc0a0714e, type: 3}
-  - numeroDeSala: 8
+  - numeroDeSala: 7
     prefabSalaEspecial: {fileID: 7362026603347181030, guid: 50a10480cf7d2044e89e624e06e67768, type: 3}
   roomPrefabs: []
+  activarSalaSorpresa: 1
+  prefabSalaSorpresa: {fileID: 1886415086692324662, guid: 641b4ba867c48d34eaf3e5846c62da2f, type: 3}
+  rangoMinimo: 2
+  rangoMaximo: 6
   panelAnimator: {fileID: 1070042619}
   tiempoDeEspera: 0.5
   interaccionBloqueada: 0

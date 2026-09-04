@@ -41,6 +41,12 @@ public class SexyCilindro : MonoBehaviour
     public Image imagenExpresionUI; 
     public Image imagenRataUI;
 
+    [Header("Peluquin")]
+    public bool usarAccesorio = false;
+    public RectTransform accesorioUI;
+    public float alturaDeCaida = 400f;
+    public float duracionDeCaida = 2.5f;
+
     [Header("Ajustes de Animación")]
     
     public float fuerzaTemblorGlitch = 2f;
@@ -63,6 +69,8 @@ public class SexyCilindro : MonoBehaviour
     
     private RectTransform rectRata;
     private Vector3 posOriginalRata;
+
+    private Vector2 posFinalAccesorio;
 
     private Sprite spriteAnteriorDoctor = null;
     private Sprite spriteAnteriorRata = null;
@@ -92,6 +100,13 @@ public class SexyCilindro : MonoBehaviour
             rectRata = imagenRataUI.GetComponent<RectTransform>();
             posOriginalRata = rectRata.anchoredPosition;
             imagenRataUI.gameObject.SetActive(false); 
+        }
+
+        if (accesorioUI != null)
+        {
+            
+            posFinalAccesorio = accesorioUI.anchoredPosition;
+            accesorioUI.gameObject.SetActive(false);
         }
     }
 
@@ -164,6 +179,15 @@ public class SexyCilindro : MonoBehaviour
         
         if (corrutinaGlitch != null) StopCoroutine(corrutinaGlitch);
         corrutinaGlitch = StartCoroutine(RutinaGlitchPeriodico());
+
+        if (usarAccesorio && accesorioUI != null)
+        {
+            accesorioUI.gameObject.SetActive(true);
+            
+            accesorioUI.anchoredPosition = posFinalAccesorio + new Vector2(0, alturaDeCaida);
+            
+            accesorioUI.DOAnchorPos(posFinalAccesorio, duracionDeCaida).SetEase(Ease.InOutSine);
+        }
 
         MostrarPaginaActual();
     }
@@ -345,6 +369,12 @@ IEnumerator RutinaGlitchPeriodico()
                 rectRata.anchoredPosition = posOriginalRata;
             }
             imagenRataUI.gameObject.SetActive(false);
+        }
+
+        if (accesorioUI != null)
+        {
+            accesorioUI.DOKill(true);
+            accesorioUI.gameObject.SetActive(false);
         }
 
         if (jugadorCerca && indicadorTeclaF != null) indicadorTeclaF.SetActive(true);

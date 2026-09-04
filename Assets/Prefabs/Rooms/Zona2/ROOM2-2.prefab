@@ -473,6 +473,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 856629393313047508}
     m_Modifications:
+    - target: {fileID: 127132879175029591, guid: c1381fe9f0df02743b3aebca25b4cd69, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 127132879175029591, guid: c1381fe9f0df02743b3aebca25b4cd69, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: "8ro de Noviembre de 1996\nEl Dr rodriguez ha empezado a movilizar los
+        sujetos de prueba, hemos tenido que limpiar excrementos de roedores por una
+        semana.\nLas hemos aclimatado a las diversas \xE1reas de prueba, las m\xE1s
+        inteligentes han sido transferidas a la r\xE9plica tama\xF1o humano del Laboratorio
+        de Skinner, esa \xE1rea da una sensaci\xF3n bien ominosa, no me gusta tener
+        que bajar a esa \xE1rea.\nHay un esp\xE9cimen en particular que ha respondido
+        bien a los est\xEDmulos\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 5415671251956388029, guid: c1381fe9f0df02743b3aebca25b4cd69, type: 3}
       propertyPath: m_Name
       value: PapelesVariation

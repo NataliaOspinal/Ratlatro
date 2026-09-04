@@ -79,9 +79,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1809050729
+  m_SortingLayer: 7
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7353249800413934122, guid: 71e4d4ee60202f2498c285b81d32d7c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1276987256092046046}
   - component: {fileID: 4424807776451446444}
   - component: {fileID: 8821721055317845697}
-  - component: {fileID: 1349548741003888864}
+  - component: {fileID: 127132879175029591}
   m_Layer: 0
   m_Name: papel
   m_TagString: Untagged
@@ -246,7 +246,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.03258753, y: 0}
   m_Radius: 1.3762307
---- !u!114 &1349548741003888864
+--- !u!114 &127132879175029591
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,12 +255,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2986887264557990750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b693d368aeb99041ad03a10f0feb9ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d60b5c71f8af1a47814da06bcb61267, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PapelInteractuable
-  paginasHoja: []
+  m_EditorClassIdentifier: Assembly-CSharp::PapelMiniRata
+  contenidoDelPapel: []
   papelOutline: {fileID: 3238786755526872221}
-  tecla: {fileID: 2497465405276567296}
+  teclaMiniRata: {fileID: 2497465405276567296}
 --- !u!1 &3238786755526872221
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,8 +387,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03258753, y: 0}
-  m_Radius: 1.3762307
+  m_Offset: {x: -0.08684993, y: 0.005427099}
+  m_Radius: 0.6002785
 --- !u!1 &5415671251956388029
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,9 +499,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingLayerID: -1809050729
+  m_SortingLayer: 7
+  m_SortingOrder: 9
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7353249800413934122, guid: 71e4d4ee60202f2498c285b81d32d7c1, type: 3}
   m_Color: {r: 0, g: 1, b: 0.13725495, a: 1}

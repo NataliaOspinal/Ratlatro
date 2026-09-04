@@ -1664,6 +1664,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papeles
       objectReference: {fileID: 0}
+    - target: {fileID: 7744832112916690137, guid: 0bd3eecd939a3fe4884fe9ea5b5443c0, type: 3}
+      propertyPath: paginasHoja.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744832112916690137, guid: 0bd3eecd939a3fe4884fe9ea5b5443c0, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744832112916690137, guid: 0bd3eecd939a3fe4884fe9ea5b5443c0, type: 3}
+      propertyPath: paginasHoja.Array.data[0].texto
+      value: "1ro de Noviembre de 1996.\nAl parecer los preparativos han sido terminados
+        y aprobado por los superiores, vamos a empezar por fin el proyecto <mark=#000000>secreto</mark>,
+        el Dr. Rodriguez me ha reclutado como asistente de laboratorio, es un gran
+        honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9 que me aceptar\xEDan
+        en un proyecto tan ambicioso como este, sobre todo ya que esta involucrado
+        <mark=#000000>secreto</mark>\n<i>a partir de este punto la nota se hace ilegible</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744832112916690137, guid: 0bd3eecd939a3fe4884fe9ea5b5443c0, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: "1ro de Noviembre de 1996,\n Al parecer los preparativos han sido terminados
+        y aprobado por los superiores, vamos a empezar por fin el proyecto <mark=#000000>secreto</mark>,
+        el Dr. Rodriguez me ha reclutado como asistente de laboratorio,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744832112916690137, guid: 0bd3eecd939a3fe4884fe9ea5b5443c0, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].texto
+      value: "es un gran honor ya que hace poco termin\xE9 mi postgrado, no pens\xE9
+        que me aceptar\xEDan en un proyecto tan ambicioso como este, sobre todo ya
+        que esta involucrado <mark=#000000>secreto</mark> \n<i>A partir de este punto
+        la nota se hace ilegible</i> "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

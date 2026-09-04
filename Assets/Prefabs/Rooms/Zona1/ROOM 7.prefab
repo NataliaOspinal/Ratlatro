@@ -863,6 +863,38 @@ PrefabInstance:
         ojal\xE1 poder mostr\xE1rtela, pero es gigaaante dicen que es capaz de \u25A0\u25A0\u25A0\u25A0\"\n\n<i>El
         resto del correo es ilegible</i>"
       objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: paginasHoja.Array.data[0].texto
+      value: "Hola ma! me ha ido bien en el traslado a la nueva sede, aun no me acostumbro
+        a la comida de por aqu\xED, no tiene el saz\xF3n que tenemos por all\xE1
+        jaja\nComo sigue mi pap\xE1? espero que no se queje mucho de que su florecita
+        fuera asignada a otro pais"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: paginasHoja.Array.data[1].texto
+      value: "Aqui las cosas van bien, reci\xE9n nos lleg\xF3 una nueva supercomputadora
+        que desarroll\xF3 la sede de neuro-tecnolog\xEDa de Tokyo, es super bacana,
+        ojal\xE1 poder mostr\xE1rtela, pero es gigaaante dicen que es capaz de <mark=#000000>secreto</mark>\n<i>l
+        resto del correo es ilegible</i>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: "Hola ma! me ha ido bien en el traslado a la nueva sede, aun no me acostumbro
+        a la comida de por aqu\xED, no tiene el saz\xF3n que tenemos por all\xE1
+        jaja\nComo sigue mi pap\xE1? espero que no se queje mucho de que su florecita
+        fuera asignada a otro pais"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].texto
+      value: "Aqui las cosas van bien, reci\xE9n nos lleg\xF3 una nueva supercomputadora
+        que desarroll\xF3 la sede de neuro-tecnolog\xEDa de Tokyo, es super bacana,
+        ojal\xE1 poder mostr\xE1rtela, pero es gigaaante dicen que es capaz de <mark=#000000>secreto</mark>\n<i>El
+        resto del correo es ilegible</i>"
+      objectReference: {fileID: 0}
     - target: {fileID: 5286215289534775112, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_SortingOrder
       value: -1

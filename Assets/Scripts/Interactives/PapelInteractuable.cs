@@ -4,15 +4,15 @@ using UnityEngine.InputSystem;
 public class PapelInteractuable : MonoBehaviour
 {
     [Header("Contenido de la hoja")]
-    [TextArea(3, 5)]
-    public string[] paginasHoja;
+    
+    public PaginaPapel[] contenidoDelPapel;
 
     [Header("Visuales")]
     public GameObject papelOutline;
     public GameObject tecla;
 
     private bool jugadorCerca = false;
-    private bool yaRecogido = false; // Nueva variable de control
+    private bool yaRecogido = false; 
 
     private void Start()
     {
@@ -22,17 +22,15 @@ public class PapelInteractuable : MonoBehaviour
 
     private void Update()
     {
-        // Solo permite interactuar si est� cerca, no se ha recogido, y pulsa F
         if (jugadorCerca && !yaRecogido && Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
         {
-            yaRecogido = true; // Lo marcamos como le�do
-            SuperPaperUI.Instance.MostrarPapel(paginasHoja);
+            yaRecogido = true; 
+            
+            SuperPaperUI.Instance.MostrarPapel(contenidoDelPapel);
 
-            // Apagamos los visuales de interacci�n
             if (papelOutline != null) papelOutline.SetActive(false);
             if (tecla != null) tecla.SetActive(false);
 
-            // Apagamos el dibujo del papel en el suelo para que parezca que lo guard�
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             if (sr != null) sr.enabled = false;
         }

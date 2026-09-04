@@ -867,13 +867,33 @@ PrefabInstance:
       propertyPath: paginasHoja.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: 'MITOSIS:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].texto
+      value: 'MOVIMIENTO DE MINIRATA: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].imagen
+      value: 
+      objectReference: {fileID: 21300000, guid: f51e94a822e3bb747a10601ec3cd3a8a, type: 3}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].imagen
+      value: 
+      objectReference: {fileID: 21300000, guid: 873ec51dbb2cdd54d8b37a652f116516, type: 3}
     - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_Name
       value: Papeles
       objectReference: {fileID: 0}
     - target: {fileID: 5415671251956388029, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8180014540841731899, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1401,16 +1421,17 @@ PrefabInstance:
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[4]'
       value: "Vamos, intenta usar un fragmento de ti para alcanzar ese bot\xF3n detr\xE1s
-        de aquel conducto de ventilaci\xF3n."
+        de aquel conducto de ventilaci\xF3n. Presiona E para dividirte y crear un
+        nuevo t\xFA."
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[5]'
-      value: "Intenta utilizar las flechas direccionales para mover ese peque\xF1o
+      value: "No olvides utilizar las flechas direccionales para mover ese peque\xF1o
         clon tuyo."
       objectReference: {fileID: 0}
     - target: {fileID: 1980529272907901484, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}
       propertyPath: 'lineasDialogo.Array.data[6]'
-      value: "Si quieres ampliar tu vista, intenta utilizar el bot\xF3n \"Shift\"
+      value: "Y si quieres ampliar tu vista, intenta utilizar el bot\xF3n \"Shift\"
         para ver m\xE1s all\xE1 de tus ojos."
       objectReference: {fileID: 0}
     - target: {fileID: 8778810363775790931, guid: 142a92bc4a05bdd4e893b205ecd78c3c, type: 3}

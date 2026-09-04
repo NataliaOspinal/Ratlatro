@@ -5,6 +5,13 @@ using UnityEngine.UI;
 using System.Collections;
 using DG.Tweening;
 
+[System.Serializable]
+public class PaginaPapel
+{
+    [TextArea(3, 10)]
+    public string texto;
+    public Sprite imagen; 
+}
 public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static SuperPaperUI Instance;
@@ -17,6 +24,8 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public Image imagenOutline;
     public TMP_Text textoPapel;
     public TMP_Text textoNumeracion;
+
+    public Image imagenContenido;
 
     [Header("Tutorial Flecha")]
     public GameObject flechaTutorial;
@@ -32,7 +41,7 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private bool estaAnimando = false;
     private bool estaEnCentro = false;
 
-    private string[] paginasActuales;
+    private PaginaPapel[] paginasActuales;
     private int indicePaginaActual = 0;
 
     private void Awake()
@@ -53,7 +62,7 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         }
     }
 
-    public void MostrarPapel(string[] nuevasPaginas)
+    public void MostrarPapel(PaginaPapel[] nuevasPaginas)
     {
         paginasActuales = nuevasPaginas;
         indicePaginaActual = 0; 
@@ -141,8 +150,22 @@ public class SuperPaperUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     {
         if (paginasActuales == null || paginasActuales.Length == 0) return;
 
-        if (textoPapel != null) textoPapel.text = paginasActuales[indicePaginaActual];
-
+        PaginaPapel paginaActual = paginasActuales[indicePaginaActual];
+        if (textoPapel != null) textoPapel.text = paginaActual.texto;
+        
+        if (imagenContenido != null)
+        {
+            if (paginaActual.imagen != null)
+            {
+                imagenContenido.sprite = paginaActual.imagen;
+                imagenContenido.gameObject.SetActive(true);
+            }
+            else
+            {
+                imagenContenido.gameObject.SetActive(false);
+            }
+        }
+        
         if (textoNumeracion != null)
         {
             if (paginasActuales.Length > 1)

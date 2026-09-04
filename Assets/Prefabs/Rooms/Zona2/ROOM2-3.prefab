@@ -2497,6 +2497,28 @@ PrefabInstance:
         a nuestra asociaci\xF3n ser\xE1 destruida de inmediato\r\n\r\nCon amor, el
         equipo de Happy Icy Cool Airs."
       objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[0].texto
+      value: "*Parece ser una queja por parte de una compa\xF1\xEDa de reparaci\xF3n
+        de aires acondicionados\n*\nQueridos <mark=#000000>secreto</mark>\nSe les
+        notifica desde Happy Icy Cool Airs que dejaremos de prestar servicio en el
+        mantenimiento del sistema de enfriamiento y aires acondicionados de su instalaci\xF3n,
+        es la 5ta vez que encontramos desechos biol\xF3gicos inesperados en nuestras
+        rondas de mantenimiento."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349548741003888864, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
+      propertyPath: contenidoDelPapel.Array.data[1].texto
+      value: "Agradecemos su consideraci\xF3n, pero ni siquiera el aumento que el
+        Dr. Rodriguez nos insinu\xF3 es suficiente para arriesgarnos a los peligros
+        que puede presentar.\nTal como qued\xF3 estipulado en el contrato inicial
+        no se hablar\xE1 m\xE1s de nuestro partnership y toda copia y papeleo correspondiente
+        a nuestra asociaci\xF3n ser\xE1 destruida de inmediato\n\nCon amor, el equipo
+        de Happy Icy Cool Airs."
+      objectReference: {fileID: 0}
     - target: {fileID: 4687428136521720718, guid: ea9b2b8499d5d5049b4a7647f558eb67, type: 3}
       propertyPath: m_SortingOrder
       value: 1

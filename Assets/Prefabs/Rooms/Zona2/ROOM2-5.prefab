@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ebdea839a9eb34eb80bab0aefb989a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogoDeSala
+  motor: {fileID: 4404524042251966161, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
   fuenteAudio: {fileID: 6446398318922539750}
   sfxDialogoLinea: {fileID: 8300000, guid: 5b64827a6baa34149bec9317e90a4560, type: 3}
   panelNarracion: {fileID: 4463335372694214537}

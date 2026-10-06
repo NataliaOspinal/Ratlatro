@@ -16,6 +16,9 @@ public class PaginaDialogo
 
 public class SexyCilindro : MonoBehaviour
 {
+    [Header("Motor")]
+    public MotorDeDialogos motor;
+
     [Header("Condición de Desbloqueo")]
     public bool necesitaPuertaAbierta = false; 
     public Door[] puertaRequisito;
@@ -210,114 +213,38 @@ public class SexyCilindro : MonoBehaviour
     {
         PaginaDialogo pagina = paginasDeDialogo[paginaActual];
 
-        if (imagenExpresionUI != null)
-        {
-            if (pagina.expresionPersonaje != null)
-            {
-                imagenExpresionUI.sprite = pagina.expresionPersonaje;
-                imagenExpresionUI.gameObject.SetActive(true);
+        // 1. Cara del Doctor
+        spriteAnteriorDoctor = motor.ActualizarYAnimarSprite(
+            imagenExpresionUI, pagina.expresionPersonaje, spriteAnteriorDoctor, 
+            rectPersonaje, posOriginalPersonaje, alturaSaltoPersonaje, 0.3f
+        );
 
-                if (pagina.expresionPersonaje != spriteAnteriorDoctor)
-                {
-                    if (rectPersonaje != null)
-                    {
-                        DOTween.Kill(rectPersonaje);
-                        rectPersonaje.anchoredPosition = posOriginalPersonaje;
-                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, alturaSaltoPersonaje), 0.3f, 1, 0.5f);
-                    }
-                    spriteAnteriorDoctor = pagina.expresionPersonaje;
-                }
-            }
-            else
-            {
-                imagenExpresionUI.gameObject.SetActive(false);
-                spriteAnteriorDoctor = null;
-            }
-        }
-
-        if (imagenRataUI != null)
-        {
-            if (pagina.expresionRata != null)
-            {
-                bool esNuevoSprite = (pagina.expresionRata != spriteAnteriorRata);
-
-                imagenRataUI.sprite = pagina.expresionRata;
-                imagenRataUI.gameObject.SetActive(true);
-
-                if (esNuevoSprite && rectRata != null)
-                {
-                    rectRata.DOKill(true); 
-                    rectRata.anchoredPosition = posOriginalRata;
-                    rectRata.DOPunchAnchorPos(new Vector2(0, alturaSaltoPersonaje), 0.3f, 1, 0.5f);
-                    
-                    spriteAnteriorRata = pagina.expresionRata;
-                }
-            }
-            else
-            {
-                imagenRataUI.gameObject.SetActive(false);
-                spriteAnteriorRata = null;
-            }
-        }
+        // 2. Cara de la Rata
+        spriteAnteriorRata = motor.ActualizarYAnimarSprite(
+            imagenRataUI, pagina.expresionRata, spriteAnteriorRata, 
+            rectRata, posOriginalRata, alturaSaltoPersonaje, 0.3f
+        );
 
         if (corrutinaTexto != null) StopCoroutine(corrutinaTexto);
-        corrutinaTexto = StartCoroutine(EscribirLetraPorLetra(pagina.texto));
+        corrutinaTexto = StartCoroutine(RutinaEscribirTexto(pagina.texto));
     }
 
-    IEnumerator EscribirLetraPorLetra(string textoCompleto)
+    IEnumerator RutinaEscribirTexto(string textoCompleto)
     {
         escribiendoTexto = true; 
 
-        if (fuenteAudio != null && sfxDialogoLinea != null)
-        {
-            fuenteAudio.clip = sfxDialogoLinea;
-            fuenteAudio.Play();
-        }
-        
-        textoDialogoUI.text = textoCompleto;
-        textoDialogoUI.maxVisibleCharacters = 0;
-        textoDialogoUI.ForceMeshUpdate();
-        int totalCaracteres = textoDialogoUI.textInfo.characterCount;
+        yield return StartCoroutine(motor.EscribirLetraPorLetra(
+            textoDialogoUI, 
+            textoCompleto, 
+            velocidadDeTexto, 
+            fuenteAudio, 
+            sfxDialogoLinea
+        ));
 
-    
-        yield return null;
-
-        for (int i = 0; i <= totalCaracteres; i++)
-        {
-            textoDialogoUI.maxVisibleCharacters = i;
-
-            float cronometro = 0f;
-            bool saltoDetectado = false;
-
-            while (cronometro < velocidadDeTexto)
-            {
-                cronometro += Time.deltaTime;
-
-                if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
-                {
-                    saltoDetectado = true;
-                    break;
-                }
-                
-                yield return null; 
-            }
-            if (saltoDetectado)
-            {
-                textoDialogoUI.maxVisibleCharacters = totalCaracteres;
-                break; 
-            }
-        }
-
-        if (fuenteAudio != null)
-        {
-            fuenteAudio.Stop();
-        }
-
-        yield return null;
         escribiendoTexto = false; 
     }
 
-IEnumerator RutinaGlitchPeriodico()
+    IEnumerator RutinaGlitchPeriodico()
     {
         while (estaDialogando)
         {

@@ -15,6 +15,9 @@ public struct LineaDialogoSala
 
 public class DialogoDeSala : MonoBehaviour
 {
+    [Header("Motor")]
+    public MotorDeDialogos motor;
+
     [Header("Sonidos (SFX)")] 
     public AudioSource fuenteAudio;
     public AudioClip sfxDialogoLinea;
@@ -79,79 +82,26 @@ public class DialogoDeSala : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
-            if (fuenteAudio != null && sfxDialogoLinea != null)
-            {
-                fuenteAudio.clip = sfxDialogoLinea;
-                fuenteAudio.Play();
-            }
-
-            if (linea.spritePersonaje != null && imagenPersonajeUI != null)
-            {
-                imagenPersonajeUI.sprite = linea.spritePersonaje;
-                imagenPersonajeUI.gameObject.SetActive(true);
-
-                if (linea.spritePersonaje != spriteAnterior)
-                {
-                    if (rectPersonaje != null)
-                    {
-                        DOTween.Kill(rectPersonaje);
-                        rectPersonaje.anchoredPosition = posOriginalPersonaje; 
-                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
-                    }
-                    spriteAnterior = linea.spritePersonaje; 
-                }
-            }
-            else if (imagenPersonajeUI != null)
-            {
-                imagenPersonajeUI.gameObject.SetActive(false); 
-                spriteAnterior = null;
-            }
-
-            textoNarrativa.text = linea.texto;
-            textoNarrativa.maxVisibleCharacters = 0;
-            textoNarrativa.ForceMeshUpdate();
-            int totalCaracteres = textoNarrativa.textInfo.characterCount;
-
-            yield return null;
-
-            for (int i = 0; i <= totalCaracteres; i++)
-            {
-                textoNarrativa.maxVisibleCharacters = i;
-
-                float cronometro = 0f;
-                bool saltoDetectado = false;
-
-                while (cronometro < velocidadEscritura)
-                {
-                    cronometro += Time.deltaTime;
-
-                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
-                    {
-                        saltoDetectado = true;
-                        break;
-                    }
-                    
-                    yield return null; 
-                }
-
-                if (saltoDetectado)
-                {
-                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
-                    break; 
-                }
-            }
-
-            if (fuenteAudio != null)
-            {
-                fuenteAudio.Stop();
-            }
-
-            yield return null; 
-
-            yield return new WaitUntil(() => 
-                (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
+            spriteAnterior = motor.ActualizarYAnimarSprite(
+                imagenPersonajeUI, 
+                linea.spritePersonaje, 
+                spriteAnterior, 
+                rectPersonaje, 
+                posOriginalPersonaje,
+                fuerzaSalto,
+                duracionSalto
             );
 
+            yield return StartCoroutine(motor.EscribirLetraPorLetra(
+                textoNarrativa, 
+                linea.texto, 
+                velocidadEscritura, 
+                fuenteAudio, 
+                sfxDialogoLinea
+            ));
+
+            yield return null; 
+            yield return new WaitUntil(() => motor.BotonSaltarPresionado());
             yield return null;
         }
 

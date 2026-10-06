@@ -16,6 +16,9 @@ public class LineaRecuerdo
 
 public class RecuerdoNarrativo : MonoBehaviour
 {
+    [Header("Motor")]
+    public MotorDeDialogos motor;
+
     [Header("Sonidos (SFX)")]
     public AudioSource fuenteAudio;
     public AudioClip sfxDialogoLinea;
@@ -87,82 +90,42 @@ public class RecuerdoNarrativo : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
-            if (fuenteAudio != null && sfxDialogoLinea != null)
-            {
-                fuenteAudio.clip = sfxDialogoLinea;
-                fuenteAudio.Play();
-            }
-
-            if (imagenRataUI != null)
-            {
-                if (linea.spriteRata != null)
-                {
-                    imagenRataUI.sprite = linea.spriteRata;
-                    imagenRataUI.gameObject.SetActive(true);
-
-                    if (linea.spriteRata != spriteAnterior)
-                    {
-                        if (rectRata != null)
-                        {
-                            rectRata.DOKill(true); 
-                            rectRata.anchoredPosition = posOriginalRata; 
-                            rectRata.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
-                        }
-                        spriteAnterior = linea.spriteRata;
-                    }
-                }
-                else
-                {
-                    imagenRataUI.gameObject.SetActive(false);
-                    spriteAnterior = null;
-                }
-            }
-
-            textoNarrativa.text = linea.texto;
-            textoNarrativa.maxVisibleCharacters = 0;
-            textoNarrativa.ForceMeshUpdate();
-            int totalCaracteres = textoNarrativa.textInfo.characterCount;
-
-            yield return null;
-
-            for (int i = 0; i <= totalCaracteres; i++)
-            {
-                textoNarrativa.maxVisibleCharacters = i;
-                float cronometro = 0f;
-                bool saltoDetectado = false;
-
-                while (cronometro < velocidadEscritura)
-                {
-                    cronometro += Time.deltaTime;
-                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
-                    {
-                        saltoDetectado = true;
-                        break;
-                    }
-                    yield return null;
-                }
-
-                if (saltoDetectado)
-                {
-                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
-                    break;
-                }
-            }
-
-            if (fuenteAudio != null)
-            {
-                fuenteAudio.Stop();
-            }
-
-            yield return null;
-            yield return new WaitUntil(() =>
-                (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
+            spriteAnterior = motor.ActualizarYAnimarSprite(
+                imagenRataUI, 
+                linea.spriteRata, 
+                spriteAnterior, 
+                rectRata, 
+                posOriginalRata,
+                fuerzaSalto,
+                duracionSalto
             );
+
+            yield return StartCoroutine(motor.EscribirLetraPorLetra(
+                textoNarrativa, 
+                linea.texto, 
+                velocidadEscritura, 
+                fuenteAudio, 
+                sfxDialogoLinea
+            ));
+
+            yield return null;
+            yield return new WaitUntil(() => motor.BotonSaltarPresionado());
             yield return null;
         }
 
         if (textoNarrativa != null) textoNarrativa.text = "";
         if (panelNubeNegra != null) panelNubeNegra.SetActive(false);
+
+        if (imagenRataUI != null)
+        {
+            if (rectRata != null)
+            {
+                DOTween.Kill(rectRata);
+                rectRata.anchoredPosition = posOriginalRata;
+            }
+            imagenRataUI.gameObject.SetActive(false);
+        }
+
         if (RoomManager.Instance != null) RoomManager.Instance.interaccionBloqueada = false;
         if (scriptRata != null) scriptRata.canMove = true;
 

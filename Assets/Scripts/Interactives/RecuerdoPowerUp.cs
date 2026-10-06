@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class RecuerdoPowerUp : MonoBehaviour
 {
+    [Header("Motor")]
+    public MotorDeDialogos motor;
+
     [Header("Sonidos (SFX)")]
     public AudioSource fuenteAudio;
     public AudioClip sfxDialogoLinea;
@@ -79,59 +82,16 @@ public class RecuerdoPowerUp : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
-            if (fuenteAudio != null && sfxDialogoLinea != null)
-            {
-                fuenteAudio.clip = sfxDialogoLinea;
-                fuenteAudio.Play();
-            }
-
-            textoNarrativa.text = linea;
-            textoNarrativa.maxVisibleCharacters = 0;
-            textoNarrativa.ForceMeshUpdate();
-            int totalCaracteres = textoNarrativa.textInfo.characterCount;
+            yield return StartCoroutine(motor.EscribirLetraPorLetra(
+                textoNarrativa, 
+                linea, 
+                velocidadEscritura, 
+                fuenteAudio, 
+                sfxDialogoLinea
+            ));
 
             yield return null;
-
-            for (int i = 0; i <= totalCaracteres; i++)
-            {
-                textoNarrativa.maxVisibleCharacters = i;
-
-                float cronometro = 0f;
-                bool saltoDetectado = false;
-
-                while (cronometro < velocidadEscritura)
-                {
-                    cronometro += Time.deltaTime;
-
-                    if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
-                        (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
-                    {
-                        saltoDetectado = true;
-                        break;
-                    }
-
-                    yield return null;
-                }
-
-                if (saltoDetectado)
-                {
-                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
-                    break;
-                }
-            }
-
-            if (fuenteAudio != null)
-            {
-                fuenteAudio.Stop();
-            }
-
-            yield return null;
-
-            yield return new WaitUntil(() =>
-                (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
-                (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
-            );
-
+            yield return new WaitUntil(() => motor.BotonSaltarPresionado());
             yield return null;
         }
 

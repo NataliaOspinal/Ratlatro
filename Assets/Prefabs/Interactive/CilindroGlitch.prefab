@@ -478,6 +478,7 @@ Transform:
   - {fileID: 8470297991086150107}
   - {fileID: 1131282667867797648}
   - {fileID: 4978654260204458872}
+  - {fileID: 2966042859516450064}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1029957029999239899
@@ -529,6 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86535c131df109a40bc98820bc2c19ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SexyCilindro
+  motor: {fileID: 1296367973918920777}
   necesitaPuertaAbierta: 0
   puertaRequisito: []
   indicadorTeclaF: {fileID: 553338511837023662}
@@ -864,6 +866,79 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &3232912226066744984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6808370412745188382}
+    m_Modifications:
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277.64148
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 73.23776
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526668954596371450, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+      propertyPath: m_Name
+      value: Motor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+--- !u!114 &1296367973918920777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4404524042251966161, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+  m_PrefabInstance: {fileID: 3232912226066744984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6ff0bb3f6d5da47979f9f486dd3fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MotorDeDialogos
+--- !u!4 &2966042859516450064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 428999537453306760, guid: c9555ecc4e175ed48975b7f5b5b4cd44, type: 3}
+  m_PrefabInstance: {fileID: 3232912226066744984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4575131593593101690
 PrefabInstance:
   m_ObjectHideFlags: 0

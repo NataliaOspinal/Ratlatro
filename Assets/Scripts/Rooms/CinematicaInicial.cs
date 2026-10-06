@@ -15,6 +15,9 @@ public struct LineaNarrativa
 
 public class CinematicaInicial : MonoBehaviour
 {
+    [Header("Motor")]
+    public MotorDeDialogos motor;
+
     [Header("Sonidos (SFX)")]
     public AudioSource reproductorAudio; 
     public AudioClip sfxTemblor; 
@@ -146,72 +149,26 @@ public class CinematicaInicial : MonoBehaviour
         {
             if (textoNarrativa == null) continue;
 
-            if (reproductorAudio != null && sfxDialogoLinea != null)
-            {
-                reproductorAudio.clip = sfxDialogoLinea;
-                reproductorAudio.Play();
-            }
-            if (linea.spritePersonaje != null && imagenPersonajeUI != null)
-            {
-                imagenPersonajeUI.sprite = linea.spritePersonaje;
-                imagenPersonajeUI.gameObject.SetActive(true);
+            spriteAnterior = motor.ActualizarYAnimarSprite(
+                imagenPersonajeUI, 
+                linea.spritePersonaje, 
+                spriteAnterior, 
+                rectPersonaje, 
+                posOriginalPersonaje,
+                fuerzaSalto,
+                duracionSalto
+            );
 
-                if (linea.spritePersonaje != spriteAnterior)
-                {
-                    if (rectPersonaje != null)
-                    {
-                        DOTween.Kill(rectPersonaje);
-                        rectPersonaje.anchoredPosition = posOriginalPersonaje; // Reseteo vital
-                        rectPersonaje.DOPunchAnchorPos(new Vector2(0, fuerzaSalto), duracionSalto, 1, 0.5f);
-                    }
-                    spriteAnterior = linea.spritePersonaje; 
-                }
-            }
-            else if (imagenPersonajeUI != null)
-            {
-                imagenPersonajeUI.gameObject.SetActive(false); 
-                spriteAnterior = null;
-            }
-
-            textoNarrativa.text = linea.texto;
-            textoNarrativa.maxVisibleCharacters = 0;
-            textoNarrativa.ForceMeshUpdate(); 
-            int totalCaracteres = textoNarrativa.textInfo.characterCount;
-            
-            for (int i = 0; i <= totalCaracteres; i++)
-            {
-                textoNarrativa.maxVisibleCharacters = i;
-
-                float cronometro = 0f;
-                bool saltoDetectado = false;
-
-                while (cronometro < velocidadEscritura)
-                {
-                    cronometro += Time.deltaTime;
-
-                    if ((Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame))
-                    {
-                        saltoDetectado = true;
-                        break;
-                    }
-                    
-                    yield return null; 
-                }
-
-                if (saltoDetectado)
-                {
-                    textoNarrativa.maxVisibleCharacters = totalCaracteres;
-                    break; 
-                }
-            }
-
-            if (reproductorAudio != null)
-            {
-                reproductorAudio.Stop();
-            }
+            yield return StartCoroutine(motor.EscribirLetraPorLetra(
+                textoNarrativa, 
+                linea.texto, 
+                velocidadEscritura, 
+                reproductorAudio, 
+                sfxDialogoLinea
+            ));
 
             yield return null;
-            yield return new WaitUntil(() => (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame));
+            yield return new WaitUntil(() => motor.BotonSaltarPresionado());
             yield return null; 
         }
 
